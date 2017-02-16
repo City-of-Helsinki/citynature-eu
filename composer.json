@@ -24,12 +24,25 @@
     "forum": "https://discourse.roots.io/category/bedrock"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "secure-http": false
   },
   "repositories": [
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "ACF/ACFPro",
+        "version": "5.3.3",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
+        }
+      }
     }
   ],
   "require": {
@@ -38,14 +51,53 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.7.2",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "villeristi/cmb2-field-leaflet-geocoder": "*",
+    "ACF/ACFPro": "*",
+    "wpackagist-plugin/adminimize": "~1",
+    "wpackagist-plugin/cms-tree-page-view": "~1.3.3",
+    "wpackagist-plugin/wp-native-dashboard": "dev-trunk",
+    "wpackagist-plugin/admin-column-view": "~1.0",
+    "wpackagist-plugin/better-wp-security": "~6.0",
+    "wpackagist-plugin/black-studio-tinymce-widget": "~2.2",
+    "wpackagist-plugin/cmb2": "~2.0",
+    "wpackagist-plugin/contact-form-7": "~4.2",
+    "wpackagist-plugin/eps-301-redirects": "~2.3",
+    "wpackagist-plugin/imsanity": "~2.3",
+    "wpackagist-plugin/relevanssi": "~3.4",
+    "wpackagist-plugin/simple-page-ordering": "~2.2",
+    "wpackagist-plugin/tabify-edit-screen": "~0.8",
+    "wpackagist-plugin/tinymce-advanced": "~4.3",
+    "wpackagist-plugin/wordpress-seo": "~4",
+    "wpackagist-plugin/user-role-editor": "~4.31"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "squizlabs/php_codesniffer": "^2.5.1",
+    "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
+    "wpackagist-plugin/debug-bar": "dev-trunk",
+    "wpackagist-plugin/debug-bar-console": "dev-trunk",
+    "wpackagist-plugin/log-deprecated-notices": "dev-trunk",
+    "wpackagist-plugin/p3-profiler": "dev-trunk",
+    "wpackagist-plugin/post-type-switcher": "~3",
+    "wpackagist-plugin/query-monitor": "dev-trunk",
+    "wpackagist-plugin/rewrite-rules-inspector": "dev-trunk",
+    "wpackagist-plugin/simply-show-ids": "dev-trunk",
+    "wpackagist-plugin/theme-check": "dev-trunk",
+    "wpackagist-plugin/user-switching": "dev-trunk",
+    "wpackagist-plugin/wordpress-importer": "dev-trunk",
+    "wpackagist-plugin/wp-sweep": "~1"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin",
+        "AFC/ACFPro",
+        "wpackagist-plugin/black-studio-tinymce-widget",
+        "wpackagist-plugin/cmb2",
+        "wpackagist-plugin/imsanity",
+        "wpackagist-plugin/tabify-edit-screen",
+        "wpackagist-plugin/simple-page-ordering"
+      ],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
