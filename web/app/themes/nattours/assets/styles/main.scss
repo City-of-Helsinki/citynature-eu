@@ -1,0 +1,22 @@
+@import "common/fonts";
+@import "common/settings";
+
+// Import npm dependencies
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+
+// Global
+@import "common/global";
+@import "common/mixins";
+
+// Components
+@import "components/wp-classes";
+@import "components/buttons";
+@import "components/comments";
+@import "components/forms";
+@import "components/tinymce";
+
+// Layouts & pages
+@import "layouts/header";
+@import "layouts/sidebar";
+@import "layouts/footer";

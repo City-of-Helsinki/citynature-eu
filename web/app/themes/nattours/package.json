@@ -1,0 +1,93 @@
+{
+  "name": "nattours",
+  "version": "0.1.0",
+  "description": "Nattours",
+  "author": "Wille <ville.ristimaki@nordsoftware.com>",
+  "private": true,
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "config": {
+    "port": 3000,
+    "devUrl": "http://nattours.dev",
+    "entry": {
+      "main": [
+        "./assets/scripts/main.js",
+        "./assets/styles/main.scss"
+      ],
+      "customizer": [
+        "./assets/scripts/customizer.js"
+      ],
+      "admin": [
+        "./assets/admin/backend.js",
+        "./assets/admin/backend.scss"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "webpack --config assets/webpack/development.js --colors --progress --watch",
+    "prod": "webpack --config assets/webpack/production.js --progress",
+    "lint": "eslint assets/scripts",
+    "test": "npm run lint -s",
+    "validate:dev": "webpack-validator assets/webpack/development.js",
+    "validate:prod": "webpack-validator assets/webpack/production.js"
+  },
+  "engines": {
+    "node": ">= 4.5"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "fastclick": "^1.0.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "1.12.4 - 3",
+    "lodash": "^4.15.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.7",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "browser-sync": "^2.17.5",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.25.0",
+    "eslint": "^3.9.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-friendly-formatter": "^2.0.6",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-html": "^1.5.5",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "exports-loader": "^0.6.3",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-webpack-plugin": "^1.2.1",
+    "imports-loader": "^0.6.5",
+    "install": "^0.8.2",
+    "minimist": "^1.2.0",
+    "node-sass": "^3.11.1",
+    "optimize-css-assets-webpack-plugin": "^1.3.0",
+    "postcss-loader": "^1.1.0",
+    "qs": "^6.3.0",
+    "require-dir": "^0.3.1",
+    "resolve-url-loader": "^1.6.0",
+    "sass-loader": "^4.0.2",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "2.1.0-beta.25",
+    "webpack-cleanup-plugin": "^0.4.1",
+    "webpack-merge": "^0.15.0",
+    "webpack-validator": "^2.2.9"
+  }
+}
