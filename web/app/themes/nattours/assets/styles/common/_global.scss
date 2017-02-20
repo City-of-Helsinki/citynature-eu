@@ -24,7 +24,30 @@ html {
 
 body {
   min-height: 100%;
+  font-size: $font-size-base;
 }
+
+// h1 {
+//   
+// }
+h2 {
+  color: #00D7A7;
+  font-weight: 600;
+  line-height: 1.2;
+}
+// h3 {
+//   
+// }
+h4 {
+  line-height: 1.5;
+  color: $gray-light;
+}
+// h5 {
+
+// }
+// h6 {
+
+// }
 
 img {
   max-width: 100%;

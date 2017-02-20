@@ -1,19 +1,19 @@
 <?php
 
 /**
- * A sample Books post-type
+ * Places post-type
  *
  * @link    http://github.com/jjgrainger/wp-custom-post-type-class/
  *
  */
 
-$books = new CPT( [
-    'post_type_name'   => 'book',
-    'singular'         => _x( 'Book', 'Single', TEXT_DOMAIN ),
-    'plural'           => _x( 'Books', 'Plural', TEXT_DOMAIN ),
-    'partitive'        => _x( 'Book', 'Partitive', TEXT_DOMAIN ),
-    'partitive_plural' => _x( 'Books', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'book'
+$places = new CPT( [
+    'post_type_name'   => 'place',
+    'singular'         => _x( 'Place', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Places', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Place', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Places', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'place'
 ], [
     'hierarchical'  => true,
     'menu_position' => 20,
@@ -27,13 +27,13 @@ $books = new CPT( [
         'with_front' => false
     ],
     'has_archive'   => true,
-    'query_var'     => 'book'
+    'query_var'     => 'place'
 
 ] );
 
-$books->menu_icon( "dashicons-editor-textcolor" );
-$books->set_textdomain( TEXT_DOMAIN );
-$books->register_taxonomy( [
+$places->menu_icon( "dashicons-editor-textcolor" );
+$places->set_textdomain( TEXT_DOMAIN );
+$places->register_taxonomy( [
     'taxonomy_name'    => 'topic',
     'singular'         => _x( 'Topic', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Topics', 'Plural', TEXT_DOMAIN ),

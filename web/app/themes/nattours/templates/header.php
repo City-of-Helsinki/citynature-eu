@@ -27,3 +27,12 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'nattours_after_body' ); ?>
+
+<header class="header--main">
+		<h2>
+			Explore the urban nature of Helsinki
+		</h2>
+		<h4>
+			Explore the urban nature of helsinki
+		</h4>
+</header>
