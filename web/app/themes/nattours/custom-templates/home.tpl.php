@@ -13,6 +13,6 @@ get_header();
 
 ?>
 
-gh
+
 
 <?php get_footer(); ?>

@@ -1,6 +1,26 @@
 .header {
+  position: relative;
   &--main {
     padding: 24px 12px 24px 24px;
     letter-spacing: .5px;
+    .filter {
+      color: $brand-info;
+      padding-top: 6px;
+      padding-left: 6px;
+      .glyphicon {
+        font-size: 18px;
+      }
+      &__text {
+        vertical-align: top;
+      }
+    }
+  }
+  .sidenavs {
+    color: $brand-info;
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    background-color: rgba(255,255,255,.5);
   }
 }

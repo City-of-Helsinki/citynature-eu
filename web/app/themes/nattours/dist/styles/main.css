@@ -12641,8 +12641,35 @@ body#tinymce {
   padding: 1.875rem 0;
 }
 
+.header {
+  position: relative;
+}
+
 .header--main {
   padding: 24px 12px 24px 24px;
   letter-spacing: .5px;
+}
+
+.header--main .filter {
+  color: #5bc0de;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.header--main .filter .glyphicon {
+  font-size: 18px;
+}
+
+.header--main .filter__text {
+  vertical-align: top;
+}
+
+.header .sidenavs {
+  color: #5bc0de;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
