@@ -29,20 +29,17 @@
 <?php do_action( 'nattours_after_body' ); ?>
 
 <header class="header header--main">
-	<div class="sidenavs">
-		<span class="glyphicon glyphicon-menu-hamburger"></span>
-		&ensp;
-		<span>hel.fi/luonto</span>
+	<div class="header__nav">
+		<i class="header__nav__sidemenu fa fa-bars" aria-hidden="true"></i>
+		<span class="header__nav__link">hel.fi/luonto</span>
+		<i class="header__nav__map fa fa-map-o" aria-hidden="true"></i>
 	</div>
-	<h2>
-		Explore the urban nature of Helsinki
-	</h2>
-	<h4>
-		Explore the urban nature of Helsinki
-	</h4>
-	<div class="filter">
-		<span class="glyphicon glyphicon-filter"></span>
-		&ensp;
-		<span class="filter__text">Suodata listausta</span>
+	<div class="header__texts">
+		<h2>
+			Explore the urban nature of Helsinki
+		</h2>
+		<h4>
+			Explore the urban nature of Helsinki
+		</h4>
 	</div>
 </header>

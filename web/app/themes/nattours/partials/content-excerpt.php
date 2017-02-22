@@ -9,7 +9,10 @@
 
 ?>
 
-<article>
-	<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-	<?php the_excerpt(); ?>
-</article>
+
+<a href="<?php the_permalink(); ?>">
+	<article class="front__preview box" style="background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(<?php the_post_thumbnail_url(); ?>);">
+		<h3><?php the_title(); ?></h3>
+		<?php the_excerpt(); ?>
+	</article>
+</a>

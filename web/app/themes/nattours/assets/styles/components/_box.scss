@@ -1,0 +1,11 @@
+.box {
+  @include make-xs-column(12);
+  background-color: rgba(0,0,0,.3);
+  padding-top: rem-calc(112);
+  padding-bottom: rem-calc(18);
+  margin-bottom: rem-calc(6);
+  & > * {
+    color: white;
+    @include make-xs-column(12);
+  }
+}

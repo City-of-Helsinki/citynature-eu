@@ -1,26 +1,29 @@
 .header {
-  position: relative;
+  @extend .container-fluid;
   &--main {
-    padding: 24px 12px 24px 24px;
+    padding-top: rem-calc(108);
+    padding-bottom: rem-calc(18);
     letter-spacing: .5px;
-    .filter {
-      color: $brand-info;
-      padding-top: 6px;
-      padding-left: 6px;
-      .glyphicon {
-        font-size: 18px;
-      }
-      &__text {
-        vertical-align: top;
-      }
+  }
+  &__nav {
+    @include make-xs-column(12, 0);
+    margin-top: rem-calc(-84);
+    color: $brand-info;
+    & > * {
+      line-height: $line-height-base;
+    }
+    &__sidemenu {
+      @include make-xs-column(1, 0);
+    } 
+    &__link {
+      @include make-xs-column(10);
+    }
+    &__map {
+      @include make-xs-column(1, 0);
+      text-align: right;
     }
   }
-  .sidenavs {
-    color: $brand-info;
-    position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-    background-color: rgba(255,255,255,.5);
+  &__texts {
+    @include make-xs-column(12);
   }
 }

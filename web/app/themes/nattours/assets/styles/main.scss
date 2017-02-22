@@ -12,12 +12,13 @@
 // Components
 @import "components/wp-classes";
 @import "components/buttons";
+@import "components/box";
 @import "components/comments";
 @import "components/forms";
 @import "components/tinymce";
 
 // Layouts & pages
-@import "layouts/box";
 @import "layouts/header";
+@import "layouts/front";
 @import "layouts/sidebar";
 @import "layouts/footer";

@@ -1618,7 +1618,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h4,
@@ -2041,7 +2041,9 @@ pre code {
   }
 }
 
-.container-fluid {
+.container-fluid,
+.header,
+.front {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -2049,12 +2051,18 @@ pre code {
 }
 
 .container-fluid:before,
-.container-fluid:after {
+.header:before,
+.front:before,
+.container-fluid:after,
+.header:after,
+.front:after {
   content: " ";
   display: table;
 }
 
-.container-fluid:after {
+.container-fluid:after,
+.header:after,
+.front:after {
   clear: both;
 }
 
@@ -6336,7 +6344,11 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
-.container-fluid > .navbar-collapse {
+.header > .navbar-header,
+.front > .navbar-header,
+.container-fluid > .navbar-collapse,
+.header > .navbar-collapse,
+.front > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6345,7 +6357,11 @@ tbody.collapse.in {
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
-  .container-fluid > .navbar-collapse {
+  .header > .navbar-header,
+  .front > .navbar-header,
+  .container-fluid > .navbar-collapse,
+  .header > .navbar-collapse,
+  .front > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -6407,7 +6423,9 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
+  .navbar > .container-fluid .navbar-brand,
+  .navbar > .header .navbar-brand,
+  .navbar > .front .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -7317,7 +7335,9 @@ a.badge:focus {
 }
 
 .container .jumbotron,
-.container-fluid .jumbotron {
+.container-fluid .jumbotron,
+.header .jumbotron,
+.front .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -7334,7 +7354,9 @@ a.badge:focus {
   }
 
   .container .jumbotron,
-  .container-fluid .jumbotron {
+  .container-fluid .jumbotron,
+  .header .jumbotron,
+  .front .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -12622,6 +12644,29 @@ figure {
   padding: 0.3125rem 0.625rem;
 }
 
+.box {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 7rem;
+  padding-bottom: 1.125rem;
+  margin-bottom: 0.375rem;
+}
+
+.box > * {
+  color: white;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .comment-list ol {
   list-style: none;
 }
@@ -12637,39 +12682,102 @@ body#tinymce {
   margin: 12px !important;
 }
 
-.box {
-  padding: 1.875rem 0;
-}
-
-.header {
-  position: relative;
-}
-
 .header--main {
-  padding: 24px 12px 24px 24px;
+  padding-top: 6.75rem;
+  padding-bottom: 1.125rem;
   letter-spacing: .5px;
 }
 
-.header--main .filter {
+.header__nav {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: -5.25rem;
   color: #5bc0de;
-  padding-top: 6px;
-  padding-left: 6px;
 }
 
-.header--main .filter .glyphicon {
-  font-size: 18px;
+.header__nav > * {
+  line-height: 1.42857;
 }
 
-.header--main .filter__text {
-  vertical-align: top;
+.header__nav__sidemenu {
+  position: relative;
+  float: left;
+  width: 8.33333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.header .sidenavs {
+.header__nav__link {
+  position: relative;
+  float: left;
+  width: 83.33333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__nav__map {
+  position: relative;
+  float: left;
+  width: 8.33333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: right;
+}
+
+.header__texts {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.front__filter {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #5bc0de;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 3rem;
+}
+
+.front__filter .fa {
+  line-height: 1.42857;
+}
+
+.front__content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.front__content:before,
+.front__content:after {
+  content: " ";
+  display: table;
+}
+
+.front__content:after {
+  clear: both;
+}
+
+.front__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  text-align: center;
+  height: 100px;
 }
 

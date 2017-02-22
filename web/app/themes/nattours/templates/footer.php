@@ -9,7 +9,9 @@
 ?>
 
 <?php wp_footer(); ?>
-
+  <footer class="footer">
+    <span>Footer</span>
+  </footer>
 </body>
 </html>
 

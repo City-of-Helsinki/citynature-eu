@@ -21,7 +21,8 @@ $places = new CPT( [
         'title',
         'editor',
         'excerpt',
-        'page-attributes'
+        'page-attributes',
+        'thumbnail'
     ],
     'rewrite'       => [
         'with_front' => false
@@ -34,16 +35,16 @@ $places = new CPT( [
 $places->menu_icon( "dashicons-editor-textcolor" );
 $places->set_textdomain( TEXT_DOMAIN );
 $places->register_taxonomy( [
-    'taxonomy_name'    => 'topic',
-    'singular'         => _x( 'Topic', 'Single', TEXT_DOMAIN ),
-    'plural'           => _x( 'Topics', 'Plural', TEXT_DOMAIN ),
-    'partitive'        => _x( 'Topic', 'Partitive', TEXT_DOMAIN ),
-    'partitive_plural' => _x( 'Topics', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'topic',
+    'taxonomy_name'    => 'category',
+    'singular'         => _x( 'Category', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Categories', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Category', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Categories', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'category',
     [
         'query_var' => true,
         'rewrite'   => [
-            'slug'         => 'topic',
+            'slug'         => 'category',
             'with_front'   => false,
             'hierarchical' => true
         ],
