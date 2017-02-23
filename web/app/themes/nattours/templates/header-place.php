@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The main Header template
+ * The Place Header template
  *
  * @package Nattours
  */
@@ -28,14 +28,9 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'nattours_after_body' ); ?>
 
-<header class="header header--main">
-	<?php get_template_part( 'partials/components/nav' ); ?>
-	<div class="header__texts">
-		<h1>
-			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
-		</h1>
-		<h4>
-			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
-		</h4>
+<header class="header header--place">
+	<div class="header__nav">
+		<i class="header__nav__sidemenu fa fa-bars" aria-hidden="true"></i>
+		<span class="header__nav__link">hel.fi/luonto</span>
+		<i class="header__nav__map fa fa-map-o" aria-hidden="true"></i>
 	</div>
-</header>

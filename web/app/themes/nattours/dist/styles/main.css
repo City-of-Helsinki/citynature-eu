@@ -1608,12 +1608,12 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 41px;
+  font-size: 30px;
 }
 
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 h3,
@@ -1628,7 +1628,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 h6,
@@ -12570,7 +12570,7 @@ body {
   font-size: 16px;
 }
 
-h2 {
+h1 {
   color: #00D7A7;
   font-weight: 600;
   line-height: 1.2;
@@ -12579,6 +12579,10 @@ h2 {
 h4 {
   line-height: 1.5;
   color: #777777;
+}
+
+h5 {
+  color: #00D7A7;
 }
 
 img {
@@ -12682,21 +12686,34 @@ body#tinymce {
   margin: 12px !important;
 }
 
-.header--main {
-  padding-top: 6.75rem;
+.header {
+  position: relative;
   padding-bottom: 1.125rem;
   letter-spacing: .5px;
+}
+
+.header--main {
+  padding-top: 6.75rem;
+}
+
+.header--main .header__nav {
+  color: #5bc0de;
+}
+
+.header--place {
+  padding-top: 5.25rem;
+  color: white;
 }
 
 .header__nav {
   position: relative;
   float: left;
-  width: 100%;
+  width: 91.66667%;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
-  margin-top: -5.25rem;
-  color: #5bc0de;
+  position: absolute;
+  top: 1.5rem;
 }
 
 .header__nav > * {

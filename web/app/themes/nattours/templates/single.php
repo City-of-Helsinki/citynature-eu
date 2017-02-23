@@ -6,7 +6,7 @@
  * @package Nattours
  */
 
-get_header();
+get_header('place');
 
 ?>
 
