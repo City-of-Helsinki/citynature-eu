@@ -36,10 +36,10 @@
 	</div>
 	<div class="header__texts">
 		<h2>
-			Explore the urban nature of Helsinki
+			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
 		</h2>
 		<h4>
-			Explore the urban nature of Helsinki
+			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
 		</h4>
 	</div>
 </header>

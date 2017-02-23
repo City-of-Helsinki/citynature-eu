@@ -17,7 +17,13 @@
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "bedrock",
+    "roots",
+    "wordpress",
+    "stack",
+    "composer",
+    "vagrant",
+    "wp"
   ],
   "support": {
     "issues": "https://github.com/roots/bedrock/issues",
@@ -64,12 +70,13 @@
     "wpackagist-plugin/contact-form-7": "~4.2",
     "wpackagist-plugin/eps-301-redirects": "~2.3",
     "wpackagist-plugin/imsanity": "~2.3",
+    "wpackagist-plugin/polylang": "^2.1.1",
     "wpackagist-plugin/relevanssi": "~3.4",
     "wpackagist-plugin/simple-page-ordering": "~2.2",
     "wpackagist-plugin/tabify-edit-screen": "~0.8",
     "wpackagist-plugin/tinymce-advanced": "~4.3",
-    "wpackagist-plugin/wordpress-seo": "~4",
-    "wpackagist-plugin/user-role-editor": "~4.31"
+    "wpackagist-plugin/user-role-editor": "~4.31",
+    "wpackagist-plugin/wordpress-seo": "~4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1",
@@ -98,8 +105,12 @@
         "wpackagist-plugin/tabify-edit-screen",
         "wpackagist-plugin/simple-page-ordering"
       ],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   },

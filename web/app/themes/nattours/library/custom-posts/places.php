@@ -35,16 +35,124 @@ $places = new CPT( [
 $places->menu_icon( "dashicons-editor-textcolor" );
 $places->set_textdomain( TEXT_DOMAIN );
 $places->register_taxonomy( [
-    'taxonomy_name'    => 'category',
-    'singular'         => _x( 'Category', 'Single', TEXT_DOMAIN ),
-    'plural'           => _x( 'Categories', 'Plural', TEXT_DOMAIN ),
-    'partitive'        => _x( 'Category', 'Partitive', TEXT_DOMAIN ),
-    'partitive_plural' => _x( 'Categories', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'category',
+    'taxonomy_name'    => 'difficulty',
+    'singular'         => _x( 'Difficulty', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Difficulties', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Difficulty', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Difficulties', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'difficulty',
     [
         'query_var' => true,
         'rewrite'   => [
-            'slug'         => 'category',
+            'slug'         => 'difficulty',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'season',
+    'singular'         => _x( 'Season', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Seasons', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Season', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Seasons', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'season',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'season',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'activities',
+    'singular'         => _x( 'Activity', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Activities', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Activity', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Activities', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'activities',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'activities',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'other',
+    'singular'         => _x( 'Other', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Others', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Other', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Others', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'other',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'other',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'birds',
+    'singular'         => _x( 'Bird', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Birds', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Bird', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Birds', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'birds',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'birds',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'animals',
+    'singular'         => _x( 'Animal', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Animals', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Animal', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Animals', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'animals',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'animals',
+            'with_front'   => false,
+            'hierarchical' => true
+        ],
+        'sort'      => true
+    ]
+] );
+
+$places->register_taxonomy( [
+    'taxonomy_name'    => 'plants',
+    'singular'         => _x( 'Plant', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Plants', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Plant', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Plants', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'plants',
+    [
+        'query_var' => true,
+        'rewrite'   => [
+            'slug'         => 'plants',
             'with_front'   => false,
             'hierarchical' => true
         ],

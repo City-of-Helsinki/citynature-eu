@@ -26,12 +26,12 @@ function nattours_theme() {
  */
 function nattours_set_imagesizes() {
     return [
-        //[
-        //    'name'   => 'article_lift',
-        //    'width'  => 360,
-        //    'height' => 200,
-        //    'crop'   => true
-        //]
+        [
+           'name'   => 'place_thumb',
+           'width'  => 611,
+           'height' => 304,
+           'crop'   => true
+        ]
     ];
 }
 
@@ -241,3 +241,11 @@ add_action( 'after_switch_theme', function () {
         update_option( 'stylesheet', $stylesheet . '/templates' );
     }
 } );
+
+/**
+ * Register strings for polylang
+ *
+ */
+if(function_exists('pll_register_string')) {
+    pll_register_string( 'Explore the urban nature of Helsinki', 'Explore the urban nature of Helsinki' );
+}
