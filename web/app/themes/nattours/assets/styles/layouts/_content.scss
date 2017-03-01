@@ -2,8 +2,13 @@
   @extend .container-fluid;
   &__content {
     @include make-row();
-    & > h5, & > p {
+    &__text {
       @include make-xs-column(12);
+      padding-top: rem-calc(36);
+      padding-bottom: rem-calc(36);
+      & > * {
+        @include make-xs-column(12);
+      }
     }
     & > img, & > .map {
       @include make-xs-column(12, 0);

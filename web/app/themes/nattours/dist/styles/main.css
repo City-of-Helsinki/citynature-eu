@@ -12579,6 +12579,7 @@ html {
 body {
   min-height: 100%;
   font-size: 16px;
+  color: #777777;
 }
 
 h1 {
@@ -12589,7 +12590,6 @@ h1 {
 
 h4 {
   line-height: 1.5;
-  color: #777777;
 }
 
 h5 {
@@ -12712,8 +12712,18 @@ body#tinymce {
   clear: both;
 }
 
-.place__content > h5,
-.place__content > p {
+.place__content__text {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.place__content__text > * {
   position: relative;
   float: left;
   width: 100%;

@@ -16,8 +16,10 @@
 		}
 	</style>
 
-	<h3><?php the_title(); ?></h3>
-	<?php the_excerpt(); ?>
+	<div class="header__texts">
+		<h3><?php the_title(); ?></h3>
+		<?php the_excerpt(); ?>
+	</div>
 
 </header>
 
@@ -47,9 +49,9 @@
 			if ( strpos( $field_name, '_text' ) !== false ) {
 				echo get_first_paragraph($value);
 			} elseif ( strpos( $field_name, '_image' ) !== false ) {
-				echo "<img src=\"$value\" />";
+				echo "</div><img src=\"$value\" />";
 			} else {
-				echo $value;
+				echo '</div>' . $value;
 			}
 		}
 	}
@@ -60,21 +62,24 @@
 	?>
 	
 	<section class="place__content">
-		<h5>Esittelytekstin otsikko</h5>
-		<?php 
-		echo get_first_paragraph( get_the_content() );
-		echo print_arr( $introduction_arr );
-		?>
+		<div class="place__content__text">
+			<h5>Esittelytekstin otsikko</h5>
+			<?php 
+			echo get_first_paragraph( get_the_content() );
+			echo print_arr( $introduction_arr );
+			?>
 	</section>
 
 	<section class="place__content">
-		<h5>Palvelut ja reitit</h5>
-		<?php echo print_arr($services_arr); ?>
+		<div class="place__content__text">
+			<h5>Palvelut ja reitit</h5>
+			<?php echo print_arr($services_arr); ?>
 	</section>
 
 	<section class="place__content">
-		<h5>Luonto</h5>
-		<?php echo print_arr($nature_arr); ?>
+		<div class="place__content__text">
+			<h5>Luonto</h5>
+			<?php echo print_arr($nature_arr); ?>
 	</section>
 
 </article>
