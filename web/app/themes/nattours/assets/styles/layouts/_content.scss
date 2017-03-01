@@ -1,0 +1,12 @@
+.place {
+  @extend .container-fluid;
+  &__content {
+    @include make-row();
+    & > h5, & > p {
+      @include make-xs-column(12);
+    }
+    & > img, & > .map {
+      @include make-xs-column(12, 0);
+    }
+  }
+}

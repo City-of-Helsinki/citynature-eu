@@ -5,13 +5,12 @@
   letter-spacing: .5px;
   &--main {
     padding-top: rem-calc(108);
-    .header__nav {
-      color: $brand-info;
-    }
   }
   &--place {
     padding-top: rem-calc(84);
-    color: white;
+    * {
+      color: white !important;
+    }
   }
 
   &__nav {
@@ -19,6 +18,7 @@
     position: absolute;
       top: rem-calc(24);
     & > * {
+      color: $brand-info;
       line-height: $line-height-base;
     }
     &__sidemenu {

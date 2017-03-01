@@ -243,13 +243,14 @@ add_action( 'after_switch_theme', function () {
 } );
 
 /**
-* Get first paragraph from a WordPress post. Use inside the Loop.
-* https://gist.github.com/banago/4023646
+* Get first paragraph from text content.
+*
+* @param $text
 *
 * @return string
 */
-function get_first_paragraph() {
-	$str = wpautop( get_the_content() );
+function get_first_paragraph( $text ) {
+	$str = wpautop( $text );
 	$str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
 	$str = strip_tags($str, '<a><strong><em>');
 	return '<p>' . $str . '</p>';
