@@ -3,10 +3,10 @@
   &__tabs {
     @include make-xs-column(12);
     list-style: none;
-    margin-bottom: rem-calc(-18);
+    margin: rem-calc(24 0 -18);
     & > li {
       display: inline-block;
-      padding: rem-calc(12);
+      padding: rem-calc(0 3 12);
     }
     .active {
       border-bottom: 2px solid white;
