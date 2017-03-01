@@ -63,8 +63,8 @@
 	
 	<section class="place__content">
 		<div class="place__content__text">
-			<h5>Esittelytekstin otsikko</h5>
 			<?php 
+			echo '<h5>' . pll__('Esittelytekstin otsikko') . '</h5>';
 			echo get_first_paragraph( get_the_content() );
 			echo print_arr( $introduction_arr );
 			?>
@@ -72,14 +72,18 @@
 
 	<section class="place__content">
 		<div class="place__content__text">
-			<h5>Palvelut ja reitit</h5>
-			<?php echo print_arr($services_arr); ?>
+			<?php 
+			echo '<h5>' . pll__('Services and routes') . '</h5>';
+			echo print_arr($services_arr);
+			?>
 	</section>
 
 	<section class="place__content">
 		<div class="place__content__text">
-			<h5>Luonto</h5>
-			<?php echo print_arr($nature_arr); ?>
+			<?php 
+			echo '<h5>' . pll__('Nature') . '</h5>';
+			echo print_arr($nature_arr);
+			?>
 	</section>
 
 </article>
