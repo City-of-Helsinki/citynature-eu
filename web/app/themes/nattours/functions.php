@@ -265,4 +265,7 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Header for introduction text', 'Header for introduction text' );
     pll_register_string( 'Services and routes', 'Services and routes' );
     pll_register_string( 'Nature', 'Nature' );
+    pll_register_string( 'Read entire introduction', 'Read entire introduction' );
+    pll_register_string( 'Read more about services and routes', 'Read more about services and routes' );
+    pll_register_string( 'Read more about nature', 'Read more about nature' );
 }
