@@ -1,5 +1,17 @@
 .place {
   @extend .container-fluid;
+  &__tabs {
+    @include make-xs-column(12);
+    list-style: none;
+    margin-bottom: rem-calc(-18);
+    & > li {
+      display: inline-block;
+      padding: rem-calc(12);
+    }
+    .active {
+      border-bottom: 2px solid white;
+    }
+  }
   &__content {
     @include make-row();
     &__text {

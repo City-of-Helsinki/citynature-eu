@@ -8,6 +8,10 @@
   }
   &--place {
     padding-top: rem-calc(84);
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     * {
       color: white !important;
     }
