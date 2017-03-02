@@ -79,7 +79,6 @@
     "wpackagist-plugin/wordpress-seo": "~4"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1",
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
     "wpackagist-plugin/debug-bar": "dev-trunk",
     "wpackagist-plugin/debug-bar-console": "dev-trunk",
