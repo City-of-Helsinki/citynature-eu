@@ -18,11 +18,19 @@ get_header('place');
 			<?php the_excerpt(); ?>
 		</div>
 
-		<ul class="place__tabs" role="tablist">
-			<li role="presentation" class="active"><a href="#preview" role="tab" data-toggle="tab">Preview</a></li>
-			<li role="presentation"><a href="#intro" role="tab" data-toggle="tab">Intro</a></li>
-			<li role="presentation"><a href="#services" role="tab" data-toggle="tab">Services</a></li>
-			<li role="presentation"><a href="#nature" role="tab" data-toggle="tab">Nature</a></li>
+		<ul class="place__tabs" role="tablist" id="tabNav">
+			<li role="presentation" class="active" data-target="#preview">
+				<a href="#preview" role="tab" data-toggle="tab">Preview</a>
+			</li>
+			<li role="presentation" data-target="#intro">
+				<a href="#intro" role="tab" data-toggle="tab">Intro</a>
+			</li>
+			<li role="presentation" data-target="#services">
+				<a href="#services" role="tab" data-toggle="tab">Services</a>
+			</li>
+			<li role="presentation" data-target="#nature">
+				<a href="#nature" role="tab" data-toggle="tab">Nature</a>
+			</li>
 		</ul>
 	</header>
 	
