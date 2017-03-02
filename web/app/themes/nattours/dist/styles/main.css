@@ -2042,12 +2042,12 @@ pre code {
 }
 
 .container-fluid,
+.front,
+.header,
 .location__preview,
 .location__intro,
 .location__services,
-.location__nature,
-.front,
-.header {
+.location__nature {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -2055,30 +2055,30 @@ pre code {
 }
 
 .container-fluid:before,
+.front:before,
+.header:before,
 .location__preview:before,
 .location__intro:before,
 .location__services:before,
 .location__nature:before,
-.front:before,
-.header:before,
 .container-fluid:after,
+.front:after,
+.header:after,
 .location__preview:after,
 .location__intro:after,
 .location__services:after,
-.location__nature:after,
-.front:after,
-.header:after {
+.location__nature:after {
   content: " ";
   display: table;
 }
 
 .container-fluid:after,
+.front:after,
+.header:after,
 .location__preview:after,
 .location__intro:after,
 .location__services:after,
-.location__nature:after,
-.front:after,
-.header:after {
+.location__nature:after {
   clear: both;
 }
 
@@ -6360,19 +6360,19 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
+.front > .navbar-header,
+.header > .navbar-header,
 .location__preview > .navbar-header,
 .location__intro > .navbar-header,
 .location__services > .navbar-header,
 .location__nature > .navbar-header,
-.front > .navbar-header,
-.header > .navbar-header,
 .container-fluid > .navbar-collapse,
+.front > .navbar-collapse,
+.header > .navbar-collapse,
 .location__preview > .navbar-collapse,
 .location__intro > .navbar-collapse,
 .location__services > .navbar-collapse,
-.location__nature > .navbar-collapse,
-.front > .navbar-collapse,
-.header > .navbar-collapse {
+.location__nature > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6381,19 +6381,19 @@ tbody.collapse.in {
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
+  .front > .navbar-header,
+  .header > .navbar-header,
   .location__preview > .navbar-header,
   .location__intro > .navbar-header,
   .location__services > .navbar-header,
   .location__nature > .navbar-header,
-  .front > .navbar-header,
-  .header > .navbar-header,
   .container-fluid > .navbar-collapse,
+  .front > .navbar-collapse,
+  .header > .navbar-collapse,
   .location__preview > .navbar-collapse,
   .location__intro > .navbar-collapse,
   .location__services > .navbar-collapse,
-  .location__nature > .navbar-collapse,
-  .front > .navbar-collapse,
-  .header > .navbar-collapse {
+  .location__nature > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -6456,12 +6456,12 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
+  .navbar > .front .navbar-brand,
+  .navbar > .header .navbar-brand,
   .navbar > .location__preview .navbar-brand,
   .navbar > .location__intro .navbar-brand,
   .navbar > .location__services .navbar-brand,
-  .navbar > .location__nature .navbar-brand,
-  .navbar > .front .navbar-brand,
-  .navbar > .header .navbar-brand {
+  .navbar > .location__nature .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -7372,12 +7372,12 @@ a.badge:focus {
 
 .container .jumbotron,
 .container-fluid .jumbotron,
+.front .jumbotron,
+.header .jumbotron,
 .location__preview .jumbotron,
 .location__intro .jumbotron,
 .location__services .jumbotron,
-.location__nature .jumbotron,
-.front .jumbotron,
-.header .jumbotron {
+.location__nature .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -7395,12 +7395,12 @@ a.badge:focus {
 
   .container .jumbotron,
   .container-fluid .jumbotron,
+  .front .jumbotron,
+  .header .jumbotron,
   .location__preview .jumbotron,
   .location__intro .jumbotron,
   .location__services .jumbotron,
-  .location__nature .jumbotron,
-  .front .jumbotron,
-  .header .jumbotron {
+  .location__nature .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -12744,75 +12744,6 @@ body#tinymce {
   margin: 12px !important;
 }
 
-.location__tabs {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  list-style: none;
-  margin: 1.5rem 0 -1.125rem;
-}
-
-.location__tabs > li {
-  display: inline-block;
-  padding: 0 0.1875rem 0.75rem;
-}
-
-.location__tabs .active {
-  border-bottom: 2px solid white;
-}
-
-.location__preview__content {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.location__preview__content:before,
-.location__preview__content:after {
-  content: " ";
-  display: table;
-}
-
-.location__preview__content:after {
-  clear: both;
-}
-
-.location__preview__content__text {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.location__preview__content__text > * {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.location__preview__content > img,
-.location__preview__content > .map {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.location__preview__content h6 {
-  cursor: pointer;
-}
-
 .footer {
   text-align: center;
   height: 100px;
@@ -12942,5 +12873,101 @@ body#tinymce {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.location__preview__content,
+.location__intro__content,
+.location__services__content,
+.location__nature__content {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.location__preview__content:before,
+.location__preview__content:after,
+.location__intro__content:before,
+.location__intro__content:after,
+.location__services__content:before,
+.location__services__content:after,
+.location__nature__content:before,
+.location__nature__content:after {
+  content: " ";
+  display: table;
+}
+
+.location__preview__content:after,
+.location__intro__content:after,
+.location__services__content:after,
+.location__nature__content:after {
+  clear: both;
+}
+
+.location__preview__content__text,
+.location__intro__content__text,
+.location__services__content__text,
+.location__nature__content__text {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.location__preview__content__text > *,
+.location__intro__content__text > *,
+.location__services__content__text > *,
+.location__nature__content__text > * {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.location__preview__content > img,
+.location__preview__content > .map,
+.location__intro__content > img,
+.location__intro__content > .map,
+.location__services__content > img,
+.location__services__content > .map,
+.location__nature__content > img,
+.location__nature__content > .map {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.location__preview__content h6,
+.location__intro__content h6,
+.location__services__content h6,
+.location__nature__content h6 {
+  cursor: pointer;
+}
+
+.location__tabs {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style: none;
+  margin: 1.5rem 0 -1.125rem;
+}
+
+.location__tabs > li {
+  display: inline-block;
+  padding: 0 0.1875rem 0.75rem;
+}
+
+.location__tabs .active {
+  border-bottom: 2px solid white;
 }
 
