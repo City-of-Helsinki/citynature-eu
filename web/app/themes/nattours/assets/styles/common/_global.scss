@@ -34,19 +34,25 @@ h1 {
   line-height: 1.2;
 }
 
-// h2 {}
+h2 {
+  line-height: 1.5;
+}
 
 // h3 {}
 
 h4 {
-  line-height: 1.5;
+  color: #00D7A7;
 }
 
 h5 {
   color: #00D7A7;
 }
 
-// h6 {}
+h6 {
+  color: $brand-info;
+  margin: 0;
+  line-height: $line-height-base;
+}
 
 img {
   max-width: 100%;

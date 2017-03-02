@@ -1613,7 +1613,7 @@ h1,
 
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 20px;
 }
 
 h3,
@@ -1623,7 +1623,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h5,
@@ -1633,7 +1633,7 @@ h5,
 
 h6,
 .h6 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 p {
@@ -2042,7 +2042,10 @@ pre code {
 }
 
 .container-fluid,
-.place,
+.location__preview,
+.location__intro,
+.location__services,
+.location__nature,
 .front,
 .header {
   margin-right: auto;
@@ -2052,11 +2055,17 @@ pre code {
 }
 
 .container-fluid:before,
-.place:before,
+.location__preview:before,
+.location__intro:before,
+.location__services:before,
+.location__nature:before,
 .front:before,
 .header:before,
 .container-fluid:after,
-.place:after,
+.location__preview:after,
+.location__intro:after,
+.location__services:after,
+.location__nature:after,
 .front:after,
 .header:after {
   content: " ";
@@ -2064,7 +2073,10 @@ pre code {
 }
 
 .container-fluid:after,
-.place:after,
+.location__preview:after,
+.location__intro:after,
+.location__services:after,
+.location__nature:after,
 .front:after,
 .header:after {
   clear: both;
@@ -6348,11 +6360,17 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
-.place > .navbar-header,
+.location__preview > .navbar-header,
+.location__intro > .navbar-header,
+.location__services > .navbar-header,
+.location__nature > .navbar-header,
 .front > .navbar-header,
 .header > .navbar-header,
 .container-fluid > .navbar-collapse,
-.place > .navbar-collapse,
+.location__preview > .navbar-collapse,
+.location__intro > .navbar-collapse,
+.location__services > .navbar-collapse,
+.location__nature > .navbar-collapse,
 .front > .navbar-collapse,
 .header > .navbar-collapse {
   margin-right: -15px;
@@ -6363,11 +6381,17 @@ tbody.collapse.in {
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
-  .place > .navbar-header,
+  .location__preview > .navbar-header,
+  .location__intro > .navbar-header,
+  .location__services > .navbar-header,
+  .location__nature > .navbar-header,
   .front > .navbar-header,
   .header > .navbar-header,
   .container-fluid > .navbar-collapse,
-  .place > .navbar-collapse,
+  .location__preview > .navbar-collapse,
+  .location__intro > .navbar-collapse,
+  .location__services > .navbar-collapse,
+  .location__nature > .navbar-collapse,
   .front > .navbar-collapse,
   .header > .navbar-collapse {
     margin-right: 0;
@@ -6432,7 +6456,10 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
-  .navbar > .place .navbar-brand,
+  .navbar > .location__preview .navbar-brand,
+  .navbar > .location__intro .navbar-brand,
+  .navbar > .location__services .navbar-brand,
+  .navbar > .location__nature .navbar-brand,
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand {
     margin-left: -15px;
@@ -7345,7 +7372,10 @@ a.badge:focus {
 
 .container .jumbotron,
 .container-fluid .jumbotron,
-.place .jumbotron,
+.location__preview .jumbotron,
+.location__intro .jumbotron,
+.location__services .jumbotron,
+.location__nature .jumbotron,
 .front .jumbotron,
 .header .jumbotron {
   border-radius: 6px;
@@ -7365,7 +7395,10 @@ a.badge:focus {
 
   .container .jumbotron,
   .container-fluid .jumbotron,
-  .place .jumbotron,
+  .location__preview .jumbotron,
+  .location__intro .jumbotron,
+  .location__services .jumbotron,
+  .location__nature .jumbotron,
   .front .jumbotron,
   .header .jumbotron {
     padding-left: 60px;
@@ -12588,12 +12621,22 @@ h1 {
   line-height: 1.2;
 }
 
-h4 {
+h2 {
   line-height: 1.5;
+}
+
+h4 {
+  color: #00D7A7;
 }
 
 h5 {
   color: #00D7A7;
+}
+
+h6 {
+  color: #5bc0de;
+  margin: 0;
+  line-height: 1.42857;
 }
 
 img {
@@ -12701,7 +12744,7 @@ body#tinymce {
   margin: 12px !important;
 }
 
-.place__tabs {
+.location__tabs {
   position: relative;
   float: left;
   width: 100%;
@@ -12712,31 +12755,31 @@ body#tinymce {
   margin: 1.5rem 0 -1.125rem;
 }
 
-.place__tabs > li {
+.location__tabs > li {
   display: inline-block;
   padding: 0 0.1875rem 0.75rem;
 }
 
-.place__tabs .active {
+.location__tabs .active {
   border-bottom: 2px solid white;
 }
 
-.place__content {
+.location__preview__content {
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.place__content:before,
-.place__content:after {
+.location__preview__content:before,
+.location__preview__content:after {
   content: " ";
   display: table;
 }
 
-.place__content:after {
+.location__preview__content:after {
   clear: both;
 }
 
-.place__content__text {
+.location__preview__content__text {
   position: relative;
   float: left;
   width: 100%;
@@ -12747,7 +12790,7 @@ body#tinymce {
   padding-bottom: 2.25rem;
 }
 
-.place__content__text > * {
+.location__preview__content__text > * {
   position: relative;
   float: left;
   width: 100%;
@@ -12756,14 +12799,18 @@ body#tinymce {
   padding-right: 15px;
 }
 
-.place__content > img,
-.place__content > .map {
+.location__preview__content > img,
+.location__preview__content > .map {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+}
+
+.location__preview__content h6 {
+  cursor: pointer;
 }
 
 .footer {
@@ -12784,6 +12831,21 @@ body#tinymce {
 
 .front__filter .fa {
   line-height: 1.42857;
+  position: relative;
+  float: left;
+  width: 8.33333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.front__filter h6 {
+  position: relative;
+  float: left;
+  width: 91.66667%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .front__content {
@@ -12817,7 +12879,7 @@ body#tinymce {
   padding-top: 6.75rem;
 }
 
-.header--place {
+.header--location {
   padding-top: 5.25rem;
   background-color: gray;
   background-repeat: no-repeat;
@@ -12825,7 +12887,7 @@ body#tinymce {
   background-size: cover;
 }
 
-.header--place * {
+.header--location * {
   color: white !important;
 }
 

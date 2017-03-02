@@ -11,8 +11,8 @@
 
 get_header();
 
-$places = new WP_Query( [
-  'post_type' => 'place',
+$locations = new WP_Query( [
+  'post_type' => 'location',
   'order'     => 'asc',
 ] )
 
@@ -21,12 +21,11 @@ $places = new WP_Query( [
 <main class="front">
   <div class="front__filter">
 		<i class="fa fa-filter" aria-hidden="true"></i>
-		&ensp;
-		Suodata listausta
+		<h6>Suodata listausta</h6>
 	</div>
   <div class="front__content">
     <?php
-    if ( $places->have_posts() ) : while ( $places->have_posts() ) : $places->the_post();
+    if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
       get_template_part( 'partials/content', 'excerpt' );
     endwhile;
     else :

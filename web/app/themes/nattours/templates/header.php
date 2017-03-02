@@ -34,8 +34,8 @@
 		<h1>
 			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
 		</h1>
-		<h4>
+		<h2>
 			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
-		</h4>
+		</h2>
 	</div>
 </header>

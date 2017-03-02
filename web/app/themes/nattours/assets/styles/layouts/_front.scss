@@ -6,6 +6,10 @@
     padding-bottom: rem-calc(48);
     .fa {
       line-height:  $line-height-base;
+      @include make-xs-column(1, 0);
+    }
+    h6 {
+      @include make-xs-column(11, 0);
     }
   }
   &__content {

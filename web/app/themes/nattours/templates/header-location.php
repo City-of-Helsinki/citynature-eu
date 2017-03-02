@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The Place Header template
+ * The Location Header template
  *
  * @package Nattours
  */
@@ -28,5 +28,5 @@
 <body <?php body_class(); ?>>
 <?php do_action( 'nattours_after_body' ); ?>
 
-<header class="header header--place">
+<header class="header header--location">
 	<?php get_template_part( 'partials/components/nav' ); ?>

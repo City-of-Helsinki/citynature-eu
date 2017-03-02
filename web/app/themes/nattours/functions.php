@@ -27,7 +27,7 @@ function nattours_theme() {
 function nattours_set_imagesizes() {
     return [
         [
-           'name'   => 'place_thumb',
+           'name'   => 'location_thumb',
            'width'  => 611,
            'height' => 304,
            'crop'   => true

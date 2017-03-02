@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Places post-type
+ * Locations post-type
  *
  * @link    http://github.com/jjgrainger/wp-custom-post-type-class/
  *
  */
 
-$places = new CPT( [
-    'post_type_name'   => 'place',
-    'singular'         => _x( 'Place', 'Single', TEXT_DOMAIN ),
-    'plural'           => _x( 'Places', 'Plural', TEXT_DOMAIN ),
-    'partitive'        => _x( 'Place', 'Partitive', TEXT_DOMAIN ),
-    'partitive_plural' => _x( 'Places', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'place'
+$locations = new CPT( [
+    'post_type_name'   => 'location',
+    'singular'         => _x( 'Location', 'Single', TEXT_DOMAIN ),
+    'plural'           => _x( 'Locations', 'Plural', TEXT_DOMAIN ),
+    'partitive'        => _x( 'Location', 'Partitive', TEXT_DOMAIN ),
+    'partitive_plural' => _x( 'Locations', 'Partitive plural', TEXT_DOMAIN ),
+    'slug'             => 'location'
 ], [
     'hierarchical'  => true,
     'menu_position' => 20,
@@ -28,13 +28,13 @@ $places = new CPT( [
         'with_front' => false
     ],
     'has_archive'   => true,
-    'query_var'     => 'place'
+    'query_var'     => 'location'
 
 ] );
 
-$places->menu_icon( "dashicons-editor-textcolor" );
-$places->set_textdomain( TEXT_DOMAIN );
-$places->register_taxonomy( [
+$locations->menu_icon( "dashicons-editor-textcolor" );
+$locations->set_textdomain( TEXT_DOMAIN );
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'difficulty',
     'singular'         => _x( 'Difficulty', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Difficulties', 'Plural', TEXT_DOMAIN ),
@@ -52,7 +52,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'season',
     'singular'         => _x( 'Season', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Seasons', 'Plural', TEXT_DOMAIN ),
@@ -70,7 +70,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'activities',
     'singular'         => _x( 'Activity', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Activities', 'Plural', TEXT_DOMAIN ),
@@ -88,7 +88,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'other',
     'singular'         => _x( 'Other', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Others', 'Plural', TEXT_DOMAIN ),
@@ -106,7 +106,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'birds',
     'singular'         => _x( 'Bird', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Birds', 'Plural', TEXT_DOMAIN ),
@@ -124,7 +124,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'animals',
     'singular'         => _x( 'Animal', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Animals', 'Plural', TEXT_DOMAIN ),
@@ -142,7 +142,7 @@ $places->register_taxonomy( [
     ]
 ] );
 
-$places->register_taxonomy( [
+$locations->register_taxonomy( [
     'taxonomy_name'    => 'plants',
     'singular'         => _x( 'Plant', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Plants', 'Plural', TEXT_DOMAIN ),

@@ -6,7 +6,7 @@
  * @package Nattours
  */
 
-get_header('place');
+get_header('location');
 
 ?>
 
@@ -18,7 +18,7 @@ get_header('place');
 			<?php the_excerpt(); ?>
 		</div>
 
-		<ul class="place__tabs" role="tablist" id="tabNav">
+		<ul class="location__tabs" role="tablist" id="tabNav">
 			<li role="presentation" class="active" data-target="#preview">
 				<a href="#preview" role="tab" data-toggle="tab">Preview</a>
 			</li>
@@ -34,7 +34,7 @@ get_header('place');
 		</ul>
 	</header>
 	
-	<div class="tab-content">
+	<main class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="preview">
 			<?php get_template_part( 'partials/content', 'preview' ); ?>
 		</div>
@@ -47,7 +47,7 @@ get_header('place');
     <div role="tabpanel" class="tab-pane fade" id="nature">
 			<?php get_template_part( 'partials/content', 'nature' ); ?>
 		</div>
-  </div>
+  </main>
 <?php endwhile; endif; ?>
 
 <?php
