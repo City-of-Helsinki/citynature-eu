@@ -10,8 +10,12 @@
   <section class="location__intro__content">
     <div class="location__intro__content__text"> 
       <h4><?= pll__( 'Header for introduction text' ) ?></h4>
-      <?php get_first_paragraph( the_content() ); ?>
+      <?php the_content(); ?>
     </div>
-    <?php print_r( get_field('introduction_gallery' ) ); ?>
+    <div id="introGallery" class="location__intro__content__gallery">
+      <?php foreach ( get_field( 'introduction_gallery' ) as $pic ) { ?>
+        <img src="<?= $pic['sizes']['medium']; ?>" />
+      <?php } ?>
+    </div>
   </section>
 </article>

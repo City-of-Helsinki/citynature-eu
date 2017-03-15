@@ -8,7 +8,8 @@ export default {
         $(tabs[index + 1]).click();
       });
     });
+
+    $('#introGallery').slick();
   },
-  finalize() {
-  },
+  finalize() {},
 };
