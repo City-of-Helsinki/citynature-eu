@@ -9,7 +9,15 @@ export default {
       });
     });
 
-    $('#introGallery').slick();
+    $('#introGallery').slick({
+      arrows: false,
+      // mobileFirst: true,
+      adaptiveHeight: true,
+      dots: true,
+    });
+
+    const introPar = $('.location__intro__content__text p');
+    $('#introGallery').insertAfter(introPar[0]);
   },
   finalize() {},
 };

@@ -12,9 +12,14 @@
       <h4><?= pll__( 'Header for introduction text' ) ?></h4>
       <?php the_content(); ?>
     </div>
-    <div id="introGallery" class="location__intro__content__gallery">
+    <div id="introGallery">
       <?php foreach ( get_field( 'introduction_gallery' ) as $pic ) { ?>
-        <img src="<?= $pic['sizes']['medium']; ?>" />
+        <img src="<?= $pic['sizes']['thumbnail']; ?>" />
+      <?php } ?>
+    </div>
+    <div id="introImages">
+      <?php foreach ( get_field( 'introduction_gallery' ) as $pic ) { ?>
+        <img src="<?= $pic['sizes']['thumbnail']; ?>" />
       <?php } ?>
     </div>
   </section>
