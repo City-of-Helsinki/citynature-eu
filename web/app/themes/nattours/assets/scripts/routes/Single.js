@@ -6,6 +6,7 @@ export default {
     navLinks.forEach((value, index) => {
       $(value).click(() => {
         $(tabs[index + 1]).click();
+        window.scroll(0, 0);
       });
     });
 

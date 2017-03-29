@@ -1,7 +1,14 @@
 <div class="header__nav">
   <i class="header__nav__sidemenu fa fa-bars" aria-hidden="true"></i>
   <a href="/" class="header__nav__link">
-    <h6>hel.fi/luonto</h6>
+    <span>hel.fi/luonto</span>
   </a>
-  <i class="header__nav__map fa fa-map-o" aria-hidden="true"></i>
+  <span class="header__nav__map">
+    <span class="hidden-xs">
+      <?php 
+      echo get_post_type() === 'location' ? pll__('Location on map') : pll__('Locations on map');
+      ?>
+    </span>
+    <i class="fa fa-map-o" aria-hidden="true"></i>
+  </span>
 </div>

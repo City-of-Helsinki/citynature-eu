@@ -18,21 +18,28 @@
   }
 
   &__nav {
-    @include make-xs-column(11, 0);
     position: absolute;
-      top: rem-calc(24);
+      top: rem-calc(24); 
+      left: 0;
+      right: 0;
     & > * {
       color: $brand-info;
       line-height: $line-height-base;
     }
     &__sidemenu {
-      @include make-xs-column(1, 0);
+      @include make-xs-column(2);
+      @include make-sm-column(4);
     } 
     &__link {
-      @include make-xs-column(10);
+      @include make-xs-column(8, 0);
+      @include make-sm-column(4, 0);
+      @media all and (min-width: $screen-sm-min) {
+        text-align: center;
+      }
     }
     &__map {
-      @include make-xs-column(1, 0);
+      @include make-xs-column(2);
+      @include make-sm-column(4);
       text-align: right;
     }
   }

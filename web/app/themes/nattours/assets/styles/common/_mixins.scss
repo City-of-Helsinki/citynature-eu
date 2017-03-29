@@ -25,22 +25,25 @@
       &--left {
         @include make-xs-column(12, 0);
         @include make-sm-column(7);
-        padding-top: rem-calc(30);
+        padding-top: rem-calc(18);
       }
       &--right {
         @include make-xs-column(12, 0);
         @include make-sm-column(5);
-        padding-top: rem-calc(30);
+        padding-top: rem-calc(18);
       }
     }
     &__text-content {
       @include make-xs-column(12);
+      padding-bottom: rem-calc(18);
       .nav-link {
-        padding-bottom: rem-calc(42);
+        padding-bottom: rem-calc(18);
+        color: $brand-info;
       }
     }
     &__graphic-content {
       @include make-xs-column(12, 0);
+      padding-bottom: rem-calc(36);
     }
   }
 }
