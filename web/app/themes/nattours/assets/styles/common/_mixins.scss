@@ -20,31 +20,27 @@
 }
 
 @mixin content-section() {
-  &__content {
-    @include make-row();
-    padding-bottom: rem-calc(36);
-    &__text {
-      @include make-xs-column(12);
-      @include make-sm-column(7);
-      @include make-lg-column(8);
-      padding-top: rem-calc(36);
-      & > * {
-        @include make-xs-column(12);
-      }
-    }
-    &__graphic {
-      @include make-xs-column(12);
-      @include make-sm-column(5);
-      padding-top: rem-calc(36);
-      & > * {
+  .location {
+    &__content {
+      &--left {
         @include make-xs-column(12, 0);
+        @include make-sm-column(7);
+        padding-top: rem-calc(30);
+      }
+      &--right {
+        @include make-xs-column(12, 0);
+        @include make-sm-column(5);
+        padding-top: rem-calc(30);
       }
     }
-    & > img, & > .map {
-      @include make-xs-column(12, 0);
+    &__text-content {
+      @include make-xs-column(12);
+      .nav-link {
+        padding-bottom: rem-calc(42);
+      }
     }
-    h6 {
-      cursor: pointer;
+    &__graphic-content {
+      @include make-xs-column(12, 0);
     }
   }
 }

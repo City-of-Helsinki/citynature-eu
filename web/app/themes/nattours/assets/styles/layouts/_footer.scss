@@ -1,4 +1,5 @@
 .footer {
+  @include make-xs-column(12);
   text-align: center;
   height: 100px;
 }

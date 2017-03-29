@@ -15,9 +15,10 @@ export default {
       slidesToShow: 1,
       variableWidth: true,
       dots: true,
+      initialSlide: 1,
     });
 
-    const introPar = $('.location__intro__content__text p');
+    const introPar = $('.location__intro .location__text-content p');
     $('#introGallery').insertAfter(introPar[0]);
   },
   finalize() {},

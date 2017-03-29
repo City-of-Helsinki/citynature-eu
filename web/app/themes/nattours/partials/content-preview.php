@@ -22,40 +22,46 @@
 	// print_r($terms);
 
 	?>
-	<section class="md-left">
-		<div class="location__preview__content">
-			<div class="location__preview__content__text">
-				<h5> <?= pll__( 'Header for introduction text' ) ?> </h5>
-				<?= get_first_paragraph( get_the_content() ); ?>
-				<h6 class="nav-link">
-					<?= pll__( 'Read entire introduction' ) ?>
-				</h6>
-			</div>
+
+	<div class="location__content--left">
+		<div class="location__text-content">
+			<h5> <?= pll__( 'Header for introduction text' ) ?> </h5>
+			<?= get_first_paragraph( get_the_content() ); ?>
+			<h6 class="nav-link">
+				<?= pll__( 'Read entire introduction' ) ?>
+			</h6>
+		</div>
+		<div class="location__graphic-content">
 			<img src="<?php the_field( 'introduction_image' ) ?>" />
 		</div>
+	</div>
 
-		<div class="location__preview__content">
-			<div class="location__preview__content__text">
-				<h5> <?= pll__( 'Services and routes' ) ?></h5>
-				<?= get_first_paragraph( get_field( 'services_text' ) ); ?>
-				<h6 class="nav-link">
-					<?= pll__( 'Read more about services and routes' ) ?>
-				</h6>
-			</div>
+	<div class="location__content--right sm-lift">
+		<div class="location__graphic-content hidden-xs">
 			<?php the_field( 'services_map' ); ?>
 		</div>
-	</section>
+		<div class="location__text-content">
+			<h5> <?= pll__( 'Services and routes' ) ?></h5>
+			<?= get_first_paragraph( get_field( 'services_text' ) ); ?>
+			<h6 class="nav-link">
+				<?= pll__( 'Read more about services and routes' ) ?>
+			</h6>
+		</div>
+		<div class="location__graphic-content visible-xs">
+			<?php the_field( 'services_map' ); ?>
+		</div>
+	</div>
 
-	<section class="md-right">
-		<div class="location__preview__content">
-			<div class="location__preview__content__text">
-				<h5> <?= pll__( 'Nature' ) ?></h5>
-				<?= get_first_paragraph( get_field( 'nature_text' ) ); ?>
-				<h6 class="nav-link">
-					<?= pll__( 'Read more about nature' ) ?>
-				</h6>
-			</div>
+	<div class="location__content--left">
+		<div class="location__text-content">
+			<h5> <?= pll__( 'Nature' ) ?></h5>
+			<?= get_first_paragraph( get_field( 'nature_text' ) ); ?>
+			<h6 class="nav-link">
+				<?= pll__( 'Read more about nature' ) ?>
+			</h6>
+		</div>
+		<div class="location__graphic-content">
 			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
-	</section>
+	</div>
 </article>

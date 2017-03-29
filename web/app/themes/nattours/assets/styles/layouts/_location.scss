@@ -12,15 +12,13 @@
     }
   }
   &__preview, &__intro, &__services, &__nature {
-    @extend .container-fluid;
     @include content-section();
     
     #introImages {
       display: none;
     }
     #introGallery {
-      @include make-xs-column(12);
-      margin-bottom: rem-calc(18);
+      display: initial;
       .slick-slide {
         margin: rem-calc(12);
         height: rem-calc(222);
@@ -31,12 +29,9 @@
       }
     }
 
-    @media all and (min-width: $screen-sm-min) {      
+    @media all and (min-width: $screen-sm-min) {
       #introImages {
         display: initial;
-        @include make-sm-column(5, 0);
-        @include make-lg-column(4, 0);
-        padding-top: rem-calc(36);
         & > * {
           width: 100%;
           padding-bottom: rem-calc(6);
@@ -44,6 +39,12 @@
       }
       #introGallery {
         display: none;
+      }
+      .sm-lift {
+        top: rem-calc(-90);
+        .location__graphic-content {
+          @include make-xs-column(12);
+        }
       }
     }
   }
