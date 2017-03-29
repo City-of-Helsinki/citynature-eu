@@ -22,7 +22,7 @@
 	// print_r($terms);
 
 	?>
-	<section class="intro-preview">
+	<section class="md-left">
 		<div class="location__preview__content">
 			<div class="location__preview__content__text">
 				<h5> <?= pll__( 'Header for introduction text' ) ?> </h5>
@@ -33,11 +33,8 @@
 			</div>
 			<img src="<?php the_field( 'introduction_image' ) ?>" />
 		</div>
-	</section>
 
-	<section class="services-preview">
 		<div class="location__preview__content">
-			<?php the_field( 'services_map' ); ?>
 			<div class="location__preview__content__text">
 				<h5> <?= pll__( 'Services and routes' ) ?></h5>
 				<?= get_first_paragraph( get_field( 'services_text' ) ); ?>
@@ -45,10 +42,11 @@
 					<?= pll__( 'Read more about services and routes' ) ?>
 				</h6>
 			</div>
+			<?php the_field( 'services_map' ); ?>
 		</div>
 	</section>
 
-	<section class="nature-preview">
+	<section class="md-right">
 		<div class="location__preview__content">
 			<div class="location__preview__content__text">
 				<h5> <?= pll__( 'Nature' ) ?></h5>

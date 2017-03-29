@@ -21,25 +21,17 @@
     #introGallery {
       @include make-xs-column(12);
       margin-bottom: rem-calc(18);
+      .slick-slide {
+        margin: rem-calc(12);
+        height: rem-calc(222);
+        width: auto !important;
+      }
       .slick-dots {
         position: static;
       }
     }
 
-    @media all and (min-width: $screen-sm-min) {
-      .intro-preview, .nature-preview {
-        @include make-sm-column(7, 0);
-        .location__preview__content__text {
-          @include make-sm-column(12);
-        }
-      }
-      .services-preview {
-        @include make-sm-column(5);
-        .location__preview__content__text {
-          @include make-sm-column(12);
-        }
-      }
-      
+    @media all and (min-width: $screen-sm-min) {      
       #introImages {
         display: initial;
         @include make-sm-column(5, 0);

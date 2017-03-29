@@ -11,8 +11,9 @@ export default {
 
     $('#introGallery').slick({
       arrows: false,
-      // mobileFirst: true,
-      adaptiveHeight: true,
+      centerMode: true,
+      slidesToShow: 1,
+      variableWidth: true,
       dots: true,
     });
 

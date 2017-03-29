@@ -13341,115 +13341,20 @@ body#tinymce {
   margin-bottom: 1.125rem;
 }
 
+.location__preview #introGallery .slick-slide,
+.location__intro #introGallery .slick-slide,
+.location__services #introGallery .slick-slide,
+.location__nature #introGallery .slick-slide {
+  margin: 0.75rem;
+  height: 13.875rem;
+  width: auto !important;
+}
+
 .location__preview #introGallery .slick-dots,
 .location__intro #introGallery .slick-dots,
 .location__services #introGallery .slick-dots,
 .location__nature #introGallery .slick-dots {
   position: static;
-}
-
-@media all and (min-width: 768px) {
-  .location__preview .intro-preview,
-  .location__preview .nature-preview,
-  .location__intro .intro-preview,
-  .location__intro .nature-preview,
-  .location__services .intro-preview,
-  .location__services .nature-preview,
-  .location__nature .intro-preview,
-  .location__nature .nature-preview {
-    position: relative;
-    min-height: 1px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media all and (min-width: 768px) and (min-width: 768px) {
-  .location__preview .intro-preview,
-  .location__preview .nature-preview,
-  .location__intro .intro-preview,
-  .location__intro .nature-preview,
-  .location__services .intro-preview,
-  .location__services .nature-preview,
-  .location__nature .intro-preview,
-  .location__nature .nature-preview {
-    float: left;
-    width: 58.33333%;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .location__preview .intro-preview .location__preview__content__text,
-  .location__preview .nature-preview .location__preview__content__text,
-  .location__intro .intro-preview .location__preview__content__text,
-  .location__intro .nature-preview .location__preview__content__text,
-  .location__services .intro-preview .location__preview__content__text,
-  .location__services .nature-preview .location__preview__content__text,
-  .location__nature .intro-preview .location__preview__content__text,
-  .location__nature .nature-preview .location__preview__content__text {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media all and (min-width: 768px) and (min-width: 768px) {
-  .location__preview .intro-preview .location__preview__content__text,
-  .location__preview .nature-preview .location__preview__content__text,
-  .location__intro .intro-preview .location__preview__content__text,
-  .location__intro .nature-preview .location__preview__content__text,
-  .location__services .intro-preview .location__preview__content__text,
-  .location__services .nature-preview .location__preview__content__text,
-  .location__nature .intro-preview .location__preview__content__text,
-  .location__nature .nature-preview .location__preview__content__text {
-    float: left;
-    width: 100%;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .location__preview .services-preview,
-  .location__intro .services-preview,
-  .location__services .services-preview,
-  .location__nature .services-preview {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media all and (min-width: 768px) and (min-width: 768px) {
-  .location__preview .services-preview,
-  .location__intro .services-preview,
-  .location__services .services-preview,
-  .location__nature .services-preview {
-    float: left;
-    width: 41.66667%;
-  }
-}
-
-@media all and (min-width: 768px) {
-  .location__preview .services-preview .location__preview__content__text,
-  .location__intro .services-preview .location__preview__content__text,
-  .location__services .services-preview .location__preview__content__text,
-  .location__nature .services-preview .location__preview__content__text {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media all and (min-width: 768px) and (min-width: 768px) {
-  .location__preview .services-preview .location__preview__content__text,
-  .location__intro .services-preview .location__preview__content__text,
-  .location__services .services-preview .location__preview__content__text,
-  .location__nature .services-preview .location__preview__content__text {
-    float: left;
-    width: 100%;
-  }
 }
 
 @media all and (min-width: 768px) {
