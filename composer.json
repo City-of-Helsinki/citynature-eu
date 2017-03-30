@@ -76,7 +76,8 @@
     "wpackagist-plugin/tabify-edit-screen": "~0.8",
     "wpackagist-plugin/tinymce-advanced": "~4.3",
     "wpackagist-plugin/user-role-editor": "~4.31",
-    "wpackagist-plugin/wordpress-seo": "~4"
+    "wpackagist-plugin/wordpress-seo": "~4",
+    "wpackagist-plugin/wd-instagram-feed": "^1.1.24"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
