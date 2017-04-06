@@ -53,3 +53,18 @@
     }
   }
 }
+
+.service-link {
+  width: 100%;
+  max-width: 300px;
+  text-decoration: none;
+  color: initial;
+  > img {
+    width: 50px;
+    float: left;
+    margin-right: 1rem;
+  }
+  > span {
+    color: $brand-info;
+  }
+}

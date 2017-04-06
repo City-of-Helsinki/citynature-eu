@@ -77,7 +77,8 @@
     "wpackagist-plugin/tinymce-advanced": "~4.3",
     "wpackagist-plugin/user-role-editor": "~4.31",
     "wpackagist-plugin/wordpress-seo": "~4",
-    "wpackagist-plugin/wd-instagram-feed": "^1.1.24"
+    "wpackagist-plugin/wd-instagram-feed": "^1.1.24",
+    "digitoimistodude/image-hashtag-feed": "dev-master"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",

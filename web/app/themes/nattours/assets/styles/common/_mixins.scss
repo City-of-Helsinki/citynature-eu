@@ -44,6 +44,9 @@
     &__graphic-content {
       @include make-xs-column(12, 0);
       padding-bottom: rem-calc(36);
+      > * {
+        width: 100%;
+      }
     }
   }
 }

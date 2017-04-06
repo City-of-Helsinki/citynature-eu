@@ -57,4 +57,8 @@
 			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 	</div>
+
+	<div class="location__content--right sm-lift">
+		<?php echo 'hi'; ?>
+	</div>
 </article>

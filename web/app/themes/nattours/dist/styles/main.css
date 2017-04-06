@@ -13270,6 +13270,13 @@ body#tinymce {
   padding-bottom: 2.25rem;
 }
 
+.location__preview .location__graphic-content > *,
+.location__intro .location__graphic-content > *,
+.location__services .location__graphic-content > *,
+.location__nature .location__graphic-content > * {
+  width: 100%;
+}
+
 .location__preview #introImages,
 .location__intro #introImages,
 .location__services #introImages,
@@ -13348,5 +13355,22 @@ body#tinymce {
   .location__nature .service-map .map {
     padding-bottom: 150% !important;
   }
+}
+
+.service-link {
+  width: 100%;
+  max-width: 300px;
+  text-decoration: none;
+  color: initial;
+}
+
+.service-link > img {
+  width: 50px;
+  float: left;
+  margin-right: 1rem;
+}
+
+.service-link > span {
+  color: #5bc0de;
 }
 
