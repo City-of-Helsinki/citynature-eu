@@ -48,7 +48,7 @@
       }
       .sm-lift {
         top: rem-calc(-90);
-        .location__graphic-content {
+        .graphic-content {
           @include make-xs-column(12);
         }
       }
@@ -63,11 +63,12 @@
   width: 100%;
   max-width: 300px;
   text-decoration: none;
+  margin-bottom: rem-calc(36);
   color: #777;
   > img {
     width: 50px;
     float: left;
-    margin-right: 1rem;
+    margin-right: rem-calc(24);
   }
   > span {
     color: $brand-info;

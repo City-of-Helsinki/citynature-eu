@@ -2,14 +2,15 @@
   @extend .container-fluid;
   &__filter {
     @include make-xs-column(12);
-    color: $brand-info;
     padding-bottom: rem-calc(48);
     .fa {
       line-height:  $line-height-base;
       @include make-xs-column(1, 0);
+      color: $brand-info !important;
     }
-    h6 {
+    a {
       @include make-xs-column(11, 0);
+      color: $brand-info !important;
     }
   }
   &__content {

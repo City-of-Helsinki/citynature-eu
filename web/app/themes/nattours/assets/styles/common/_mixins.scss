@@ -20,33 +20,31 @@
 }
 
 @mixin content-section() {
-  .location {
-    &__content {
-      &--left {
-        @include make-xs-column(12, 0);
-        @include make-sm-column(7);
-        padding-top: rem-calc(18);
-      }
-      &--right {
-        @include make-xs-column(12, 0);
-        @include make-sm-column(5);
-        padding-top: rem-calc(18);
-      }
-    }
-    &__text-content {
-      @include make-xs-column(12);
-      padding-bottom: rem-calc(18);
-      .nav-link {
-        padding-bottom: rem-calc(18);
-        color: $brand-info;
-      }
-    }
-    &__graphic-content {
+  .content {
+    &--left {
       @include make-xs-column(12, 0);
-      padding-bottom: rem-calc(36);
-      > * {
-        width: 100%;
-      }
+      @include make-sm-column(7);
+      margin-top: rem-calc(18);
+    }
+    &--right {
+      @include make-xs-column(12, 0);
+      @include make-sm-column(5);
+      margin-top: rem-calc(18);
+    }
+  }
+  .text-content {
+    @include make-xs-column(12);
+    padding-bottom: rem-calc(18);
+    .nav-link {
+      margin-bottom: rem-calc(18);
+      color: $brand-info;
+    }
+  }
+  .graphic-content {
+    @include make-xs-column(12, 0);
+    margin-bottom: rem-calc(36);
+    > * {
+      width: 100%;
     }
   }
 }

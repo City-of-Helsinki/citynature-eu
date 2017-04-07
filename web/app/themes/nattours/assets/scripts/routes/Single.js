@@ -3,10 +3,12 @@ export default {
     const tabs = $('#tabNav a').get();
     const navLinks = $('.nav-link').get();
 
-    navLinks.forEach((value, index) => {
-      $(value).click(() => {
-        $(tabs[index + 1]).click();
-        $('html, body').animate({ scrollTop: 0 }, 400);
+    navLinks.forEach(value => {
+      $(value).click(e => {
+        tabs.forEach(value => {
+          e.target.href === value.href && $(value).click();
+          $('html, body').animate({ scrollTop: 0 }, 400);
+        });
       });
     });
 

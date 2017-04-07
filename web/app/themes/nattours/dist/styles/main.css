@@ -2043,7 +2043,8 @@ pre code {
 
 .container-fluid,
 .front,
-.header {
+.header,
+.service {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -2053,16 +2054,19 @@ pre code {
 .container-fluid:before,
 .front:before,
 .header:before,
+.service:before,
 .container-fluid:after,
 .front:after,
-.header:after {
+.header:after,
+.service:after {
   content: " ";
   display: table;
 }
 
 .container-fluid:after,
 .front:after,
-.header:after {
+.header:after,
+.service:after {
   clear: both;
 }
 
@@ -6346,9 +6350,11 @@ tbody.collapse.in {
 .container-fluid > .navbar-header,
 .front > .navbar-header,
 .header > .navbar-header,
+.service > .navbar-header,
 .container-fluid > .navbar-collapse,
 .front > .navbar-collapse,
-.header > .navbar-collapse {
+.header > .navbar-collapse,
+.service > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6359,9 +6365,11 @@ tbody.collapse.in {
   .container-fluid > .navbar-header,
   .front > .navbar-header,
   .header > .navbar-header,
+  .service > .navbar-header,
   .container-fluid > .navbar-collapse,
   .front > .navbar-collapse,
-  .header > .navbar-collapse {
+  .header > .navbar-collapse,
+  .service > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -6425,7 +6433,8 @@ tbody.collapse.in {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
   .navbar > .front .navbar-brand,
-  .navbar > .header .navbar-brand {
+  .navbar > .header .navbar-brand,
+  .navbar > .service .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -7337,7 +7346,8 @@ a.badge:focus {
 .container .jumbotron,
 .container-fluid .jumbotron,
 .front .jumbotron,
-.header .jumbotron {
+.header .jumbotron,
+.service .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -7356,7 +7366,8 @@ a.badge:focus {
   .container .jumbotron,
   .container-fluid .jumbotron,
   .front .jumbotron,
-  .header .jumbotron {
+  .header .jumbotron,
+  .service .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -12874,7 +12885,7 @@ h5 {
 }
 
 h6 {
-  margin-top: 0;
+  margin: 0 0 1.875rem;
   color: #AAA;
 }
 
@@ -13001,7 +13012,6 @@ body#tinymce {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #5bc0de;
   padding-bottom: 3rem;
 }
 
@@ -13013,15 +13023,17 @@ body#tinymce {
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+  color: #5bc0de !important;
 }
 
-.front__filter h6 {
+.front__filter a {
   position: relative;
   float: left;
   width: 91.66667%;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
+  color: #5bc0de !important;
 }
 
 .front__content {
@@ -13199,10 +13211,10 @@ body#tinymce {
   padding-top: 1.125rem;
 }
 
-.location__home .location__content--left,
-.location__intro .location__content--left,
-.location__services .location__content--left,
-.location__nature .location__content--left {
+.location__home .content--left,
+.location__intro .content--left,
+.location__services .content--left,
+.location__nature .content--left {
   position: relative;
   float: left;
   width: 100%;
@@ -13213,23 +13225,23 @@ body#tinymce {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 1.125rem;
+  margin-top: 1.125rem;
 }
 
 @media (min-width: 768px) {
-  .location__home .location__content--left,
-  .location__intro .location__content--left,
-  .location__services .location__content--left,
-  .location__nature .location__content--left {
+  .location__home .content--left,
+  .location__intro .content--left,
+  .location__services .content--left,
+  .location__nature .content--left {
     float: left;
     width: 58.33333%;
   }
 }
 
-.location__home .location__content--right,
-.location__intro .location__content--right,
-.location__services .location__content--right,
-.location__nature .location__content--right {
+.location__home .content--right,
+.location__intro .content--right,
+.location__services .content--right,
+.location__nature .content--right {
   position: relative;
   float: left;
   width: 100%;
@@ -13240,23 +13252,23 @@ body#tinymce {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 1.125rem;
+  margin-top: 1.125rem;
 }
 
 @media (min-width: 768px) {
-  .location__home .location__content--right,
-  .location__intro .location__content--right,
-  .location__services .location__content--right,
-  .location__nature .location__content--right {
+  .location__home .content--right,
+  .location__intro .content--right,
+  .location__services .content--right,
+  .location__nature .content--right {
     float: left;
     width: 41.66667%;
   }
 }
 
-.location__home .location__text-content,
-.location__intro .location__text-content,
-.location__services .location__text-content,
-.location__nature .location__text-content {
+.location__home .text-content,
+.location__intro .text-content,
+.location__services .text-content,
+.location__nature .text-content {
   position: relative;
   float: left;
   width: 100%;
@@ -13266,31 +13278,31 @@ body#tinymce {
   padding-bottom: 1.125rem;
 }
 
-.location__home .location__text-content .nav-link,
-.location__intro .location__text-content .nav-link,
-.location__services .location__text-content .nav-link,
-.location__nature .location__text-content .nav-link {
-  padding-bottom: 1.125rem;
+.location__home .text-content .nav-link,
+.location__intro .text-content .nav-link,
+.location__services .text-content .nav-link,
+.location__nature .text-content .nav-link {
+  margin-bottom: 1.125rem;
   color: #5bc0de;
 }
 
-.location__home .location__graphic-content,
-.location__intro .location__graphic-content,
-.location__services .location__graphic-content,
-.location__nature .location__graphic-content {
+.location__home .graphic-content,
+.location__intro .graphic-content,
+.location__services .graphic-content,
+.location__nature .graphic-content {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
-.location__home .location__graphic-content > *,
-.location__intro .location__graphic-content > *,
-.location__services .location__graphic-content > *,
-.location__nature .location__graphic-content > * {
+.location__home .graphic-content > *,
+.location__intro .graphic-content > *,
+.location__services .graphic-content > *,
+.location__nature .graphic-content > * {
   width: 100%;
 }
 
@@ -13354,10 +13366,10 @@ body#tinymce {
     top: -5.625rem;
   }
 
-  .location__home .sm-lift .location__graphic-content,
-  .location__intro .sm-lift .location__graphic-content,
-  .location__services .sm-lift .location__graphic-content,
-  .location__nature .sm-lift .location__graphic-content {
+  .location__home .sm-lift .graphic-content,
+  .location__intro .sm-lift .graphic-content,
+  .location__services .sm-lift .graphic-content,
+  .location__nature .sm-lift .graphic-content {
     position: relative;
     float: left;
     width: 100%;
@@ -13378,16 +13390,88 @@ body#tinymce {
   width: 100%;
   max-width: 300px;
   text-decoration: none;
+  margin-bottom: 2.25rem;
   color: #777;
 }
 
 .service-link > img {
   width: 50px;
   float: left;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .service-link > span {
   color: #5bc0de;
+}
+
+.service .content--left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .service .content--left {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+.service .content--right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .service .content--right {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+.service .text-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 1.125rem;
+}
+
+.service .text-content .nav-link {
+  margin-bottom: 1.125rem;
+  color: #5bc0de;
+}
+
+.service .graphic-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.25rem;
+}
+
+.service .graphic-content > * {
+  width: 100%;
 }
 

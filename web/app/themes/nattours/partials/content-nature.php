@@ -5,12 +5,12 @@
 </style>
 
 <article class="location__nature">
-	<div class="location__content--left">
-		<div class="location__text-content">
+	<div class="content--left">
+		<div class="text-content">
 			<h5> <?= pll__( 'Nature' ) ?></h5>
 			<?= get_field( 'nature_text' ); ?>
 		</div>
-		<div class="location__graphic-content">
+		<div class="graphic-content">
 			<?php
 			$terms = wp_get_post_terms( $post->ID, 'birds' );
 			print_r($terms);

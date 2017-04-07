@@ -21,19 +21,19 @@ $services = get_posts(array(
 </style>
 
 <article class="location__services">
-	<section class="location__content--left">
-    <div class="location__text-content"> 
+	<section class="content--left">
+    <div class="text-content"> 
       <h4> <?= pll__( 'Services and routes' ) ?></h4>
 			<?= get_field( 'services_text' ); ?>
     </div>
-		<div class="location__graphic-content visible-xs">
+		<div class="graphic-content visible-xs">
 			<?php the_field( 'services_map' ); ?>
 		</div>
-    <div class="location__text-content"> 
+    <div class="text-content"> 
       <h6>Reitit</h6>
 			<?php if( $services ) : foreach( $services as $service ): ?>
-        <?php print_r( $service ); ?>
-        <a href="<?= $service->guid ?>">
+        <!--<?php print_r( $service ); ?>-->
+        <a href="<?= get_permalink($service->ID) ?>" target="_blank">
           <div class="service-link">
             <?= get_the_post_thumbnail( $service ) ?>
             <span><?= $service->post_title ?></span>
@@ -43,7 +43,7 @@ $services = get_posts(array(
       <?php endforeach; endif; ?>
     </div>
   </section>
-  <section class="location__content--right service-map hidden-xs">
+  <section class="content--right service-map hidden-xs">
     <?php the_field( 'services_map' ); ?>
   </section>
 </article>

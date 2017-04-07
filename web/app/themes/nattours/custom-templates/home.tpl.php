@@ -21,7 +21,7 @@ $locations = new WP_Query( [
 <main class="front">
   <div class="front__filter">
 		<i class="fa fa-filter" aria-hidden="true"></i>
-		<h6>Suodata listausta</h6>
+		<a>Suodata listausta</a>
 	</div>
   <div class="front__content">
     <?php

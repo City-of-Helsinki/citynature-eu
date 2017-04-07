@@ -30,3 +30,4 @@
 
 <header class="header header--service">
 	<?php get_template_part( 'partials/components/nav' ); ?>
+</header>
