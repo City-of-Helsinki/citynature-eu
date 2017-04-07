@@ -275,4 +275,5 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Nature', 'Nature' );
     pll_register_string( 'Further information', 'Further information' );
     pll_register_string( 'Opening hours and further info at:', 'Opening hours and further info at:' );
+    pll_register_string( 'Services', 'Services' );
 }

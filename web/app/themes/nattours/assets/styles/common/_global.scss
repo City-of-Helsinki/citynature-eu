@@ -85,3 +85,9 @@ a {
     border: 0;
   }
 }
+
+@media all and (min-width: $screen-sm-min) {
+.map > div {
+    padding-bottom: 150% !important;
+  }
+}

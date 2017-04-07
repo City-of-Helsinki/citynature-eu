@@ -29,15 +29,15 @@ $services = get_posts([
 			<?= get_field( 'services_text' ); ?>
     </div>
 		<div class="graphic-content visible-xs">
-			<div class="map">
+			<div>
         <?php the_field( 'services_map' ); ?>
       </div>
 		</div>
     <div class="text-content"> 
-      <h6>Reitit</h6>
+      <h6><?= pll__('Services'); ?></h6>
 			<?php if( $services ) : foreach( $services as $service ): ?>
         <!--<?php print_r( $service ); ?>-->
-        <a href="<?= get_permalink($service->ID) ?>" target="_blank">
+        <a href="<?= get_permalink($service->ID) ?>">
           <div class="link-component">
             <?= get_the_post_thumbnail( $service ) ?>
             <span><?= $service->post_title ?></span>
@@ -48,7 +48,7 @@ $services = get_posts([
     </div>
   </section>
   <section class="content--right hidden-xs">
-    <div class="map map--large">
+    <div class="map">
       <?php the_field( 'services_map' ); ?>
     </div>
   </section>

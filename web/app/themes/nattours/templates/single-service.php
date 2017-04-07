@@ -23,7 +23,9 @@ $location = get_field( 'service_location');
     <p><?= $post->post_content; ?></p>
   </section>
   <section class="graphic-content">
-    <?php the_field( 'service_map' ); ?>
+    <div>
+      <?php the_field( 'service_map' ); ?>
+    </div>
   </section>
   <section class="text-content">
     <h6><?= pll__('Further information'); ?></h6>

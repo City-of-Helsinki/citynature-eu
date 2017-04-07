@@ -14,7 +14,7 @@
 			<?php
 			$terms = wp_get_post_terms( $post->ID, 'birds' );
 			print_r($terms);
-			?>			
+			?>
 		</div>
 	</div>
 </article>

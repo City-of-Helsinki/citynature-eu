@@ -12930,6 +12930,12 @@ a {
   border: 0;
 }
 
+@media all and (min-width: 768px) {
+  .map > div {
+    padding-bottom: 150% !important;
+  }
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
@@ -13079,10 +13085,10 @@ body#tinymce {
 }
 
 .header--location {
-  padding-top: 5.25rem;
+  padding-top: 20%;
   background-color: gray;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
 }
 
@@ -13318,15 +13324,6 @@ body#tinymce {
   width: 100%;
 }
 
-.location__home .map,
-.location__intro .map,
-.location__services .map,
-.location__nature .map {
-  position: relative;
-  width: 100%;
-  padding-bottom: 49%;
-}
-
 .location__home #introImages,
 .location__intro #introImages,
 .location__services #introImages,
@@ -13397,13 +13394,6 @@ body#tinymce {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  .location__home .map--large,
-  .location__intro .map--large,
-  .location__services .map--large,
-  .location__nature .map--large {
-    padding-bottom: 150% !important;
   }
 }
 
