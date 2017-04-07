@@ -20,6 +20,12 @@
     padding-top: rem-calc(18);
     @include content-section();
     
+    .map {
+      position: relative;
+      width: 100%;
+      padding-bottom: 49%;
+    }
+
     #introImages {
       display: none;
     }
@@ -52,14 +58,14 @@
           @include make-xs-column(12);
         }
       }
-      .service-map .map {
+      .map--large {
         padding-bottom: 150% !important;
       }
     }
   }
 }
 
-.service-link {
+.link-component {
   width: 100%;
   max-width: 300px;
   text-decoration: none;

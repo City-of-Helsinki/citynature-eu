@@ -34,7 +34,9 @@
 			</a>
 		</div>
 		<div class="graphic-content visible-xs">
-			<?php the_field( 'services_map' ); ?>
+			<div class="map">
+				<?php the_field( 'services_map' ); ?>
+			</div
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'Nature' ) ?></h5>
@@ -60,7 +62,9 @@
 
 	<section class="content--right hidden-xs sm-lift">
 		<div class="graphic-content">
-			<?php the_field( 'services_map' ); ?>
+			<div class="map">
+				<?php the_field( 'services_map' ); ?>
+			</div>
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'Services and routes' ) ?></h5>

@@ -1,0 +1,4 @@
+.taxonomy {
+  @extend .container-fluid;
+  @include content-section();
+}

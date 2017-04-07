@@ -1,16 +1,18 @@
 <?php
 
-$services = get_posts(array(
-'post_type'		=> 'service',
-'posts_per_page'	=> -1,
-'meta_query'		=> array(
-	array(
-		'key' => 'service_location',
-		'value' => get_the_ID(),
-		'compare' => 'LIKE'
-		)
-	)
-));
+$services = get_posts([
+  'post_type'		    => 'service',
+  'posts_per_page'	=> -1,
+  'orderby'         => 'title',
+  'order'           => 'ASC',
+  'meta_query'		  => [
+    [
+      'key'     => 'service_location',
+      'value'   => get_the_ID(),
+      'compare' => 'LIKE'
+    ]
+  ]
+]);
 
 ?>
 
@@ -27,14 +29,16 @@ $services = get_posts(array(
 			<?= get_field( 'services_text' ); ?>
     </div>
 		<div class="graphic-content visible-xs">
-			<?php the_field( 'services_map' ); ?>
+			<div class="map">
+        <?php the_field( 'services_map' ); ?>
+      </div>
 		</div>
     <div class="text-content"> 
       <h6>Reitit</h6>
 			<?php if( $services ) : foreach( $services as $service ): ?>
         <!--<?php print_r( $service ); ?>-->
         <a href="<?= get_permalink($service->ID) ?>" target="_blank">
-          <div class="service-link">
+          <div class="link-component">
             <?= get_the_post_thumbnail( $service ) ?>
             <span><?= $service->post_title ?></span>
             <p><?= $service->post_excerpt ?></p>
@@ -43,7 +47,9 @@ $services = get_posts(array(
       <?php endforeach; endif; ?>
     </div>
   </section>
-  <section class="content--right service-map hidden-xs">
-    <?php the_field( 'services_map' ); ?>
+  <section class="content--right hidden-xs">
+    <div class="map map--large">
+      <?php the_field( 'services_map' ); ?>
+    </div>
   </section>
 </article>

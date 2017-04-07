@@ -36,6 +36,7 @@
     @include make-xs-column(12);
     padding-bottom: rem-calc(18);
     .nav-link {
+      display: inline-block;
       margin-bottom: rem-calc(18);
       color: $brand-info;
     }

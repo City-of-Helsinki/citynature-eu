@@ -2044,7 +2044,8 @@ pre code {
 .container-fluid,
 .front,
 .header,
-.service {
+.service,
+.taxonomy {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -2055,10 +2056,12 @@ pre code {
 .front:before,
 .header:before,
 .service:before,
+.taxonomy:before,
 .container-fluid:after,
 .front:after,
 .header:after,
-.service:after {
+.service:after,
+.taxonomy:after {
   content: " ";
   display: table;
 }
@@ -2066,7 +2069,8 @@ pre code {
 .container-fluid:after,
 .front:after,
 .header:after,
-.service:after {
+.service:after,
+.taxonomy:after {
   clear: both;
 }
 
@@ -6351,10 +6355,12 @@ tbody.collapse.in {
 .front > .navbar-header,
 .header > .navbar-header,
 .service > .navbar-header,
+.taxonomy > .navbar-header,
 .container-fluid > .navbar-collapse,
 .front > .navbar-collapse,
 .header > .navbar-collapse,
-.service > .navbar-collapse {
+.service > .navbar-collapse,
+.taxonomy > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6366,10 +6372,12 @@ tbody.collapse.in {
   .front > .navbar-header,
   .header > .navbar-header,
   .service > .navbar-header,
+  .taxonomy > .navbar-header,
   .container-fluid > .navbar-collapse,
   .front > .navbar-collapse,
   .header > .navbar-collapse,
-  .service > .navbar-collapse {
+  .service > .navbar-collapse,
+  .taxonomy > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
   }
@@ -6434,7 +6442,8 @@ tbody.collapse.in {
   .navbar > .container-fluid .navbar-brand,
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
-  .navbar > .service .navbar-brand {
+  .navbar > .service .navbar-brand,
+  .navbar > .taxonomy .navbar-brand {
     margin-left: -15px;
   }
 }
@@ -7347,7 +7356,8 @@ a.badge:focus {
 .container-fluid .jumbotron,
 .front .jumbotron,
 .header .jumbotron,
-.service .jumbotron {
+.service .jumbotron,
+.taxonomy .jumbotron {
   border-radius: 6px;
   padding-left: 15px;
   padding-right: 15px;
@@ -7367,7 +7377,8 @@ a.badge:focus {
   .container-fluid .jumbotron,
   .front .jumbotron,
   .header .jumbotron,
-  .service .jumbotron {
+  .service .jumbotron,
+  .taxonomy .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -13282,6 +13293,7 @@ body#tinymce {
 .location__intro .text-content .nav-link,
 .location__services .text-content .nav-link,
 .location__nature .text-content .nav-link {
+  display: inline-block;
   margin-bottom: 1.125rem;
   color: #5bc0de;
 }
@@ -13304,6 +13316,15 @@ body#tinymce {
 .location__services .graphic-content > *,
 .location__nature .graphic-content > * {
   width: 100%;
+}
+
+.location__home .map,
+.location__intro .map,
+.location__services .map,
+.location__nature .map {
+  position: relative;
+  width: 100%;
+  padding-bottom: 49%;
 }
 
 .location__home #introImages,
@@ -13378,15 +13399,15 @@ body#tinymce {
     padding-right: 15px;
   }
 
-  .location__home .service-map .map,
-  .location__intro .service-map .map,
-  .location__services .service-map .map,
-  .location__nature .service-map .map {
+  .location__home .map--large,
+  .location__intro .map--large,
+  .location__services .map--large,
+  .location__nature .map--large {
     padding-bottom: 150% !important;
   }
 }
 
-.service-link {
+.link-component {
   width: 100%;
   max-width: 300px;
   text-decoration: none;
@@ -13394,13 +13415,13 @@ body#tinymce {
   color: #777;
 }
 
-.service-link > img {
+.link-component > img {
   width: 50px;
   float: left;
   margin-right: 1.5rem;
 }
 
-.service-link > span {
+.link-component > span {
   color: #5bc0de;
 }
 
@@ -13457,6 +13478,7 @@ body#tinymce {
 }
 
 .service .text-content .nav-link {
+  display: inline-block;
   margin-bottom: 1.125rem;
   color: #5bc0de;
 }
@@ -13472,6 +13494,78 @@ body#tinymce {
 }
 
 .service .graphic-content > * {
+  width: 100%;
+}
+
+.taxonomy .content--left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .taxonomy .content--left {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+.taxonomy .content--right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .taxonomy .content--right {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+.taxonomy .text-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 1.125rem;
+}
+
+.taxonomy .text-content .nav-link {
+  display: inline-block;
+  margin-bottom: 1.125rem;
+  color: #5bc0de;
+}
+
+.taxonomy .graphic-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.25rem;
+}
+
+.taxonomy .graphic-content > * {
   width: 100%;
 }
 
