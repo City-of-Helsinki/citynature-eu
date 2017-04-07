@@ -16,6 +16,13 @@
       color: white !important;
     }
   }
+  &--service {
+    padding-top: rem-calc(84);
+    background-color: white;
+    * {
+      color: $brand-info !important;
+    }
+  }
 
   &__nav {
     position: absolute;

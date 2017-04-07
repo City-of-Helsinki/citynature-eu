@@ -19,24 +19,24 @@ get_header('location');
 		</div>
 
 		<ul class="location__tabs" role="tablist" id="tabNav">
-			<li role="presentation" class="active" data-target="#preview">
-				<a href="#preview" role="tab" data-toggle="tab">Preview</a>
+			<li role="presentation" class="active" data-target="#home">
+				<a href="#home" role="tab" data-toggle="tab"><?= pll__( 'Home' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#intro">
-				<a href="#intro" role="tab" data-toggle="tab">Intro</a>
+				<a href="#intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#services">
-				<a href="#services" role="tab" data-toggle="tab">Services</a>
+				<a href="#services" role="tab" data-toggle="tab"><?= pll__( 'Services and routes' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#nature">
-				<a href="#nature" role="tab" data-toggle="tab">Nature</a>
+				<a href="#nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>
 			</li>
 		</ul>
 	</header>
 	
 	<main class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="preview">
-			<?php get_template_part( 'partials/content', 'preview' ); ?>
+    <div role="tabpanel" class="tab-pane fade in active" id="home">
+			<?php get_template_part( 'partials/content', 'home' ); ?>
 		</div>
     <div role="tabpanel" class="tab-pane fade" id="intro">
 			<?php get_template_part( 'partials/content', 'intro' ); ?>
@@ -50,10 +50,10 @@ get_header('location');
   </main>
 <?php endwhile; endif; ?>
 
-<?php
+<!--<?php
 if ( comments_open() || '0' != get_comments_number() ) :
 	comments_template();
 endif;
-?>
+?>-->
 
 <?php get_footer(); ?>

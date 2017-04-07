@@ -4,14 +4,19 @@
     list-style: none;
     margin: rem-calc(24 0 -18);
     & > li {
+      font-size: rem-calc(21);
       display: inline-block;
       padding: rem-calc(0 3 12);
+      @media all and (min-width: $screen-sm-min) {
+        font-size: initial;
+        padding: rem-calc(0 12 12);
+      }
     }
     .active {
       border-bottom: 2px solid white;
     }
   }
-  &__preview, &__intro, &__services, &__nature {
+  &__home, &__intro, &__services, &__nature {
     padding-top: rem-calc(18);
     @include content-section();
     
@@ -58,7 +63,7 @@
   width: 100%;
   max-width: 300px;
   text-decoration: none;
-  color: initial;
+  color: #777;
   > img {
     width: 50px;
     float: left;

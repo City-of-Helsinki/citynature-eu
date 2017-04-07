@@ -13039,7 +13039,7 @@ body#tinymce {
   clear: both;
 }
 
-.front__preview {
+.front__home {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13065,6 +13065,15 @@ body#tinymce {
 
 .header--location * {
   color: white !important;
+}
+
+.header--service {
+  padding-top: 5.25rem;
+  background-color: white;
+}
+
+.header--service * {
+  color: #5bc0de !important;
 }
 
 .header__nav {
@@ -13167,22 +13176,30 @@ body#tinymce {
 }
 
 .location__tabs > li {
+  font-size: 1.3125rem;
   display: inline-block;
   padding: 0 0.1875rem 0.75rem;
+}
+
+@media all and (min-width: 768px) {
+  .location__tabs > li {
+    font-size: initial;
+    padding: 0 0.75rem 0.75rem;
+  }
 }
 
 .location__tabs .active {
   border-bottom: 2px solid white;
 }
 
-.location__preview,
+.location__home,
 .location__intro,
 .location__services,
 .location__nature {
   padding-top: 1.125rem;
 }
 
-.location__preview .location__content--left,
+.location__home .location__content--left,
 .location__intro .location__content--left,
 .location__services .location__content--left,
 .location__nature .location__content--left {
@@ -13200,7 +13217,7 @@ body#tinymce {
 }
 
 @media (min-width: 768px) {
-  .location__preview .location__content--left,
+  .location__home .location__content--left,
   .location__intro .location__content--left,
   .location__services .location__content--left,
   .location__nature .location__content--left {
@@ -13209,7 +13226,7 @@ body#tinymce {
   }
 }
 
-.location__preview .location__content--right,
+.location__home .location__content--right,
 .location__intro .location__content--right,
 .location__services .location__content--right,
 .location__nature .location__content--right {
@@ -13227,7 +13244,7 @@ body#tinymce {
 }
 
 @media (min-width: 768px) {
-  .location__preview .location__content--right,
+  .location__home .location__content--right,
   .location__intro .location__content--right,
   .location__services .location__content--right,
   .location__nature .location__content--right {
@@ -13236,7 +13253,7 @@ body#tinymce {
   }
 }
 
-.location__preview .location__text-content,
+.location__home .location__text-content,
 .location__intro .location__text-content,
 .location__services .location__text-content,
 .location__nature .location__text-content {
@@ -13249,7 +13266,7 @@ body#tinymce {
   padding-bottom: 1.125rem;
 }
 
-.location__preview .location__text-content .nav-link,
+.location__home .location__text-content .nav-link,
 .location__intro .location__text-content .nav-link,
 .location__services .location__text-content .nav-link,
 .location__nature .location__text-content .nav-link {
@@ -13257,7 +13274,7 @@ body#tinymce {
   color: #5bc0de;
 }
 
-.location__preview .location__graphic-content,
+.location__home .location__graphic-content,
 .location__intro .location__graphic-content,
 .location__services .location__graphic-content,
 .location__nature .location__graphic-content {
@@ -13270,28 +13287,28 @@ body#tinymce {
   padding-bottom: 2.25rem;
 }
 
-.location__preview .location__graphic-content > *,
+.location__home .location__graphic-content > *,
 .location__intro .location__graphic-content > *,
 .location__services .location__graphic-content > *,
 .location__nature .location__graphic-content > * {
   width: 100%;
 }
 
-.location__preview #introImages,
+.location__home #introImages,
 .location__intro #introImages,
 .location__services #introImages,
 .location__nature #introImages {
   display: none;
 }
 
-.location__preview #introGallery,
+.location__home #introGallery,
 .location__intro #introGallery,
 .location__services #introGallery,
 .location__nature #introGallery {
   display: initial;
 }
 
-.location__preview #introGallery .slick-slide,
+.location__home #introGallery .slick-slide,
 .location__intro #introGallery .slick-slide,
 .location__services #introGallery .slick-slide,
 .location__nature #introGallery .slick-slide {
@@ -13300,7 +13317,7 @@ body#tinymce {
   width: auto !important;
 }
 
-.location__preview #introGallery .slick-dots,
+.location__home #introGallery .slick-dots,
 .location__intro #introGallery .slick-dots,
 .location__services #introGallery .slick-dots,
 .location__nature #introGallery .slick-dots {
@@ -13308,14 +13325,14 @@ body#tinymce {
 }
 
 @media all and (min-width: 768px) {
-  .location__preview #introImages,
+  .location__home #introImages,
   .location__intro #introImages,
   .location__services #introImages,
   .location__nature #introImages {
     display: initial;
   }
 
-  .location__preview #introImages > *,
+  .location__home #introImages > *,
   .location__intro #introImages > *,
   .location__services #introImages > *,
   .location__nature #introImages > * {
@@ -13323,21 +13340,21 @@ body#tinymce {
     padding-bottom: 0.375rem;
   }
 
-  .location__preview #introGallery,
+  .location__home #introGallery,
   .location__intro #introGallery,
   .location__services #introGallery,
   .location__nature #introGallery {
     display: none;
   }
 
-  .location__preview .sm-lift,
+  .location__home .sm-lift,
   .location__intro .sm-lift,
   .location__services .sm-lift,
   .location__nature .sm-lift {
     top: -5.625rem;
   }
 
-  .location__preview .sm-lift .location__graphic-content,
+  .location__home .sm-lift .location__graphic-content,
   .location__intro .sm-lift .location__graphic-content,
   .location__services .sm-lift .location__graphic-content,
   .location__nature .sm-lift .location__graphic-content {
@@ -13349,7 +13366,7 @@ body#tinymce {
     padding-right: 15px;
   }
 
-  .location__preview .service-map .map,
+  .location__home .service-map .map,
   .location__intro .service-map .map,
   .location__services .service-map .map,
   .location__nature .service-map .map {
@@ -13361,7 +13378,7 @@ body#tinymce {
   width: 100%;
   max-width: 300px;
   text-decoration: none;
-  color: initial;
+  color: #777;
 }
 
 .service-link > img {
