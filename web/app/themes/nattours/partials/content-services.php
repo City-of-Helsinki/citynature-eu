@@ -1,5 +1,19 @@
 <?php
 
+$routes = get_posts([
+  'post_type'		    => 'route',
+  'posts_per_page'	=> -1,
+  'orderby'         => 'title',
+  'order'           => 'ASC',
+  'meta_query'		  => [
+    [
+      'key'     => 'route_location',
+      'value'   => get_the_ID(),
+      'compare' => 'LIKE'
+    ]
+  ]
+]);
+
 $services = get_posts([
   'post_type'		    => 'service',
   'posts_per_page'	=> -1,
@@ -33,19 +47,36 @@ $services = get_posts([
         <?php the_field( 'services_map' ); ?>
       </div>
 		</div>
-    <div class="text-content"> 
-      <h6><?= pll__('Services'); ?></h6>
-			<?php if( $services ) : foreach( $services as $service ): ?>
-        <!--<?php print_r( $service ); ?>-->
-        <a href="<?= get_permalink($service->ID) ?>">
-          <div class="link-component">
-            <?= get_the_post_thumbnail( $service ) ?>
-            <span><?= $service->post_title ?></span>
-            <p><?= $service->post_excerpt ?></p>
-          </div>
-        </a>
-      <?php endforeach; endif; ?>
-    </div>
+    <?php if( $routes ) : ?>
+      <div class="text-content"> 
+        <h6><?= pll__('Routes'); ?></h6>
+        <?php foreach( $routes as $route ): ?>
+          <!--<?php print_r( $route ); ?>-->
+          <a href="<?= get_permalink($route->ID) ?>">
+            <div class="link-component">
+              <?= get_the_post_thumbnail( $route ) ?>
+              <span><?= $route->post_title ?></span>
+              <p><?= $route->post_excerpt ?></p>
+            </div>
+          </a>
+        <?php endforeach;?>
+      </div>
+    <?php endif; ?>
+    <?php if( $services ) : ?>
+      <div class="text-content"> 
+        <h6><?= pll__('Services'); ?></h6>
+        <?php foreach( $services as $service ): ?>
+          <!--<?php print_r( $service ); ?>-->
+          <a href="<?= get_permalink($service->ID) ?>">
+            <div class="link-component">
+              <?= get_the_post_thumbnail( $service ) ?>
+              <span><?= $service->post_title ?></span>
+              <p><?= $service->post_excerpt ?></p>
+            </div>
+          </a>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
   </section>
   <section class="content--right hidden-xs">
     <div class="map">

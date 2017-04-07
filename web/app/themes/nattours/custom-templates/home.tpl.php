@@ -18,8 +18,15 @@ $locations = new WP_Query( [
 
 ?>
 
+<style>
+	.header--main {
+		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?= get_the_post_thumbnail_url() ?>");
+	}
+</style>
+
 <main class="front">
   <div class="front__filter">
+    <h6>Kohteet</h6>
 		<i class="fa fa-filter" aria-hidden="true"></i>
 		<a>Suodata listausta</a>
 	</div>

@@ -2,19 +2,32 @@
   @extend .container-fluid;
   &__filter {
     @include make-xs-column(12);
-    padding-bottom: rem-calc(48);
+    padding-bottom: rem-calc(36);
+    h6 {
+      @include make-xs-column(2, 0);
+      max-width: rem-calc(190);
+      @extend .hidden-xs;
+      margin-bottom: 0;
+    }
     .fa {
       line-height:  $line-height-base;
       @include make-xs-column(1, 0);
       color: $brand-info !important;
+      max-width: rem-calc(42) !important;
     }
     a {
       @include make-xs-column(11, 0);
+      @include make-sm-column(5, 0);
       color: $brand-info !important;
     }
   }
   &__content {
-    @include make-row();
+    @media all and (max-width: $screen-xs-max) {
+      @include make-row();
+    }
+    @media all and (min-width: $screen-sm-min) {
+      @include make-sm-column(12);
+    }
   }
   &__home {
     background-position: center;

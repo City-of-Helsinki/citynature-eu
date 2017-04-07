@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The Service post-template-wrapper
+ * The Route post-template-wrapper
  *
  * @package Nattours
  */

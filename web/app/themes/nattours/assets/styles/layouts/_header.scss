@@ -4,7 +4,19 @@
   padding-bottom: rem-calc(18);
   letter-spacing: .5px;
   &--main {
-    padding-top: rem-calc(108);
+    padding-top: 25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media all and (max-width: $screen-xs-max) {
+      background-image: none !important;
+    }
+    @media all and (min-width: $screen-xs-max) {
+      margin-bottom: rem-calc(30);
+      & * {
+        color: white !important;
+      }
+    }
   }
   &--location {
     padding-top: 20%;
