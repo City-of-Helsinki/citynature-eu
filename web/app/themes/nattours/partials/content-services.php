@@ -54,7 +54,7 @@ $services = get_posts([
           <!--<?php print_r( $route ); ?>-->
           <a href="<?= get_permalink($route->ID) ?>">
             <div class="link-component">
-              <?= get_the_post_thumbnail( $route ) ?>
+              <div class="link-component__img"></div>
               <span><?= $route->post_title ?></span>
               <p><?= $route->post_excerpt ?></p>
             </div>
@@ -69,9 +69,11 @@ $services = get_posts([
           <!--<?php print_r( $service ); ?>-->
           <a href="<?= get_permalink($service->ID) ?>">
             <div class="link-component">
-              <?= get_the_post_thumbnail( $service ) ?>
-              <span><?= $service->post_title ?></span>
-              <p><?= $service->post_excerpt ?></p>
+              <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $service->ID ); ?>)"></div>
+              <div class="link-component__text">
+                <span><?= $service->post_title ?></span>
+                <p><?= $service->post_excerpt ?></p>
+              </div>
             </div>
           </a>
         <?php endforeach; ?>

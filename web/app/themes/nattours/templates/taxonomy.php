@@ -30,7 +30,7 @@ $taxonomy = get_queried_object();
 
 <style>
 	.header--location {
-		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?php the_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ?>");
+		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?= get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ?>");
 	}
 </style>
 
@@ -42,6 +42,7 @@ $taxonomy = get_queried_object();
 
 <main class="taxonomy">
 	<section class="content--left">
+		<!--<h1><?= $taxonomy->description; ?></h1>-->
 		<?php the_field( 'info', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>
 	</section>
 	
@@ -50,17 +51,15 @@ $taxonomy = get_queried_object();
 		<?php if( $locations ) : foreach( $locations as $location ): ?>
         <a href="<?= get_permalink($location->ID) ?>">
           <div class="link-component">
-            <?= get_the_post_thumbnail( $location ) ?>
-            <span><?= $location->post_title ?></span>
-            <p><?= $location->post_excerpt ?></p>
+						<div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $location ); ?>)"></div>
+						<div class="link-component__text">
+							<span><?= $location->post_title ?></span>
+							<p><?= $location->post_excerpt ?></p>
+						</div>
           </div>
         </a>
       <?php endforeach; endif; ?>
 	</section>
 </main>
-
-<?php
-// print_r( $taxonomy );
-?>
 
 <?php get_footer(); ?>
