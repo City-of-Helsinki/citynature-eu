@@ -1,0 +1,12 @@
+.sidemenu {
+  &__header {
+    @extend .container-fluid;
+    color: $brand-info;
+    > span {
+      text-align: center;
+    }
+    > i {
+      text-align: right;
+    }
+  }
+}

@@ -21,7 +21,7 @@ export default {
       initialSlide: 1,
     });
 
-    const introPar = $('.location__intro .location__text-content p');
+    const introPar = $('.location__intro .content--left .text-content p');
     $('#introGallery').insertAfter(introPar[0]);
   },
   finalize() {},

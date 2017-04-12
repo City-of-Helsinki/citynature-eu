@@ -10,21 +10,20 @@ get_header('location');
 
 do_action( 'nattours_before_page' ); 
 
+$taxonomy = get_queried_object();
 $locations = get_posts(
 	array(
 		'posts_per_page' => -1,
 		'post_type' => 'location',
 		'tax_query' => array(
 			array(
-				'taxonomy' => 'birds',
+				'taxonomy' => $taxonomy->taxonomy,
 				'field'		=> 'name',
-				'terms' => get_queried_object()->name,
+				'terms' => $taxonomy->name,
 			)
 		)
 	)
 );
-
-$taxonomy = get_queried_object();
 
 ?>
 

@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  color: #00D7A7;
+  color: $brand-success;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -41,12 +41,12 @@ h2 {
 // h3 {}
 
 h4 {
-  color: #00D7A7;
+  color: $brand-success;
   margin-top: 0;
 }
 
 h5 {
-  color: #00D7A7;
+  color: $brand-success;
   margin-top: 0;
 }
 

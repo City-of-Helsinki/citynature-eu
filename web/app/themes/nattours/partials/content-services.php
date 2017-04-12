@@ -60,6 +60,7 @@ $services = get_posts([
             </div>
           </a>
         <?php endforeach;?>
+        <hr class="visible-xs" />
       </div>
     <?php endif; ?>
     <?php if( $services ) : ?>
@@ -77,6 +78,7 @@ $services = get_posts([
             </div>
           </a>
         <?php endforeach; ?>
+        <hr class="visible-xs" />
       </div>
     <?php endif; ?>
   </section>

@@ -17,6 +17,7 @@
 @import "components/box";
 @import "components/comments";
 @import "components/forms";
+@import "components/link-component";
 @import "components/tinymce";
 
 // Layouts & pages
@@ -25,5 +26,5 @@
 @import "layouts/header";
 @import "layouts/location";
 @import "layouts/service";
-@import "layouts/sidebar";
+@import "layouts/sidemenu";
 @import "layouts/taxonomy";
