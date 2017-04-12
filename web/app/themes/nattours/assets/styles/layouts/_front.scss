@@ -29,9 +29,4 @@
       @include make-sm-column(12);
     }
   }
-  &__home {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 }

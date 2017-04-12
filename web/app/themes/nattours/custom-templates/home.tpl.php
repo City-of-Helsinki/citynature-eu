@@ -24,6 +24,8 @@ $locations = new WP_Query( [
 	}
 </style>
 
+<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+
 <main class="front">
   <div class="front__filter">
     <h6>Kohteet</h6>

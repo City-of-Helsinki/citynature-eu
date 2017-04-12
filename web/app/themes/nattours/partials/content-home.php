@@ -49,14 +49,10 @@
 			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 		<div class="text-content visible-xs">
-			<h5> <?= pll__( 'Nature' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'nature_text' ) ); ?>
+			<h5> <?= pll__( 'History' ) ?></h5>
 			<a href="#nature" class="nav-link">
-				<?= pll__( 'Read more about nature' ) ?>
+				<?= pll__( 'Read more about history' ) ?>
 			</a>
-		</div>
-		<div class="graphic-content visible-xs">
-			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 	</section>
 
@@ -74,14 +70,10 @@
 			</a>
 		</div>
 		<div class="text-content">
-			<h5> <?= pll__( 'Nature' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'nature_text' ) ); ?>
+			<h5> <?= pll__( 'History' ) ?></h5>
 			<a href="#nature" class="nav-link">
-				<?= pll__( 'Read more about nature' ) ?>
+				<?= pll__( 'Read more about history' ) ?>
 			</a>
-		</div>
-		<div class="graphic-content">
-			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 	</section>
 </article>

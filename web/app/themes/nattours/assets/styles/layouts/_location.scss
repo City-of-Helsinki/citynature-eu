@@ -1,12 +1,13 @@
 .location {
   &__tabs {
-    @include make-xs-column(12);
+    @include make-xs-column(12, 0);
+    @include make-sm-column(12);
     list-style: none;
     margin: rem-calc(24 0 -18);
     & > li {
-      font-size: rem-calc(21);
+      font-size: rem-calc(18);
       display: inline-block;
-      padding: rem-calc(0 3 12);
+      padding: rem-calc(0 1 12);
       @media all and (min-width: $screen-sm-min) {
         font-size: initial;
         padding: rem-calc(0 12 12);
@@ -16,7 +17,7 @@
       border-bottom: 2px solid white;
     }
   }
-  &__home, &__intro, &__services, &__nature {
+  &__home, &__intro, &__services, &__nature, &__history {
     padding-top: rem-calc(18);
     @include content-section();
 

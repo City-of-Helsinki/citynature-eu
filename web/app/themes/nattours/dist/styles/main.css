@@ -2009,8 +2009,8 @@ pre code {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .container:before,
@@ -2025,19 +2025,19 @@ pre code {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 744px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 964px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1164px;
   }
 }
 
@@ -2045,25 +2045,22 @@ pre code {
 .front,
 .header,
 .service,
-.sidemenu__header,
 .taxonomy {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .container-fluid:before,
 .front:before,
 .header:before,
 .service:before,
-.sidemenu__header:before,
 .taxonomy:before,
 .container-fluid:after,
 .front:after,
 .header:after,
 .service:after,
-.sidemenu__header:after,
 .taxonomy:after {
   content: " ";
   display: table;
@@ -2073,14 +2070,13 @@ pre code {
 .front:after,
 .header:after,
 .service:after,
-.sidemenu__header:after,
 .taxonomy:after {
   clear: both;
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .row:before,
@@ -2143,8 +2139,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .col-xs-1,
@@ -4460,8 +4456,8 @@ select[multiple].input-lg,
 .comment-form .form-horizontal p,
 .form-horizontal .search-form label,
 .search-form .form-horizontal label {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -12px;
+  margin-right: -12px;
 }
 
 .form-horizontal .form-group:before,
@@ -4495,7 +4491,7 @@ select[multiple].input-lg,
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px;
+  right: 12px;
 }
 
 @media (min-width: 768px) {
@@ -6294,8 +6290,8 @@ tbody.collapse.in {
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 12px;
+  padding-left: 12px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -6359,16 +6355,14 @@ tbody.collapse.in {
 .front > .navbar-header,
 .header > .navbar-header,
 .service > .navbar-header,
-.sidemenu__header > .navbar-header,
 .taxonomy > .navbar-header,
 .container-fluid > .navbar-collapse,
 .front > .navbar-collapse,
 .header > .navbar-collapse,
 .service > .navbar-collapse,
-.sidemenu__header > .navbar-collapse,
 .taxonomy > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -12px;
+  margin-left: -12px;
 }
 
 @media (min-width: 768px) {
@@ -6378,13 +6372,11 @@ tbody.collapse.in {
   .front > .navbar-header,
   .header > .navbar-header,
   .service > .navbar-header,
-  .sidemenu__header > .navbar-header,
   .taxonomy > .navbar-header,
   .container-fluid > .navbar-collapse,
   .front > .navbar-collapse,
   .header > .navbar-collapse,
   .service > .navbar-collapse,
-  .sidemenu__header > .navbar-collapse,
   .taxonomy > .navbar-collapse {
     margin-right: 0;
     margin-left: 0;
@@ -6430,7 +6422,7 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 14px 15px;
+  padding: 14px 12px;
   font-size: 20px;
   line-height: 22px;
   height: 50px;
@@ -6451,16 +6443,15 @@ tbody.collapse.in {
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > .service .navbar-brand,
-  .navbar > .sidemenu__header .navbar-brand,
   .navbar > .taxonomy .navbar-brand {
-    margin-left: -15px;
+    margin-left: -12px;
   }
 }
 
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 12px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -6492,7 +6483,7 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-  margin: 7px -15px;
+  margin: 7px -12px;
 }
 
 .navbar-nav > li > a {
@@ -6544,9 +6535,9 @@ tbody.collapse.in {
 }
 
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -12px;
+  margin-right: -12px;
+  padding: 10px 12px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -6738,8 +6729,8 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar-text {
     float: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 12px;
+    margin-right: 12px;
   }
 }
 
@@ -6750,7 +6741,7 @@ tbody.collapse.in {
 
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: -12px;
   }
 
   .navbar-right ~ .navbar-right {
@@ -7366,11 +7357,10 @@ a.badge:focus {
 .front .jumbotron,
 .header .jumbotron,
 .service .jumbotron,
-.sidemenu__header .jumbotron,
 .taxonomy .jumbotron {
   border-radius: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .jumbotron .container {
@@ -7388,7 +7378,6 @@ a.badge:focus {
   .front .jumbotron,
   .header .jumbotron,
   .service .jumbotron,
-  .sidemenu__header .jumbotron,
   .taxonomy .jumbotron {
     padding-left: 60px;
     padding-right: 60px;
@@ -12985,7 +12974,7 @@ figure {
   padding: 0.3125rem 0.625rem;
 }
 
-.box {
+.box-container {
   position: relative;
   float: left;
   width: 100%;
@@ -12994,19 +12983,41 @@ figure {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-top: 8.125rem;
-  padding-bottom: 1.125rem;
-  margin-bottom: 0.375rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .box {
+  .box-container {
     float: left;
     width: 50%;
   }
+}
+
+.box-container:first-child {
+  padding-left: 0 !important;
+}
+
+@media all and (max-width: 767px) {
+  .box-container {
+    padding: 0 !important;
+  }
+}
+
+.box {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 30%;
+  padding-bottom: 3%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .box > * {
@@ -13015,8 +13026,75 @@ figure {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.menu-box-container {
+  position: relative;
+  float: left;
+  width: 91.66667%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .menu-box-container {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-box-container {
+    float: left;
+    width: 25%;
+  }
+}
+
+.menu-box-container:first-child {
+  padding-left: 0 !important;
+}
+
+@media all and (max-width: 767px) {
+  .menu-box-container {
+    padding: 0 !important;
+  }
+}
+
+.menu-box {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-top: 40%;
+  padding-bottom: 1.125rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-box > * {
+  color: white;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .comment-list ol {
@@ -13052,8 +13130,8 @@ figure {
   float: left;
   width: 16.66667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 16.66667%;
   background-position: center;
   background-repeat: no-repeat;
@@ -13065,8 +13143,8 @@ figure {
   float: left;
   width: 83.33333%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .link-component__text > span {
@@ -13085,8 +13163,8 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: center;
   height: 100px;
 }
@@ -13096,8 +13174,8 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 2.25rem;
 }
 
@@ -13147,8 +13225,8 @@ body#tinymce {
 
 @media all and (max-width: 767px) {
   .front__content {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: -12px;
+    margin-right: -12px;
   }
 
   .front__content:before,
@@ -13166,8 +13244,8 @@ body#tinymce {
   .front__content {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -13176,12 +13254,6 @@ body#tinymce {
     float: left;
     width: 100%;
   }
-}
-
-.front__home {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .header {
@@ -13251,12 +13323,12 @@ body#tinymce {
   float: left;
   width: 16.66667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 @media (min-width: 768px) {
@@ -13297,12 +13369,12 @@ body#tinymce {
   float: left;
   width: 16.66667%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: right;
 }
 
@@ -13318,8 +13390,8 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .location__tabs {
@@ -13327,16 +13399,27 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
   list-style: none;
   margin: 1.5rem 0 -1.125rem;
 }
 
+@media (min-width: 768px) {
+  .location__tabs {
+    float: left;
+    width: 100%;
+  }
+}
+
 .location__tabs > li {
-  font-size: 1.3125rem;
+  font-size: 1.125rem;
   display: inline-block;
-  padding: 0 0.1875rem 0.75rem;
+  padding: 0 0.0625rem 0.75rem;
 }
 
 @media all and (min-width: 768px) {
@@ -13353,14 +13436,16 @@ body#tinymce {
 .location__home,
 .location__intro,
 .location__services,
-.location__nature {
+.location__nature,
+.location__history {
   padding-top: 1.125rem;
 }
 
 .location__home .content--left,
 .location__intro .content--left,
 .location__services .content--left,
-.location__nature .content--left {
+.location__nature .content--left,
+.location__history .content--left {
   position: relative;
   float: left;
   width: 100%;
@@ -13369,8 +13454,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13378,7 +13463,8 @@ body#tinymce {
   .location__home .content--left,
   .location__intro .content--left,
   .location__services .content--left,
-  .location__nature .content--left {
+  .location__nature .content--left,
+  .location__history .content--left {
     float: left;
     width: 58.33333%;
   }
@@ -13387,7 +13473,8 @@ body#tinymce {
 .location__home .content--right,
 .location__intro .content--right,
 .location__services .content--right,
-.location__nature .content--right {
+.location__nature .content--right,
+.location__history .content--right {
   position: relative;
   float: left;
   width: 100%;
@@ -13396,8 +13483,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13405,7 +13492,8 @@ body#tinymce {
   .location__home .content--right,
   .location__intro .content--right,
   .location__services .content--right,
-  .location__nature .content--right {
+  .location__nature .content--right,
+  .location__history .content--right {
     float: left;
     width: 41.66667%;
   }
@@ -13414,20 +13502,22 @@ body#tinymce {
 .location__home .text-content,
 .location__intro .text-content,
 .location__services .text-content,
-.location__nature .text-content {
+.location__nature .text-content,
+.location__history .text-content {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 1.125rem;
 }
 
 .location__home .text-content .nav-link,
 .location__intro .text-content .nav-link,
 .location__services .text-content .nav-link,
-.location__nature .text-content .nav-link {
+.location__nature .text-content .nav-link,
+.location__history .text-content .nav-link {
   display: inline-block;
   margin-bottom: 1.125rem;
   color: #5bc0de;
@@ -13436,7 +13526,8 @@ body#tinymce {
 .location__home .text-content hr,
 .location__intro .text-content hr,
 .location__services .text-content hr,
-.location__nature .text-content hr {
+.location__nature .text-content hr,
+.location__history .text-content hr {
   position: relative;
   float: left;
   width: 100%;
@@ -13448,7 +13539,8 @@ body#tinymce {
 .location__home .graphic-content,
 .location__intro .graphic-content,
 .location__services .graphic-content,
-.location__nature .graphic-content {
+.location__nature .graphic-content,
+.location__history .graphic-content {
   position: relative;
   float: left;
   width: 100%;
@@ -13461,28 +13553,32 @@ body#tinymce {
 .location__home .graphic-content > *,
 .location__intro .graphic-content > *,
 .location__services .graphic-content > *,
-.location__nature .graphic-content > * {
+.location__nature .graphic-content > *,
+.location__history .graphic-content > * {
   width: 100%;
 }
 
 .location__home #introImages,
 .location__intro #introImages,
 .location__services #introImages,
-.location__nature #introImages {
+.location__nature #introImages,
+.location__history #introImages {
   display: none;
 }
 
 .location__home #introGallery,
 .location__intro #introGallery,
 .location__services #introGallery,
-.location__nature #introGallery {
+.location__nature #introGallery,
+.location__history #introGallery {
   display: initial;
 }
 
 .location__home #introGallery .slick-slide,
 .location__intro #introGallery .slick-slide,
 .location__services #introGallery .slick-slide,
-.location__nature #introGallery .slick-slide {
+.location__nature #introGallery .slick-slide,
+.location__history #introGallery .slick-slide {
   margin: 0.75rem;
   height: 13.875rem;
   width: auto !important;
@@ -13491,7 +13587,8 @@ body#tinymce {
 .location__home #introGallery .slick-dots,
 .location__intro #introGallery .slick-dots,
 .location__services #introGallery .slick-dots,
-.location__nature #introGallery .slick-dots {
+.location__nature #introGallery .slick-dots,
+.location__history #introGallery .slick-dots {
   position: static;
 }
 
@@ -13499,14 +13596,16 @@ body#tinymce {
   .location__home #introImages,
   .location__intro #introImages,
   .location__services #introImages,
-  .location__nature #introImages {
+  .location__nature #introImages,
+  .location__history #introImages {
     display: initial;
   }
 
   .location__home #introImages > *,
   .location__intro #introImages > *,
   .location__services #introImages > *,
-  .location__nature #introImages > * {
+  .location__nature #introImages > *,
+  .location__history #introImages > * {
     width: 100%;
     padding-bottom: 0.375rem;
   }
@@ -13514,27 +13613,30 @@ body#tinymce {
   .location__home #introGallery,
   .location__intro #introGallery,
   .location__services #introGallery,
-  .location__nature #introGallery {
+  .location__nature #introGallery,
+  .location__history #introGallery {
     display: none;
   }
 
   .location__home .sm-lift,
   .location__intro .sm-lift,
   .location__services .sm-lift,
-  .location__nature .sm-lift {
+  .location__nature .sm-lift,
+  .location__history .sm-lift {
     top: -5.625rem;
   }
 
   .location__home .sm-lift .graphic-content,
   .location__intro .sm-lift .graphic-content,
   .location__services .sm-lift .graphic-content,
-  .location__nature .sm-lift .graphic-content {
+  .location__nature .sm-lift .graphic-content,
+  .location__history .sm-lift .graphic-content {
     position: relative;
     float: left;
     width: 100%;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
@@ -13547,8 +13649,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13568,8 +13670,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13585,8 +13687,8 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 1.125rem;
 }
 
@@ -13619,16 +13721,143 @@ body#tinymce {
   width: 100%;
 }
 
-.sidemenu__header {
+.sidemenu--left {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidemenu--left .content--left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .sidemenu--left .content--left {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+.sidemenu--left .content--right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .sidemenu--left .content--right {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+.sidemenu--left .text-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 1.125rem;
+}
+
+.sidemenu--left .text-content .nav-link {
+  display: inline-block;
+  margin-bottom: 1.125rem;
   color: #5bc0de;
 }
 
-.sidemenu__header > span {
+.sidemenu--left .text-content hr {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidemenu--left .graphic-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.25rem;
+}
+
+.sidemenu--left .graphic-content > * {
+  width: 100%;
+}
+
+.sidemenu__location {
+  float: left;
+  margin-right: 1.125rem;
+}
+
+.sidemenu__all {
+  float: left;
+  color: #5bc0de;
+}
+
+@media all and (max-width: 767px) {
+  .sidemenu__all {
+    float: right;
+  }
+}
+
+.sidemenu__header-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 2.25rem;
+}
+
+.sidemenu__header {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #5bc0de;
   text-align: center;
 }
 
 .sidemenu__header > i {
-  text-align: right;
+  float: right;
 }
 
 .taxonomy .content--left {
@@ -13640,8 +13869,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13661,8 +13890,8 @@ body#tinymce {
   padding-right: 0;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   margin-top: 1.125rem;
 }
 
@@ -13678,8 +13907,8 @@ body#tinymce {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
   padding-bottom: 1.125rem;
 }
 

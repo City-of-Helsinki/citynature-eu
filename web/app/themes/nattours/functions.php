@@ -277,4 +277,10 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Opening hours and further info at:', 'Opening hours and further info at:' );
     pll_register_string( 'Services', 'Services' );
     pll_register_string( 'Rare', 'Rare' );
+    pll_register_string( 'Helsinki', 'Helsinki' );
+    pll_register_string( 'All locations', 'All locations' );
+    pll_register_string( 'History', 'History' );
+    pll_register_string( 'Birds', 'Birds' );
+    pll_register_string( 'Animals', 'Animals' );
+    pll_register_string( 'Plants', 'Plants' );
 }

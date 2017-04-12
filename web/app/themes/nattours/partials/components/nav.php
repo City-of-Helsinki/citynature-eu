@@ -1,5 +1,5 @@
 <div class="header__nav">
-  <i class="header__nav__sidemenu fa fa-bars" aria-hidden="true"></i>
+  <i class="header__nav__sidemenu fa fa-bars" id="leftOpen" aria-hidden="true"></i>
   <a href="/" class="header__nav__link">
     <span>hel.fi/luonto</span>
   </a>

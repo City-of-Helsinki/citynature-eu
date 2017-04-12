@@ -31,9 +31,14 @@ get_header('location');
 			<li role="presentation" data-target="#nature">
 				<a href="#nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>
 			</li>
+			<li role="presentation" data-target="#history">
+				<a href="#history" role="tab" data-toggle="tab"><?= pll__( 'History' ); ?></a>
+			</li>
 		</ul>
 	</header>
 	
+	<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+
 	<main class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="home">
 			<?php get_template_part( 'partials/content', 'home' ); ?>
@@ -46,6 +51,9 @@ get_header('location');
 		</div>
     <div role="tabpanel" class="tab-pane fade" id="nature">
 			<?php get_template_part( 'partials/content', 'nature' ); ?>
+		</div>
+    <div role="tabpanel" class="tab-pane fade" id="history">
+			<?php get_template_part( 'partials/content', 'history' ); ?>
 		</div>
   </main>
 <?php endwhile; endif; ?>

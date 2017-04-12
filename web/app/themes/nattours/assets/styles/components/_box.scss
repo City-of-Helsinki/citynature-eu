@@ -1,12 +1,52 @@
-.box {
+.box-container {
   @include make-xs-column(12, 0);
   @include make-sm-column(6);
+  margin-bottom: rem-calc(24);
+  &:first-child {
+    padding-left: 0 !important;
+  }
+  @media all and (max-width: $screen-xs-max) {
+    padding: 0 !important;
+  }
+}
+
+.box {
+  @include make-xs-column(12);
   background-color: rgba(0,0,0,.3);
-  padding-top: rem-calc(130);
-  padding-bottom: rem-calc(18);
-  margin-bottom: rem-calc(6);
+  padding-top: 30%;
+  padding-bottom: 3%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   & > * {
     color: white;
     @include make-xs-column(12);
+  }
+}
+
+.menu-box-container {
+  @include make-xs-column(11, 0);
+  @include make-sm-column(4);
+  @include make-md-column(3);
+  margin-bottom: rem-calc(24);
+  &:first-child {
+    padding-left: 0 !important;
+  }
+  @media all and (max-width: $screen-xs-max) {
+    padding: 0 !important;
+  }
+}
+
+.menu-box {
+  @include make-xs-column(12);
+  background-color: rgba(0,0,0,.3);
+  padding-top: 40%;
+  padding-bottom: rem-calc(18);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & > * {
+    color: white;
+    @include make-xs-column(12, 0);
   }
 }
