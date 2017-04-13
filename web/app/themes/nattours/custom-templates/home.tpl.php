@@ -14,8 +14,9 @@ get_header();
 $locations = new WP_Query( [
   'post_type' => 'location',
   'order'     => 'asc',
-] )
+] );
 
+$location_arr = [];
 ?>
 
 <style>
@@ -28,19 +29,29 @@ $locations = new WP_Query( [
 
 <main class="front">
   <div class="front__filter">
-    <h6>Kohteet</h6>
+    <h6><?= pll__('Locations') ?></h6>
 		<i class="fa fa-filter" aria-hidden="true"></i>
-		<a>Suodata listausta</a>
+		<a><?= pll__('Filter locations') ?></a>
 	</div>
   <div class="front__content">
     <?php
     if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
       get_template_part( 'partials/content', 'excerpt' );
+      array_push($location_arr, get_the_title());
     endwhile;
+    wp_reset_postdata();
     else :
       get_template_part( 'partials/no-results' );
     endif;
     ?>
+  </div>
+  <div class="text-content">
+    <h4><?php the_title(); ?></h4>
+    <?php the_content(); ?>
+    <span class="front__city"><?= pll__('Helsinki') ?></span>
+    <p>
+      <?= implode( ' - ', $location_arr ); ?>
+    </p>
   </div>
 </main>
 

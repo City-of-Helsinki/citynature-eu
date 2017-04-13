@@ -39,6 +39,8 @@ $locations = get_posts(
 	</div>
 </header>
 
+<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+
 <main class="taxonomy">
 	<section class="content--left">
 		<!--<h1><?= $taxonomy->description; ?></h1>-->

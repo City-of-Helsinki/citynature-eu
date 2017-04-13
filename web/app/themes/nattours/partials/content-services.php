@@ -51,7 +51,6 @@ $services = get_posts([
       <div class="text-content"> 
         <h6><?= pll__('Routes'); ?></h6>
         <?php foreach( $routes as $route ): ?>
-          <!--<?php print_r( $route ); ?>-->
           <a href="<?= get_permalink($route->ID) ?>">
             <div class="link-component">
               <div class="link-component__img"></div>
@@ -67,7 +66,6 @@ $services = get_posts([
       <div class="text-content"> 
         <h6><?= pll__('Services'); ?></h6>
         <?php foreach( $services as $service ): ?>
-          <!--<?php print_r( $service ); ?>-->
           <a href="<?= get_permalink($service->ID) ?>">
             <div class="link-component">
               <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $service->ID ); ?>)"></div>

@@ -13,7 +13,7 @@ $locations = new WP_Query( [
     </div>
   </div>
   <div class="content--left">
-    <h6 class="sidemenu__location"><?= pll__('Helsinki') ?></h6><span class="sidemenu__all"><?= pll__('All locations') ?></span>
+    <h6 class="sidemenu__location"><?= pll__('Helsinki') ?></h6><a href="/" class="sidemenu__all"><?= pll__('All locations') ?></a>
     <div class="graphic-content visible-xs" id="locationGallery">
       <?php if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
         get_template_part( 'partials/content', 'excerpt-sidemenu' );

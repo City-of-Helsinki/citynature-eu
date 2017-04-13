@@ -17,6 +17,16 @@
         color: white !important;
       }
     }
+    .link-component {
+      max-width: 400px;
+    }
+    .link-component__text {
+      @include make-xs-column(9.5);
+    }
+    .link-component__img {
+      @include make-xs-column(2.5);
+      padding-bottom: 11.7%;
+    }
   }
   &--location {
     padding-top: 20%;
@@ -64,5 +74,8 @@
   }
   &__texts {
     @include make-xs-column(12);
+    h2 {
+      margin-top: 0;
+    }
   }
 }

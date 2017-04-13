@@ -1,5 +1,6 @@
 .front {
   @extend .container-fluid;
+  @include content-section();
   &__filter {
     @include make-xs-column(12);
     padding-bottom: rem-calc(36);
@@ -22,11 +23,13 @@
     }
   }
   &__content {
-    @media all and (max-width: $screen-xs-max) {
-      @include make-row();
-    }
-    @media all and (min-width: $screen-sm-min) {
-      @include make-sm-column(12);
-    }
+    @include make-row();
+    margin-bottom: rem-calc(18);
+  }
+  &__city {
+    display: block;
+    color: $brand-info;
+    line-height: 2;
+    margin-top: rem-calc(30);
   }
 }

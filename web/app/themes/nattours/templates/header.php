@@ -6,6 +6,10 @@
  * @package Nattours
  */
 
+$youtube = get_field( 'video_url' );
+$url_arr = explode( '/', $youtube );
+$video_id = end( $url_arr );
+
 ?>
 
 <!doctype html>
@@ -37,5 +41,16 @@
 		<h2>
 			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
 		</h2>
+		<?php if ( $youtube ) : ?>
+			<a href="<?= $youtube ?>" target="_blank">
+				<div class="link-component hidden-xs">
+					<div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
+					<div class="link-component__text">
+						<span><?= pll__('Helsinki nature documentary'); ?></span>
+						<p><?= pll__('Video, 10min'); ?></p>
+					</div>
+				</div>
+			</a>
+		<?php endif; ?>
 	</div>
 </header>

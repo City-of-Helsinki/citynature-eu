@@ -283,4 +283,11 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Birds', 'Birds' );
     pll_register_string( 'Animals', 'Animals' );
     pll_register_string( 'Plants', 'Plants' );
+    pll_register_string( 'Locations', 'Locations' );
+    pll_register_string( 'Filter locations', 'Filter locations' );
+    pll_register_string( 'Helsinki', 'Helsinki' );
+    pll_register_string( 'Language', 'Language' );
+    pll_register_string( 'Menu', 'Menu' );
+    pll_register_string( 'Helsinki nature documentary', 'Helsinki nature documentary' );
+    pll_register_string( 'Video, 10min', 'Video, 10min' );
 }
