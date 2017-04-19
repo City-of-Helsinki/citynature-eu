@@ -12,7 +12,7 @@ get_header('location');
 
 <?php do_action( 'nattours_before_page' ); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : the_post(); ?>
 		<div class="header__texts">
 			<h3><?php the_title(); ?></h3>
 			<?php the_excerpt(); ?>
@@ -56,7 +56,7 @@ get_header('location');
 			<?php get_template_part( 'partials/content', 'history' ); ?>
 		</div>
   </main>
-<?php endwhile; endif; ?>
+<?php endif; ?>
 
 <!--<?php
 if ( comments_open() || '0' != get_comments_number() ) :

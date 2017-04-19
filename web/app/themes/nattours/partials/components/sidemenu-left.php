@@ -1,5 +1,5 @@
 <?php
-$locations = new WP_Query( [
+$sidemenu_locations = new WP_Query( [
   'post_type' => 'location',
   'order'     => 'asc',
 ] );
@@ -15,14 +15,14 @@ $locations = new WP_Query( [
   <div class="content--left">
     <h6 class="sidemenu__location"><?= pll__('Helsinki') ?></h6><a href="/" class="sidemenu__all"><?= pll__('All locations') ?></a>
     <div class="graphic-content visible-xs" id="locationGallery">
-      <?php if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
+      <?php if ( $sidemenu_locations->have_posts() ) : while ( $sidemenu_locations->have_posts() ) : $sidemenu_locations->the_post();
         get_template_part( 'partials/content', 'excerpt-sidemenu' );
       endwhile; endif; ?>
     </div>
     <div class="graphic-content hidden-xs">
-      <?php if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
+      <?php if ( $sidemenu_locations->have_posts() ) : while ( $sidemenu_locations->have_posts() ) : $sidemenu_locations->the_post();
         get_template_part( 'partials/content', 'excerpt-sidemenu' );
-      endwhile; endif; ?>
+      endwhile; endif; wp_reset_postdata(); ?>
     </div>
   </div>
   <div class="content--right">
