@@ -71,16 +71,16 @@ $locations->register_taxonomy( [
 ] );
 
 $locations->register_taxonomy( [
-    'taxonomy_name'    => 'activities',
+    'taxonomy_name'    => 'activity',
     'singular'         => _x( 'Activity', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Activities', 'Plural', TEXT_DOMAIN ),
     'partitive'        => _x( 'Activity', 'Partitive', TEXT_DOMAIN ),
     'partitive_plural' => _x( 'Activities', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'activities',
+    'slug'             => 'activity',
     [
         'query_var' => true,
         'rewrite'   => [
-            'slug'         => 'activities',
+            'slug'         => 'activity',
             'with_front'   => false,
             'hierarchical' => true
         ],

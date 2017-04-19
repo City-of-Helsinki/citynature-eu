@@ -7,6 +7,7 @@ import 'fastclick';
 // import local dependencies
 import Router from './util/router';
 import common from './routes/Common';
+import home from './routes/Home';
 import single from './routes/Single';
 
 // Use this variable to set up the common and page specific functions. If you
@@ -14,9 +15,11 @@ import single from './routes/Single';
 const routes = {
   // All pages
   common,
+  home,
   single,
 };
 
 // Load Events
 document.addEventListener('DOMContentLoaded', () =>
-  new Router(routes).loadEvents());
+  new Router(routes).loadEvents(),
+);

@@ -3,23 +3,26 @@
   @include content-section();
   &__filter {
     @include make-xs-column(12);
-    padding-bottom: rem-calc(36);
+    margin-bottom: rem-calc(36);
     h6 {
       @include make-xs-column(2, 0);
       max-width: rem-calc(190);
       @extend .hidden-xs;
       margin-bottom: 0;
     }
-    .fa {
-      line-height:  $line-height-base;
-      @include make-xs-column(1, 0);
-      color: $brand-info !important;
-      max-width: rem-calc(42) !important;
-    }
-    a {
-      @include make-xs-column(11, 0);
-      @include make-sm-column(5, 0);
-      color: $brand-info !important;
+    &__link {
+      float: left;
+      cursor: pointer;
+      .fa {
+        line-height:  $line-height-base;
+        // @include make-xs-column(1, 0);
+        color: $brand-info !important;
+        margin-right: rem-calc(12);
+      }
+      a {
+        // @include make-xs-column(11, 0);
+        color: $brand-info !important;
+      }
     }
   }
   &__content {

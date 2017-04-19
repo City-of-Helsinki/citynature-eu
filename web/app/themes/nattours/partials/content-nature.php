@@ -1,6 +1,8 @@
-<?php $birds = wp_get_post_terms( $post->ID, 'birds' ) ?>
-<?php $animals = wp_get_post_terms( $post->ID, 'animals' ) ?>
-<?php $plants = wp_get_post_terms( $post->ID, 'plants' ) ?>
+<?php
+$birds = wp_get_post_terms( $post->ID, 'birds' );
+$animals = wp_get_post_terms( $post->ID, 'animals' );
+$plants = wp_get_post_terms( $post->ID, 'plants' );
+?>
 
 <style>
 	.header--location {

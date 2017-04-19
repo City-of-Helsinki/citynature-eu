@@ -26,12 +26,15 @@ $location_arr = [];
 </style>
 
 <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/filter' ); ?>
 
 <main class="front">
   <div class="front__filter">
     <h6><?= pll__('Locations') ?></h6>
-		<i class="fa fa-filter" aria-hidden="true"></i>
-		<a><?= pll__('Filter locations') ?></a>
+    <div class="front__filter__link" id="openFilter">
+      <i class="fa fa-filter" aria-hidden="true"></i>
+      <a><?= pll__('Filter locations') ?></a>
+    </div>
 	</div>
   <div class="front__content">
     <?php

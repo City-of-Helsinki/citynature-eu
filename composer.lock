@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "76ca3c5096af74529c22021fbcca675f",
+    "content-hash": "1db858117d98098d4ef7b5a379e45550",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -116,41 +116,6 @@
                 "zikula"
             ],
             "time": "2016-04-13T19:46:30+00:00"
-        },
-        {
-            "name": "digitoimistodude/image-hashtag-feed",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/digitoimistodude/image-hashtag-feed.git",
-                "reference": "c4d1f1dfa33198163bfed9ab2e70a4823b1f5697"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/digitoimistodude/image-hashtag-feed/zipball/c4d1f1dfa33198163bfed9ab2e70a4823b1f5697",
-                "reference": "c4d1f1dfa33198163bfed9ab2e70a4823b1f5697",
-                "shasum": ""
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "gplv2"
-            ],
-            "authors": [
-                {
-                    "name": "Timi Wahalahti",
-                    "email": "timi@dude.fi",
-                    "homepage": "https://www.dude.fi"
-                }
-            ],
-            "description": "WordPress plugin to get Instagram hashtag feeds working again by bypassing the API.",
-            "homepage": "https://github.com/digitoimistodude/image-hashtag-feed",
-            "keywords": [
-                "instagram",
-                "plugin",
-                "wordpress"
-            ],
-            "time": "2017-02-24T13:14:03+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -469,7 +434,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/admin-column-view.1.0.3.zip",
-                "reference": null,
+                "reference": "tags/1.0.3",
                 "shasum": null
             },
             "require": {
@@ -489,7 +454,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/adminimize.1.11.2.zip",
-                "reference": null,
+                "reference": "tags/1.11.2",
                 "shasum": null
             },
             "require": {
@@ -497,6 +462,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/adminimize/"
+        },
+        {
+            "name": "wpackagist-plugin/beautiful-taxonomy-filters",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/beautiful-taxonomy-filters/",
+                "reference": "tags/2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/beautiful-taxonomy-filters.2.3.1.zip",
+                "reference": "tags/2.3.1",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/beautiful-taxonomy-filters/"
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
@@ -509,7 +494,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/better-wp-security.6.2.1.zip",
-                "reference": null,
+                "reference": "tags/6.2.1",
                 "shasum": null
             },
             "require": {
@@ -529,7 +514,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/black-studio-tinymce-widget.2.3.2.zip",
-                "reference": null,
+                "reference": "tags/2.3.2",
                 "shasum": null
             },
             "require": {
@@ -549,7 +534,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/cmb2.zip?timestamp=1488208231",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -569,7 +554,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/cms-tree-page-view.1.3.4.zip",
-                "reference": null,
+                "reference": "tags/1.3.4",
                 "shasum": null
             },
             "require": {
@@ -589,7 +574,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip",
-                "reference": null,
+                "reference": "tags/4.7",
                 "shasum": null
             },
             "require": {
@@ -609,7 +594,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/eps-301-redirects.2.3.0.zip",
-                "reference": null,
+                "reference": "tags/2.3.0",
                 "shasum": null
             },
             "require": {
@@ -629,7 +614,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/imsanity.2.3.8.zip",
-                "reference": null,
+                "reference": "tags/2.3.8",
                 "shasum": null
             },
             "require": {
@@ -649,7 +634,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/polylang.2.1.3.zip",
-                "reference": null,
+                "reference": "tags/2.1.3",
                 "shasum": null
             },
             "require": {
@@ -669,7 +654,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/relevanssi.3.5.8.zip",
-                "reference": null,
+                "reference": "tags/3.5.8",
                 "shasum": null
             },
             "require": {
@@ -689,7 +674,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-page-ordering.2.2.4.zip",
-                "reference": null,
+                "reference": "tags/2.2.4",
                 "shasum": null
             },
             "require": {
@@ -709,7 +694,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/tabify-edit-screen.0.9.7.zip",
-                "reference": null,
+                "reference": "tags/0.9.7",
                 "shasum": null
             },
             "require": {
@@ -729,7 +714,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.4.3.zip",
-                "reference": null,
+                "reference": "tags/4.4.3",
                 "shasum": null
             },
             "require": {
@@ -749,7 +734,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/user-role-editor.4.32.3.zip",
-                "reference": null,
+                "reference": "tags/4.32.3",
                 "shasum": null
             },
             "require": {
@@ -769,7 +754,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wd-instagram-feed.1.1.27.zip",
-                "reference": null,
+                "reference": "tags/1.1.27",
                 "shasum": null
             },
             "require": {
@@ -789,7 +774,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.6.zip",
-                "reference": null,
+                "reference": "tags/4.6",
                 "shasum": null
             },
             "require": {
@@ -808,8 +793,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-native-dashboard.zip?timestamp=1375861411",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/wp-native-dashboard.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -831,8 +816,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ajax-thumbnail-rebuild.zip?timestamp=1399189549",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/ajax-thumbnail-rebuild.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -852,8 +837,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-bar.zip?timestamp=1476834116",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/debug-bar.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -873,8 +858,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-bar-console.zip?timestamp=1344368520",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/debug-bar-console.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -894,8 +879,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/log-deprecated-notices.zip?timestamp=1485564988",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/log-deprecated-notices.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -915,8 +900,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/p3-profiler.zip?timestamp=1429542180",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/p3-profiler.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -936,8 +921,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.zip?timestamp=1479638531",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/post-type-switcher.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -956,8 +941,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/query-monitor.zip?timestamp=1491346866",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -965,7 +950,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/",
-            "time": "2017-04-05T00:01:06+00:00"
+            "time": "2016-12-06T20:53:19+00:00"
         },
         {
             "name": "wpackagist-plugin/rewrite-rules-inspector",
@@ -977,8 +962,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.zip?timestamp=1380036205",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -998,8 +983,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simply-show-ids.zip?timestamp=1277516454",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/simply-show-ids.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -1019,8 +1004,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/theme-check.zip?timestamp=1480886340",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/theme-check.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -1040,8 +1025,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-switching.zip?timestamp=1492037582",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/user-switching.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -1049,7 +1034,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/user-switching/",
-            "time": "2017-04-12T23:53:02+00:00"
+            "time": "2016-12-08T04:55:42+00:00"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -1061,8 +1046,8 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.zip?timestamp=1481227482",
-                "reference": null,
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.zip",
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -1083,7 +1068,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-sweep.1.0.10.zip",
-                "reference": null,
+                "reference": "tags/1.0.10",
                 "shasum": null
             },
             "require": {
@@ -1097,7 +1082,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "wpackagist-plugin/wp-native-dashboard": 20,
-        "digitoimistodude/image-hashtag-feed": 20,
         "wpackagist-plugin/ajax-thumbnail-rebuild": 20,
         "wpackagist-plugin/debug-bar": 20,
         "wpackagist-plugin/debug-bar-console": 20,

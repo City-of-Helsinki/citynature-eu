@@ -13154,6 +13154,273 @@ body#tinymce {
   margin: 12px !important;
 }
 
+.sidemenu--left {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateX(-100%);
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidemenu--left .content--left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .sidemenu--left .content--left {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+.sidemenu--left .content--right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .sidemenu--left .content--right {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+.sidemenu--left .text-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 1.125rem;
+}
+
+.sidemenu--left .text-content .nav-link {
+  display: inline-block;
+  margin-bottom: 1.125rem;
+  color: #5bc0de;
+}
+
+.sidemenu--left .text-content hr {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidemenu--left .graphic-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.25rem;
+}
+
+.sidemenu--left .graphic-content > * {
+  width: 100%;
+}
+
+.sidemenu__location {
+  float: left;
+  margin-right: 1.125rem;
+}
+
+.sidemenu__all {
+  float: left;
+  color: #5bc0de;
+}
+
+@media all and (max-width: 767px) {
+  .sidemenu__all {
+    float: right;
+  }
+}
+
+.sidemenu__header-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 2.25rem;
+}
+
+.sidemenu__header {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #5bc0de;
+  text-align: center;
+}
+
+.sidemenu__header > i {
+  float: right;
+}
+
+.sidemenu__header #leftClose {
+  cursor: pointer;
+}
+
+.filter {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.filter .content--left {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .filter .content--left {
+    float: left;
+    width: 58.33333%;
+  }
+}
+
+.filter .content--right {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-top: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .filter .content--right {
+    float: left;
+    width: 41.66667%;
+  }
+}
+
+.filter .text-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 1.125rem;
+}
+
+.filter .text-content .nav-link {
+  display: inline-block;
+  margin-bottom: 1.125rem;
+  color: #5bc0de;
+}
+
+.filter .text-content hr {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.filter .graphic-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 2.25rem;
+}
+
+.filter .graphic-content > * {
+  width: 100%;
+}
+
+.filter__header-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 2.25rem;
+}
+
+.filter__header {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #5bc0de;
+  text-align: center;
+}
+
+.filter__header > i {
+  float: right;
+}
+
+.filter__header #filterClose {
+  cursor: pointer;
+}
+
 .footer {
   position: relative;
   float: left;
@@ -13253,7 +13520,7 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 2.25rem;
+  margin-bottom: 2.25rem;
 }
 
 .front__filter h6 {
@@ -13267,37 +13534,19 @@ body#tinymce {
   margin-bottom: 0;
 }
 
-.front__filter .fa {
+.front__filter__link {
+  float: left;
+  cursor: pointer;
+}
+
+.front__filter__link .fa {
   line-height: 1.42857;
-  position: relative;
-  float: left;
-  width: 8.33333%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
   color: #5bc0de !important;
-  max-width: 2.625rem !important;
+  margin-right: 0.75rem;
 }
 
-.front__filter a {
-  position: relative;
-  float: left;
-  width: 91.66667%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
+.front__filter__link a {
   color: #5bc0de !important;
-}
-
-@media (min-width: 768px) {
-  .front__filter a {
-    float: left;
-    width: 41.66667%;
-  }
 }
 
 .front__content {
@@ -13426,6 +13675,10 @@ body#tinymce {
     float: left;
     width: 33.33333%;
   }
+}
+
+.header__nav__sidemenu #leftOpen {
+  cursor: pointer;
 }
 
 .header__nav__link {
@@ -13813,145 +14066,6 @@ body#tinymce {
 
 .service .graphic-content > * {
   width: 100%;
-}
-
-.sidemenu--left {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  transform: translateX(-100%);
-  background-color: #fff;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-
-.sidemenu--left .content--left {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-top: 1.125rem;
-}
-
-@media (min-width: 768px) {
-  .sidemenu--left .content--left {
-    float: left;
-    width: 58.33333%;
-  }
-}
-
-.sidemenu--left .content--right {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin-top: 1.125rem;
-}
-
-@media (min-width: 768px) {
-  .sidemenu--left .content--right {
-    float: left;
-    width: 41.66667%;
-  }
-}
-
-.sidemenu--left .text-content {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 1.125rem;
-}
-
-.sidemenu--left .text-content .nav-link {
-  display: inline-block;
-  margin-bottom: 1.125rem;
-  color: #5bc0de;
-}
-
-.sidemenu--left .text-content hr {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.sidemenu--left .graphic-content {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: 2.25rem;
-}
-
-.sidemenu--left .graphic-content > * {
-  width: 100%;
-}
-
-.sidemenu__location {
-  float: left;
-  margin-right: 1.125rem;
-}
-
-.sidemenu__all {
-  float: left;
-  color: #5bc0de;
-}
-
-@media all and (max-width: 767px) {
-  .sidemenu__all {
-    float: right;
-  }
-}
-
-.sidemenu__header-container {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eeeeee;
-  margin-bottom: 2.25rem;
-}
-
-.sidemenu__header {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
-  color: #5bc0de;
-  text-align: center;
-}
-
-.sidemenu__header > i {
-  float: right;
 }
 
 .taxonomy .content--left {

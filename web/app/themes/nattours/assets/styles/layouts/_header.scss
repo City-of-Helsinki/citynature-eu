@@ -58,6 +58,9 @@
     &__sidemenu {
       @include make-xs-column(2);
       @include make-sm-column(4);
+      #leftOpen {
+        cursor: pointer;
+      }
     } 
     &__link {
       @include make-xs-column(8, 0);
