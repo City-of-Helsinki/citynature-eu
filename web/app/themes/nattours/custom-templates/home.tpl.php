@@ -36,6 +36,7 @@ $location_arr = [];
       <a><?= pll__('Filter locations') ?></a>
     </div>
 	</div>
+  <div class="front__filter-selections" id="filterSelections"></div>
   <div class="front__content">
     <?php
     if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();

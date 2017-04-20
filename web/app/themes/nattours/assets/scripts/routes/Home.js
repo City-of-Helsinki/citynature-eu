@@ -2,21 +2,72 @@ export default {
   init() {
     $('body').show();
 
-    const filterView = $('#filterView');
+    let filters = [];
 
-    $('#openFilter').click(() => {
+    const openFilter = $('#openFilter');
+    const filterClose = $('#filterClose');
+
+    const filtersSelections = $('input[type=checkbox]');
+
+    const filterView = $('#filterView');
+    const filterBtn = $('#filterBtn');
+    const filterSelections = $('#filterSelections');
+
+    const locations = $('.box-container').get();
+
+    openFilter.click(() => {
       filterView.fadeToggle();
       filterView.css('overflow', 'auto');
       $('body').css('overflow', 'hidden');
     });
 
-    $('#filterClose').click(() => {
+    filterClose.click(() => {
       filterView.fadeToggle();
       filterView.css('overflow', 'hidden');
       $('body').css('overflow', 'auto');
+    });
+
+    filtersSelections.change(e => {
+      e.target.checked
+        ? (filters = [...filters, e.target.value].sort())
+        : (filters = filterArr(filters, e.target.value));
+
+      filters.length > 0
+        ? filterBtn.css('display', 'block')
+        : filterBtn.css('display', 'none');
+    });
+
+    filterBtn.click(() => {
+      filterSelections.html(null);
+      filterClose.click();
+
+      filters.forEach(value => {
+        let filterValue = $.parseHTML(
+          `<span class="front__filter-value">${value}</span>`,
+        );
+        filterSelections.append(filterValue);
+        $(filterValue).click(e => {
+          filters = filterArr(filters, e.target.innerHTML);
+          goThruLocations(locations, filters);
+          $(e.target).remove();
+        });
+      });
+
+      goThruLocations(locations, filters);
     });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
   },
+};
+
+const filterArr = (arr, target) => arr.filter(value => value !== target).sort();
+
+const goThruLocations = (locations, filters) => {
+  locations.forEach(value => {
+    const terms = value.getAttribute('data-terms');
+    terms.includes(filters.join(', '))
+      ? (value.style.display = 'block')
+      : (value.style.display = 'none');
+  });
 };

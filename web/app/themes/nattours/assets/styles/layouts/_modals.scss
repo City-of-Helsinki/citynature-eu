@@ -1,16 +1,7 @@
 .sidemenu {
+  @include modal();
   &--left {
-    @include content-section();
-    // height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     transform: translateX(-100%);
-    background-color: #fff;
-    overflow-x: hidden;
     transition: 0.5s;
   }
   &__location {
@@ -24,55 +15,52 @@
       float: right;
     }
   }
-  &__header-container {
-    // @include make-row();
-    @include make-xs-column(12, 0);
-    padding-top: rem-calc(24);
-    padding-bottom: rem-calc(24);
-    border-bottom: 1px solid $gray-lighter;
-    margin-bottom: rem-calc(36);
-  }
-  &__header {
-    @include make-xs-column(12);
-    color: $brand-info;
-    text-align: center;
-    > i {
-      float: right;
-    }
-    #leftClose {
-      cursor: pointer;
-    }
-  }
 }
 
 .filter {
-  @include content-section();
+  @include modal();
   display: none;
-  position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-  width: 100%;
-  z-index: 1;
-  background-color: #fff;
-  overflow-x: hidden;
-  &__header-container {
-    // @include make-row();
-    @include make-xs-column(12, 0);
-    padding-top: rem-calc(24);
-    padding-bottom: rem-calc(24);
-    border-bottom: 1px solid $gray-lighter;
-    margin-bottom: rem-calc(36);
+  &-category {
+    @include make-row();
+    > span {
+      @include make-xs-column(12);
+      margin-bottom: rem-calc(18);
+    }
   }
-  &__header {
-    @include make-xs-column(12);
-    color: $brand-info;
-    text-align: center;
-    > i {
-      float: right;
+  input[type=checkbox] {
+    display: none;
+    & + label {
+      @include make-xs-column(4);
+      max-width: rem-calc(210);
+      margin-bottom: rem-calc(36);
+      > span {
+        @include make-xs-column(12, 0);
+        background-color: #F7F7F7;
+        color: #0072C6;
+        border-radius: rem-calc(4);
+        cursor: pointer;
+        text-align: center;
+        font-weight: normal;
+        padding: 35% rem-calc(12);
+      }
     }
-    #filterClose {
-      cursor: pointer;
+    &:checked + label > span {
+      background-color: #0072C6;
+      color: #F7F7F7;
     }
+  }
+  &__btn {
+    position: fixed;
+      bottom: rem-calc(30);
+      left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    width: rem-calc(474);
+    margin: auto;
+    padding: rem-calc(30 0);
+    color: white;
+    background-color: $brand-success;
+    border: none;
+    font-weight: bold;
   }
 }

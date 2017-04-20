@@ -290,4 +290,8 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Menu', 'Menu' );
     pll_register_string( 'Helsinki nature documentary', 'Helsinki nature documentary' );
     pll_register_string( 'Video, 10min', 'Video, 10min' );
+    pll_register_string( 'Difficulty', 'Difficulty' );
+    pll_register_string( 'Season', 'Season' );
+    pll_register_string( 'Activity', 'Activity' );
+    pll_register_string( 'Season', 'Season' );
 }

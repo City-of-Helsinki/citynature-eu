@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1db858117d98098d4ef7b5a379e45550",
+    "content-hash": "8279dc7da8ab6be829c5dac8fb3b074e",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -602,6 +602,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/eps-301-redirects/"
+        },
+        {
+            "name": "wpackagist-plugin/hyphenator",
+            "version": "5.1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/hyphenator/",
+                "reference": "tags/5.1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/hyphenator.5.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/hyphenator/"
         },
         {
             "name": "wpackagist-plugin/imsanity",

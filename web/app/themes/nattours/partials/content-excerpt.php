@@ -7,14 +7,28 @@
  *
  */
 
+$taxonomies = wp_get_post_terms( get_the_ID(), ['activity', 'season', 'difficulty', 'other'] );
+
+// if ( !empty( $taxonomies ) ) print_r( $taxonomies );
+
+$terms_arr = [];
+
+foreach ( $taxonomies as $taxonomy ) {
+	array_push( $terms_arr, $taxonomy->name );
+}
+
+// print_r( $terms_arr );
+
 ?>
 
-
-	<article class="box-container">
-		<a href="<?php the_permalink(); ?>">
-			<div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(<?php the_post_thumbnail_url('location_thumb'); ?>);">
-				<h3><?php the_title(); ?></h3>
-				<?php the_excerpt(); ?>
-			</div>
-		</a>
-	</article>
+<article
+	class="box-container"
+	data-terms="<?= implode( ', ', $terms_arr ) ?>"
+>
+	<a href="<?php the_permalink(); ?>">
+		<div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(<?php the_post_thumbnail_url('location_thumb'); ?>);">
+			<h3><?php the_title(); ?></h3>
+			<?php the_excerpt(); ?>
+		</div>
+	</a>
+</article>

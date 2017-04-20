@@ -5,11 +5,11 @@ $sidemenu_locations = new WP_Query( [
 ] );
 ?>
 
-<section class="sidemenu--left" id="leftMenu">
+<section class="sidemenu sidemenu--left" id="leftMenu">
   <div class="sidemenu__header-container">
     <div class="sidemenu__header">
       <span> <?= pll__('Menu') ?> </span>
-      <i class="fa fa-times" id="leftClose" aria-hidden="true"></i>
+      <i class="fa fa-times close-modal" id="leftClose" aria-hidden="true"></i>
     </div>
   </div>
   <div class="content--left">
