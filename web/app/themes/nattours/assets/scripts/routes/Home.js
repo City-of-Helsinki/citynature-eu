@@ -7,7 +7,7 @@ export default {
     const openFilter = $('#openFilter');
     const filterClose = $('#filterClose');
 
-    const filtersSelections = $('input[type=checkbox]');
+    const filterBoxes = $('input[type=checkbox]');
 
     const filterView = $('#filterView');
     const filterBtn = $('#filterBtn');
@@ -27,7 +27,7 @@ export default {
       $('body').css('overflow', 'auto');
     });
 
-    filtersSelections.change(e => {
+    filterBoxes.change(e => {
       e.target.checked
         ? (filters = [...filters, e.target.value].sort())
         : (filters = filterArr(filters, e.target.value));
@@ -47,7 +47,11 @@ export default {
         );
         filterSelections.append(filterValue);
         $(filterValue).click(e => {
-          filters = filterArr(filters, e.target.innerHTML);
+          //eslint-disable-next-line
+          $.grep(filterBoxes, value => value.value === e.target.innerHTML)[
+            0
+          ].click();
+          // filters = filterArr(filters, e.target.innerHTML);
           goThruLocations(locations, filters);
           $(e.target).remove();
         });
@@ -66,7 +70,7 @@ const filterArr = (arr, target) => arr.filter(value => value !== target).sort();
 const goThruLocations = (locations, filters) => {
   locations.forEach(value => {
     const terms = value.getAttribute('data-terms');
-    terms.includes(filters.join(', '))
+    filters.every(value => terms.includes(value))
       ? (value.style.display = 'block')
       : (value.style.display = 'none');
   });
