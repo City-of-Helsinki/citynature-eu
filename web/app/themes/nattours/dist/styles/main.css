@@ -14078,14 +14078,6 @@ body#tinymce {
   font-size: 1.3125rem;
 }
 
-.location__home #overlay,
-.location__intro #overlay,
-.location__services #overlay,
-.location__nature #overlay,
-.location__history #overlay {
-  max-width: 100% !important;
-}
-
 @media all and (min-width: 768px) {
   .location__home #introImages,
   .location__intro #introImages,
@@ -14095,11 +14087,11 @@ body#tinymce {
     display: initial;
   }
 
-  .location__home #introImages > a,
-  .location__intro #introImages > a,
-  .location__services #introImages > a,
-  .location__nature #introImages > a,
-  .location__history #introImages > a {
+  .location__home #introImages > *,
+  .location__intro #introImages > *,
+  .location__services #introImages > *,
+  .location__nature #introImages > *,
+  .location__history #introImages > * {
     display: block;
     padding-bottom: 0.375rem;
   }

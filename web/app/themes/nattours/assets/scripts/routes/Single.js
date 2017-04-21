@@ -18,7 +18,7 @@ export default {
       slidesToShow: 1,
       variableWidth: true,
       dots: true,
-      initialSlide: 1,
+      initialSlide: 0,
     });
 
     const introPar = $('.location__intro .content--left .text-content p');

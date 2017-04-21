@@ -43,14 +43,11 @@
       background-color: #EFF6FF;
       font-size: rem-calc(21);
     }
-    #overlay {
-      max-width: 100% !important;
-    }
 
     @media all and (min-width: $screen-sm-min) {
       #introImages {
         display: initial;
-        & > a {
+        & > * {
           display: block;
           padding-bottom: rem-calc(6);
         }

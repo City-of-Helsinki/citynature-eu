@@ -81,7 +81,7 @@
     "wpackagist-plugin/beautiful-taxonomy-filters": "^2.3.1",
     "wpackagist-plugin/hyphenator": "^5.1.5",
     "wpackagist-plugin/responsivevoice-text-to-speech": "^1.1.7",
-    "wpackagist-plugin/wp-lightbox-2": "3.0.6.2"
+    "wpackagist-plugin/responsive-lightbox": "^1.6.12"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
