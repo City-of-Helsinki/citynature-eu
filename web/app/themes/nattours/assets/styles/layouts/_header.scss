@@ -32,8 +32,9 @@
     padding-top: 20%;
     background-color: gray;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
+    transition: all .3s ease-in;
     * {
       color: white !important;
     }

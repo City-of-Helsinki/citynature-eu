@@ -20,19 +20,19 @@ get_header('location');
 
 		<ul class="location__tabs" role="tablist" id="tabNav">
 			<li role="presentation" class="active" data-target="#home">
-				<a href="#home" role="tab" data-toggle="tab"><?= pll__( 'Home' ); ?></a>
+				<a href="#home" rel="home" role="tab" data-toggle="tab"><?= pll__( 'Home' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#intro">
-				<a href="#intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
+				<a href="#intro" rel="intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#services">
-				<a href="#services" role="tab" data-toggle="tab"><?= pll__( 'Services and routes' ); ?></a>
+				<a href="#services" rel="services" role="tab" data-toggle="tab"><?= pll__( 'Services and routes' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#nature">
-				<a href="#nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>
+				<a href="#nature" rel="nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#history">
-				<a href="#history" role="tab" data-toggle="tab"><?= pll__( 'History' ); ?></a>
+				<a href="#history" rel="history" role="tab" data-toggle="tab"><?= pll__( 'History' ); ?></a>
 			</li>
 		</ul>
 	</header>

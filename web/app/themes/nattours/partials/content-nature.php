@@ -2,13 +2,9 @@
 $birds = wp_get_post_terms( $post->ID, 'birds' );
 $animals = wp_get_post_terms( $post->ID, 'animals' );
 $plants = wp_get_post_terms( $post->ID, 'plants' );
-?>
 
-<style>
-	.header--location {
-		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?php the_field('nature_image'); ?>");
-	}
-</style>
+$nature_bg = get_field('nature_image');
+?>
 
 <article class="location__nature">
 	<section class="content--left">

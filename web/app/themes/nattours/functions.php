@@ -203,6 +203,18 @@ add_action( 'wp_enqueue_scripts', function () {
         [],
         nattours_theme()->get( 'Version' )
     );
+
+    wp_localize_script(
+        'nord-theme',
+        'nattours_vars',
+        [
+            'home' => get_the_post_thumbnail_url(),
+            'intro' => get_field('introduction_image'),
+            'services' => get_field('services_image'),
+            'nature' => get_field('nature_image'),
+            'history' => get_field('history_image'),
+        ]
+    );
 } );
 
 /**

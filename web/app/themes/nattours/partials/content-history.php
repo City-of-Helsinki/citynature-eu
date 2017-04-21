@@ -1,10 +1,4 @@
-<!--<style>
-  .header--location {
-    background-image:
-      linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),
-      url("<?php the_field('introduction_image'); ?>");
-    }
-</style>-->
+<?php $history_bg = get_field('history_image'); ?>
 
 <article class="location__history">
   <section class="content--left">

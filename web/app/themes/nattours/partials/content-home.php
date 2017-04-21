@@ -7,11 +7,13 @@
  *
  */
 
+ $home_bg = get_the_post_thumbnail_url();
+
 ?>
 
 <style>
 	.header--location {
-		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?php the_post_thumbnail_url(); ?>");
+		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?= $home_bg; ?>");
 	}
 </style>
 <article class="location__home">
