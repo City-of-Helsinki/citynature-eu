@@ -13767,6 +13767,15 @@ body#tinymce {
   color: #5bc0de !important;
 }
 
+.header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .header__nav {
   position: absolute;
   top: 1.5rem;

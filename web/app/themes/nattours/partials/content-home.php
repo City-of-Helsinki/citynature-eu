@@ -13,7 +13,7 @@
 
 <style>
 	.header--location {
-		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?= $home_bg; ?>");
+		background-image: url("<?= $home_bg; ?>");
 	}
 </style>
 <article class="location__home">
