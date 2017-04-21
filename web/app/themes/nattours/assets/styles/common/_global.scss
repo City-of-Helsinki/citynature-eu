@@ -86,8 +86,14 @@ a {
   }
 }
 
-@media all and (min-width: $screen-sm-min) {
-.map > div {
+span.h7 {
+  font-size: rem-calc(30);
+  color: $brand-info;
+}
+
+.map {
+  margin-bottom: rem-calc(48);
+  > div {
     padding-bottom: 150% !important;
   }
 }

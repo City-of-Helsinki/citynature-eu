@@ -54,7 +54,7 @@ $locations = get_posts(
           <div class="link-component">
 						<div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $location ); ?>)"></div>
 						<div class="link-component__text">
-							<span><?= $location->post_title ?></span>
+							<span class="h7"><?= $location->post_title ?></span>
 							<p><?= $location->post_excerpt ?></p>
 						</div>
           </div>

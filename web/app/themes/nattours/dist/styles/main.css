@@ -12931,10 +12931,17 @@ a {
   border: 0;
 }
 
-@media all and (min-width: 768px) {
-  .map > div {
-    padding-bottom: 150% !important;
-  }
+span.h7 {
+  font-size: 1.875rem;
+  color: #5bc0de;
+}
+
+.map {
+  margin-bottom: 3rem;
+}
+
+.map > div {
+  padding-bottom: 150% !important;
 }
 
 .alignnone {
@@ -13110,7 +13117,7 @@ figure {
   padding-right: 0;
   max-width: 300px;
   text-decoration: none;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.5rem;
   color: #777;
   clear: both;
 }
@@ -13141,10 +13148,6 @@ figure {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.link-component__text > span {
-  color: #5bc0de;
 }
 
 html .mceContentBody,
@@ -14042,6 +14045,17 @@ body#tinymce {
 .location__nature #introGallery .slick-dots,
 .location__history #introGallery .slick-dots {
   position: static;
+}
+
+.location__home .route-link > a,
+.location__intro .route-link > a,
+.location__services .route-link > a,
+.location__nature .route-link > a,
+.location__history .route-link > a {
+  padding: 0.75rem;
+  background-color: #EFF6FF;
+  font-size: 1.3125rem;
+  font-weight: bold;
 }
 
 @media all and (min-width: 768px) {

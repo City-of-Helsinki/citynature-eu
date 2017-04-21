@@ -54,7 +54,7 @@ $services = get_posts([
           <a href="<?= get_permalink($route->ID) ?>">
             <div class="link-component">
               <div class="link-component__img"></div>
-              <span><?= $route->post_title ?></span>
+              <span class="h7"><?= $route->post_title ?></span>
               <p><?= $route->post_excerpt ?></p>
             </div>
           </a>
@@ -70,7 +70,7 @@ $services = get_posts([
             <div class="link-component">
               <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $service->ID ); ?>)"></div>
               <div class="link-component__text">
-                <span><?= $service->post_title ?></span>
+                <span class="h7"><?= $service->post_title ?></span>
                 <p><?= $service->post_excerpt ?></p>
               </div>
             </div>
@@ -79,10 +79,24 @@ $services = get_posts([
         <hr class="visible-xs" />
       </div>
     <?php endif; ?>
+    <?php if ( get_field( 'servicemap_id' ) ) : ?>
+      <div class="text-content route-link visible-xs">
+        <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
+        <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
+        <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
+      </div>
+    <?php endif; ?>
   </section>
   <section class="content--right hidden-xs">
     <div class="map">
       <?php the_field( 'services_map' ); ?>
     </div>
+    <?php if ( get_field( 'servicemap_id' ) ) : ?>
+      <div class="route-link">
+        <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
+        <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
+        <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
+      </div>
+    <?php endif; ?>
   </section>
 </article>

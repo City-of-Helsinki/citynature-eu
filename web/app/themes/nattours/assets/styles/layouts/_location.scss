@@ -35,6 +35,12 @@
         position: static;
       }
     }
+    .route-link > a {
+      padding: rem-calc(12);
+      background-color: #EFF6FF;
+      font-size: rem-calc(21);
+      font-weight: bold;
+    }
 
     @media all and (min-width: $screen-sm-min) {
       #introImages {

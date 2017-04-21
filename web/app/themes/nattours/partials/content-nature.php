@@ -27,7 +27,7 @@ $plants = wp_get_post_terms( $post->ID, 'plants' );
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $bird->taxonomy . '_' . $bird->term_id ) ?>)"></div>
 							<div class="link-component__text">
-								<span><?= $bird->name ?></span>
+								<span class="h7"><?= $bird->name ?></span>
 								<?php if ( get_field( 'is_rare', $bird->taxonomy . '_' . $bird->term_id ) ) : ?>
 									&emsp;<span class="is-rare"><i class="fa fa-star" aria-hidden="true"> </i>&ensp;<?= pll__('Rare'); ?></span>
 								<?php endif; ?>
@@ -48,7 +48,7 @@ $plants = wp_get_post_terms( $post->ID, 'plants' );
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $animal->taxonomy . '_' . $animal->term_id ) ?>)"></div>
 							<div class="link-component__text">
-								<span><?= $animal->name ?></span>
+								<span class="h7"><?= $animal->name ?></span>
 								<?php if ( get_field( 'is_rare', $animal->taxonomy . '_' . $animal->term_id ) ) : ?>
 									&emsp;<span class="is-rare"><i class="fa fa-star" aria-hidden="true"> </i>&ensp;<?= pll__('Rare'); ?></span>
 								<?php endif; ?>
@@ -69,7 +69,7 @@ $plants = wp_get_post_terms( $post->ID, 'plants' );
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $plant->taxonomy . '_' . $plant->term_id ) ?>)"></div>
 							<div class="link-component__text">
-								<span><?= $plant->name ?></span>
+								<span class="h7"><?= $plant->name ?></span>
 								<?php if ( get_field( 'is_rare', $plant->taxonomy . '_' . $plant->term_id ) ) : ?>
 									&emsp;<span class="is-rare"><i class="fa fa-star" aria-hidden="true"> </i>&ensp;<?= pll__('Rare'); ?></span>
 								<?php endif; ?>
