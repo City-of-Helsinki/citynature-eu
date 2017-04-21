@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8279dc7da8ab6be829c5dac8fb3b074e",
+    "content-hash": "dfb86a67ba02d7e97943d037e120d208",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -684,6 +684,26 @@
             "homepage": "https://wordpress.org/plugins/relevanssi/"
         },
         {
+            "name": "wpackagist-plugin/responsivevoice-text-to-speech",
+            "version": "1.1.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/responsivevoice-text-to-speech/",
+                "reference": "tags/1.1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/responsivevoice-text-to-speech.1.1.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/responsivevoice-text-to-speech/"
+        },
+        {
             "name": "wpackagist-plugin/simple-page-ordering",
             "version": "2.2.4",
             "source": {
@@ -802,6 +822,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-lightbox-2",
+            "version": "3.0.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-lightbox-2/",
+                "reference": "tags/3.0.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-lightbox-2.3.0.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-lightbox-2/"
         },
         {
             "name": "wpackagist-plugin/wp-native-dashboard",

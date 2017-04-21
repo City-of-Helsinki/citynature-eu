@@ -42,7 +42,7 @@ h2 {
 
 h4 {
   color: $brand-success;
-  margin-top: 0;
+  margin: rem-calc(0 0 24);
 }
 
 h5 {
@@ -96,4 +96,14 @@ span.h7 {
   > div {
     padding-bottom: 150% !important;
   }
+}
+
+.responsivevoice-button {
+  display: block;
+  padding: rem-calc(12);
+  margin-bottom: rem-calc(24);
+  color: $brand-info;
+  background-color: #EFF6FF;
+  border: none;
+  font-size: rem-calc(21);
 }

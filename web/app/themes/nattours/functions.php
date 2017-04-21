@@ -243,6 +243,13 @@ add_action( 'after_switch_theme', function () {
 } );
 
 /**
+ * Add setting-page through ACF
+ */
+if ( function_exists( 'acf_add_options_page' ) ) {
+	acf_add_options_page( 'Nattours' );
+}
+
+/**
 * Get first paragraph from text content.
 *
 * @param $text
@@ -253,6 +260,7 @@ function get_first_paragraph( $text ) {
 	$str = wpautop( $text );
 	$str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
 	$str = strip_tags($str, '<a><strong><em>');
+    $str = preg_replace( "/\[.*\]\s+/", "", $str );
 	return '<p>' . $str . '</p>';
 }
 
