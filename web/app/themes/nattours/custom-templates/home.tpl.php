@@ -26,6 +26,7 @@ $location_arr = [];
 </style>
 
 <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right' ); ?>
 <?php get_template_part( 'partials/components/filter' ); ?>
 
 <main class="front">

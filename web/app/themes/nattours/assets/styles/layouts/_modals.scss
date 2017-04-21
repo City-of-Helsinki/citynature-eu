@@ -4,6 +4,10 @@
     transform: translateX(-100%);
     transition: 0.5s;
   }
+  &--right {
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
   &__location {
     float: left;
     margin-right: rem-calc(18);

@@ -16,6 +16,21 @@ export default {
       $('body').css('overflow', 'auto');
     });
 
+    const rightOpen = $('#rightOpen');
+    const rightMenu = $('#rightMenu');
+    const rightClose = $('#rightClose');
+
+    rightOpen.click(() => {
+      rightMenu.css('transform', 'translateX(0)');
+      rightMenu.css('overflow', 'auto');
+      $('body').css('overflow', 'hidden');
+    });
+    rightClose.click(() => {
+      rightMenu.css('transform', 'translateX(100%)');
+      rightMenu.css('overflow', 'hidden');
+      $('body').css('overflow', 'auto');
+    });
+
     $('#locationGallery').slick({
       arrows: false,
       centerMode: true,

@@ -13161,7 +13161,6 @@ body#tinymce {
   z-index: 999999;
   position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #fff;
@@ -13286,6 +13285,11 @@ body#tinymce {
   transition: 0.5s;
 }
 
+.sidemenu--right {
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
 .sidemenu__location {
   float: left;
   margin-right: 1.125rem;
@@ -13306,7 +13310,6 @@ body#tinymce {
   z-index: 999999;
   position: fixed;
   top: 0;
-  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #fff;

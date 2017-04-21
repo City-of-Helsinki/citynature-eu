@@ -293,8 +293,9 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Difficulty', 'Difficulty' );
     pll_register_string( 'Season', 'Season' );
     pll_register_string( 'Activity', 'Activity' );
-    pll_register_string( 'Season', 'Season' );
+    pll_register_string( 'Other', 'Other' );
     pll_register_string( 'Directions to location', 'Directions to location' );
     pll_register_string( 'Find the best route and transportation from Reittiopas', 'Find the best route and transportation from Reittiopas' );
     pll_register_string( 'Open in Reittiopas', 'Open in Reittiopas' );
+    pll_register_string( 'Map', 'Map' );
 }

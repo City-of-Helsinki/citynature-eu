@@ -9,11 +9,11 @@
     <span>hel.fi/luonto</span>
   </a>
   <span class="header__nav__map">
-    <span class="hidden-xs">
-      <?php 
-      echo get_post_type() === 'location' ? pll__('Location on map') : pll__('Locations on map');
-      ?>
+    <span id="rightOpen">
+      <span class="hidden-xs">
+        <?= get_post_type() === 'location' ? pll__('Location on map') : pll__('Locations on map'); ?>
+      </span>
+      <i class="fa fa-map-o" aria-hidden="true"></i>
     </span>
-    <i class="fa fa-map-o" aria-hidden="true"></i>
   </span>
 </div>

@@ -9,7 +9,7 @@ $sidemenu_locations = new WP_Query( [
   <div class="sidemenu__header-container">
     <div class="sidemenu__header">
       <span> <?= pll__('Menu') ?> </span>
-      <i class="fa fa-times close-modal" id="leftClose" aria-hidden="true"></i>
+      <i class="fa fa-times close-modal" id="leftClose" aria-hidden="false"></i>
     </div>
   </div>
   <div class="content--left">

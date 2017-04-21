@@ -40,6 +40,7 @@ $locations = get_posts(
 </header>
 
 <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right' ); ?>
 
 <main class="taxonomy">
 	<section class="content--left">
