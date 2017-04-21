@@ -2230,7 +2230,7 @@ msgid "Are you sure you want to delete %s?"
 msgstr "Haluatko poistaa teeman %s?"
 
 #. translators: %s: user name
-#: wp-includes/pluggable.php:1715
+#: wp-includes/pluggable.php:1731
 msgid "Password changed for user: %s"
 msgstr "Käyttäjän %s salasana vaihdettu."
 
@@ -2261,7 +2261,7 @@ msgid "Password strength unknown"
 msgstr "Salasanan vahvuus tuntematon"
 
 #. translators: %s: site title
-#: wp-includes/pluggable.php:1720
+#: wp-includes/pluggable.php:1736
 msgid "[%s] Password Changed"
 msgstr "[%s] Salasana vaihdettu"
 
@@ -3457,7 +3457,7 @@ msgstr "Salasananvaihtolinkkisi vaikuttaa vialliselta. Tilaa uusi linkki alta."
 msgid "Username may not be longer than 60 characters."
 msgstr "Käyttäjätunnus ei voi olla 60 merkkiä pidempi."
 
-#: wp-includes/pluggable.php:1790
+#: wp-includes/pluggable.php:1806
 msgid "To set your password, visit the following address:"
 msgstr "Aseta salasana vierailemalla osoitteessa:"
 
@@ -4216,15 +4216,15 @@ msgstr "<strong>Sivustoa %1$s ei löytynyt.</strong> Haettiin taulua %2$s tietok
 
 #. translators: 1: Trackback/pingback website name, 2: website IP, 3: website
 #. hostname
-#: wp-includes/pluggable.php:1436 wp-includes/pluggable.php:1447
-#: wp-includes/pluggable.php:1597 wp-includes/pluggable.php:1607
+#: wp-includes/pluggable.php:1452 wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1613 wp-includes/pluggable.php:1623
 msgid "Website: %1$s (IP: %2$s, %3$s)"
 msgstr "Sivusto: %1$s (IP: %2$s, %3$s)"
 
 #. translators: 1: comment author, 2: author IP, 3: author domain
 #. translators: 1: Comment author name, 2: comment author's IP, 3: comment
 #. author IP's hostname
-#: wp-includes/pluggable.php:1457 wp-includes/pluggable.php:1617
+#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1633
 msgid "Author: %1$s (IP: %2$s, %3$s)"
 msgstr "Kirjoittaja: %1$s (IP: %2$s, %3$s)"
 
@@ -4372,28 +4372,28 @@ msgctxt "verb"
 msgid "Trash"
 msgstr "Siirrä roskakoriin"
 
-#: wp-includes/pluggable.php:1461
+#: wp-includes/pluggable.php:1477
 msgid "You can see all comments on this post here:"
 msgstr "Voit lukea kaikki tähän artikkeliin tulleet kommentit täällä:"
 
-#: wp-includes/pluggable.php:1450
+#: wp-includes/pluggable.php:1466
 msgid "You can see all pingbacks on this post here:"
 msgstr "Voit nähdä kaikki tämän artikkelin päivitysilmoitukset täällä: "
 
-#: wp-includes/pluggable.php:1439
+#: wp-includes/pluggable.php:1455
 msgid "You can see all trackbacks on this post here:"
 msgstr "Voit nähdä kaikki tämän artikkelin paluuviitteet täällä:"
 
 #. translators: 1: Comment text
-#: wp-includes/pluggable.php:1438 wp-includes/pluggable.php:1449
-#: wp-includes/pluggable.php:1460 wp-includes/pluggable.php:1623
+#: wp-includes/pluggable.php:1454 wp-includes/pluggable.php:1465
+#: wp-includes/pluggable.php:1476 wp-includes/pluggable.php:1639
 msgid "Comment: %s"
 msgstr "Kommentti: %s"
 
 #. translators: 1: Trackback/pingback/comment author URL
-#: wp-includes/pluggable.php:1437 wp-includes/pluggable.php:1448
-#: wp-includes/pluggable.php:1459 wp-includes/pluggable.php:1599
-#: wp-includes/pluggable.php:1609 wp-includes/pluggable.php:1621
+#: wp-includes/pluggable.php:1453 wp-includes/pluggable.php:1464
+#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1615
+#: wp-includes/pluggable.php:1625 wp-includes/pluggable.php:1637
 msgid "URL: %s"
 msgstr "URL: %s"
 
@@ -7163,7 +7163,7 @@ msgctxt "add new from admin bar"
 msgid "User"
 msgstr "Käyttäjä"
 
-#: wp-includes/pluggable.php:1043 wp-includes/pluggable.php:1086
+#: wp-includes/pluggable.php:1059 wp-includes/pluggable.php:1102
 msgid "You should specify a nonce action to be verified by using the first parameter."
 msgstr "Määrittele varmistettava nonce-toiminto käyttämällä ensimmäistä parametria."
 
@@ -7273,7 +7273,7 @@ msgstr "(Tämä viesti lisättiin versioon %s.)"
 msgid "%1$s was called <strong>incorrectly</strong>. %2$s %3$s"
 msgstr "%1$s kutsuttiin <strong>väärin</strong>. %2$s%3$s"
 
-#: wp-includes/pluggable.php:1467
+#: wp-includes/pluggable.php:1483
 msgid "Permalink: %s"
 msgstr "Kestolinkki: %s"
 
@@ -7807,7 +7807,7 @@ msgstr ""
 "\n"
 "%s"
 
-#: wp-includes/pluggable.php:1758
+#: wp-includes/pluggable.php:1774
 msgid "New user registration on your site %s:"
 msgstr "Uusi käyttäjärekisteröinti sivustollasi %s:"
 
@@ -8036,7 +8036,7 @@ msgid "If you&#8217;re not going to use a great site domain, leave it for a new 
 msgstr "Mikäli et aio käyttää sivuston verkkotunnusta, jätä se uusille käyttäjille. "
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1434
+#: wp-includes/pluggable.php:1450
 msgid "New trackback on your post \"%s\""
 msgstr "Uusi paluuviite artikkeliisi \"%s\""
 
@@ -8048,27 +8048,27 @@ msgstr "Jos sivustosi ei näy, ole yhteydessä verkon ylläpitäjään."
 msgid "If you are the owner of this network please check that MySQL is running properly and all tables are error free."
 msgstr "Jos olet tämän verkon ylläpitäjä, varmista että MySQL toimii oikein eikä missään taulussa ole virheitä."
 
-#: wp-includes/pluggable.php:1455
+#: wp-includes/pluggable.php:1471
 msgid "New comment on your post \"%s\""
 msgstr "Uusi kommentti artikkeliisi \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1445
+#: wp-includes/pluggable.php:1461
 msgid "New pingback on your post \"%s\""
 msgstr "Uusi päivitysilmoitus artikkeliisi \"%s\""
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1594
+#: wp-includes/pluggable.php:1610
 msgid "A new trackback on the post \"%s\" is waiting for your approval"
 msgstr "Uusi paluuviite artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1604
+#: wp-includes/pluggable.php:1620
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
 msgstr "Uusi päivitysilmoitus artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
 #. translators: 1: Post title
-#: wp-includes/pluggable.php:1614
+#: wp-includes/pluggable.php:1630
 msgid "A new comment on the post \"%s\" is waiting for your approval"
 msgstr "Uusi kommentti artikkeliisi \"%s\" odottaa hyväksymistäsi"
 
@@ -9022,40 +9022,40 @@ msgid "PM"
 msgstr "PM"
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1463
+#: wp-includes/pluggable.php:1479
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] Kommentti: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1441
+#: wp-includes/pluggable.php:1457
 msgid "[%1$s] Trackback: \"%2$s\""
 msgstr "[%1$s] Paluuviite: \"%2$s\""
 
 #. translators: 1: blog name, 2: post title
-#: wp-includes/pluggable.php:1452
+#: wp-includes/pluggable.php:1468
 msgid "[%1$s] Pingback: \"%2$s\""
 msgstr "[%1$s] Päivitysilmoitus: \"%2$s\""
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1473 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1489 wp-includes/pluggable.php:1651
 msgid "Delete it: %s"
 msgstr "Poista: %s"
 
-#: wp-includes/pluggable.php:1600
+#: wp-includes/pluggable.php:1616
 msgid "Trackback excerpt: "
 msgstr "Ote paluuviitteestä: "
 
-#: wp-includes/pluggable.php:1610
+#: wp-includes/pluggable.php:1626
 msgid "Pingback excerpt: "
 msgstr "Ote päivitysilmoituksesta: "
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1628
+#: wp-includes/pluggable.php:1644
 msgid "Approve it: %s"
 msgstr "Hyväksy: %s"
 
 #. translators: Comment moderation. 1: Number of comments awaiting approval
-#: wp-includes/pluggable.php:1642
+#: wp-includes/pluggable.php:1658
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
 msgstr[0] "Tällä hetkellä %s kommentti odottaa hyväksyntää. Siirry kommenttien hallintaan:"
@@ -9063,11 +9063,11 @@ msgstr[1] "Tällä hetkellä %s kommenttia odottaa hyväksyntää. Siirry kommen
 
 #. translators: Comment moderation notification email subject. 1: Site name, 2:
 #. Post title
-#: wp-includes/pluggable.php:1647
+#: wp-includes/pluggable.php:1663
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] Arvioitavana: \"%2$s\""
 
-#: wp-includes/pluggable.php:1762
+#: wp-includes/pluggable.php:1778
 msgid "[%s] New User Registration"
 msgstr "[%s] Uuden käyttäjän rekisteröityminen"
 
@@ -9405,7 +9405,7 @@ msgid "Manual Offsets"
 msgstr "Manuaaliset siirtymät"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1475 wp-includes/pluggable.php:1639
+#: wp-includes/pluggable.php:1491 wp-includes/pluggable.php:1655
 msgid "Spam it: %s"
 msgstr "Merkitse roskaviestiksi: %s"
 
@@ -9443,7 +9443,7 @@ msgid "Entries <abbr title=\"Really Simple Syndication\">RSS</abbr>"
 msgstr "Artikkeleiden <abbr title=\"Really Simple Syndication\">RSS</abbr>-syöte"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: wp-includes/pluggable.php:1471 wp-includes/pluggable.php:1632
+#: wp-includes/pluggable.php:1487 wp-includes/pluggable.php:1648
 msgid "Trash it: %s"
 msgstr "Siirrä roskakoriin: %s"
 
@@ -9715,12 +9715,12 @@ msgstr "Vain käyttäjätunnus, kiitos."
 msgid "<strong>ERROR</strong>: Invalid username or email."
 msgstr "<strong>VIRHE</strong>: Käyttäjätunnus tai sähköpostiosoite ei kelpaa."
 
-#: wp-includes/pluggable.php:1759 wp-includes/pluggable.php:1789
+#: wp-includes/pluggable.php:1775 wp-includes/pluggable.php:1805
 #: wp-login.php:329
 msgid "Username: %s"
 msgstr "Käyttäjätunnus: %s"
 
-#: wp-includes/pluggable.php:1795
+#: wp-includes/pluggable.php:1811
 msgid "[%s] Your username and password info"
 msgstr "[%s] Käyttäjätunnuksesi ja salasanasi"
 
@@ -10528,8 +10528,8 @@ msgid "Username"
 msgstr "Käyttäjätunnus"
 
 #. translators: 1: Comment author URL
-#: wp-includes/pluggable.php:1458 wp-includes/pluggable.php:1619
-#: wp-includes/pluggable.php:1760
+#: wp-includes/pluggable.php:1474 wp-includes/pluggable.php:1635
+#: wp-includes/pluggable.php:1776
 msgid "Email: %s"
 msgstr "Sähköposti: %s"
 
