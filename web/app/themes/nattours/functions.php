@@ -282,7 +282,6 @@ function get_first_paragraph( $text ) {
  */
 if(function_exists('pll_register_string')) {
     pll_register_string( 'Explore the urban nature of Helsinki', 'Explore the urban nature of Helsinki' );
-    pll_register_string( 'Header for introduction text', 'Header for introduction text' );
     pll_register_string( 'Read entire introduction', 'Read entire introduction' );
     pll_register_string( 'Read more about services and routes', 'Read more about services and routes' );
     pll_register_string( 'Read more about nature', 'Read more about nature' );
@@ -291,7 +290,7 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Location on map', 'Location on map' );
     pll_register_string( 'Home', 'Home' );
     pll_register_string( 'Intro', 'Intro' );
-    pll_register_string( 'Services and routes', 'Services and routes' );
+    pll_register_string( 'Routes', 'Routes' );
     pll_register_string( 'Nature', 'Nature' );
     pll_register_string( 'Further information', 'Further information' );
     pll_register_string( 'Opening hours and further info at:', 'Opening hours and further info at:' );

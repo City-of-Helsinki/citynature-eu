@@ -5,15 +5,16 @@
     list-style: none;
     margin: rem-calc(24 0 -18);
     & > li {
-      font-size: rem-calc(18);
+      font-size: rem-calc(24);
       display: inline-block;
-      padding: rem-calc(0 1 12);
+      padding: rem-calc(0 3 12);
       @media all and (min-width: $screen-sm-min) {
         font-size: initial;
         padding: rem-calc(0 12 12);
       }
     }
     .active {
+      font-weight: bold;
       border-bottom: 2px solid white;
     }
   }
@@ -21,10 +22,10 @@
     padding-top: rem-calc(18);
     @include content-section();
 
-    #introImages {
+    .location__images {
       display: none;
     }
-    #introGallery {
+    .location__gallery {
       display: initial;
       .slick-slide {
         margin: rem-calc(12);
@@ -45,14 +46,14 @@
     }
 
     @media all and (min-width: $screen-sm-min) {
-      #introImages {
+      .location__images {
         display: initial;
         & > * {
           display: block;
           padding-bottom: rem-calc(6);
         }
       }
-      #introGallery {
+      .location__gallery {
         display: none;
       }
       .sm-lift {

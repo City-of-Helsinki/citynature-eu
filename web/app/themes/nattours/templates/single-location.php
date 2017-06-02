@@ -26,7 +26,7 @@ get_header('location');
 				<a href="#intro" rel="intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#services">
-				<a href="#services" rel="services" role="tab" data-toggle="tab"><?= pll__( 'Services and routes' ); ?></a>
+				<a href="#services" rel="services" role="tab" data-toggle="tab"><?= pll__( 'Routes' ); ?></a>
 			</li>
 			<li role="presentation" data-target="#nature">
 				<a href="#nature" rel="nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>

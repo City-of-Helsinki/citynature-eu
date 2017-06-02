@@ -35,7 +35,6 @@ $services_bg = get_field('services_image');
 <article class="location__services">
 	<section class="content--left">
     <div class="text-content"> 
-      <h4> <?= pll__( 'Services and routes' ) ?></h4>
 			<?= get_field( 'services_text' ); ?>
     </div>
 		<div class="graphic-content visible-xs">

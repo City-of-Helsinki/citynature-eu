@@ -11,7 +11,7 @@ export default {
       $(value).click(e => {
         $(locationHeader).css(
           'background-image',
-          `url(${window.nattours_vars[e.target.rel]})`,
+          `url(${window.nattours_vars[e.target.rel]})`
         );
         $('html, body').animate({ scrollTop: 0 }, 400);
       });
@@ -25,17 +25,22 @@ export default {
       });
     });
 
-    $('#introGallery').slick({
-      arrows: false,
-      centerMode: true,
-      slidesToShow: 1,
-      variableWidth: true,
-      dots: true,
-      initialSlide: 0,
-    });
-
-    const introPar = $('.location__intro .content--left .text-content p');
-    $('#introGallery').insertAfter(introPar[0]);
+    gallerize('#introGallery', '.location__intro');
+    gallerize('#historyGallery', '.location__history');
   },
   finalize() {},
 };
+
+function gallerize(galleryId, locatioTab) {
+  $(galleryId).slick({
+    arrows: false,
+    centerMode: true,
+    slidesToShow: 1,
+    variableWidth: true,
+    dots: true,
+    initialSlide: 0,
+  });
+
+  const introPar = $(`${locatioTab} .content--left .text-content p`);
+  $(galleryId).insertAfter(introPar[0]);
+}

@@ -3,18 +3,17 @@
 <article class="location__intro">
   <section class="content--left">
     <div class="text-content"> 
-      <h4><?= pll__( 'Header for introduction text' ) ?></h4>
       <?php the_content(); ?>
-      <div id="introGallery">
+      <div id="introGallery" class="location__gallery">
         <?php foreach ( get_field( 'introduction_gallery' ) as $pic ) { ?>
-          <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['thumbnail']; ?>" /></a>
+          <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
         <?php } ?>
       </div>
     </div>
   </section>
-  <section class="content--right" id="introImages">
+  <section class="content--right location__images" id="introImages">
     <?php foreach ( get_field( 'introduction_gallery' ) as $pic ) { ?>
-      <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['thumbnail']; ?>" /></a>
+      <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
     <?php } ?>
   </section>
 </article>

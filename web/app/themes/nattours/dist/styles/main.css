@@ -13895,9 +13895,9 @@ body#tinymce {
 }
 
 .location__tabs > li {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   display: inline-block;
-  padding: 0 0.0625rem 0.75rem;
+  padding: 0 0.1875rem 0.75rem;
 }
 
 @media all and (min-width: 768px) {
@@ -13908,6 +13908,7 @@ body#tinymce {
 }
 
 .location__tabs .active {
+  font-weight: bold;
   border-bottom: 2px solid white;
 }
 
@@ -14036,45 +14037,45 @@ body#tinymce {
   width: 100%;
 }
 
-.location__home #introImages,
-.location__intro #introImages,
-.location__services #introImages,
-.location__nature #introImages,
-.location__history #introImages {
+.location__home .location__images,
+.location__intro .location__images,
+.location__services .location__images,
+.location__nature .location__images,
+.location__history .location__images {
   display: none;
 }
 
-.location__home #introGallery,
-.location__intro #introGallery,
-.location__services #introGallery,
-.location__nature #introGallery,
-.location__history #introGallery {
+.location__home .location__gallery,
+.location__intro .location__gallery,
+.location__services .location__gallery,
+.location__nature .location__gallery,
+.location__history .location__gallery {
   display: initial;
 }
 
-.location__home #introGallery .slick-slide,
-.location__intro #introGallery .slick-slide,
-.location__services #introGallery .slick-slide,
-.location__nature #introGallery .slick-slide,
-.location__history #introGallery .slick-slide {
+.location__home .location__gallery .slick-slide,
+.location__intro .location__gallery .slick-slide,
+.location__services .location__gallery .slick-slide,
+.location__nature .location__gallery .slick-slide,
+.location__history .location__gallery .slick-slide {
   margin: 0.75rem;
   height: 13.875rem;
   width: auto !important;
 }
 
-.location__home #introGallery .slick-slide img,
-.location__intro #introGallery .slick-slide img,
-.location__services #introGallery .slick-slide img,
-.location__nature #introGallery .slick-slide img,
-.location__history #introGallery .slick-slide img {
+.location__home .location__gallery .slick-slide img,
+.location__intro .location__gallery .slick-slide img,
+.location__services .location__gallery .slick-slide img,
+.location__nature .location__gallery .slick-slide img,
+.location__history .location__gallery .slick-slide img {
   height: 100%;
 }
 
-.location__home #introGallery .slick-dots,
-.location__intro #introGallery .slick-dots,
-.location__services #introGallery .slick-dots,
-.location__nature #introGallery .slick-dots,
-.location__history #introGallery .slick-dots {
+.location__home .location__gallery .slick-dots,
+.location__intro .location__gallery .slick-dots,
+.location__services .location__gallery .slick-dots,
+.location__nature .location__gallery .slick-dots,
+.location__history .location__gallery .slick-dots {
   position: static;
 }
 
@@ -14089,28 +14090,28 @@ body#tinymce {
 }
 
 @media all and (min-width: 768px) {
-  .location__home #introImages,
-  .location__intro #introImages,
-  .location__services #introImages,
-  .location__nature #introImages,
-  .location__history #introImages {
+  .location__home .location__images,
+  .location__intro .location__images,
+  .location__services .location__images,
+  .location__nature .location__images,
+  .location__history .location__images {
     display: initial;
   }
 
-  .location__home #introImages > *,
-  .location__intro #introImages > *,
-  .location__services #introImages > *,
-  .location__nature #introImages > *,
-  .location__history #introImages > * {
+  .location__home .location__images > *,
+  .location__intro .location__images > *,
+  .location__services .location__images > *,
+  .location__nature .location__images > *,
+  .location__history .location__images > * {
     display: block;
     padding-bottom: 0.375rem;
   }
 
-  .location__home #introGallery,
-  .location__intro #introGallery,
-  .location__services #introGallery,
-  .location__nature #introGallery,
-  .location__history #introGallery {
+  .location__home .location__gallery,
+  .location__intro .location__gallery,
+  .location__services .location__gallery,
+  .location__nature .location__gallery,
+  .location__history .location__gallery {
     display: none;
   }
 

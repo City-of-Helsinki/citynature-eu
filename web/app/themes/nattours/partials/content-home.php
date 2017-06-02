@@ -19,7 +19,6 @@
 <article class="location__home">
 	<section class="content--left">
 		<div class="text-content">
-			<h5> <?= pll__( 'Header for introduction text' ) ?> </h5>
 			<?= get_first_paragraph( get_the_content() ); ?>
 			<a href="#intro" class="nav-link">
 				<?= pll__( 'Read entire introduction' ) ?>
