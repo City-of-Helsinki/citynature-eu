@@ -43,7 +43,7 @@ $video_id = end( $url_arr );
 		</h2>
 		<?php if ( $youtube ) : ?>
 			<a href="<?= $youtube ?>" target="_blank">
-				<div class="link-component hidden-xs">
+				<div class="link-component">
 					<div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
 					<div class="link-component__text">
 						<span class="h7"><?= pll__('Helsinki nature documentary'); ?></span>

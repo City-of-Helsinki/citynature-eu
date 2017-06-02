@@ -29,5 +29,5 @@
 <?php do_action( 'nattours_after_body' ); ?>
 
 <header class="header header--location" id="locationHeader">
-	<div class="header__overlay"></div>
+	<!--<div class="header__overlay"></div>-->
 	<?php get_template_part( 'partials/components/nav' ); ?>

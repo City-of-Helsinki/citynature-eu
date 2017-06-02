@@ -29,7 +29,7 @@ $locations = get_posts(
 
 <style>
 	.header--location {
-		background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url("<?= get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ?>");
+		background-image: url("<?= get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ?>");
 	}
 </style>
 

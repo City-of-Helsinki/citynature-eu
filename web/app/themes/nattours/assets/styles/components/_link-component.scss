@@ -1,6 +1,6 @@
 .link-component {
   @include make-xs-column(12, 0);
-  max-width: 300px;
+  // max-width: 300px;
   text-decoration: none;
   margin-bottom: rem-calc(24);
   color: #777;
@@ -11,13 +11,13 @@
     color: $brand-warning;
   }
   &__img {
-    @include make-xs-column(2);
+    @include make-xs-column(3.5);
     padding-bottom: 2/12*100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   &__text {
-    @include make-xs-column(10);
+    @include make-xs-column(8.5);
   }
 }

@@ -13026,7 +13026,7 @@ figure {
   padding-left: 12px;
   padding-right: 12px;
   background-color: rgba(0, 0, 0, 0.3);
-  padding-top: 30%;
+  padding-top: 24%;
   padding-bottom: 3%;
   background-position: center;
   background-repeat: no-repeat;
@@ -13125,7 +13125,6 @@ figure {
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
-  max-width: 300px;
   text-decoration: none;
   margin-bottom: 1.5rem;
   color: #777;
@@ -13141,7 +13140,7 @@ figure {
 .link-component__img {
   position: relative;
   float: left;
-  width: 16.66667%;
+  width: 29.16667%;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
@@ -13154,7 +13153,7 @@ figure {
 .link-component__text {
   position: relative;
   float: left;
-  width: 83.33333%;
+  width: 70.83333%;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
@@ -13700,36 +13699,27 @@ body#tinymce {
 }
 
 .header--main {
-  padding-top: 25%;
+  height: 100vh;
+  max-height: 45rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 1.875rem;
 }
 
-@media all and (max-width: 767px) {
-  .header--main {
-    background-image: none !important;
-  }
-}
-
-@media all and (min-width: 767px) {
-  .header--main {
-    margin-bottom: 1.875rem;
-  }
-
-  .header--main * {
-    color: white !important;
-  }
+.header--main * {
+  color: white !important;
 }
 
 .header--main .link-component {
   max-width: 400px;
+  margin-top: 1.5rem;
 }
 
 .header--main .link-component__text {
   position: relative;
   float: left;
-  width: 79.16667%;
+  width: 66.66667%;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
@@ -13738,18 +13728,19 @@ body#tinymce {
 .header--main .link-component__img {
   position: relative;
   float: left;
-  width: 20.83333%;
+  width: 33.33333%;
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 11.7%;
+  padding-bottom: 18%;
 }
 
 .header--location {
-  padding-top: 20%;
+  height: 50vh;
+  max-height: 480px;
   background-color: gray;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   transition: all .3s ease-in;
 }
@@ -13866,6 +13857,10 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
+  width: auto;
+  max-width: 100%;
+  position: absolute;
+  bottom: 3.75rem;
 }
 
 .header__texts h2 {
@@ -13883,8 +13878,12 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
+  width: auto;
+  max-width: 100%;
   list-style: none;
-  margin: 1.5rem 0 -1.125rem;
+  margin: 0;
+  position: absolute;
+  bottom: 0.1875rem;
 }
 
 @media (min-width: 768px) {
@@ -13910,6 +13909,28 @@ body#tinymce {
 .location__tabs .active {
   font-weight: bold;
   border-bottom: 2px solid white;
+}
+
+.location__images {
+  display: none;
+}
+
+.location__gallery {
+  display: initial;
+}
+
+.location__gallery .slick-slide {
+  margin: 0.75rem;
+  height: 13.875rem;
+  width: auto !important;
+}
+
+.location__gallery .slick-slide img {
+  height: 100%;
+}
+
+.location__gallery .slick-dots {
+  position: static;
 }
 
 .location__home,
@@ -14037,48 +14058,6 @@ body#tinymce {
   width: 100%;
 }
 
-.location__home .location__images,
-.location__intro .location__images,
-.location__services .location__images,
-.location__nature .location__images,
-.location__history .location__images {
-  display: none;
-}
-
-.location__home .location__gallery,
-.location__intro .location__gallery,
-.location__services .location__gallery,
-.location__nature .location__gallery,
-.location__history .location__gallery {
-  display: initial;
-}
-
-.location__home .location__gallery .slick-slide,
-.location__intro .location__gallery .slick-slide,
-.location__services .location__gallery .slick-slide,
-.location__nature .location__gallery .slick-slide,
-.location__history .location__gallery .slick-slide {
-  margin: 0.75rem;
-  height: 13.875rem;
-  width: auto !important;
-}
-
-.location__home .location__gallery .slick-slide img,
-.location__intro .location__gallery .slick-slide img,
-.location__services .location__gallery .slick-slide img,
-.location__nature .location__gallery .slick-slide img,
-.location__history .location__gallery .slick-slide img {
-  height: 100%;
-}
-
-.location__home .location__gallery .slick-dots,
-.location__intro .location__gallery .slick-dots,
-.location__services .location__gallery .slick-dots,
-.location__nature .location__gallery .slick-dots,
-.location__history .location__gallery .slick-dots {
-  position: static;
-}
-
 .location__home .route-link > a,
 .location__intro .route-link > a,
 .location__services .route-link > a,
@@ -14090,44 +14069,24 @@ body#tinymce {
 }
 
 @media all and (min-width: 768px) {
-  .location__home .location__images,
-  .location__intro .location__images,
-  .location__services .location__images,
-  .location__nature .location__images,
-  .location__history .location__images {
+  .location__images {
     display: initial;
   }
 
-  .location__home .location__images > *,
-  .location__intro .location__images > *,
-  .location__services .location__images > *,
-  .location__nature .location__images > *,
-  .location__history .location__images > * {
+  .location__images > * {
     display: block;
     padding-bottom: 0.375rem;
   }
 
-  .location__home .location__gallery,
-  .location__intro .location__gallery,
-  .location__services .location__gallery,
-  .location__nature .location__gallery,
-  .location__history .location__gallery {
+  .location__gallery {
     display: none;
   }
 
-  .location__home .sm-lift,
-  .location__intro .sm-lift,
-  .location__services .sm-lift,
-  .location__nature .sm-lift,
-  .location__history .sm-lift {
+  .location .sm-lift {
     top: -5.625rem;
   }
 
-  .location__home .sm-lift .graphic-content,
-  .location__intro .sm-lift .graphic-content,
-  .location__services .sm-lift .graphic-content,
-  .location__nature .sm-lift .graphic-content,
-  .location__history .sm-lift .graphic-content {
+  .location .sm-lift .graphic-content {
     position: relative;
     float: left;
     width: 100%;
