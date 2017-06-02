@@ -5,8 +5,8 @@
   letter-spacing: .5px;
   &--main {
     // padding-top: 25%;
-    height: 100vh;
-    max-height: 45rem;
+    height: 90vh;
+    max-height: rem-calc(1200);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -27,11 +27,11 @@
     }
   }
   &--location {
-    height: 50vh;
-    max-height: 480px;
+    height: 70vh;
+    max-height: rem-calc(900);
     background-color: gray;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     transition: all .3s ease-in;
     * {

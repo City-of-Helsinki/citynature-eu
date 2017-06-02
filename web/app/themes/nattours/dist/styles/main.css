@@ -13699,8 +13699,8 @@ body#tinymce {
 }
 
 .header--main {
-  height: 100vh;
-  max-height: 45rem;
+  height: 90vh;
+  max-height: 75rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13736,11 +13736,11 @@ body#tinymce {
 }
 
 .header--location {
-  height: 50vh;
-  max-height: 480px;
+  height: 70vh;
+  max-height: 56.25rem;
   background-color: gray;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   transition: all .3s ease-in;
 }
