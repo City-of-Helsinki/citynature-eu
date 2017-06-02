@@ -43,7 +43,7 @@ export default {
 
       filters.forEach(value => {
         let filterValue = $.parseHTML(
-          `<span class="front__filter-value">${value}</span>`,
+          `<span class="front__filter-value">${value}</span>`
         );
         filterSelections.append(filterValue);
         $(filterValue).click(e => {
@@ -59,6 +59,8 @@ export default {
 
       goThruLocations(locations, filters);
     });
+
+    $('.box').matchHeight();
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

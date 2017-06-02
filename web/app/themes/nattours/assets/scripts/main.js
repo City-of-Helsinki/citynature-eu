@@ -3,6 +3,7 @@ import 'jquery';
 import 'slick-carousel';
 import 'bootstrap-sass/assets/javascripts/bootstrap';
 import 'fastclick';
+import 'jquery-match-height';
 
 // import local dependencies
 import Router from './util/router';
@@ -21,5 +22,5 @@ const routes = {
 
 // Load Events
 document.addEventListener('DOMContentLoaded', () =>
-  new Router(routes).loadEvents(),
+  new Router(routes).loadEvents()
 );
