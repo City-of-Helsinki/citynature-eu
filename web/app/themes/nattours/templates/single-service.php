@@ -20,7 +20,7 @@ $location = get_field( 'service_location');
     </a>
 
     <h1><?php the_title(); ?></h1>
-    <p><?= $post->post_content; ?></p>
+    <p><?= apply_filters( 'the_content', $post->post_content ); ?></p>
   </section>
   <section class="graphic-content">
     <div>

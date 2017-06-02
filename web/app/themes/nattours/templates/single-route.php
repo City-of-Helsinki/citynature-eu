@@ -8,11 +8,11 @@
 
 get_header('blank');
 
-$location = get_field( 'service_location');
+$location = get_field( 'route_location');
 
 ?>
 
-<article class="service">
+<article class="route">
   <section class="text-content">
     <a class="nav-link" href="<?= get_permalink( $location->ID ); ?>">
       <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
@@ -20,11 +20,11 @@ $location = get_field( 'service_location');
     </a>
 
     <h1><?php the_title(); ?></h1>
-    <p><?= $post->post_content; ?></p>
+    <p><?= apply_filters( 'the_content', $post->post_content ); ?></p>
   </section>
   <section class="graphic-content">
     <div>
-      <?php the_field( 'service_map' ); ?>
+      <?php the_field( 'route_map' ); ?>
     </div>
   </section>
   <section class="text-content">
@@ -32,8 +32,8 @@ $location = get_field( 'service_location');
     <p>
       <?= pll__('Opening hours and further info at:') ?>
     </p>
-    <a class="nav-link" href="//www.<?php the_field( 'service_link' ); ?>" target="_blank">
-      <?php the_field( 'service_link' ); ?>
+    <a class="nav-link" href="//www.<?php the_field( 'route_link' ); ?>" target="_blank">
+      <?php the_field( 'route_link' ); ?>
       <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
     </a>
   </section>
