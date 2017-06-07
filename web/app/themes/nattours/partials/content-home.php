@@ -38,7 +38,7 @@
 		</div>
 		<div class="graphic-content visible-xs">
 			<div>
-				<?= do_shortcode( "[leaflet-map height=300][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
+				<?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content">
@@ -62,7 +62,7 @@
 	<section class="content--right hidden-xs sm-lift">
 		<div class="graphic-content">
 			<div>
-				<?= do_shortcode( "[leaflet-map height=300][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
+				<?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content">
