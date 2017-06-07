@@ -9,6 +9,8 @@
 
  $home_bg = get_the_post_thumbnail_url();
 
+ $services_map = get_field( 'services_map' );
+
 ?>
 
 <style>
@@ -36,7 +38,7 @@
 		</div>
 		<div class="graphic-content visible-xs">
 			<div>
-				<?php the_field( 'services_map' ); ?>
+				<?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content">
@@ -60,7 +62,7 @@
 	<section class="content--right hidden-xs sm-lift">
 		<div class="graphic-content">
 			<div>
-				<?php the_field( 'services_map' ); ?>
+				<?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content">

@@ -30,6 +30,8 @@ $services = get_posts([
 
 $services_bg = get_field('services_image');
 
+$services_map = get_field( 'services_map' );
+
 ?>
 
 <article class="location__services">
@@ -39,7 +41,7 @@ $services_bg = get_field('services_image');
     </div>
 		<div class="graphic-content visible-xs">
 			<div>
-        <?php the_field( 'services_map' ); ?>
+        <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
       </div>
 		</div>
     <?php if( $routes ) : ?>
@@ -84,7 +86,7 @@ $services_bg = get_field('services_image');
   </section>
   <section class="content--right hidden-xs">
     <div class="map">
-      <?php the_field( 'services_map' ); ?>
+      <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
     </div>
     <?php if ( get_field( 'servicemap_id' ) ) : ?>
       <div class="route-link">

@@ -1,4 +1,7 @@
 .route {
   @extend .container-fluid;
   @include content-section();
+  &__map {
+    height: 50vh !important;
+  }
 }

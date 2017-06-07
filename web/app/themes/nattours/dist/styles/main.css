@@ -2044,6 +2044,11 @@ pre code {
 .container-fluid,
 .front,
 .header,
+.location__home,
+.location__intro,
+.location__services,
+.location__nature,
+.location__history,
 .route,
 .service,
 .taxonomy {
@@ -2056,12 +2061,22 @@ pre code {
 .container-fluid:before,
 .front:before,
 .header:before,
+.location__home:before,
+.location__intro:before,
+.location__services:before,
+.location__nature:before,
+.location__history:before,
 .route:before,
 .service:before,
 .taxonomy:before,
 .container-fluid:after,
 .front:after,
 .header:after,
+.location__home:after,
+.location__intro:after,
+.location__services:after,
+.location__nature:after,
+.location__history:after,
 .route:after,
 .service:after,
 .taxonomy:after {
@@ -2072,6 +2087,11 @@ pre code {
 .container-fluid:after,
 .front:after,
 .header:after,
+.location__home:after,
+.location__intro:after,
+.location__services:after,
+.location__nature:after,
+.location__history:after,
 .route:after,
 .service:after,
 .taxonomy:after {
@@ -6358,12 +6378,22 @@ tbody.collapse.in {
 .container-fluid > .navbar-header,
 .front > .navbar-header,
 .header > .navbar-header,
+.location__home > .navbar-header,
+.location__intro > .navbar-header,
+.location__services > .navbar-header,
+.location__nature > .navbar-header,
+.location__history > .navbar-header,
 .route > .navbar-header,
 .service > .navbar-header,
 .taxonomy > .navbar-header,
 .container-fluid > .navbar-collapse,
 .front > .navbar-collapse,
 .header > .navbar-collapse,
+.location__home > .navbar-collapse,
+.location__intro > .navbar-collapse,
+.location__services > .navbar-collapse,
+.location__nature > .navbar-collapse,
+.location__history > .navbar-collapse,
 .route > .navbar-collapse,
 .service > .navbar-collapse,
 .taxonomy > .navbar-collapse {
@@ -6377,12 +6407,22 @@ tbody.collapse.in {
   .container-fluid > .navbar-header,
   .front > .navbar-header,
   .header > .navbar-header,
+  .location__home > .navbar-header,
+  .location__intro > .navbar-header,
+  .location__services > .navbar-header,
+  .location__nature > .navbar-header,
+  .location__history > .navbar-header,
   .route > .navbar-header,
   .service > .navbar-header,
   .taxonomy > .navbar-header,
   .container-fluid > .navbar-collapse,
   .front > .navbar-collapse,
   .header > .navbar-collapse,
+  .location__home > .navbar-collapse,
+  .location__intro > .navbar-collapse,
+  .location__services > .navbar-collapse,
+  .location__nature > .navbar-collapse,
+  .location__history > .navbar-collapse,
   .route > .navbar-collapse,
   .service > .navbar-collapse,
   .taxonomy > .navbar-collapse {
@@ -6450,6 +6490,11 @@ tbody.collapse.in {
   .navbar > .container-fluid .navbar-brand,
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
+  .navbar > .location__home .navbar-brand,
+  .navbar > .location__intro .navbar-brand,
+  .navbar > .location__services .navbar-brand,
+  .navbar > .location__nature .navbar-brand,
+  .navbar > .location__history .navbar-brand,
   .navbar > .route .navbar-brand,
   .navbar > .service .navbar-brand,
   .navbar > .taxonomy .navbar-brand {
@@ -7365,6 +7410,11 @@ a.badge:focus {
 .container-fluid .jumbotron,
 .front .jumbotron,
 .header .jumbotron,
+.location__home .jumbotron,
+.location__intro .jumbotron,
+.location__services .jumbotron,
+.location__nature .jumbotron,
+.location__history .jumbotron,
 .route .jumbotron,
 .service .jumbotron,
 .taxonomy .jumbotron {
@@ -7387,6 +7437,11 @@ a.badge:focus {
   .container-fluid .jumbotron,
   .front .jumbotron,
   .header .jumbotron,
+  .location__home .jumbotron,
+  .location__intro .jumbotron,
+  .location__services .jumbotron,
+  .location__nature .jumbotron,
+  .location__history .jumbotron,
   .route .jumbotron,
   .service .jumbotron,
   .taxonomy .jumbotron {
@@ -13268,7 +13323,6 @@ body#tinymce {
 
 .sidemenu .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 
 .sidemenu__header-container {
@@ -13431,7 +13485,6 @@ body#tinymce {
 
 .filter .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 
 .filter__header-container {
@@ -13637,7 +13690,6 @@ body#tinymce {
 
 .front .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 
 .front__filter {
@@ -13911,7 +13963,7 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
-  width: auto;
+  width: auto !important;
   max-width: 100%;
   list-style: none;
   margin: 0;
@@ -14089,7 +14141,6 @@ body#tinymce {
 .location__nature .graphic-content > *,
 .location__history .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 
 .location__home .route-link > a,
@@ -14209,7 +14260,10 @@ body#tinymce {
 
 .route .graphic-content > * {
   width: 100%;
-  height: 100% !important;
+}
+
+.route__map {
+  height: 50vh !important;
 }
 
 .service .content--left {
@@ -14291,7 +14345,6 @@ body#tinymce {
 
 .service .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 
 .taxonomy .content--left {
@@ -14373,6 +14426,5 @@ body#tinymce {
 
 .taxonomy .graphic-content > * {
   width: 100%;
-  height: 100% !important;
 }
 

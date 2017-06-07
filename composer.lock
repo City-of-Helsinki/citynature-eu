@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "56d01c78f004c4a19fe08e355c96b1e6",
-    "content-hash": "2cef353b0b4dca028a1c687a3357572b",
+    "hash": "903c06092ceb70f4cfe51719ce5a6a10",
+    "content-hash": "37ac44d0ee5e007f36d1f05043b963c9",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -725,6 +725,26 @@
             "homepage": "https://wordpress.org/plugins/responsive-lightbox/"
         },
         {
+            "name": "wpackagist-plugin/responsive-video-embed",
+            "version": "0.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/responsive-video-embed/",
+                "reference": "tags/0.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/responsive-video-embed.0.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/responsive-video-embed/"
+        },
+        {
             "name": "wpackagist-plugin/responsivevoice-text-to-speech",
             "version": "1.1.7",
             "source": {
@@ -846,15 +866,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.8",
+            "version": "4.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.8"
+                "reference": "tags/4.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.9.zip",
                 "reference": null,
                 "shasum": null
             },

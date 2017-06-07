@@ -1,4 +1,7 @@
-<?php $location = get_field( 'route_location'); ?>
+<?php
+$location = get_field( 'route_location'); 
+$map = get_field( 'map_file', $location->ID ); 
+?>
 
 <section class="sidemenu sidemenu--right" id="rightMenu">
   <div class="sidemenu__header-container">
@@ -8,6 +11,6 @@
     </div>
   </div>
   <div class="graphic-content">
-    <?= do_shortcode( get_field( 'map_shortcodes', $location->ID ) ); ?>
+    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
   </div>
 </section>

@@ -2,7 +2,7 @@
   &__tabs {
     @include make-xs-column(12, 0);
     @include make-sm-column(12);
-    width: auto;
+    width: auto !important;
     max-width: 100%; 
     list-style: none;
     margin: 0;
@@ -41,6 +41,7 @@
   }
   &__home, &__intro, &__services, &__nature, &__history {
     padding-top: rem-calc(18);
+    @extend .container-fluid;
     @include content-section();
 
     .route-link > a {

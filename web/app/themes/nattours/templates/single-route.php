@@ -8,7 +8,8 @@
 
 get_header('blank');
 
-$location = get_field( 'route_location');
+$location = get_field( 'route_location' );
+$map = get_field( 'route_map' );
 
 ?>
 
@@ -26,19 +27,9 @@ $location = get_field( 'route_location');
     <p><?= apply_filters( 'the_content', $post->post_content ); ?></p>
   </section>
   <section class="graphic-content">
-    <div>
-      <?= do_shortcode( get_field( 'map_shortcodes' ) ); ?>
+    <div class="route__map">
+      <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
     </div>
-  </section>
-  <section class="text-content">
-    <h6><?= pll__('Further information'); ?></h6>
-    <p>
-      <?= pll__('Opening hours and further info at:') ?>
-    </p>
-    <a class="nav-link" href="//www.<?php the_field( 'route_link' ); ?>" target="_blank">
-      <?php the_field( 'route_link' ); ?>
-      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-    </a>
   </section>
 </article>
 
