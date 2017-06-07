@@ -13178,6 +13178,8 @@ body#tinymce {
 }
 
 .sidemenu {
+  display: flex;
+  flex-direction: column;
   z-index: 999999;
   position: fixed;
   top: 0;
@@ -13266,9 +13268,11 @@ body#tinymce {
 
 .sidemenu .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .sidemenu__header-container {
+  flex: none;
   position: relative;
   float: left;
   width: 100%;
@@ -13300,6 +13304,10 @@ body#tinymce {
   cursor: pointer;
 }
 
+.sidemenu .graphic-content {
+  flex: 1;
+}
+
 .sidemenu--left {
   transform: translateX(-100%);
   transition: 0.5s;
@@ -13308,6 +13316,11 @@ body#tinymce {
 .sidemenu--right {
   transform: translateX(100%);
   transition: 0.5s;
+  overflow: hidden !important;
+}
+
+.sidemenu--right > * {
+  margin-bottom: 0 !important;
 }
 
 .sidemenu__location {
@@ -13327,6 +13340,8 @@ body#tinymce {
 }
 
 .filter {
+  display: flex;
+  flex-direction: column;
   z-index: 999999;
   position: fixed;
   top: 0;
@@ -13416,9 +13431,11 @@ body#tinymce {
 
 .filter .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .filter__header-container {
+  flex: none;
   position: relative;
   float: left;
   width: 100%;
@@ -13448,6 +13465,10 @@ body#tinymce {
 
 .filter__header .close-modal {
   cursor: pointer;
+}
+
+.filter .graphic-content {
+  flex: 1;
 }
 
 .filter-category {
@@ -13616,6 +13637,7 @@ body#tinymce {
 
 .front .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .front__filter {
@@ -14067,6 +14089,7 @@ body#tinymce {
 .location__nature .graphic-content > *,
 .location__history .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .location__home .route-link > a,
@@ -14186,6 +14209,7 @@ body#tinymce {
 
 .route .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .service .content--left {
@@ -14267,6 +14291,7 @@ body#tinymce {
 
 .service .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 
 .taxonomy .content--left {
@@ -14348,5 +14373,6 @@ body#tinymce {
 
 .taxonomy .graphic-content > * {
   width: 100%;
+  height: 100% !important;
 }
 

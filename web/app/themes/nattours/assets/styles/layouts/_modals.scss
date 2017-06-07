@@ -7,6 +7,10 @@
   &--right {
     transform: translateX(100%);
     transition: 0.5s;
+    overflow: hidden !important;
+    & > * {
+      margin-bottom: 0 !important;
+    }
   }
   &__location {
     float: left;

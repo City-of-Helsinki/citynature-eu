@@ -12,6 +12,9 @@ $location = get_field( 'route_location');
 
 ?>
 
+<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right__route' ); ?>
+
 <article class="route">
   <section class="text-content">
     <a class="nav-link" href="<?= get_permalink( $location->ID ); ?>">
@@ -24,7 +27,7 @@ $location = get_field( 'route_location');
   </section>
   <section class="graphic-content">
     <div>
-      <?php the_field( 'route_map' ); ?>
+      <?= do_shortcode( get_field( 'map_shortcodes' ) ); ?>
     </div>
   </section>
   <section class="text-content">

@@ -222,6 +222,7 @@ add_action( 'wp_enqueue_scripts', function () {
  */
 add_filter( 'upload_mimes', function ( $mimes ) {
     $mimes['svg'] = 'image/svg+xml';
+    $mimes['geojson'] = 'application/vnd.geo+json';
 
     return $mimes;
 } );
