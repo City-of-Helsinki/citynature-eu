@@ -13321,10 +13321,6 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.sidemenu .graphic-content > * {
-  width: 100%;
-}
-
 .sidemenu__header-container {
   flex: none;
   position: relative;
@@ -13481,10 +13477,6 @@ body#tinymce {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.25rem;
-}
-
-.filter .graphic-content > * {
-  width: 100%;
 }
 
 .filter__header-container {
@@ -13686,10 +13678,6 @@ body#tinymce {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.25rem;
-}
-
-.front .graphic-content > * {
-  width: 100%;
 }
 
 .front__filter {
@@ -14135,14 +14123,6 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.location__home .graphic-content > *,
-.location__intro .graphic-content > *,
-.location__services .graphic-content > *,
-.location__nature .graphic-content > *,
-.location__history .graphic-content > * {
-  width: 100%;
-}
-
 .location__home .route-link > a,
 .location__intro .route-link > a,
 .location__services .route-link > a,
@@ -14258,10 +14238,6 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.route .graphic-content > * {
-  width: 100%;
-}
-
 .route__map {
   height: 50vh !important;
 }
@@ -14343,10 +14319,6 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.service .graphic-content > * {
-  width: 100%;
-}
-
 .taxonomy .content--left {
   position: relative;
   float: left;
@@ -14422,9 +14394,5 @@ body#tinymce {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.25rem;
-}
-
-.taxonomy .graphic-content > * {
-  width: 100%;
 }
 
