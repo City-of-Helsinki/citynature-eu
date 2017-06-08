@@ -13988,6 +13988,10 @@ body#tinymce {
   display: none;
 }
 
+.location__images img {
+  min-width: 100%;
+}
+
 .location__gallery {
   display: initial;
 }

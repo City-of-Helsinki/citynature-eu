@@ -5,8 +5,6 @@ export default {
     const tabs = $('#tabNav a').get();
     const navLinks = $('.nav-link').get();
 
-    // console.log(window.nattours_vars); //eslint-disable-line
-
     tabs.forEach(value => {
       $(value).click(e => {
         $(locationHeader).css(
@@ -28,6 +26,14 @@ export default {
 
     gallerize('#introGallery', '.location__intro');
     gallerize('#historyGallery', '.location__history');
+
+    $('a[data-toggle="tab"]').on('shown.bs.tab', () => {
+      window.WPLeafletMapPlugin.maps.forEach(value => {
+        console.log(value); //eslint-disable-line
+        value._leaflet_id !== 2 && value.setZoom(15);
+        value.invalidateSize();
+      });
+    });
   },
   finalize() {},
 };

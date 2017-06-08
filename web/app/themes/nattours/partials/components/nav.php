@@ -11,7 +11,7 @@
   <span class="header__nav__map">
     <span id="rightOpen">
       <span class="hidden-xs">
-        <?= get_post_type() === 'location' ? pll__('Location on map') : pll__('Locations on map'); ?>
+        <?= get_post_type() === 'location' || get_post_type() === 'route' || get_post_type() === 'service' ? pll__('Location on map') : pll__('Locations on map'); ?>
       </span>
       <i class="fa fa-map-o" aria-hidden="true"></i>
     </span>

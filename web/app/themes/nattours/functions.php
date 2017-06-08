@@ -27,10 +27,10 @@ function nattours_theme() {
 function nattours_set_imagesizes() {
     return [
         [
-           'name'   => 'location_thumb',
-           'width'  => 611,
-           'height' => 304,
-           'crop'   => true
+            'name'   => 'location_thumb',
+            'width'  => 611,
+            'height' => 304,
+            'crop'   => true
         ]
     ];
 }
