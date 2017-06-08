@@ -29,7 +29,6 @@ export default {
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', () => {
       window.WPLeafletMapPlugin.maps.forEach(value => {
-        console.log(value); //eslint-disable-line
         value._leaflet_id !== 2 && value.setZoom(15);
         value.invalidateSize();
       });

@@ -53,7 +53,8 @@
 		</div>
 		<div class="text-content visible-xs">
 			<h5> <?= pll__( 'History' ) ?></h5>
-			<a href="#nature" class="nav-link">
+			<?= get_first_paragraph( get_field( 'history_text' ) ); ?>
+			<a href="#history" class="nav-link">
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
 		</div>
@@ -74,7 +75,8 @@
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'History' ) ?></h5>
-			<a href="#nature" class="nav-link">
+			<?= get_first_paragraph( get_field( 'history_text' ) ); ?>
+			<a href="#history" class="nav-link">
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
 		</div>
