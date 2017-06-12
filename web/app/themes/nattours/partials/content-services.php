@@ -91,7 +91,7 @@ $services_map = get_field( 'services_map' );
       <?= do_shortcode( "[leaflet-map height=600][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
     </div>
     <?php if ( get_field( 'servicemap_id' ) ) : ?>
-      <div class="route-link">
+      <div class="outer-link">
         <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
         <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
         <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>

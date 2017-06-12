@@ -46,13 +46,6 @@
     padding-top: rem-calc(18);
     @extend .container-fluid;
     @include content-section();
-
-    .route-link > a {
-      padding: rem-calc(12);
-      background-color: #EFF6FF;
-      font-size: rem-calc(21);
-    }
-
   }
   @media all and (min-width: $screen-sm-min) {
     &__images {

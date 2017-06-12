@@ -1,4 +1,4 @@
-<?php $map_file = get_field( 'map_file' ); ?>
+<?php $map_file = get_field( 'map_file', get_option( 'page_on_front' ) ); ?>
 
 <section class="sidemenu sidemenu--right" id="rightMenu">
   <div class="sidemenu__header-container">

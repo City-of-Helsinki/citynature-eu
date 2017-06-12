@@ -431,6 +431,25 @@ acf_add_local_field_group(array (
 			'ui_on_text' => '',
 			'ui_off_text' => '',
 		),
+		array (
+			'key' => 'field_58edc9615a81e',
+			'label' => 'Luontoportti URL',
+			'name' => 'luontoportti_url',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
 	),
 	'location' => array (
 		array (

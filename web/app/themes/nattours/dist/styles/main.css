@@ -13020,6 +13020,12 @@ span.h7 {
   font-size: 1.3125rem;
 }
 
+.outer-link > a {
+  padding: 0.75rem;
+  background-color: #EFF6FF;
+  font-size: 1.3125rem;
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
@@ -14125,16 +14131,6 @@ body#tinymce {
   padding-left: 0;
   padding-right: 0;
   margin-bottom: 2.25rem;
-}
-
-.location__home .route-link > a,
-.location__intro .route-link > a,
-.location__services .route-link > a,
-.location__nature .route-link > a,
-.location__history .route-link > a {
-  padding: 0.75rem;
-  background-color: #EFF6FF;
-  font-size: 1.3125rem;
 }
 
 @media all and (min-width: 768px) {

@@ -107,3 +107,9 @@ span.h7 {
   border: none;
   font-size: rem-calc(21);
 }
+
+.outer-link > a {
+  padding: rem-calc(12);
+  background-color: #EFF6FF;
+  font-size: rem-calc(21);
+}

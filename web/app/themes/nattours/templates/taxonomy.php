@@ -46,6 +46,13 @@ $locations = get_posts(
 	<section class="content--left">
 		<!--<h1><?= $taxonomy->description; ?></h1>-->
 		<?php the_field( 'info', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>
+		<?php if ( get_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ) : ?>
+      <div class="outer-link">
+        <span class="h7"><?= pll__( 'Species in Luontoportti' ); ?></span>
+        <p><?= pll__( 'Find more info about the species on Luontoportti' ); ?></p>
+        <a href="<?php the_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>" target="_blank"><?= pll__('Open Luontoportti'); ?></a>
+      </div>
+    <?php endif; ?>
 	</section>
 	
 	<section class="content--right">
