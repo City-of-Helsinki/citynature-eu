@@ -7,9 +7,11 @@
  *
  */
 
- $home_bg = get_the_post_thumbnail_url();
+$home_bg = get_the_post_thumbnail_url();
 
- $services_map = get_field( 'services_map' );
+$services_map = get_field( 'services_map' );
+
+$ig_feed = get_field( 'feed_shortcode' );
 
 ?>
 
@@ -58,6 +60,12 @@
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
 		</div>
+		<?php if ( $ig_feed ) : ?>
+			<div class="text-content visible-xs">
+				<h5> <?= pll__( 'Instagram' ) ?></h5>
+				<?= do_shortcode( $ig_feed ); ?>
+			</div>
+		<?php endif; ?>
 	</section>
 
 	<section class="content--right hidden-xs sm-lift">
@@ -80,5 +88,11 @@
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
 		</div>
+		<?php if ( $ig_feed ) : ?>
+			<div class="text-content">
+				<h5> <?= pll__( 'Instagram' ) ?></h5>
+				<?= do_shortcode( $ig_feed ); ?>
+			</div>
+		<?php endif; ?>
 	</section>
 </article>

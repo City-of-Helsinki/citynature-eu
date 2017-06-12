@@ -723,6 +723,49 @@ acf_add_local_field_group(array (
 	'description' => '',
 ));
 
+acf_add_local_field_group(array (
+	'key' => 'group_593e90c3708b9',
+	'title' => 'Instagram feed',
+	'fields' => array (
+		array (
+			'key' => 'field_593e90c9b6f04',
+			'label' => 'Feed shortcode',
+			'name' => 'feed_shortcode',
+			'type' => 'text',
+			'instructions' => 'Paste the feed shortcode here',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'location',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
+
 endif;
 
 ?>
