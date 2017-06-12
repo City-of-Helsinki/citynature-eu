@@ -20,7 +20,7 @@ $nature_bg = get_field('nature_image');
 					<!--<?php print_r( $plant ); ?>-->
 					<a href="<?= '/' . $plant->taxonomy . '/' . $plant->slug ?>">
 						<div class="link-component">
-							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $plant->taxonomy . '_' . $plant->term_id ) ?>)"></div>
+							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $plant->taxonomy . '_' . $plant->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">
 								<span class="h7"><?= $plant->name ?></span>
 								<?php if ( get_field( 'is_rare', $plant->taxonomy . '_' . $plant->term_id ) ) : ?>
@@ -41,7 +41,7 @@ $nature_bg = get_field('nature_image');
 					<!--<?php print_r( $bird ); ?>-->
 					<a href="<?= '/' . $bird->taxonomy . '/' . $bird->slug ?>">
 						<div class="link-component">
-							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $bird->taxonomy . '_' . $bird->term_id ) ?>)"></div>
+							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $bird->taxonomy . '_' . $bird->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">
 								<span class="h7"><?= $bird->name ?></span>
 								<?php if ( get_field( 'is_rare', $bird->taxonomy . '_' . $bird->term_id ) ) : ?>
@@ -62,7 +62,7 @@ $nature_bg = get_field('nature_image');
 					<!--<?php print_r( $animal ); ?>-->
 					<a href="<?= '/' . $animal->taxonomy . '/' . $animal->slug ?>">
 						<div class="link-component">
-							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $animal->taxonomy . '_' . $animal->term_id ) ?>)"></div>
+							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $animal->taxonomy . '_' . $animal->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">
 								<span class="h7"><?= $animal->name ?></span>
 								<?php if ( get_field( 'is_rare', $animal->taxonomy . '_' . $animal->term_id ) ) : ?>

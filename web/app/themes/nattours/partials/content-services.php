@@ -50,9 +50,11 @@ $services_map = get_field( 'services_map' );
         <?php foreach( $routes as $route ): ?>
           <a href="<?= get_permalink($route->ID) ?>">
             <div class="link-component">
-              <div class="link-component__img"></div>
-              <span class="h7"><?= $route->post_title ?></span>
-              <p><?= $route->post_excerpt ?></p>
+              <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $route->ID ); ?>); background-color: gray;"></div>
+              <div class="link-component__text">
+                <span class="h7"><?= $route->post_title ?></span>
+                <p><?= $route->post_excerpt ?></p>
+              </div>
             </div>
           </a>
         <?php endforeach;?>
@@ -65,7 +67,7 @@ $services_map = get_field( 'services_map' );
         <?php foreach( $services as $service ): ?>
           <a href="<?= get_permalink($service->ID) ?>">
             <div class="link-component">
-              <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $service->ID ); ?>)"></div>
+              <div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $service->ID ); ?>); background-color: gray;"></div>
               <div class="link-component__text">
                 <span class="h7"><?= $service->post_title ?></span>
                 <p><?= $service->post_excerpt ?></p>

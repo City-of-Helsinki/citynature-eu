@@ -28,7 +28,7 @@ $map = get_field( 'route_map' );
   </section>
   <section class="graphic-content">
     <div class="route__map">
-      <?= do_shortcode( "[leaflet-map height=400][leaflet-geojson src=$map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
+      <?= do_shortcode( "[leaflet-map height=500][leaflet-geojson src=$map fitbounds=1 popup_property=\"popup-text\"]" ) ?>
     </div>
   </section>
 </article>
