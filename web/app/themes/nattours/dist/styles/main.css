@@ -13398,8 +13398,8 @@ body#tinymce {
 
 .sidemenu--left .lang-item > a {
   display: block;
-  margin: 12px 12px 12px 0;
-  padding: 42px 24px 12px;
+  margin: 1.875rem 1.5rem 0 0;
+  padding: 4.875rem 2.625rem 1.5rem;
   background-color: #F7F7F7;
   color: #0072C6;
 }

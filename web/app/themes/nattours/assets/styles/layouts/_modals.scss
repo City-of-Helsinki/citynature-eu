@@ -13,8 +13,8 @@
     }
     .lang-item > a {
       display: block;
-      margin: 12px 12px 12px 0;
-      padding: 42px 24px 12px;
+      margin: rem-calc(30 24 0 0);
+      padding: rem-calc(78 42 24);
       background-color: #F7F7F7;
       color: #0072C6; 
     }
