@@ -11,6 +11,6 @@ $map = get_field( 'map_file', $location->ID );
     </div>
   </div>
   <div class="graphic-content">
-    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map fitbounds=1 popup_property=\"message\"]" ) ?>
+    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map fitbounds=1]" ) ?>
   </div>
 </section>
