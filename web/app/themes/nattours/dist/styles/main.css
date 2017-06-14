@@ -14263,7 +14263,7 @@ body#tinymce {
 }
 
 .route__map {
-  height: 50vh !important;
+  height: 60vh !important;
 }
 
 .service .content--left {
@@ -14345,6 +14345,10 @@ body#tinymce {
 
 .service .graphic-content img {
   width: 100%;
+}
+
+.service__map {
+  height: 300px !important;
 }
 
 .taxonomy .content--left {

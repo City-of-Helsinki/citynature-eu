@@ -27,8 +27,8 @@ $map = get_field( 'service_map' );
     <p><?= apply_filters( 'the_content', $post->post_content ); ?></p>
   </section>
   <section class="graphic-content">
-    <div>
-      <?php the_field( 'service_map' ); ?>
+    <div class="service__map">
+      <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map fitbounds=1 popup_property=\"message\"]" ) ?>
     </div>
   </section>
   <section class="text-content">

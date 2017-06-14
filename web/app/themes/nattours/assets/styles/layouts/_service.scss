@@ -1,4 +1,7 @@
 .service {
   @extend .container-fluid;
   @include content-section();
+  &__map {
+    height: 300px !important;
+  }
 }

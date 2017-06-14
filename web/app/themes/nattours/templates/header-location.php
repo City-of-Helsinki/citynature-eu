@@ -12,6 +12,8 @@
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
 
+	<base target="_blank"/>
+
 	<meta charset="<?php echo get_bloginfo( 'charset' ); ?>"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">

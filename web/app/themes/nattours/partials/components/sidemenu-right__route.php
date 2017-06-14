@@ -1,6 +1,10 @@
 <?php
-$location = get_field( 'route_location'); 
-$map = get_field( 'map_file', $location->ID ); 
+$route_location = get_field( 'route_location'); 
+$service_location = get_field( 'service_location'); 
+$map; 
+
+if ($route_location) $map = get_field( 'map_file', $route_location->ID ); 
+if ($service_location) $map = get_field( 'map_file', $service_location->ID ); 
 ?>
 
 <section class="sidemenu sidemenu--right" id="rightMenu">
