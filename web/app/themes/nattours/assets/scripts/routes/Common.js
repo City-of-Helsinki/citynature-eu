@@ -40,8 +40,6 @@ export default {
       initialSlide: 0,
       centerPadding: 0,
     });
-
-    console.log($('.leaflet-popup-content')); //eslint-disable-line
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
