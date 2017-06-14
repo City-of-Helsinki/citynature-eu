@@ -49,8 +49,10 @@ $locations = get_posts(
 		<?php if ( get_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ) ) : ?>
       <div class="outer-link">
         <span class="h7"><?= pll__( 'Species in Luontoportti' ); ?></span>
-        <p><?= pll__( 'Find more info about the species on Luontoportti' ); ?></p>
-        <a href="<?php the_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>" target="_blank"><?= pll__('Open Luontoportti'); ?></a>
+        <p>
+					<?= pll__( 'Find more info about the species ' ); ?>
+        	<a href="<?php the_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>" target="_blank"><?= pll__('on Luontoportti'); ?></a>
+				</p>
       </div>
     <?php endif; ?>
 	</section>
@@ -60,7 +62,7 @@ $locations = get_posts(
 		<?php if( $locations ) : foreach( $locations as $location ): ?>
         <a href="<?= get_permalink($location->ID) ?>">
           <div class="link-component">
-						<div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $location ); ?>)"></div>
+						<div class="link-component__img" style="background-image: url(<?= get_the_post_thumbnail_url( $location, 'location_thumb' ); ?>)"></div>
 						<div class="link-component__text">
 							<span class="h7"><?= $location->post_title ?></span>
 							<p><?= $location->post_excerpt ?></p>

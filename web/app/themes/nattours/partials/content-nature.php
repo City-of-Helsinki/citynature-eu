@@ -18,7 +18,7 @@ $nature_bg = get_field('nature_image');
 				<h6><?= pll__('Plants'); ?></h6>
 				<?php foreach( $plants as $plant ): ?>
 					<!--<?php print_r( $plant ); ?>-->
-					<a href="<?= '/' . $plant->taxonomy . '/' . $plant->slug ?>">
+					<a href="<?= '/' . $plant->taxonomy . '/' . $plant->slug ?>" target="_blank">
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $plant->taxonomy . '_' . $plant->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">
@@ -39,7 +39,7 @@ $nature_bg = get_field('nature_image');
 				<h6><?= pll__('Birds'); ?></h6>
 				<?php foreach( $birds as $bird ): ?>
 					<!--<?php print_r( $bird ); ?>-->
-					<a href="<?= '/' . $bird->taxonomy . '/' . $bird->slug ?>">
+					<a href="<?= '/' . $bird->taxonomy . '/' . $bird->slug ?>" target="_blank">
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $bird->taxonomy . '_' . $bird->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">
@@ -60,7 +60,7 @@ $nature_bg = get_field('nature_image');
 				<h6><?= pll__('Animals'); ?></h6>
 				<?php foreach( $animals as $animal ): ?>
 					<!--<?php print_r( $animal ); ?>-->
-					<a href="<?= '/' . $animal->taxonomy . '/' . $animal->slug ?>">
+					<a href="<?= '/' . $animal->taxonomy . '/' . $animal->slug ?>" target="_blank">
 						<div class="link-component">
 							<div class="link-component__img" style="background-image: url(<?= get_field( 'featured_image', $animal->taxonomy . '_' . $animal->term_id ) ?>); background-color: gray;"></div>
 							<div class="link-component__text">

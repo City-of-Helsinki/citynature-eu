@@ -7,7 +7,7 @@
  *
  */
 
-$home_bg = get_the_post_thumbnail_url();
+$home_bg = get_the_post_thumbnail_url(null, 'header_img');
 
 $services_map = get_field( 'services_map' );
 

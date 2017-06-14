@@ -31,6 +31,12 @@ function nattours_set_imagesizes() {
             'width'  => 611,
             'height' => 304,
             'crop'   => true
+        ],
+        [
+            'name'   => 'header_img',
+            'width'  => 1000,
+            'height' => 500,
+            'crop'   => true
         ]
     ];
 }
@@ -208,7 +214,7 @@ add_action( 'wp_enqueue_scripts', function () {
         'nord-theme',
         'nattours_vars',
         [
-            'home' => get_the_post_thumbnail_url(),
+            'home' => get_the_post_thumbnail_url(null, 'header_img'),
             'intro' => get_field('introduction_image'),
             'services' => get_field('services_image'),
             'nature' => get_field('nature_image'),
@@ -319,7 +325,7 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Open in Reittiopas', 'Open in Reittiopas' );
     pll_register_string( 'Map', 'Map' );
     pll_register_string( 'Species in Luontoportti', 'Species in Luontoportti' );
-    pll_register_string( 'Find more info about the species on Luontoportti', 'Find more info about the species on Luontoportti' );
-    pll_register_string( 'Open Luontoportti', 'Open Luontoportti' );
+    pll_register_string( 'Find more info about the species ', 'Find more info about the species ' );
+    pll_register_string( 'on Luontoportti', 'on Luontoportti' );
     pll_register_string( 'Instagram', 'Instagram' );
 }
