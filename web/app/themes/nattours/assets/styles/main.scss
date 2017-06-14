@@ -1,16 +1,13 @@
 @import "common/fonts";
 @import "common/settings";
-
 // Import npm dependencies
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~font-awesome/scss/font-awesome";
 @import "~slick-carousel/slick/slick";
 @import "~slick-carousel/slick/slick-theme";
-
 // Global
 @import "common/global";
 @import "common/mixins";
-
 // Components
 @import "components/wp-classes";
 @import "components/buttons";
@@ -19,7 +16,6 @@
 @import "components/forms";
 @import "components/link-component";
 @import "components/tinymce";
-
 // Layouts & pages
 @import "layouts/modals";
 @import "layouts/footer";

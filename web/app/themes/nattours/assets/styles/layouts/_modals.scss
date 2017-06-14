@@ -3,6 +3,25 @@
   &--left {
     transform: translateX(-100%);
     transition: 0.5s;
+    .container-fluid {margin: 0 !important;}
+    span {
+      display: block;
+    }
+    .lang-item {
+      list-style: none;
+      display: inline-block;
+    }
+    .lang-item > a {
+      display: block;
+      margin: 12px 12px 12px 0;
+      padding: 42px 24px 12px;
+      background-color: #F7F7F7;
+      color: #0072C6; 
+    }
+    .current-lang > a {
+      background-color: #0072C6;
+      color: #F7F7F7;
+    }
   }
   &--right {
     transform: translateX(100%);

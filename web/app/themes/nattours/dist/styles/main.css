@@ -13373,6 +13373,42 @@ body#tinymce {
   transition: 0.5s;
 }
 
+.sidemenu--left .container-fluid,
+.sidemenu--left .front,
+.sidemenu--left .header,
+.sidemenu--left .location__home,
+.sidemenu--left .location__intro,
+.sidemenu--left .location__services,
+.sidemenu--left .location__nature,
+.sidemenu--left .location__history,
+.sidemenu--left .route,
+.sidemenu--left .service,
+.sidemenu--left .taxonomy {
+  margin: 0 !important;
+}
+
+.sidemenu--left span {
+  display: block;
+}
+
+.sidemenu--left .lang-item {
+  list-style: none;
+  display: inline-block;
+}
+
+.sidemenu--left .lang-item > a {
+  display: block;
+  margin: 12px 12px 12px 0;
+  padding: 42px 24px 12px;
+  background-color: #F7F7F7;
+  color: #0072C6;
+}
+
+.sidemenu--left .current-lang > a {
+  background-color: #0072C6;
+  color: #F7F7F7;
+}
+
 .sidemenu--right {
   transform: translateX(100%);
   transition: 0.5s;
