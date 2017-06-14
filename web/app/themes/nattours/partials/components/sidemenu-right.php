@@ -8,6 +8,6 @@
     </div>
   </div>
   <div class="graphic-content">
-    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map_file fitbounds=1]" ) ?>
+    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map_file fitbounds=1 popup_property=\"message\"]" ) ?>
   </div>
 </section>
