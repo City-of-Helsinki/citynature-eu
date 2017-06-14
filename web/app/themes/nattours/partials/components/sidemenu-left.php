@@ -27,7 +27,7 @@ $sidemenu_locations = new WP_Query( [
       </div>
     </div>
     <div class="content--right">
-      <span> <?= pll__('Language') ?> </span>
+      <span class="language"> <?= pll__('Language') ?> </span>
       <?php nattours_main_menu(); ?>
     </div>
   </div>

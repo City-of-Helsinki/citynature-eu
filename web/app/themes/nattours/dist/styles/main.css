@@ -13387,7 +13387,7 @@ body#tinymce {
   margin: 0 !important;
 }
 
-.sidemenu--left span {
+.sidemenu--left .language {
   display: block;
 }
 
