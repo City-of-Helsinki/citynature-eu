@@ -38,7 +38,7 @@ get_header('location');
 	</header>
 	
 	<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
-	<?php get_template_part( 'partials/components/sidemenu-right' ); ?>
+	<?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 
 	<main class="tab-content">
     <div role="tabpanel" class="tab-pane fade in active" id="home">

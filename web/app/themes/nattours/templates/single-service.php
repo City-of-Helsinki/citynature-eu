@@ -9,8 +9,12 @@
 get_header('blank');
 
 $location = get_field( 'service_location');
+$map = get_field( 'service_map' );
 
 ?>
+
+<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right__route' ); ?>
 
 <article class="service">
   <section class="text-content">
