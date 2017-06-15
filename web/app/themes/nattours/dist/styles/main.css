@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);@import url(https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i,800,800i);@charset "UTF-8";
 
+/* Webfont: HelsinkiGrotesk-Regular */
+
+@font-face {
+  font-family: 'HelsinkiGroteskRegular';
+  src: url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.eot);
+  /* IE9 Compat Modes */
+  src: url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.eot) format("embedded-opentype"), url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.woff) format("woff"), url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.ttf) format("truetype"), url(/app/themes/nattours/dist/assets/fonts/HelsinkiGrotesk-Regular.svg) format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1406,7 +1419,7 @@ html {
 }
 
 body {
-  font-family: "Raleway", "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskRegular", "Open sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   color: #333333;
@@ -1608,12 +1621,12 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 h2,
 .h2 {
-  font-size: 22px;
+  font-size: 32px;
 }
 
 h3,
@@ -8709,7 +8722,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Raleway", "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskRegular", "Open sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8843,7 +8856,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Raleway", "Open sans", Helvetica, Arial, sans-serif;
+  font-family: "HelsinkiGroteskRegular", "Open sans", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
