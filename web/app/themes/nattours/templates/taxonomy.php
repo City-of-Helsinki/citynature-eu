@@ -8,7 +8,7 @@
 
 get_header('location');
 
-do_action( 'nattours_before_page' ); 
+do_action( 'nattours_before_page' );
 
 $taxonomy = get_queried_object();
 $locations = get_posts(
@@ -35,7 +35,7 @@ $locations = get_posts(
 
 	<div class="header__texts">
 		<h3><?php single_term_title(); ?></h3>
-		<?= term_description(); ?>
+		<p class="subtitle"><?= wp_strip_all_tags( term_description() ); ?></p>
 	</div>
 </header>
 
@@ -56,7 +56,7 @@ $locations = get_posts(
       </div>
     <?php endif; ?>
 	</section>
-	
+
 	<section class="content--right">
 		<h6>Kohteet</h6>
 		<?php if( $locations ) : foreach( $locations as $location ): ?>

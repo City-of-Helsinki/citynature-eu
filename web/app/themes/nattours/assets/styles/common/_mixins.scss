@@ -1,13 +1,13 @@
 @mixin placeholder($color: $gray) {
-   ::-webkit-input-placeholder {
+  ::-webkit-input-placeholder {
     color: $color;
     font-weight: 300;
   }
-   ::-moz-placeholder {
+  ::-moz-placeholder {
     color: $color;
     font-weight: 300;
   }
-   :-ms-input-placeholder {
+  :-ms-input-placeholder {
     color: $color;
     font-weight: 300;
   }
@@ -76,7 +76,7 @@
     @include make-xs-column(12);
     color: $brand-info;
     text-align: center;
-    >i {
+    > i {
       float: right;
     }
     .close-modal {
@@ -85,5 +85,13 @@
   }
   .graphic-content {
     flex: 1;
+  }
+}
+
+@mixin responsive-font($font-size) {
+  font-size: $font-size;
+  @media all and (max-width: $screen-xs-max) {
+    font-size: $font-size * .67;
+    line-height: 1;
   }
 }

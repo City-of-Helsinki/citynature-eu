@@ -42,7 +42,7 @@ $location_arr = [];
     <?php
     if ( $locations->have_posts() ) : while ( $locations->have_posts() ) : $locations->the_post();
       get_template_part( 'partials/content', 'excerpt' );
-      array_push($location_arr, get_the_title());
+      array_push( $location_arr, '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' );
     endwhile;
     wp_reset_postdata();
     else :
@@ -53,7 +53,7 @@ $location_arr = [];
   <div class="text-content">
     <h4><?php the_title(); ?></h4>
     <?php the_content(); ?>
-    <span class="front__city"><?= pll__('Helsinki') ?></span>
+    <!--<span class="front__city"><?= pll__('Helsinki') ?></span>-->
     <p>
       <?= implode( ' - ', $location_arr ); ?>
     </p>

@@ -25,20 +25,32 @@ html {
 body {
   min-height: 100%;
   font-size: $font-size-base;
-  color:$gray-light;
+  color: $gray-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 h1 {
   color: $brand-success;
-  font-weight: 600;
   line-height: 1.2;
+  @include responsive-font($font-size-h1);
 }
 
 h2 {
   line-height: 1.5;
+  @include responsive-font($font-size-h2);
 }
 
-// h3 {}
+h3 {
+  @include responsive-font($font-size-h3);
+}
 
 h4 {
   color: $brand-success;
@@ -52,7 +64,7 @@ h5 {
 
 h6 {
   margin: rem-calc(0 0 30);
-  color: #AAA;
+  color: #aaa;
 }
 
 img {
@@ -103,13 +115,17 @@ span.h7 {
   padding: rem-calc(12);
   margin-bottom: rem-calc(24);
   color: $brand-info;
-  background-color: #EFF6FF;
+  background-color: #eff6ff;
   border: none;
   font-size: rem-calc(21);
 }
 
 .outer-link a {
   padding: rem-calc(12);
-  background-color: #EFF6FF;
+  background-color: #eff6ff;
   font-size: rem-calc(21);
+}
+
+.subtitle {
+  font-size: 21px;
 }

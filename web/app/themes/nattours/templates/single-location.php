@@ -15,7 +15,7 @@ get_header('location');
 <?php if ( have_posts() ) : the_post(); ?>
 		<div class="header__texts">
 			<h3><?php the_title(); ?></h3>
-			<?php the_excerpt(); ?>
+			<p class="subtitle"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
 		</div>
 
 		<ul class="location__tabs" role="tablist" id="tabNav">
@@ -36,7 +36,7 @@ get_header('location');
 			</li>
 		</ul>
 	</header>
-	
+
 	<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
 	<?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 

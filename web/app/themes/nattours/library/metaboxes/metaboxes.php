@@ -79,7 +79,7 @@ acf_add_local_field_group(array (
 			'name' => 'introduction_image',
 			'type' => 'image',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -144,7 +144,7 @@ acf_add_local_field_group(array (
 			'name' => 'services_text',
 			'type' => 'wysiwyg',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -163,7 +163,7 @@ acf_add_local_field_group(array (
 			'name' => 'services_map',
 			'type' => 'file',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -182,7 +182,7 @@ acf_add_local_field_group(array (
 			'name' => 'services_image',
 			'type' => 'image',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -243,7 +243,7 @@ acf_add_local_field_group(array (
 			'name' => 'nature_text',
 			'type' => 'wysiwyg',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -262,7 +262,7 @@ acf_add_local_field_group(array (
 			'name' => 'nature_image',
 			'type' => 'image',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -302,7 +302,7 @@ acf_add_local_field_group(array (
 			'name' => 'history_text',
 			'type' => 'wysiwyg',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -321,7 +321,7 @@ acf_add_local_field_group(array (
 			'name' => 'history_image',
 			'type' => 'image',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -394,7 +394,7 @@ acf_add_local_field_group(array (
 			'name' => 'featured_image',
 			'type' => 'image',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
@@ -418,7 +418,7 @@ acf_add_local_field_group(array (
 			'name' => 'info',
 			'type' => 'wysiwyg',
 			'instructions' => '',
-			'required' => 1,
+			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array (
 				'width' => '',
