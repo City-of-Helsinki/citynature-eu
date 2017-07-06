@@ -22,9 +22,11 @@ get_header('location');
 			<li role="presentation" class="active" data-target="#home">
 				<a href="#home" rel="home" role="tab" data-toggle="tab"><?= pll__( 'Home' ); ?></a>
 			</li>
-			<li role="presentation" data-target="#intro">
-				<a href="#intro" rel="intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
-			</li>
+			<?php if ( pll_current_language() !== 'et' ) : ?>
+				<li role="presentation" data-target="#intro">
+					<a href="#intro" rel="intro" role="tab" data-toggle="tab"><?= pll__( 'Intro' ); ?></a>
+				</li>
+			<?php endif; ?>
 			<li role="presentation" data-target="#services">
 				<a href="#services" rel="services" role="tab" data-toggle="tab"><?= pll__( 'Routes' ); ?></a>
 			</li>

@@ -1,7 +1,8 @@
 <?php
 $sidemenu_locations = new WP_Query( [
-  'post_type' => 'location',
-  'order'     => 'asc',
+  'post_type'       => 'location',
+  'order'           => 'asc',
+  'posts_per_page'  => -1,
 ] );
 ?>
 

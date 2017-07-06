@@ -33,11 +33,43 @@ export default {
         value.invalidateSize();
       });
     });
+
+    $(window).on('load', () => {
+      if (
+        $('body').hasClass('single-service') ||
+        $('body').hasClass('single-route')
+      ) {
+        const map = window.WPLeafletMapPlugin.maps[1];
+
+        let circle;
+
+        map.locate({
+          setView: true,
+          maxZoom: 16,
+        });
+
+        map.on('locationfound', e => {
+          circle = window.L.circleMarker(e.latlng, { radius: 5 });
+          circle.addTo(map);
+        });
+
+        setInterval(() => {
+          map.locate({
+            setView: true,
+            maxZoom: 16,
+          });
+
+          map.on('locationfound', e => {
+            circle.removeFrom(map).setLatLng(e.latlng);
+          });
+        }, 5000);
+      }
+    });
   },
   finalize() {},
 };
 
-function gallerize(galleryId, locatioTab) {
+function gallerize(galleryId, locationTab) {
   $(galleryId).slick({
     arrows: false,
     centerMode: true,
@@ -47,6 +79,6 @@ function gallerize(galleryId, locatioTab) {
     initialSlide: 0,
   });
 
-  const introPar = $(`${locatioTab} .content--left .text-content p`);
+  const introPar = $(`${locationTab} .content--left .text-content p`);
   $(galleryId).insertAfter(introPar[0]);
 }

@@ -5,7 +5,7 @@
   letter-spacing: .5px;
   &--main {
     // padding-top: 25%;
-    height: 90vh;
+    height: 100vh;
     max-height: rem-calc(1200);
     background-repeat: no-repeat;
     background-position: center;
@@ -47,17 +47,17 @@
   }
   &__overlay {
     position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-    background-color: rgba(0,0,0,.4)
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
   }
   &__nav {
     position: absolute;
-      top: rem-calc(24); 
-      left: 0;
-      right: 0;
+    top: rem-calc(24);
+    left: 0;
+    right: 0;
     & > * {
       color: $brand-info;
       line-height: $line-height-base;
@@ -65,10 +65,7 @@
     &__sidemenu {
       @include make-xs-column(2);
       @include make-sm-column(4);
-      #leftOpen {
-        cursor: pointer;
-      }
-    } 
+    }
     &__link {
       @include make-xs-column(8, 0);
       @include make-sm-column(4, 0);
@@ -80,6 +77,10 @@
       @include make-xs-column(2);
       @include make-sm-column(4);
       text-align: right;
+    }
+    #leftOpen,
+    #rightOpen {
+      cursor: pointer;
     }
   }
   &__texts {

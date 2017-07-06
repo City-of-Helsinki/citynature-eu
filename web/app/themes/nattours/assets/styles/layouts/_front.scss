@@ -14,7 +14,7 @@
       float: left;
       cursor: pointer;
       .fa {
-        line-height:  $line-height-base;
+        line-height: $line-height-base;
         // @include make-xs-column(1, 0);
         color: $brand-info !important;
         margin-right: rem-calc(12);
@@ -52,5 +52,8 @@
     color: $brand-info;
     line-height: 2;
     margin-top: rem-calc(30);
+  }
+  &__location-list a {
+    color: $brand-info !important;
   }
 }

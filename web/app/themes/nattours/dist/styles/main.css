@@ -12968,6 +12968,7 @@ h1 {
   color: #00d7a7;
   line-height: 1.2;
   font-size: 67px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
@@ -12980,6 +12981,7 @@ h1 {
 h2 {
   line-height: 1.5;
   font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
@@ -12991,6 +12993,7 @@ h2 {
 
 h3 {
   font-size: 37px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
@@ -13871,6 +13874,10 @@ body#tinymce {
   margin-top: 1.875rem;
 }
 
+.front__location-list a {
+  color: #0072c6 !important;
+}
+
 .header {
   position: relative;
   padding-bottom: 1.125rem;
@@ -13878,7 +13885,7 @@ body#tinymce {
 }
 
 .header--main {
-  height: 90vh;
+  height: 100vh;
   max-height: 75rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -13978,10 +13985,6 @@ body#tinymce {
   }
 }
 
-.header__nav__sidemenu #leftOpen {
-  cursor: pointer;
-}
-
 .header__nav__link {
   position: relative;
   float: left;
@@ -14027,6 +14030,11 @@ body#tinymce {
     float: left;
     width: 33.33333%;
   }
+}
+
+.header__nav #leftOpen,
+.header__nav #rightOpen {
+  cursor: pointer;
 }
 
 .header__texts {
@@ -14351,7 +14359,7 @@ body#tinymce {
 }
 
 .route__map {
-  height: 60vh !important;
+  height: 85vh !important;
 }
 
 .service .content--left {

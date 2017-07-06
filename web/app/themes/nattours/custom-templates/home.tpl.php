@@ -54,7 +54,7 @@ $location_arr = [];
     <h4><?php the_title(); ?></h4>
     <?php the_content(); ?>
     <!--<span class="front__city"><?= pll__('Helsinki') ?></span>-->
-    <p>
+    <p class="front__location-list">
       <?= implode( ' - ', $location_arr ); ?>
     </p>
   </div>
