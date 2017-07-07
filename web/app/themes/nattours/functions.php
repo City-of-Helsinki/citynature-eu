@@ -325,7 +325,7 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Open in Reittiopas', 'Open in Reittiopas' );
     pll_register_string( 'Map', 'Map' );
     pll_register_string( 'Species in Luontoportti', 'Species in Luontoportti' );
-    pll_register_string( 'Find more info about the species ', 'Find more info about the species ' );
+    pll_register_string( 'More info about the species ', 'More info about the species ' );
     pll_register_string( 'on Luontoportti', 'on Luontoportti' );
     pll_register_string( 'Instagram', 'Instagram' );
 }

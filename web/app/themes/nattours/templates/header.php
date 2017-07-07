@@ -46,7 +46,7 @@ $video_id = end( $url_arr );
 				<div class="link-component">
 					<div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
 					<div class="link-component__text">
-						<span class="h7"><?= pll__('Helsinki nature documentary'); ?></span>
+						<h5><?= pll__('Helsinki nature documentary'); ?></h5>
 						<p><?= pll__('Video, 10min'); ?></p>
 					</div>
 				</div>

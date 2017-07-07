@@ -13382,7 +13382,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.sidemenu .graphic-content img {
+.sidemenu img {
   width: 100%;
 }
 
@@ -13580,7 +13580,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.filter .graphic-content img {
+.filter img {
   width: 100%;
 }
 
@@ -13785,7 +13785,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.front .graphic-content img {
+.front img {
   width: 100%;
 }
 
@@ -14241,11 +14241,11 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.location__home .graphic-content img,
-.location__intro .graphic-content img,
-.location__services .graphic-content img,
-.location__nature .graphic-content img,
-.location__history .graphic-content img {
+.location__home img,
+.location__intro img,
+.location__services img,
+.location__nature img,
+.location__history img {
   width: 100%;
 }
 
@@ -14354,7 +14354,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.route .graphic-content img {
+.route img {
   width: 100%;
 }
 
@@ -14439,7 +14439,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.service .graphic-content img {
+.service img {
   width: 100%;
 }
 
@@ -14524,7 +14524,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.taxonomy .graphic-content img {
+.taxonomy img {
   width: 100%;
 }
 
