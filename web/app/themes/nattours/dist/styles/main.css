@@ -13698,8 +13698,7 @@ body#tinymce {
 }
 
 .leaflet-popup {
-  max-height: 60vh !important;
-  overflow: auto;
+  overflow: visible !important;
 }
 
 .leaflet-popup-content {
@@ -13708,6 +13707,8 @@ body#tinymce {
 
 .leaflet-popup-content-wrapper {
   border-radius: 0 !important;
+  max-height: 60vh !important;
+  overflow: auto;
 }
 
 .footer {

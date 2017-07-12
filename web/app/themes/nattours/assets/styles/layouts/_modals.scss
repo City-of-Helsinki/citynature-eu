@@ -95,12 +95,15 @@
 }
 
 .leaflet-popup {
-  max-height: 60vh !important;
-  overflow: auto;
+  // margin-bottom: 0 !important;
+  // min-height: 65px !important;
+  overflow: visible !important;
   &-content {
     max-width: 70vw !important;
     &-wrapper {
       border-radius: 0 !important;
+      max-height: 60vh !important;
+      overflow: auto;
     }
   }
 }
