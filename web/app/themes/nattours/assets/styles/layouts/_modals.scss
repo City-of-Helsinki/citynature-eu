@@ -3,7 +3,9 @@
   &--left {
     transform: translateX(-100%);
     transition: 0.5s;
-    .container-fluid {margin: 0 !important;}
+    .container-fluid {
+      margin: 0 !important;
+    }
     .language {
       display: block;
     }
@@ -15,12 +17,12 @@
       display: block;
       margin: rem-calc(30 24 0 0);
       padding: rem-calc(78 42 24);
-      background-color: #F7F7F7;
-      color: #0072C6; 
+      background-color: #f7f7f7;
+      color: #0072c6;
     }
     .current-lang > a {
-      background-color: #0072C6;
-      color: #F7F7F7;
+      background-color: #0072c6;
+      color: #f7f7f7;
     }
   }
   &--right {
@@ -62,8 +64,8 @@
       margin-bottom: rem-calc(36);
       > span {
         @include make-xs-column(12, 0);
-        background-color: #F7F7F7;
-        color: #0072C6;
+        background-color: #f7f7f7;
+        color: #0072c6;
         border-radius: rem-calc(4);
         cursor: pointer;
         text-align: center;
@@ -72,14 +74,14 @@
       }
     }
     &:checked + label > span {
-      background-color: #0072C6;
-      color: #F7F7F7;
+      background-color: #0072c6;
+      color: #f7f7f7;
     }
   }
   &__btn {
     position: fixed;
-      bottom: rem-calc(30);
-      left: 50%;
+    bottom: rem-calc(30);
+    left: 50%;
     transform: translateX(-50%);
     display: none;
     width: rem-calc(474);
@@ -89,5 +91,16 @@
     background-color: $brand-success;
     border: none;
     font-weight: bold;
+  }
+}
+
+.leaflet-popup {
+  max-height: 60vh !important;
+  overflow: auto;
+  &-content {
+    max-width: 70vw !important;
+    &-wrapper {
+      border-radius: 0 !important;
+    }
   }
 }

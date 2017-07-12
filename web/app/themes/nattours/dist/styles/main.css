@@ -13455,13 +13455,13 @@ body#tinymce {
   display: block;
   margin: 1.875rem 1.5rem 0 0;
   padding: 4.875rem 2.625rem 1.5rem;
-  background-color: #F7F7F7;
-  color: #0072C6;
+  background-color: #f7f7f7;
+  color: #0072c6;
 }
 
 .sidemenu--left .current-lang > a {
-  background-color: #0072C6;
-  color: #F7F7F7;
+  background-color: #0072c6;
+  color: #f7f7f7;
 }
 
 .sidemenu--right {
@@ -13668,8 +13668,8 @@ body#tinymce {
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
-  background-color: #F7F7F7;
-  color: #0072C6;
+  background-color: #f7f7f7;
+  color: #0072c6;
   border-radius: 0.25rem;
   cursor: pointer;
   text-align: center;
@@ -13678,8 +13678,8 @@ body#tinymce {
 }
 
 .filter input[type=checkbox]:checked + label > span {
-  background-color: #0072C6;
-  color: #F7F7F7;
+  background-color: #0072c6;
+  color: #f7f7f7;
 }
 
 .filter__btn {
@@ -13695,6 +13695,19 @@ body#tinymce {
   background-color: #00d7a7;
   border: none;
   font-weight: bold;
+}
+
+.leaflet-popup {
+  max-height: 60vh !important;
+  overflow: auto;
+}
+
+.leaflet-popup-content {
+  max-width: 70vw !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0 !important;
 }
 
 .footer {
