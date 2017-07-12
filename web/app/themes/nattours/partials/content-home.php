@@ -76,14 +76,14 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'Services and routes' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'services_text' ) ); ?>
+			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
 			<a href="#services" class="nav-link">
 				<?= pll__( 'Read more about services and routes' ) ?>
 			</a>
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'History' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'history_text' ) ); ?>
+			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
 			<a href="#history" class="nav-link">
 				<?= pll__( 'Read more about history' ) ?>
 			</a>

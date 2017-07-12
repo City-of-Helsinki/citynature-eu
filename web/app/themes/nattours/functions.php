@@ -279,7 +279,7 @@ function get_first_paragraph( $text ) {
 	$str = wpautop( $text );
 	$str = substr( $str, 0, strpos( $str, '</p>' ) + 4 );
 	$str = strip_tags($str, '<a><strong><em>');
-    $str = preg_replace( "/\[.*\]\s+/", "", $str );
+    $str = preg_replace( "/\[.*\]\s*/", "", $str );
 	return '<p>' . $str . '</p>';
 }
 
