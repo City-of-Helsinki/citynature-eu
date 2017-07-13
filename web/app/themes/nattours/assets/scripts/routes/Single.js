@@ -35,11 +35,21 @@ export default {
     });
 
     $(window).on('load', () => {
+      const maps = window.WPLeafletMapPlugin.maps;
+
+      console.log(responsiveVoice.speak); //eslint-disable-line
+
+      maps.forEach(value => {
+        value.on('popupopen', e => {
+          console.log(e.popup._contentNode.innerText); //eslint-disable-line
+        });
+      });
+
       if (
         $('body').hasClass('single-service') ||
         $('body').hasClass('single-route')
       ) {
-        const map = window.WPLeafletMapPlugin.maps[1];
+        const map = maps[1];
 
         let circle;
 
