@@ -37,11 +37,33 @@ export default {
     $(window).on('load', () => {
       const maps = window.WPLeafletMapPlugin.maps;
 
-      console.log(responsiveVoice.speak); //eslint-disable-line
+      let lang = 'US English Female';
+      if (document.documentElement.lang === 'fi') {
+        lang = 'Finnish Female';
+      }
+
+      // console.log(document.documentElement.lang); //eslint-disable-line
 
       maps.forEach(value => {
         value.on('popupopen', e => {
-          console.log(e.popup._contentNode.innerText); //eslint-disable-line
+          const contentNode = e.popup._contentNode;
+          const innerText = contentNode.innerText.replace(
+            /\.?\r?\n|\r|\n/g,
+            '. '
+          );
+
+          $(contentNode).prepend(
+            `<span
+              class="glyphicon
+              glyphicon-volume-up"
+              aria-hidden="true"
+              style="display: block; font-size: 24px; margin-bottom: 1rem; cursor: pointer"
+              onclick="window.responsiveVoice.speak('${innerText}', '${lang}');"
+            </span>`
+          );
+        });
+        value.on('popupclose', () => {
+          window.responsiveVoice.cancel();
         });
       });
 
@@ -53,10 +75,7 @@ export default {
 
         let circle;
 
-        map.locate({
-          setView: true,
-          maxZoom: 16,
-        });
+        map.locate();
 
         map.on('locationfound', e => {
           circle = window.L.circleMarker(e.latlng, { radius: 5 });
