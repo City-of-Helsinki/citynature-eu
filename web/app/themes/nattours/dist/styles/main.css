@@ -13705,6 +13705,11 @@ body#tinymce {
   max-width: 70vw !important;
 }
 
+.leaflet-popup-content strong {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .leaflet-popup-content-wrapper {
   border-radius: 0 !important;
   max-height: 60vh !important;

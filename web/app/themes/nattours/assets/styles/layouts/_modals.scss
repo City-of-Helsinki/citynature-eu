@@ -100,6 +100,10 @@
   overflow: visible !important;
   &-content {
     max-width: 70vw !important;
+    strong {
+      font-size: 14px;
+      font-weight: bold;
+    }
     &-wrapper {
       border-radius: 0 !important;
       max-height: 60vh !important;
