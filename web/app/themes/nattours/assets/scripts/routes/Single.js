@@ -37,10 +37,9 @@ export default {
     $(window).on('load', () => {
       const maps = window.WPLeafletMapPlugin.maps;
 
-      let lang = 'US English Female';
-      if (document.documentElement.lang === 'fi') {
-        lang = 'Finnish Female';
-      }
+      document.documentElement.lang === 'fi'
+        ? window.responsiveVoice.setDefaultVoice('Finnish Female')
+        : window.responsiveVoice.setDefaultVoice('US English Female');
 
       // console.log(document.documentElement.lang); //eslint-disable-line
 
@@ -58,7 +57,7 @@ export default {
               glyphicon-volume-up"
               aria-hidden="true"
               style="display: block; font-size: 24px; margin-bottom: 1rem; cursor: pointer"
-              onclick="window.responsiveVoice.speak('${innerText}', '${lang}');"
+              onclick="window.responsiveVoice.speak('${innerText}');"
             </span>`
           );
         });
