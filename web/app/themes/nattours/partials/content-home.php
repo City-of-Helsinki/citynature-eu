@@ -23,10 +23,14 @@ $ig_feed = get_field( 'feed_shortcode' );
 <article class="location__home">
 	<section class="content--left">
 		<div class="text-content">
-			<?= get_first_paragraph( get_the_content() ); ?>
-			<a href="#intro" class="nav-link">
-				<?= pll__( 'Read entire introduction' ) ?>
-			</a>
+			<?php if ( pll_current_language() !== 'et' ) : ?>
+				<?= get_first_paragraph( get_the_content() ); ?>
+				<a href="#intro" class="nav-link">
+					<?= pll__( 'Read entire introduction' ) ?>
+				</a>
+			<?php else : ?>
+				<?= get_the_content(); ?>
+			<?php endif; ?>
 		</div>
 		<div class="graphic-content">
 			<img src="<?php the_field( 'introduction_image' ) ?>" />
