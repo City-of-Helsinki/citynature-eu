@@ -11,10 +11,22 @@ $nature_bg = get_field('nature_image');
 		<div class="text-content">
 			<?= get_field( 'nature_text' ); ?>
 		</div>
+		<?php if ( get_field( 'nature_gallery' ) ) : ?>
+			<div id="natureGallery" class="location__gallery">
+				<?php foreach ( get_field( 'nature_gallery' ) as $pic ) { ?>
+					<a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
+				<?php } ?>
+			</div>
+			<div class="location__images" id="natureImages">
+				<?php foreach ( get_field( 'nature_gallery' ) as $pic ) { ?>
+					<a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
+				<?php } ?>
+			</div>
+		<?php endif; ?>
 	</section>
 	<section class="content--right">
 		<?php if( $plants ) : ?>
-			<div class="text-content"> 
+			<div class="text-content">
 				<h6><?= pll__('Plants'); ?></h6>
 				<?php foreach( $plants as $plant ): ?>
 					<!--<?php print_r( $plant ); ?>-->
@@ -35,7 +47,7 @@ $nature_bg = get_field('nature_image');
 		<?php endif; ?>
 
 		<?php if( $birds ) : ?>
-			<div class="text-content"> 
+			<div class="text-content">
 				<h6><?= pll__('Birds'); ?></h6>
 				<?php foreach( $birds as $bird ): ?>
 					<!--<?php print_r( $bird ); ?>-->
@@ -54,9 +66,9 @@ $nature_bg = get_field('nature_image');
 				<?php endforeach;?>
 			</div>
 		<?php endif; ?>
-		
+
 		<?php if( $animals ) : ?>
-			<div class="text-content"> 
+			<div class="text-content">
 				<h6><?= pll__('Animals'); ?></h6>
 				<?php foreach( $animals as $animal ): ?>
 					<!--<?php print_r( $animal ); ?>-->

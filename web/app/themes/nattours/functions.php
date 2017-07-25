@@ -34,7 +34,7 @@ function nattours_set_imagesizes() {
         ],
         [
             'name'   => 'header_img',
-            'width'  => 1000,
+            'width'  => 1500,
             'height' => 500,
             'crop'   => true
         ]

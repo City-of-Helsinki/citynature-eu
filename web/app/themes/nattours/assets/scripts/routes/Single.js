@@ -25,6 +25,7 @@ export default {
     });
 
     gallerize('#introGallery', '.location__intro');
+    gallerize('#natureGallery', '.location__nature');
     gallerize('#historyGallery', '.location__history');
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', () => {
