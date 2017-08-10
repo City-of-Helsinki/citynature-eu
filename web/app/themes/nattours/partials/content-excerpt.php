@@ -26,7 +26,7 @@ foreach ( $taxonomies as $taxonomy ) {
 	data-terms="<?= implode( ', ', $terms_arr ) ?>"
 >
 	<a href="<?php the_permalink(); ?>">
-		<div class="box" style="background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(<?php the_post_thumbnail_url('location_thumb'); ?>);">
+		<div class="box" style="background-image: url(<?php the_post_thumbnail_url('location_thumb'); ?>);">
 			<h3><?php the_title(); ?></h3>
 			 <p class="subtitle"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
 		</div>
