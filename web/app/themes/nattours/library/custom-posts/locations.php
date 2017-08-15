@@ -215,16 +215,16 @@ $locations->register_taxonomy( [
 ] );
 
 $locations->register_taxonomy( [
-    'taxonomy_name'    => 'amphibian',
+    'taxonomy_name'    => 'amphibians',
     'singular'         => _x( 'Amphibian', 'Single', TEXT_DOMAIN ),
     'plural'           => _x( 'Amphibians', 'Plural', TEXT_DOMAIN ),
     'partitive'        => _x( 'Amphibian', 'Partitive', TEXT_DOMAIN ),
     'partitive_plural' => _x( 'Amphibians', 'Partitive plural', TEXT_DOMAIN ),
-    'slug'             => 'amphibian',
+    'slug'             => 'amphibians',
     [
         'query_var' => true,
         'rewrite'   => [
-            'slug'         => 'amphibian',
+            'slug'         => 'amphibians',
             'with_front'   => false,
             'hierarchical' => true
         ],

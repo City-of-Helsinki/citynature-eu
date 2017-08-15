@@ -307,9 +307,14 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Helsinki', 'Helsinki' );
     pll_register_string( 'All locations', 'All locations' );
     pll_register_string( 'History', 'History' );
-    pll_register_string( 'Birds', 'Birds' );
-    pll_register_string( 'Animals', 'Animals' );
     pll_register_string( 'Plants', 'Plants' );
+    pll_register_string( 'Mushrooms', 'Mushrooms' );
+    pll_register_string( 'Mosses and lichens', 'Mosses and lichens' );
+    pll_register_string( 'Birds', 'Birds' );
+    pll_register_string( 'Mammals', 'Mammals' );
+    pll_register_string( 'Reptiles', 'Reptiles' );
+    pll_register_string( 'Amphibians', 'Amphibians' );
+    pll_register_string( 'Insects', 'Insects' );
     pll_register_string( 'Locations', 'Locations' );
     pll_register_string( 'Filter locations', 'Filter locations' );
     pll_register_string( 'Helsinki', 'Helsinki' );
