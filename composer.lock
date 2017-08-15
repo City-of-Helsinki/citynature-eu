@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab4cd9b3fedba8628c8a331e3d7ee195",
-    "content-hash": "0a0d3b33425a6873caf3eea3de6f9558",
+    "hash": "911833dcf6be202594f425aa9ad6fb87",
+    "content-hash": "03607f17a58ef7e32c96b3dffff57cbe",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -647,15 +647,15 @@
         },
         {
             "name": "wpackagist-plugin/leaflet-map",
-            "version": "2.8.3",
+            "version": "2.8.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/leaflet-map/",
-                "reference": "tags/2.8.3"
+                "reference": "tags/2.8.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/leaflet-map.2.8.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/leaflet-map.2.8.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -847,15 +847,15 @@
         },
         {
             "name": "wpackagist-plugin/wd-instagram-feed",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wd-instagram-feed/",
-                "reference": "tags/1.2.2"
+                "reference": "tags/1.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wd-instagram-feed.1.2.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wd-instagram-feed.1.2.3.zip",
                 "reference": null,
                 "shasum": null
             },

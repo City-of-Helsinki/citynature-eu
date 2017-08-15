@@ -54,7 +54,7 @@ $locations = get_posts(
 					<p>
 						<?= pll__( 'More info about the species ' ); ?>
 						<a href="<?php the_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>" target="_blank">
-							<?= pll__('on Luontoportti'); ?>
+							<?= pll__('Luontoportti'); ?>
 						</a>
 					</p>
 				</div>

@@ -82,7 +82,7 @@
     "wpackagist-plugin/hyphenator": "^5.1.5",
     "wpackagist-plugin/responsivevoice-text-to-speech": "^1.1.7",
     "wpackagist-plugin/responsive-lightbox": "^1.6.12",
-    "wpackagist-plugin/leaflet-map": "^2.7.5",
+    "wpackagist-plugin/leaflet-map": "^2.8.5",
     "wpackagist-plugin/responsive-video-embed": "^0.3"
   },
   "require-dev": {
