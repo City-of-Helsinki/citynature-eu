@@ -92,7 +92,7 @@
   font-size: $font-size;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
   @media all and (max-width: $screen-xs-max) {
-    font-size: $font-size * .67;
+    font-size: $font-size * .5;
     line-height: 1;
   }
 }

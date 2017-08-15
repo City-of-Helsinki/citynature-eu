@@ -1621,22 +1621,22 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 67px;
+  font-size: 80px;
 }
 
 h2,
 .h2 {
-  font-size: 50px;
+  font-size: 65px;
 }
 
 h3,
 .h3 {
-  font-size: 37px;
+  font-size: 45px;
 }
 
 h4,
 .h4 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 h5,
@@ -12967,38 +12967,38 @@ h6 {
 h1 {
   color: #00d7a7;
   line-height: 1.2;
-  font-size: 67px;
+  font-size: 80px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
   h1 {
-    font-size: 44.89px;
+    font-size: 40px;
     line-height: 1;
   }
 }
 
 h2 {
   line-height: 1.5;
-  font-size: 50px;
+  font-size: 65px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
   h2 {
-    font-size: 33.5px;
+    font-size: 32.5px;
     line-height: 1;
   }
 }
 
 h3 {
-  font-size: 37px;
+  font-size: 45px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 @media all and (max-width: 767px) {
   h3 {
-    font-size: 24.79px;
+    font-size: 22.5px;
     line-height: 1;
   }
 }
