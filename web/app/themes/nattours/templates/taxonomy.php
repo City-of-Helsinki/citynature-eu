@@ -64,7 +64,7 @@ $locations = get_posts(
 
 		<section class="content--right">
 			<div class="text-content">
-				<h6>Kohteet</h6>
+				<h6><?= pll__( 'Locations' ); ?></h6>
 				<?php if( $locations ) : foreach( $locations as $location ): ?>
 				<a href="<?= get_permalink($location->ID) ?>">
 					<div class="link-component">
