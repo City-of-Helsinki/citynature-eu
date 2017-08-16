@@ -1,5 +1,3 @@
-<?php $intro_bg = get_field('history_image'); ?>
-
 <article class="location__history">
   <section class="content--left">
     <div class="text-content">

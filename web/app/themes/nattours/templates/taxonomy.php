@@ -54,7 +54,7 @@ $locations = get_posts(
 					<p>
 						<?= pll__( 'More info about the species ' ); ?>
 						<a href="<?php the_field( 'luontoportti_url', $taxonomy->taxonomy . '_' . $taxonomy->term_id ); ?>" target="_blank">
-							<?= pll__('on Luontoportti'); ?>
+							<?= pll__('Luontoportti'); ?>
 						</a>
 					</p>
 				</div>
@@ -64,7 +64,7 @@ $locations = get_posts(
 
 		<section class="content--right">
 			<div class="text-content">
-				<h6>Kohteet</h6>
+				<h6><?= pll__( 'Locations' ); ?></h6>
 				<?php if( $locations ) : foreach( $locations as $location ): ?>
 				<a href="<?= get_permalink($location->ID) ?>">
 					<div class="link-component">

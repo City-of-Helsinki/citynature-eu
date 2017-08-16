@@ -500,6 +500,27 @@ acf_add_local_field_group(array (
 			array (
 				'param' => 'taxonomy',
 				'operator' => '==',
+				'value' => 'plants',
+			),
+		),
+		array (
+			array (
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'mushrooms',
+			),
+		),
+		array (
+			array (
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'mosses_and_lichens',
+			),
+		),
+		array (
+			array (
+				'param' => 'taxonomy',
+				'operator' => '==',
 				'value' => 'birds',
 			),
 		),
@@ -507,14 +528,28 @@ acf_add_local_field_group(array (
 			array (
 				'param' => 'taxonomy',
 				'operator' => '==',
-				'value' => 'animals',
+				'value' => 'mammals',
 			),
 		),
 		array (
 			array (
 				'param' => 'taxonomy',
 				'operator' => '==',
-				'value' => 'plants',
+				'value' => 'reptiles',
+			),
+		),
+		array (
+			array (
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'amphibians',
+			),
+		),
+		array (
+			array (
+				'param' => 'taxonomy',
+				'operator' => '==',
+				'value' => 'insects',
 			),
 		),
 	),
