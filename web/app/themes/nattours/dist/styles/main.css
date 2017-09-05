@@ -2058,9 +2058,9 @@ pre code {
 .front,
 .header,
 .location__home,
-.location__intro,
-.location__services,
 .location__nature,
+.location__services,
+.location__species,
 .location__history,
 .route,
 .service,
@@ -2075,9 +2075,9 @@ pre code {
 .front:before,
 .header:before,
 .location__home:before,
-.location__intro:before,
-.location__services:before,
 .location__nature:before,
+.location__services:before,
+.location__species:before,
 .location__history:before,
 .route:before,
 .service:before,
@@ -2086,9 +2086,9 @@ pre code {
 .front:after,
 .header:after,
 .location__home:after,
-.location__intro:after,
-.location__services:after,
 .location__nature:after,
+.location__services:after,
+.location__species:after,
 .location__history:after,
 .route:after,
 .service:after,
@@ -2101,9 +2101,9 @@ pre code {
 .front:after,
 .header:after,
 .location__home:after,
-.location__intro:after,
-.location__services:after,
 .location__nature:after,
+.location__services:after,
+.location__species:after,
 .location__history:after,
 .route:after,
 .service:after,
@@ -6392,9 +6392,9 @@ tbody.collapse.in {
 .front > .navbar-header,
 .header > .navbar-header,
 .location__home > .navbar-header,
-.location__intro > .navbar-header,
-.location__services > .navbar-header,
 .location__nature > .navbar-header,
+.location__services > .navbar-header,
+.location__species > .navbar-header,
 .location__history > .navbar-header,
 .route > .navbar-header,
 .service > .navbar-header,
@@ -6403,9 +6403,9 @@ tbody.collapse.in {
 .front > .navbar-collapse,
 .header > .navbar-collapse,
 .location__home > .navbar-collapse,
-.location__intro > .navbar-collapse,
-.location__services > .navbar-collapse,
 .location__nature > .navbar-collapse,
+.location__services > .navbar-collapse,
+.location__species > .navbar-collapse,
 .location__history > .navbar-collapse,
 .route > .navbar-collapse,
 .service > .navbar-collapse,
@@ -6421,9 +6421,9 @@ tbody.collapse.in {
   .front > .navbar-header,
   .header > .navbar-header,
   .location__home > .navbar-header,
-  .location__intro > .navbar-header,
-  .location__services > .navbar-header,
   .location__nature > .navbar-header,
+  .location__services > .navbar-header,
+  .location__species > .navbar-header,
   .location__history > .navbar-header,
   .route > .navbar-header,
   .service > .navbar-header,
@@ -6432,9 +6432,9 @@ tbody.collapse.in {
   .front > .navbar-collapse,
   .header > .navbar-collapse,
   .location__home > .navbar-collapse,
-  .location__intro > .navbar-collapse,
-  .location__services > .navbar-collapse,
   .location__nature > .navbar-collapse,
+  .location__services > .navbar-collapse,
+  .location__species > .navbar-collapse,
   .location__history > .navbar-collapse,
   .route > .navbar-collapse,
   .service > .navbar-collapse,
@@ -6504,9 +6504,9 @@ tbody.collapse.in {
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > .location__home .navbar-brand,
-  .navbar > .location__intro .navbar-brand,
-  .navbar > .location__services .navbar-brand,
   .navbar > .location__nature .navbar-brand,
+  .navbar > .location__services .navbar-brand,
+  .navbar > .location__species .navbar-brand,
   .navbar > .location__history .navbar-brand,
   .navbar > .route .navbar-brand,
   .navbar > .service .navbar-brand,
@@ -7424,9 +7424,9 @@ a.badge:focus {
 .front .jumbotron,
 .header .jumbotron,
 .location__home .jumbotron,
-.location__intro .jumbotron,
-.location__services .jumbotron,
 .location__nature .jumbotron,
+.location__services .jumbotron,
+.location__species .jumbotron,
 .location__history .jumbotron,
 .route .jumbotron,
 .service .jumbotron,
@@ -7451,9 +7451,9 @@ a.badge:focus {
   .front .jumbotron,
   .header .jumbotron,
   .location__home .jumbotron,
-  .location__intro .jumbotron,
-  .location__services .jumbotron,
   .location__nature .jumbotron,
+  .location__services .jumbotron,
+  .location__species .jumbotron,
   .location__history .jumbotron,
   .route .jumbotron,
   .service .jumbotron,
@@ -12698,8 +12698,6 @@ button.close {
   left: 0;
   top: 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .slick-track:before,
@@ -12982,7 +12980,7 @@ h1 {
 
 @media all and (max-width: 767px) {
   h1 {
-    font-size: 40px;
+    font-size: 56px;
     line-height: 1;
   }
 }
@@ -12995,7 +12993,7 @@ h2 {
 
 @media all and (max-width: 767px) {
   h2 {
-    font-size: 32.5px;
+    font-size: 45.5px;
     line-height: 1;
   }
 }
@@ -13007,7 +13005,7 @@ h3 {
 
 @media all and (max-width: 767px) {
   h3 {
-    font-size: 22.5px;
+    font-size: 31.5px;
     line-height: 1;
   }
 }
@@ -13088,6 +13086,7 @@ span.h7 {
 
 .subtitle {
   font-size: 21px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .alignnone {
@@ -13437,9 +13436,9 @@ body#tinymce {
 .sidemenu--left .front,
 .sidemenu--left .header,
 .sidemenu--left .location__home,
-.sidemenu--left .location__intro,
-.sidemenu--left .location__services,
 .sidemenu--left .location__nature,
+.sidemenu--left .location__services,
+.sidemenu--left .location__species,
 .sidemenu--left .location__history,
 .sidemenu--left .route,
 .sidemenu--left .service,
@@ -13897,7 +13896,7 @@ body#tinymce {
 .header {
   position: relative;
   padding-bottom: 1.125rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .header--main {
@@ -13925,6 +13924,7 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
+  padding-top: 6px;
 }
 
 .header--main .link-component__img {
@@ -13934,7 +13934,7 @@ body#tinymce {
   min-height: 1px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 18%;
+  padding-bottom: 19%;
 }
 
 .header--location {
@@ -13944,7 +13944,7 @@ body#tinymce {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .header--location * {
@@ -13971,7 +13971,9 @@ body#tinymce {
 
 .header__nav {
   position: absolute;
-  top: 1.5rem;
+  padding: 1.5rem 0 2.5rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.3) 60%, transparent);
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -14133,17 +14135,17 @@ body#tinymce {
 }
 
 .location__home,
-.location__intro,
-.location__services,
 .location__nature,
+.location__services,
+.location__species,
 .location__history {
   padding-top: 1.125rem;
 }
 
 .location__home .content--left,
-.location__intro .content--left,
-.location__services .content--left,
 .location__nature .content--left,
+.location__services .content--left,
+.location__species .content--left,
 .location__history .content--left {
   position: relative;
   float: left;
@@ -14160,9 +14162,9 @@ body#tinymce {
 
 @media (min-width: 768px) {
   .location__home .content--left,
-  .location__intro .content--left,
-  .location__services .content--left,
   .location__nature .content--left,
+  .location__services .content--left,
+  .location__species .content--left,
   .location__history .content--left {
     float: left;
     width: 58.33333%;
@@ -14170,9 +14172,9 @@ body#tinymce {
 }
 
 .location__home .content--right,
-.location__intro .content--right,
-.location__services .content--right,
 .location__nature .content--right,
+.location__services .content--right,
+.location__species .content--right,
 .location__history .content--right {
   position: relative;
   float: left;
@@ -14189,9 +14191,9 @@ body#tinymce {
 
 @media (min-width: 768px) {
   .location__home .content--right,
-  .location__intro .content--right,
-  .location__services .content--right,
   .location__nature .content--right,
+  .location__services .content--right,
+  .location__species .content--right,
   .location__history .content--right {
     float: left;
     width: 41.66667%;
@@ -14199,9 +14201,9 @@ body#tinymce {
 }
 
 .location__home .text-content,
-.location__intro .text-content,
-.location__services .text-content,
 .location__nature .text-content,
+.location__services .text-content,
+.location__species .text-content,
 .location__history .text-content {
   position: relative;
   float: left;
@@ -14213,9 +14215,9 @@ body#tinymce {
 }
 
 .location__home .text-content .nav-link,
-.location__intro .text-content .nav-link,
-.location__services .text-content .nav-link,
 .location__nature .text-content .nav-link,
+.location__services .text-content .nav-link,
+.location__species .text-content .nav-link,
 .location__history .text-content .nav-link {
   display: inline-block;
   margin-bottom: 1.125rem;
@@ -14223,9 +14225,9 @@ body#tinymce {
 }
 
 .location__home .text-content hr,
-.location__intro .text-content hr,
-.location__services .text-content hr,
 .location__nature .text-content hr,
+.location__services .text-content hr,
+.location__species .text-content hr,
 .location__history .text-content hr {
   position: relative;
   float: left;
@@ -14236,9 +14238,9 @@ body#tinymce {
 }
 
 .location__home .graphic-content,
-.location__intro .graphic-content,
-.location__services .graphic-content,
 .location__nature .graphic-content,
+.location__services .graphic-content,
+.location__species .graphic-content,
 .location__history .graphic-content {
   position: relative;
   float: left;
@@ -14262,19 +14264,6 @@ body#tinymce {
   .location__gallery {
     display: none;
   }
-}
-
-.sm-lift {
-  top: -5.625rem;
-}
-
-.sm-lift .graphic-content {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .route .content--left {

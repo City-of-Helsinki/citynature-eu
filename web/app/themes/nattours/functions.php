@@ -215,9 +215,9 @@ add_action( 'wp_enqueue_scripts', function () {
         'nattours_vars',
         [
             'home' => get_the_post_thumbnail_url(null, 'header_img'),
-            'intro' => get_field('introduction_image'),
+            'nature' => get_field('introduction_image'),
             'services' => get_field('services_image'),
-            'nature' => get_field('nature_image'),
+            'species' => get_field('species_image'),
             'history' => get_field('history_image'),
         ]
     );
@@ -262,6 +262,13 @@ add_action( 'after_switch_theme', function () {
 } );
 
 /**
+ * Register local ACF-json
+ */
+add_filter( 'acf/settings/save_json', function () {
+    return get_stylesheet_directory() . '/acf-data';
+} );
+
+/**
  * Add setting-page through ACF
  */
 if ( function_exists( 'acf_add_options_page' ) ) {
@@ -297,9 +304,9 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Locations on map', 'Locations on map' );
     pll_register_string( 'Location on map', 'Location on map' );
     pll_register_string( 'Home', 'Home' );
-    pll_register_string( 'Intro', 'Intro' );
-    pll_register_string( 'Routes', 'Routes' );
     pll_register_string( 'Nature', 'Nature' );
+    pll_register_string( 'Routes', 'Routes' );
+    pll_register_string( 'Species', 'Species' );
     pll_register_string( 'Further information', 'Further information' );
     pll_register_string( 'Opening hours and further info at:', 'Opening hours and further info at:' );
     pll_register_string( 'Services', 'Services' );

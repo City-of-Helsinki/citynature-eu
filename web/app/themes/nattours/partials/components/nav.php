@@ -6,7 +6,7 @@
     </span>
   </div>
   <a href="/" class="header__nav__link">
-    <span>hel.fi/luonto</span>
+    <span>citynature.eu</span>
   </a>
   <span class="header__nav__map">
     <span id="rightOpen">

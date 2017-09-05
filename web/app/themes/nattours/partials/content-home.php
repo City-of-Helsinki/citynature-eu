@@ -23,17 +23,13 @@ $ig_feed = get_field( 'feed_shortcode' );
 <article class="location__home">
 	<section class="content--left">
 		<div class="text-content">
-			<?php if ( pll_current_language() !== 'et' ) : ?>
-				<?= get_first_paragraph( get_the_content() ); ?>
-				<a href="#intro" class="nav-link">
-					<?= pll__( 'Read entire introduction' ) ?>
-				</a>
-			<?php else : ?>
-				<?= get_the_content(); ?>
-			<?php endif; ?>
+      <?= get_first_paragraph( get_the_content() ); ?>
+      <a href="#nature" class="nav-link">
+        <?= pll__( 'Read more about nature' ) ?>
+      </a>
 		</div>
 		<div class="graphic-content">
-			<img src="<?php the_field( 'introduction_image' ) ?>" />
+			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 		<div class="text-content visible-xs">
 			<h5> <?= pll__( 'Services and routes' ) ?></h5>
@@ -47,22 +43,22 @@ $ig_feed = get_field( 'feed_shortcode' );
 				<?= do_shortcode( "[leaflet-map height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
 			</div>
 		</div>
-		<div class="text-content">
-			<h5> <?= pll__( 'Nature' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'nature_text', false, false ) ); ?>
-			<a href="#nature" class="nav-link">
-				<?= pll__( 'Read more about nature' ) ?>
-			</a>
-		</div>
-		<div class="graphic-content">
-			<img src="<?php the_field( 'nature_image' ) ?>" />
-		</div>
-		<div class="text-content visible-xs">
+    <div class="text-content">
 			<h5> <?= pll__( 'History' ) ?></h5>
 			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
 			<a href="#history" class="nav-link">
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
+		</div>
+		<div class="text-content visible-xs">
+			<h5> <?= pll__( 'Species' ) ?></h5>
+			<?= get_first_paragraph( get_field( 'nature_text', false, false ) ); ?>
+			<a href="#species" class="nav-link">
+				<?= pll__( 'Read more about species' ) ?>
+			</a>
+		</div>
+		<div class="graphic-content visible-xs">
+			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content visible-xs">
@@ -72,7 +68,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 		<?php endif; ?>
 	</section>
 
-	<section class="content--right hidden-xs sm-lift">
+	<section class="content--right hidden-xs">
 		<div class="graphic-content">
 			<div>
 				<?= do_shortcode( "[leaflet-map height=15vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
@@ -86,11 +82,14 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</a>
 		</div>
 		<div class="text-content">
-			<h5> <?= pll__( 'History' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
-			<a href="#history" class="nav-link">
-				<?= pll__( 'Read more about history' ) ?>
+			<h5> <?= pll__( 'species' ) ?></h5>
+			<?= get_first_paragraph( get_field( 'nature_text', false, false ) ); ?>
+			<a href="#species" class="nav-link">
+				<?= pll__( 'Read more about species' ) ?>
 			</a>
+		</div>
+		<div class="graphic-content">
+			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content">

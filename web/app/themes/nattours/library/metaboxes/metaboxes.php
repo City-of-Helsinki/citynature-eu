@@ -11,6 +11,49 @@
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array (
+	'key' => 'group_59ae5c9853f81',
+	'title' => 'Front page title',
+	'fields' => array (
+		array (
+			'key' => 'field_59ae5c9dfeb2d',
+			'label' => 'Title',
+			'name' => 'title',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+	),
+	'location' => array (
+		array (
+			array (
+				'param' => 'page_template',
+				'operator' => '==',
+				'value' => 'custom-templates/home.tpl.php',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => 1,
+	'description' => '',
+));
+
+acf_add_local_field_group(array (
 	'key' => 'group_58ef74150eb45',
 	'title' => 'Front page video',
 	'fields' => array (
@@ -18,6 +61,44 @@ acf_add_local_field_group(array (
 			'key' => 'field_58ef74dbaac73',
 			'label' => 'Video URL',
 			'name' => 'video_url',
+			'type' => 'url',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array (
+			'key' => 'video_title',
+			'label' => 'Video title',
+			'name' => 'video_title',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array (
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+			'maxlength' => '',
+		),
+		array (
+			'key' => 'video_subtitle',
+			'label' => 'Video subtitle',
+			'name' => 'video_subtitle',
 			'type' => 'text',
 			'instructions' => '',
 			'required' => 0,
@@ -59,7 +140,7 @@ acf_add_local_field_group(array (
 	'fields' => array (
 		array (
 			'key' => 'field_58aed53d7a36f',
-			'label' => 'Introduction tab',
+			'label' => 'Nature tab',
 			'name' => '',
 			'type' => 'tab',
 			'instructions' => '',
@@ -75,8 +156,8 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_58b6b4ab5d654',
-			'label' => 'Introduction image',
-			'name' => 'introduction_image',
+			'label' => 'Nature image',
+			'name' => 'nature_image',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -87,7 +168,7 @@ acf_add_local_field_group(array (
 				'id' => '',
 			),
 			'return_format' => 'url',
-			'preview_size' => 'full',
+			'preview_size' => 'location_thumb',
 			'library' => 'all',
 			'min_width' => '',
 			'min_height' => '',
@@ -99,8 +180,8 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_58aee3547a376',
-			'label' => 'Introduction gallery',
-			'name' => 'introduction_gallery',
+			'label' => 'Nature gallery',
+			'name' => 'nature_gallery',
 			'type' => 'gallery',
 			'instructions' => '',
 			'required' => 0,
@@ -223,7 +304,7 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_58aee1cf7a373',
-			'label' => 'Nature tab',
+			'label' => 'Species tab',
 			'name' => '',
 			'type' => 'tab',
 			'instructions' => '',
@@ -238,9 +319,9 @@ acf_add_local_field_group(array (
 			'endpoint' => 0,
 		),
 		array (
-			'key' => 'nature_text',
-			'label' => 'Nature text',
-			'name' => 'nature_text',
+			'key' => 'species_text',
+			'label' => 'Species text',
+			'name' => 'species_text',
 			'type' => 'wysiwyg',
 			'instructions' => '',
 			'required' => 0,
@@ -258,8 +339,8 @@ acf_add_local_field_group(array (
 		),
 		array (
 			'key' => 'field_58aee3b87a378',
-			'label' => 'Nature image',
-			'name' => 'nature_image',
+			'label' => 'Species image',
+			'name' => 'species_image',
 			'type' => 'image',
 			'instructions' => '',
 			'required' => 0,
@@ -271,31 +352,6 @@ acf_add_local_field_group(array (
 			),
 			'return_format' => 'url',
 			'preview_size' => 'full',
-			'library' => 'all',
-			'min_width' => '',
-			'min_height' => '',
-			'min_size' => '',
-			'max_width' => '',
-			'max_height' => '',
-			'max_size' => '',
-			'mime_types' => '',
-		),
-		array (
-			'key' => 'field_59771554267a8',
-			'label' => 'Nature gallery',
-			'name' => 'nature_gallery',
-			'type' => 'gallery',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array (
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'min' => '',
-			'max' => '',
-			'insert' => 'append',
 			'library' => 'all',
 			'min_width' => '',
 			'min_height' => '',
@@ -411,7 +467,7 @@ acf_add_local_field_group(array (
 
 acf_add_local_field_group(array (
 	'key' => 'group_58aea75144069',
-	'title' => 'Nature fields',
+	'title' => 'Species fields',
 	'fields' => array (
 		array (
 			'key' => 'field_58aeab69fb566',

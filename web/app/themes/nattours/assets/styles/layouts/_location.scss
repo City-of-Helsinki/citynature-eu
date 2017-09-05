@@ -43,9 +43,9 @@
     }
   }
   &__home,
-  &__intro,
-  &__services,
   &__nature,
+  &__services,
+  &__species,
   &__history {
     padding-top: rem-calc(18);
     @extend .container-fluid;
@@ -62,12 +62,5 @@
     &__gallery {
       display: none;
     }
-  }
-}
-
-.sm-lift {
-  top: rem-calc(-90);
-  .graphic-content {
-    @include make-xs-column(12);
   }
 }

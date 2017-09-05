@@ -36,18 +36,15 @@ $video_id = end( $url_arr );
 	<?php get_template_part( 'partials/components/nav' ); ?>
 	<div class="header__texts">
 		<h1>
-			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
+			<?= get_field( 'title' ); ?>
 		</h1>
-		<h2>
-			<?php echo pll__( 'Explore the urban nature of Helsinki' ); ?>
-		</h2>
 		<?php if ( $youtube ) : ?>
 			<a href="<?= $youtube ?>" target="_blank">
 				<div class="link-component">
 					<div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
 					<div class="link-component__text">
-						<h5><?= pll__('Helsinki nature documentary'); ?></h5>
-						<p><?= pll__('Video, 10min'); ?></p>
+						<h5><?= get_field( 'video_title' ); ?></h5>
+						<p><?= get_field( 'video_subtitle' ); ?></p>
 					</div>
 				</div>
 			</a>
