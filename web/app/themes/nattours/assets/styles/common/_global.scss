@@ -55,6 +55,7 @@ h3 {
 h4 {
   color: $brand-success;
   margin: rem-calc(0 0 24);
+  @include responsive-font($font-size-h4);
 }
 
 h5 {
@@ -129,4 +130,24 @@ span.h7 {
 .subtitle {
   font-size: 21px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+
+  &-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 90% !important;
+    max-width: 720px !important;
+  }
 }

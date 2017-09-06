@@ -48,9 +48,10 @@ export default {
         filterSelections.append(filterValue);
         $(filterValue).click(e => {
           //eslint-disable-next-line
-          $.grep(filterBoxes, value => value.value === e.target.innerHTML)[
-            0
-          ].click();
+          $.grep(
+            filterBoxes,
+            value => value.value === e.target.innerHTML
+          )[0].click();
           // filters = filterArr(filters, e.target.innerHTML);
           goThruLocations(locations, filters);
           $(e.target).remove();
@@ -61,6 +62,10 @@ export default {
     });
 
     $('.box').matchHeight();
+
+    $('#myModal').on('hidden.bs.modal', () => {
+      $('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

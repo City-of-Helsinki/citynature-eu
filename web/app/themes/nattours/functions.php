@@ -215,7 +215,7 @@ add_action( 'wp_enqueue_scripts', function () {
         'nattours_vars',
         [
             'home' => get_the_post_thumbnail_url(null, 'header_img'),
-            'nature' => get_field('introduction_image'),
+            'nature' => get_field('nature_image'),
             'services' => get_field('services_image'),
             'species' => get_field('species_image'),
             'history' => get_field('history_image'),
@@ -341,4 +341,5 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'More info about the species ', 'More info about the species ' );
     pll_register_string( 'Luontoportti', 'Luontoportti' );
     pll_register_string( 'Instagram', 'Instagram' );
+    pll_register_string( 'Read more about species', 'Read more about species' );
 }

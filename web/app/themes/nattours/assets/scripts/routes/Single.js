@@ -24,7 +24,6 @@ export default {
       });
     });
 
-    gallerize('#introGallery', '.location__intro');
     gallerize('#natureGallery', '.location__nature');
     gallerize('#historyGallery', '.location__history');
 
@@ -108,6 +107,19 @@ function gallerize(galleryId, locationTab) {
     initialSlide: 0,
   });
 
-  const introPar = $(`${locationTab} .content--left .text-content p`);
-  $(galleryId).insertAfter(introPar[0]);
+  const introPar = $(`${locationTab} .content--left .text-content p`)[0];
+  const contentLeft = $(`${locationTab} .content--left`)[0];
+  const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+  if (mediaQuery.matches) {
+    $(galleryId).insertAfter(introPar);
+  }
+
+  mediaQuery.addListener(mql => {
+    if (mql.matches) {
+      $(galleryId).insertAfter(introPar);
+    } else {
+      $(galleryId).insertAfter(contentLeft);
+    }
+  });
 }

@@ -39,15 +39,26 @@ $video_id = end( $url_arr );
 			<?= get_field( 'title' ); ?>
 		</h1>
 		<?php if ( $youtube ) : ?>
-			<a href="<?= $youtube ?>" target="_blank">
-				<div class="link-component">
-					<div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
-					<div class="link-component__text">
-						<h5><?= get_field( 'video_title' ); ?></h5>
-						<p><?= get_field( 'video_subtitle' ); ?></p>
-					</div>
-				</div>
-			</a>
+      <div class="link-component" data-toggle="modal" data-target="#myModal">
+        <div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
+        <div class="link-component__text">
+          <h5><?= get_field( 'video_title' ); ?></h5>
+          <p><?= get_field( 'video_subtitle' ); ?></p>
+        </div>
+      </div>
 		<?php endif; ?>
 	</div>
 </header>
+
+<!--
+  TODO:
+    Modal
+      [rve src="<iframe src="https://www.youtube.com/embed/<?= $video_id ?>" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>" ratio="16by9"]
+-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <?= do_shortcode( "[rve src=\"<iframe src=\"https://www.youtube.com/embed/$video_id\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>\" ratio=\"16by9\"]" ); ?>
+    </div>
+  </div>
+</div>

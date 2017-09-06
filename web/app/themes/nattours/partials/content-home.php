@@ -82,15 +82,15 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</a>
 		</div>
 		<div class="text-content">
-			<h5> <?= pll__( 'species' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'nature_text', false, false ) ); ?>
+			<h5> <?= pll__( 'Species' ) ?></h5>
+			<?= get_first_paragraph( get_field( 'species_text', false, false ) ); ?>
 			<a href="#species" class="nav-link">
 				<?= pll__( 'Read more about species' ) ?>
 			</a>
 		</div>
-		<div class="graphic-content">
-			<img src="<?php the_field( 'nature_image' ) ?>" />
-		</div>
+		<!-- <div class="graphic-content">
+			<img src="<?php the_field( 'species_image' ) ?>" />
+		</div> -->
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content">
 				<h5> <?= pll__( 'Instagram' ) ?></h5>

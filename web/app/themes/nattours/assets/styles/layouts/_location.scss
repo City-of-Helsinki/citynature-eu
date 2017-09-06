@@ -29,7 +29,7 @@
     }
   }
   &__gallery {
-    @extend .visible-xs;
+    // @extend .visible-xs;
     .slick-slide {
       margin: rem-calc(12);
       height: rem-calc(222);
@@ -59,8 +59,8 @@
         padding-bottom: rem-calc(6);
       }
     }
-    &__gallery {
-      display: none;
-    }
+    // &__gallery {
+    //   display: none;
+    // }
   }
 }

@@ -1,18 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);@import url(https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i,800,800i);@charset "UTF-8";
 
-/* Webfont: HelsinkiGrotesk-Regular */
-
-@font-face {
-  font-family: 'HelsinkiGroteskRegular';
-  src: url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.eot);
-  /* IE9 Compat Modes */
-  src: url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.eot) format("embedded-opentype"), url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.woff) format("woff"), url(/app/themes/nattours/dist/vendor/HelsinkiGrotesk-Regular.ttf) format("truetype"), url(/app/themes/nattours/dist/assets/fonts/HelsinkiGrotesk-Regular.svg) format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: normal;
-  text-rendering: optimizeLegibility;
-}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -9320,8 +9307,7 @@ button.close {
   width: device-width;
 }
 
-.visible-xs,
-.location__gallery {
+.visible-xs {
   display: none !important;
 }
 
@@ -9353,25 +9339,20 @@ button.close {
 }
 
 @media (max-width: 767px) {
-  .visible-xs,
-  .location__gallery {
+  .visible-xs {
     display: block !important;
   }
 
-  table.visible-xs,
-  table.location__gallery {
+  table.visible-xs {
     display: table !important;
   }
 
-  tr.visible-xs,
-  tr.location__gallery {
+  tr.visible-xs {
     display: table-row !important;
   }
 
   th.visible-xs,
-  th.location__gallery,
-  td.visible-xs,
-  td.location__gallery {
+  td.visible-xs {
     display: table-cell !important;
   }
 }
@@ -12698,6 +12679,8 @@ button.close {
   left: 0;
   top: 0;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-track:before,
@@ -13013,6 +12996,15 @@ h3 {
 h4 {
   color: #00d7a7;
   margin: 0 0 1.5rem;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (max-width: 767px) {
+  h4 {
+    font-size: 28px;
+    line-height: 1;
+  }
 }
 
 h5 {
@@ -13087,6 +13079,27 @@ span.h7 {
 .subtitle {
   font-size: 21px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 90% !important;
+  max-width: 720px !important;
 }
 
 .alignnone {
@@ -14259,10 +14272,6 @@ body#tinymce {
   .location__images > * {
     display: block;
     padding-bottom: 0.375rem;
-  }
-
-  .location__gallery {
-    display: none;
   }
 }
 
