@@ -40,49 +40,49 @@ function get_species($tax) {
 		<?php endif; ?>
 
 		<?php if( $mushrooms ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Mushrooms'); ?></h6>
 				<?php get_species($mushrooms) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $mosses_and_lichens ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Mosses and lichens'); ?></h6>
 				<?php get_species($mosses_and_lichens) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $birds ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Birds'); ?></h6>
 				<?php get_species($birds) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $mammals ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Mammals'); ?></h6>
 				<?php get_species($mammals) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $reptiles ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Reptiles'); ?></h6>
 				<?php get_species($reptiles) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $amphibians ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Amphibians'); ?></h6>
 				<?php get_species($amphibians) ?>
 			</div>
 		<?php endif; ?>
 
 		<?php if( $insects ) : ?>
-			<div class="col-xs-12 col-sm-6 col-md-4">
+			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<h6><?= pll__('Insects'); ?></h6>
 				<?php get_species($insects) ?>
 			</div>
