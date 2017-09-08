@@ -9,7 +9,14 @@ export default {
       $(value).click(e => {
         $(locationHeader).css(
           'background-image',
-          `url(${window.nattours_vars[e.target.rel]})`
+          `linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1) 10%,
+            rgba(0, 0, 0, 0.1) 70%,
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(${window.nattours_vars[e.target.rel]})`
         );
       });
     });

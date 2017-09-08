@@ -13985,7 +13985,6 @@ body#tinymce {
 .header__nav {
   position: absolute;
   padding: 1.5rem 0 2.5rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.3) 60%, transparent);
   top: 0;
   left: 0;
   right: 0;
@@ -14078,7 +14077,7 @@ body#tinymce {
   width: auto;
   max-width: 100%;
   position: absolute;
-  bottom: 3.75rem;
+  bottom: 5rem;
 }
 
 .header__texts h2 {

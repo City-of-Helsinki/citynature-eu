@@ -17,7 +17,14 @@ $ig_feed = get_field( 'feed_shortcode' );
 
 <style>
 	.header--location {
-		background-image: url("<?= $home_bg; ?>");
+		background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1) 10%,
+      rgba(0, 0, 0, 0.1) 70%,
+      rgba(0, 0, 0, 0.6)
+		),
+		url("<?= $home_bg; ?>");
 	}
 </style>
 <article class="location__home">
