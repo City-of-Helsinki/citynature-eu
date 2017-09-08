@@ -28,9 +28,6 @@ function get_species($tax) {
 ?>
 
 <article class="location__species">
-		<div class="text-content">
-			<?= get_field( 'nature_text' ); ?>
-		</div>
 	<section class="graphic-content">
 		<?php if( $plants ) : ?>
 			<div class="col-xs-12 col-sm-6 col-lg-4">
