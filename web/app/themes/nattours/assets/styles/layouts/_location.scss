@@ -51,6 +51,9 @@
     @extend .container-fluid;
     @include content-section();
   }
+  &__species {
+    margin-top: 15px;
+  }
   @media all and (min-width: $screen-sm-min) {
     &__images {
       display: initial;

@@ -13,56 +13,55 @@ get_header('location');
 <?php do_action( 'nattours_before_page' ); ?>
 
 <?php if ( have_posts() ) : the_post(); ?>
-		<div class="header__texts">
-			<h3><?php the_title(); ?></h3>
-			<p class="subtitle"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
-		</div>
+    <div class="header__texts">
+      <h3><?php the_title(); ?></h3>
+      <p class="subtitle"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
+    </div>
 
-		<ul class="location__tabs" role="tablist" id="tabNav">
-			<li role="presentation" class="active" data-target="#home">
-				<a href="#home" rel="home" role="tab" data-toggle="tab"><?= pll__( 'Home' ); ?></a>
-			</li>
-      <li role="presentation" data-target="#nature">
-        <a href="#nature" rel="nature" role="tab" data-toggle="tab"><?= pll__( 'Nature' ); ?></a>
+    <ul class="location__tabs" role="tablist" id="tabNav">
+      <li>
+        <a href="?section=home" data-target="home"><?= pll__( 'Home' ); ?></a>
       </li>
-			<li role="presentation" data-target="#services">
-				<a href="#services" rel="services" role="tab" data-toggle="tab"><?= pll__( 'Routes' ); ?></a>
-			</li>
-			<li role="presentation" data-target="#species">
-				<a href="#species" rel="species" role="tab" data-toggle="tab"><?= pll__( 'Species' ); ?></a>
-			</li>
-			<li role="presentation" data-target="#history">
-				<a href="#history" rel="history" role="tab" data-toggle="tab"><?= pll__( 'History' ); ?></a>
-			</li>
-		</ul>
-	</header>
+      <li>
+        <a href="?section=nature" data-target="nature"><?= pll__( 'Nature' ); ?></a>
+      </li>
+      <li>
+        <a href="?section=services" data-target="services"><?= pll__( 'Routes' ); ?></a>
+      </li>
+      <li>
+        <a href="?section=species" data-target="species"><?= pll__( 'Species' ); ?></a>
+      </li>
+      <li>
+        <a href="?section=history" data-target="history"><?= pll__( 'History' ); ?></a>
+      </li>
+    </ul>
+  </header>
 
-	<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
-	<?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
+  <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+  <?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 
-	<main class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="home">
-			<?php get_template_part( 'partials/content', 'home' ); ?>
-		</div>
-    <div role="tabpanel" class="tab-pane fade" id="nature">
-			<?php get_template_part( 'partials/content', 'nature' ); ?>
-		</div>
-    <div role="tabpanel" class="tab-pane fade" id="services">
-			<?php get_template_part( 'partials/content', 'services' ); ?>
-		</div>
-    <div role="tabpanel" class="tab-pane fade" id="species">
-			<?php get_template_part( 'partials/content', 'species' ); ?>
-		</div>
-    <div role="tabpanel" class="tab-pane fade" id="history">
-			<?php get_template_part( 'partials/content', 'history' ); ?>
-		</div>
-  </main>
-<?php endif; ?>
+  <?php
+  if ( !empty( $_GET ) ) {
+    if ( $_GET['section'] === 'home' ) :
+      get_template_part( 'partials/content', 'home' );
+    elseif ( $_GET['section'] === 'nature' ) :
+      get_template_part( 'partials/content', 'nature' );
+    elseif ( $_GET['section'] === 'services' ) :
+      get_template_part( 'partials/content', 'services' );
+    elseif ( $_GET['section'] === 'species' ) :
+      get_template_part( 'partials/content', 'species' );
+    elseif ( $_GET['section'] === 'history' ) :
+      get_template_part( 'partials/content', 'history' );
+    else:
+      get_template_part( 'partials/content', 'home' );
+    endif;
+  } else {
+    get_template_part( 'partials/content', 'home' );
+  }
+endif;?>
 
-<!--<?php
-if ( comments_open() || '0' != get_comments_number() ) :
-	comments_template();
-endif;
-?>-->
+<script>
+  console.log();
+</script>
 
 <?php get_footer(); ?>

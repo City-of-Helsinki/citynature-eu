@@ -8,6 +8,8 @@ $reptiles = wp_get_post_terms( $post->ID, 'reptiles' );
 $amphibians = wp_get_post_terms( $post->ID, 'amphibians' );
 $insects = wp_get_post_terms( $post->ID, 'insects' );
 
+$bg_img = get_field('species_image');
+
 
 function get_species($tax) {
 	foreach( $tax as $value ):
@@ -27,7 +29,20 @@ function get_species($tax) {
 }
 ?>
 
-<article class="location__species">
+<style>
+  .header--location {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1) 10%,
+      rgba(0, 0, 0, 0.1) 70%,
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(<?= $bg_img ?>) center/cover no-repeat;
+  }
+</style>
+
+<main class="location__species">
 	<section class="graphic-content">
 		<?php if( $plants ) : ?>
 			<div class="col-xs-12 col-sm-6 col-lg-4">
@@ -86,4 +101,4 @@ function get_species($tax) {
 		<?php endif; ?>
 
 	</section>
-</article>
+</main>

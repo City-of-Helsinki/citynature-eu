@@ -40,6 +40,14 @@ export default {
       initialSlide: 0,
       centerPadding: 0,
     });
+
+    $.urlParam = function(name) {
+      var results = new RegExp('[?&]' + name + '=([^&#]*)').exec(
+        window.location.href
+      );
+      // console.log(name, results); //eslint-disable-line
+      return results ? results[1] : 0;
+    };
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

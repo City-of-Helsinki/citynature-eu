@@ -1,32 +1,27 @@
 export default {
   init() {
-    const locationHeader = $('#locationHeader');
-
-    const tabs = $('#tabNav a').get();
+    const tabs = $('#tabNav li').get();
     const navLinks = $('.nav-link').get();
 
     tabs.forEach(value => {
-      $(value).click(e => {
-        $(locationHeader).css(
-          'background-image',
-          `linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.1) 10%,
-            rgba(0, 0, 0, 0.1) 70%,
-            rgba(0, 0, 0, 0.6)
-          ),
-          url(${window.nattours_vars[e.target.rel]})`
-        );
-      });
+      $(value).removeClass('active');
     });
+
+    const activeTab = tabs.filter(
+      value =>
+        $(value)
+          .children('a')
+          .data('target') == $.urlParam('section')
+    );
+
+    activeTab.length > 0
+      ? $(activeTab).addClass('active')
+      : $(tabs[0]).addClass('active');
 
     navLinks.forEach(value => {
       $(value).click(e => {
-        $('html, body').animate({ scrollTop: 0 }, 300, 'swing', () => {
-          tabs.forEach(value => {
-            e.target.href === value.href && $(value).click();
-          });
+        tabs.forEach(value => {
+          e.target.href === value.href && $(value).click();
         });
       });
     });

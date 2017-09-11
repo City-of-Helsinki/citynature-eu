@@ -14263,6 +14263,10 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
+.location__species {
+  margin-top: 15px;
+}
+
 @media all and (min-width: 768px) {
   .location__images {
     display: initial;

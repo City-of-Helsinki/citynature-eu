@@ -34,9 +34,22 @@ $services_map = get_field( 'services_map' );
 
 ?>
 
-<article class="location__services">
+<style>
+  .header--location {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.1) 10%,
+      rgba(0, 0, 0, 0.1) 70%,
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(<?= $services_bg ?>) center/cover no-repeat;
+  }
+</style>
+
+<main class="location__services">
 	<section class="content--left">
-    <div class="text-content"> 
+    <div class="text-content">
 			<?= get_field( 'services_text' ); ?>
     </div>
 		<div class="graphic-content visible-xs">
@@ -45,7 +58,7 @@ $services_map = get_field( 'services_map' );
       </div>
 		</div>
     <?php if( $routes ) : ?>
-      <div class="text-content"> 
+      <div class="text-content">
         <h6><?= pll__('Routes'); ?></h6>
         <?php foreach( $routes as $route ): ?>
           <a href="<?= get_permalink($route->ID) ?>">
@@ -62,7 +75,7 @@ $services_map = get_field( 'services_map' );
       </div>
     <?php endif; ?>
     <?php if( $services ) : ?>
-      <div class="text-content"> 
+      <div class="text-content">
         <h6><?= pll__('Services'); ?></h6>
         <?php foreach( $services as $service ): ?>
           <a href="<?= get_permalink($service->ID) ?>">
@@ -98,4 +111,4 @@ $services_map = get_field( 'services_map' );
       </div>
     <?php endif; ?>
   </section>
-</article>
+</main>

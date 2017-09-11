@@ -27,11 +27,12 @@ $ig_feed = get_field( 'feed_shortcode' );
 		url("<?= $home_bg; ?>");
 	}
 </style>
-<article class="location__home">
+
+<main class="location__home">
 	<section class="content--left">
 		<div class="text-content">
       <?= get_first_paragraph( get_the_content() ); ?>
-      <a href="#nature" class="nav-link">
+      <a href="?section=nature" class="nav-link">
         <?= pll__( 'Read more about nature' ) ?>
       </a>
 		</div>
@@ -41,7 +42,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 		<div class="text-content visible-xs">
 			<h5> <?= pll__( 'Services and routes' ) ?></h5>
 			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
-			<a href="#services" class="nav-link">
+			<a href="?section=services" class="nav-link">
 				<?= pll__( 'Read more about services and routes' ) ?>
 			</a>
 		</div>
@@ -52,7 +53,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="text-content visible-xs">
 			<h5> <?= pll__( 'Species' ) ?></h5>
-			<a href="#species" class="nav-link">
+			<a href="?section=species" class="nav-link">
 				<?= pll__( 'Read more about species' ) ?>
 			</a>
 		</div>
@@ -62,7 +63,7 @@ $ig_feed = get_field( 'feed_shortcode' );
     <div class="text-content">
 			<h5> <?= pll__( 'History' ) ?></h5>
 			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
-			<a href="#history" class="nav-link">
+			<a href="?section=history" class="nav-link">
 				<?= pll__( 'Read more about history' ) ?>
 			</a>
 		</div>
@@ -86,13 +87,13 @@ $ig_feed = get_field( 'feed_shortcode' );
 		<div class="text-content">
 			<h5> <?= pll__( 'Services and routes' ) ?></h5>
 			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
-			<a href="#services" class="nav-link">
+			<a href="?section=services" class="nav-link">
 				<?= pll__( 'Read more about services and routes' ) ?>
 			</a>
 		</div>
 		<div class="text-content">
 			<h5> <?= pll__( 'Species' ) ?></h5>
-			<a href="#species" class="nav-link">
+			<a href="?section=species" class="nav-link">
 				<?= pll__( 'Read more about species' ) ?>
 			</a>
 		</div>
@@ -106,4 +107,4 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</div>
 		<?php endif; ?>
 	</section>
-</article>
+</main>
