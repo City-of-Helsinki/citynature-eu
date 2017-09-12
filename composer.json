@@ -2,7 +2,8 @@
   "name": "roots/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
+  "description":
+    "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
@@ -46,7 +47,8 @@
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
-          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
+          "url":
+            "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU4OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTEyIDA3OjM4OjM4"
         }
       }
     }
@@ -83,7 +85,9 @@
     "wpackagist-plugin/responsivevoice-text-to-speech": "^1.1.7",
     "wpackagist-plugin/responsive-lightbox": "^1.6.12",
     "wpackagist-plugin/leaflet-map": "^2.8.5",
-    "wpackagist-plugin/responsive-video-embed": "^0.3"
+    "wpackagist-plugin/responsive-video-embed": "^0.3",
+    "wpackagist-plugin/autoptimize": "^2.2.2",
+    "wpackagist-plugin/ewww-image-optimizer": "^3.6.1"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4345f23d11228318731e57772ed17887",
-    "content-hash": "03607f17a58ef7e32c96b3dffff57cbe",
+    "hash": "e07fcdf8b34b8ade501ba30b8afc0f05",
+    "content-hash": "2a89c17c0799495ee853f29bfa05753a",
     "packages": [
         {
             "name": "ACF/ACFPro",
@@ -466,6 +466,26 @@
             "homepage": "https://wordpress.org/plugins/adminimize/"
         },
         {
+            "name": "wpackagist-plugin/autoptimize",
+            "version": "2.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autoptimize/",
+                "reference": "tags/2.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autoptimize.2.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autoptimize/"
+        },
+        {
             "name": "wpackagist-plugin/beautiful-taxonomy-filters",
             "version": "2.3.1",
             "source": {
@@ -604,6 +624,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/eps-301-redirects/"
+        },
+        {
+            "name": "wpackagist-plugin/ewww-image-optimizer",
+            "version": "3.6.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/ewww-image-optimizer/",
+                "reference": "tags/3.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/ewww-image-optimizer.3.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/ewww-image-optimizer/"
         },
         {
             "name": "wpackagist-plugin/hyphenator",
