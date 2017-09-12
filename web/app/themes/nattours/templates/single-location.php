@@ -60,8 +60,4 @@ get_header('location');
   }
 endif;?>
 
-<script>
-  console.log();
-</script>
-
 <?php get_footer(); ?>
