@@ -32,7 +32,7 @@
     // @extend .visible-xs;
     .slick-slide {
       margin: rem-calc(12);
-      height: rem-calc(222);
+      height: rem-calc(300);
       width: auto !important;
       img {
         height: 100%;
@@ -62,8 +62,5 @@
         padding-bottom: rem-calc(6);
       }
     }
-    // &__gallery {
-    //   display: none;
-    // }
   }
 }

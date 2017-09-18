@@ -31,6 +31,9 @@
       @include make-sm-column(5);
       margin-top: rem-calc(18);
     }
+    &--center {
+      @extend .container;
+    }
   }
   .text-content {
     @include make-xs-column(12);
