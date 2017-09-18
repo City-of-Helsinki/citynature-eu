@@ -14063,11 +14063,11 @@ body#tinymce {
 .front__filter h6 {
   position: relative;
   float: left;
-  width: 16.66667%;
+  width: 25%;
   min-height: 1px;
   padding-left: 0;
   padding-right: 0;
-  max-width: 11.875rem;
+  max-width: 15.625rem;
   margin-bottom: 0;
 }
 
@@ -14107,7 +14107,7 @@ body#tinymce {
 }
 
 .front__filter-value:after {
-  content: "x";
+  content: 'x';
   padding-left: 1.875rem;
   font-size: 16px;
 }
