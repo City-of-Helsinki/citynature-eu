@@ -2006,18 +2006,7 @@ pre code {
   overflow-y: scroll;
 }
 
-.container,
-.sidemenu .content--center,
-.filter .content--center,
-.front .content--center,
-.location__home .content--center,
-.location__nature .content--center,
-.location__services .content--center,
-.location__species .content--center,
-.location__history .content--center,
-.route .content--center,
-.service .content--center,
-.taxonomy .content--center {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 12px;
@@ -2025,95 +2014,29 @@ pre code {
 }
 
 .container:before,
-.sidemenu .content--center:before,
-.filter .content--center:before,
-.front .content--center:before,
-.location__home .content--center:before,
-.location__nature .content--center:before,
-.location__services .content--center:before,
-.location__species .content--center:before,
-.location__history .content--center:before,
-.route .content--center:before,
-.service .content--center:before,
-.taxonomy .content--center:before,
-.container:after,
-.sidemenu .content--center:after,
-.filter .content--center:after,
-.front .content--center:after,
-.location__home .content--center:after,
-.location__nature .content--center:after,
-.location__services .content--center:after,
-.location__species .content--center:after,
-.location__history .content--center:after,
-.route .content--center:after,
-.service .content--center:after,
-.taxonomy .content--center:after {
+.container:after {
   content: " ";
   display: table;
 }
 
-.container:after,
-.sidemenu .content--center:after,
-.filter .content--center:after,
-.front .content--center:after,
-.location__home .content--center:after,
-.location__nature .content--center:after,
-.location__services .content--center:after,
-.location__species .content--center:after,
-.location__history .content--center:after,
-.route .content--center:after,
-.service .content--center:after,
-.taxonomy .content--center:after {
+.container:after {
   clear: both;
 }
 
 @media (min-width: 768px) {
-  .container,
-  .sidemenu .content--center,
-  .filter .content--center,
-  .front .content--center,
-  .location__home .content--center,
-  .location__nature .content--center,
-  .location__services .content--center,
-  .location__species .content--center,
-  .location__history .content--center,
-  .route .content--center,
-  .service .content--center,
-  .taxonomy .content--center {
+  .container {
     width: 744px;
   }
 }
 
 @media (min-width: 992px) {
-  .container,
-  .sidemenu .content--center,
-  .filter .content--center,
-  .front .content--center,
-  .location__home .content--center,
-  .location__nature .content--center,
-  .location__services .content--center,
-  .location__species .content--center,
-  .location__history .content--center,
-  .route .content--center,
-  .service .content--center,
-  .taxonomy .content--center {
+  .container {
     width: 964px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container,
-  .sidemenu .content--center,
-  .filter .content--center,
-  .front .content--center,
-  .location__home .content--center,
-  .location__nature .content--center,
-  .location__services .content--center,
-  .location__species .content--center,
-  .location__history .content--center,
-  .route .content--center,
-  .service .content--center,
-  .taxonomy .content--center {
+  .container {
     width: 1164px;
   }
 }
@@ -6451,29 +6374,7 @@ tbody.collapse.in {
 }
 
 .container > .navbar-header,
-.sidemenu .content--center > .navbar-header,
-.filter .content--center > .navbar-header,
-.front .content--center > .navbar-header,
-.location__home .content--center > .navbar-header,
-.location__nature .content--center > .navbar-header,
-.location__services .content--center > .navbar-header,
-.location__species .content--center > .navbar-header,
-.location__history .content--center > .navbar-header,
-.route .content--center > .navbar-header,
-.service .content--center > .navbar-header,
-.taxonomy .content--center > .navbar-header,
 .container > .navbar-collapse,
-.sidemenu .content--center > .navbar-collapse,
-.filter .content--center > .navbar-collapse,
-.front .content--center > .navbar-collapse,
-.location__home .content--center > .navbar-collapse,
-.location__nature .content--center > .navbar-collapse,
-.location__services .content--center > .navbar-collapse,
-.location__species .content--center > .navbar-collapse,
-.location__history .content--center > .navbar-collapse,
-.route .content--center > .navbar-collapse,
-.service .content--center > .navbar-collapse,
-.taxonomy .content--center > .navbar-collapse,
 .container-fluid > .navbar-header,
 .front > .navbar-header,
 .header > .navbar-header,
@@ -6502,29 +6403,7 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   .container > .navbar-header,
-  .sidemenu .content--center > .navbar-header,
-  .filter .content--center > .navbar-header,
-  .front .content--center > .navbar-header,
-  .location__home .content--center > .navbar-header,
-  .location__nature .content--center > .navbar-header,
-  .location__services .content--center > .navbar-header,
-  .location__species .content--center > .navbar-header,
-  .location__history .content--center > .navbar-header,
-  .route .content--center > .navbar-header,
-  .service .content--center > .navbar-header,
-  .taxonomy .content--center > .navbar-header,
   .container > .navbar-collapse,
-  .sidemenu .content--center > .navbar-collapse,
-  .filter .content--center > .navbar-collapse,
-  .front .content--center > .navbar-collapse,
-  .location__home .content--center > .navbar-collapse,
-  .location__nature .content--center > .navbar-collapse,
-  .location__services .content--center > .navbar-collapse,
-  .location__species .content--center > .navbar-collapse,
-  .location__history .content--center > .navbar-collapse,
-  .route .content--center > .navbar-collapse,
-  .service .content--center > .navbar-collapse,
-  .taxonomy .content--center > .navbar-collapse,
   .container-fluid > .navbar-header,
   .front > .navbar-header,
   .header > .navbar-header,
@@ -6608,17 +6487,6 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
-  .sidemenu .navbar > .content--center .navbar-brand,
-  .filter .navbar > .content--center .navbar-brand,
-  .front .navbar > .content--center .navbar-brand,
-  .location__home .navbar > .content--center .navbar-brand,
-  .location__nature .navbar > .content--center .navbar-brand,
-  .location__services .navbar > .content--center .navbar-brand,
-  .location__species .navbar > .content--center .navbar-brand,
-  .location__history .navbar > .content--center .navbar-brand,
-  .route .navbar > .content--center .navbar-brand,
-  .service .navbar > .content--center .navbar-brand,
-  .taxonomy .navbar > .content--center .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
@@ -7539,17 +7407,6 @@ a.badge:focus {
 }
 
 .container .jumbotron,
-.sidemenu .content--center .jumbotron,
-.filter .content--center .jumbotron,
-.front .content--center .jumbotron,
-.location__home .content--center .jumbotron,
-.location__nature .content--center .jumbotron,
-.location__services .content--center .jumbotron,
-.location__species .content--center .jumbotron,
-.location__history .content--center .jumbotron,
-.route .content--center .jumbotron,
-.service .content--center .jumbotron,
-.taxonomy .content--center .jumbotron,
 .container-fluid .jumbotron,
 .front .jumbotron,
 .header .jumbotron,
@@ -7566,29 +7423,7 @@ a.badge:focus {
   padding-right: 12px;
 }
 
-.jumbotron .container,
-.jumbotron .sidemenu .content--center,
-.sidemenu .jumbotron .content--center,
-.jumbotron .filter .content--center,
-.filter .jumbotron .content--center,
-.jumbotron .front .content--center,
-.front .jumbotron .content--center,
-.jumbotron .location__home .content--center,
-.location__home .jumbotron .content--center,
-.jumbotron .location__nature .content--center,
-.location__nature .jumbotron .content--center,
-.jumbotron .location__services .content--center,
-.location__services .jumbotron .content--center,
-.jumbotron .location__species .content--center,
-.location__species .jumbotron .content--center,
-.jumbotron .location__history .content--center,
-.location__history .jumbotron .content--center,
-.jumbotron .route .content--center,
-.route .jumbotron .content--center,
-.jumbotron .service .content--center,
-.service .jumbotron .content--center,
-.jumbotron .taxonomy .content--center,
-.taxonomy .jumbotron .content--center {
+.jumbotron .container {
   max-width: 100%;
 }
 
@@ -7599,17 +7434,6 @@ a.badge:focus {
   }
 
   .container .jumbotron,
-  .sidemenu .content--center .jumbotron,
-  .filter .content--center .jumbotron,
-  .front .content--center .jumbotron,
-  .location__home .content--center .jumbotron,
-  .location__nature .content--center .jumbotron,
-  .location__services .content--center .jumbotron,
-  .location__species .content--center .jumbotron,
-  .location__history .content--center .jumbotron,
-  .route .content--center .jumbotron,
-  .service .content--center .jumbotron,
-  .taxonomy .content--center .jumbotron,
   .container-fluid .jumbotron,
   .front .jumbotron,
   .header .jumbotron,
@@ -13601,6 +13425,49 @@ body#tinymce {
   }
 }
 
+.sidemenu .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .sidemenu .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidemenu .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidemenu .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidemenu .content--center {
+    margin-left: 25%;
+  }
+}
+
 .sidemenu .text-content {
   position: relative;
   float: left;
@@ -13792,6 +13659,49 @@ body#tinymce {
   .filter .content--right {
     float: left;
     width: 41.66667%;
+  }
+}
+
+.filter .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .filter .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .filter .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .filter .content--center {
+    margin-left: 25%;
   }
 }
 
@@ -14012,6 +13922,49 @@ body#tinymce {
   .front .content--right {
     float: left;
     width: 41.66667%;
+  }
+}
+
+.front .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .front .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .front .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .front .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .front .content--center {
+    margin-left: 25%;
   }
 }
 
@@ -14367,12 +14320,18 @@ body#tinymce {
 
 .location__gallery .slick-slide {
   margin: 0.75rem;
-  height: 18.75rem;
+  height: 21.875rem;
   width: auto !important;
 }
 
 .location__gallery .slick-slide img {
   height: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .location__gallery .slick-slide {
+    height: 12.5rem;
+  }
 }
 
 .location__gallery .slick-dots {
@@ -14445,6 +14404,69 @@ body#tinymce {
   }
 }
 
+.location__home .content--center,
+.location__nature .content--center,
+.location__services .content--center,
+.location__species .content--center,
+.location__history .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .location__home .content--center,
+  .location__nature .content--center,
+  .location__services .content--center,
+  .location__species .content--center,
+  .location__history .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .location__home .content--center,
+  .location__nature .content--center,
+  .location__services .content--center,
+  .location__species .content--center,
+  .location__history .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .location__home .content--center,
+  .location__nature .content--center,
+  .location__services .content--center,
+  .location__species .content--center,
+  .location__history .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .location__home .content--center,
+  .location__nature .content--center,
+  .location__services .content--center,
+  .location__species .content--center,
+  .location__history .content--center {
+    margin-left: 25%;
+  }
+}
+
 .location__home .text-content,
 .location__nature .text-content,
 .location__services .text-content,
@@ -14500,17 +14522,6 @@ body#tinymce {
   margin-top: 15px;
 }
 
-@media all and (min-width: 768px) {
-  .location__images {
-    display: initial;
-  }
-
-  .location__images > * {
-    display: block;
-    padding-bottom: 0.375rem;
-  }
-}
-
 .route .content--left {
   position: relative;
   float: left;
@@ -14550,6 +14561,49 @@ body#tinymce {
   .route .content--right {
     float: left;
     width: 41.66667%;
+  }
+}
+
+.route .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .route .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .route .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .route .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .route .content--center {
+    margin-left: 25%;
   }
 }
 
@@ -14634,6 +14688,49 @@ body#tinymce {
   }
 }
 
+.service .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .service .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .service .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .service .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .service .content--center {
+    margin-left: 25%;
+  }
+}
+
 .service .text-content {
   position: relative;
   float: left;
@@ -14712,6 +14809,49 @@ body#tinymce {
   .taxonomy .content--right {
     float: left;
     width: 41.66667%;
+  }
+}
+
+.taxonomy .content--center {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .taxonomy .content--center {
+    float: left;
+    width: 66.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .taxonomy .content--center {
+    margin-left: 16.66667%;
+  }
+}
+
+@media (min-width: 992px) {
+  .taxonomy .content--center {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .taxonomy .content--center {
+    margin-left: 25%;
   }
 }
 
