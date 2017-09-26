@@ -14,16 +14,16 @@
 </style>
 
 <main class="location__history">
-  <section class="content--left">
+  <section class="content--center">
     <div class="text-content">
       <?= get_field( 'history_text' ); ?>
     </div>
+    <?php if ( get_field( 'history_gallery' ) ) : ?>
+      <div class="graphic-content location__gallery" id="historyGallery">
+        <?php if ( get_field( 'history_gallery' ) ) : foreach ( get_field( 'history_gallery' ) as $pic ) : ?>
+          <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
+        <?php endforeach;  endif; ?>
+      </div>
+    <?php endif; ?>
   </section>
-  <?php if ( get_field( 'history_gallery' ) ) : ?>
-    <section class="content--right location__gallery" id="historyGallery">
-      <?php if ( get_field( 'history_gallery' ) ) : foreach ( get_field( 'history_gallery' ) as $pic ) : ?>
-        <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
-      <?php endforeach;  endif; ?>
-    </section>
-  <?php endif; ?>
 </main>

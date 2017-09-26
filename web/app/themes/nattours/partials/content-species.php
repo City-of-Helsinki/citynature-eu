@@ -13,7 +13,7 @@ $bg_img = get_field('species_image');
 
 function get_species($tax) {
 	foreach( $tax as $value ):
-		echo '<a href="/' . $value->taxonomy . '/' . $value->slug . '" target="_blank">';
+		echo '<a href="/' . $value->taxonomy . '/' . $value->slug . '">';
 			echo '<div class="link-component">';
 				echo '<div class="link-component__img" style="background-image: url(' . get_field( 'featured_image', $value->taxonomy . '_' . $value->term_id ). '); background-color: gray;"></div>';
 				echo '<div class="link-component__text">';

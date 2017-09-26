@@ -32,10 +32,13 @@
     // @extend .visible-xs;
     .slick-slide {
       margin: rem-calc(12);
-      height: rem-calc(222);
+      height: rem-calc(350);
       width: auto !important;
       img {
         height: 100%;
+      }
+      @media all and (max-width: $screen-xs-max) {
+        height: rem-calc(200);
       }
     }
     .slick-dots {
@@ -53,17 +56,5 @@
   }
   &__species {
     margin-top: 15px;
-  }
-  @media all and (min-width: $screen-sm-min) {
-    &__images {
-      display: initial;
-      & > * {
-        display: block;
-        padding-bottom: rem-calc(6);
-      }
-    }
-    // &__gallery {
-    //   display: none;
-    // }
   }
 }

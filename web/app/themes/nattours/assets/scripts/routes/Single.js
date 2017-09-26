@@ -109,19 +109,7 @@ function gallerize(galleryId, locationTab) {
     initialSlide: 0,
   });
 
-  const introPar = $(`${locationTab} .content--left .text-content p`)[0];
-  const contentLeft = $(`${locationTab} .content--left`)[0];
-  const mediaQuery = window.matchMedia('(max-width: 768px)');
+  const introPar = $(`${locationTab} .content--center .text-content p`)[0];
 
-  if (mediaQuery.matches) {
-    $(galleryId).insertAfter(introPar);
-  }
-
-  mediaQuery.addListener(mql => {
-    if (mql.matches) {
-      $(galleryId).insertAfter(introPar);
-    } else {
-      $(galleryId).insertAfter(contentLeft);
-    }
-  });
+  $(galleryId).insertAfter(introPar);
 }

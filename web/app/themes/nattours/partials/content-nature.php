@@ -14,16 +14,16 @@
 </style>
 
 <main class="location__nature">
-  <section class="content--left">
+  <section class="content--center">
     <div class="text-content">
       <?php the_content(); ?>
     </div>
+    <?php if ( get_field( 'nature_gallery' ) ) : ?>
+      <div class="graphic-content location__gallery" id="natureGallery">
+        <?php foreach ( get_field( 'nature_gallery' ) as $pic ) : ?>
+          <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
   </section>
-  <?php if ( get_field( 'nature_gallery' ) ) : ?>
-    <section class="content--right location__gallery" id="natureGallery">
-      <?php foreach ( get_field( 'nature_gallery' ) as $pic ) : ?>
-        <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
-      <?php endforeach; ?>
-    </section>
-  <?php endif; ?>
 </main>

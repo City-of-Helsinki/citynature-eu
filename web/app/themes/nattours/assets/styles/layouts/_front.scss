@@ -5,8 +5,8 @@
     @include make-xs-column(12);
     margin-bottom: rem-calc(18);
     h6 {
-      @include make-xs-column(2, 0);
-      max-width: rem-calc(190);
+      @include make-xs-column(3, 0);
+      max-width: rem-calc(250);
       @extend .hidden-xs;
       margin-bottom: 0;
     }
@@ -37,7 +37,7 @@
       background-color: $brand-info;
       cursor: pointer;
       &:after {
-        content: "x";
+        content: 'x';
         padding-left: rem-calc(30);
         font-size: $font-size-base;
       }
