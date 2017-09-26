@@ -301,7 +301,7 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Read more about nature', 'Read more about nature' );
     pll_register_string( 'Read more about history', 'Read more about history' );
     pll_register_string( 'Locations on map', 'Locations on map' );
-    pll_register_string( 'Locations on map', 'Locations on map' );
+    pll_register_string( 'Services and routes', 'Services and routes' );
     pll_register_string( 'Location on map', 'Location on map' );
     pll_register_string( 'Home', 'Home' );
     pll_register_string( 'Nature', 'Nature' );
