@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e07fcdf8b34b8ade501ba30b8afc0f05",
     "content-hash": "2a89c17c0799495ee853f29bfa05753a",
     "packages": [
         {
@@ -116,24 +115,24 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-04-13T19:46:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "75bbc8dade6d66b66c7184656df7b3d545d31baa"
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/75bbc8dade6d66b66c7184656df7b3d545d31baa",
-                "reference": "75bbc8dade6d66b66c7184656df7b3d545d31baa",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/d500aae1793990e4874cf794b6cf88ce60a38918",
+                "reference": "d500aae1793990e4874cf794b6cf88ce60a38918",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.8.1",
+                "johnpbloch/wordpress-core": "4.8.2",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -155,24 +154,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-08-02 21:47:41"
+            "time": "2017-09-19T22:27:16+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.8.1",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "eee7b6128469d31803da3a07aaac9c442f81758e"
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/eee7b6128469d31803da3a07aaac9c442f81758e",
-                "reference": "eee7b6128469d31803da3a07aaac9c442f81758e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
+                "reference": "706faa0d7b6b57a25d4acd18331dd71dfa6b01cf",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
+            },
+            "provide": {
+                "wordpress/core-implementation": "4.8.2"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -192,7 +194,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-08-02 21:47:36"
+            "time": "2017-09-19T22:27:11+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -241,7 +243,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-05-31 18:42:33"
+            "time": "2017-05-31T18:42:33+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -283,7 +285,7 @@
             "keywords": [
                 "env"
             ],
-            "time": "2017-07-17 20:41:59"
+            "time": "2017-07-17T20:41:59+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -340,7 +342,7 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01 16:27:06"
+            "time": "2016-03-01T16:27:06+00:00"
         },
         {
             "name": "villeristi/cmb2-field-leaflet-geocoder",
@@ -373,7 +375,7 @@
                 "plugin",
                 "wordpress"
             ],
-            "time": "2017-01-10 21:48:46"
+            "time": "2017-01-10T21:48:46+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -423,7 +425,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
+            "time": "2016-09-01T10:05:43+00:00"
         },
         {
             "name": "wpackagist-plugin/admin-column-view",
@@ -507,15 +509,15 @@
         },
         {
             "name": "wpackagist-plugin/better-wp-security",
-            "version": "6.6.0",
+            "version": "6.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/better-wp-security/",
-                "reference": "tags/6.6.0"
+                "reference": "tags/6.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/better-wp-security.6.6.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/better-wp-security.6.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -707,15 +709,15 @@
         },
         {
             "name": "wpackagist-plugin/polylang",
-            "version": "2.2.1",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/2.2.1"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.2.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.2.2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -867,15 +869,15 @@
         },
         {
             "name": "wpackagist-plugin/user-role-editor",
-            "version": "4.35.3",
+            "version": "4.36",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/user-role-editor/",
-                "reference": "tags/4.35.3"
+                "reference": "tags/4.36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-role-editor.4.35.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/user-role-editor.4.36.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -887,15 +889,15 @@
         },
         {
             "name": "wpackagist-plugin/wd-instagram-feed",
-            "version": "1.2.4",
+            "version": "1.2.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wd-instagram-feed/",
-                "reference": "tags/1.2.4"
+                "reference": "tags/1.2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wd-instagram-feed.1.2.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wd-instagram-feed.1.2.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -944,7 +946,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-native-dashboard/",
-            "time": "2013-08-07 08:43:31"
+            "time": "2013-08-07T08:43:31+00:00"
         }
     ],
     "packages-dev": [
@@ -967,7 +969,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/ajax-thumbnail-rebuild/",
-            "time": "2014-05-04 08:45:49"
+            "time": "2014-05-04T08:45:49+00:00"
         },
         {
             "name": "wpackagist-plugin/debug-bar",
@@ -988,7 +990,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar/",
-            "time": "2017-05-15 12:59:36"
+            "time": "2017-05-15T12:59:36+00:00"
         },
         {
             "name": "wpackagist-plugin/debug-bar-console",
@@ -1009,7 +1011,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/debug-bar-console/",
-            "time": "2012-08-07 20:42:00"
+            "time": "2012-08-07T20:42:00+00:00"
         },
         {
             "name": "wpackagist-plugin/log-deprecated-notices",
@@ -1030,7 +1032,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/log-deprecated-notices/",
-            "time": "2017-01-28 00:56:28"
+            "time": "2017-01-28T00:56:28+00:00"
         },
         {
             "name": "wpackagist-plugin/p3-profiler",
@@ -1051,7 +1053,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/p3-profiler/",
-            "time": "2015-04-20 16:03:00"
+            "time": "2015-04-20T16:03:00+00:00"
         },
         {
             "name": "wpackagist-plugin/post-type-switcher",
@@ -1092,7 +1094,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/query-monitor/",
-            "time": "2017-09-08 22:18:28"
+            "time": "2017-09-08T22:18:28+00:00"
         },
         {
             "name": "wpackagist-plugin/rewrite-rules-inspector",
@@ -1113,7 +1115,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/",
-            "time": "2017-06-08 15:35:26"
+            "time": "2017-06-08T15:35:26+00:00"
         },
         {
             "name": "wpackagist-plugin/simply-show-ids",
@@ -1134,7 +1136,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simply-show-ids/",
-            "time": "2010-06-26 02:40:54"
+            "time": "2010-06-26T02:40:54+00:00"
         },
         {
             "name": "wpackagist-plugin/theme-check",
@@ -1155,7 +1157,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/theme-check/",
-            "time": "2016-12-04 21:19:00"
+            "time": "2016-12-04T21:19:00+00:00"
         },
         {
             "name": "wpackagist-plugin/user-switching",
@@ -1176,7 +1178,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/user-switching/",
-            "time": "2017-09-08 00:26:07"
+            "time": "2017-09-08T00:26:07+00:00"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -1197,7 +1199,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/",
-            "time": "2016-12-08 20:04:42"
+            "time": "2016-12-08T20:04:42+00:00"
         },
         {
             "name": "wpackagist-plugin/wp-sweep",
