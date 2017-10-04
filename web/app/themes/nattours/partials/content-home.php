@@ -33,17 +33,19 @@ $ig_feed = get_field( 'feed_shortcode' );
 		<div class="text-content">
       <?= get_first_paragraph( get_the_content() ); ?>
       <a href="?section=nature" class="nav-link">
-        <?= pll__( 'Read more about nature' ) ?>
+        <?= pll__( 'Read more' ) ?>
       </a>
 		</div>
 		<div class="graphic-content">
 			<img src="<?php the_field( 'nature_image' ) ?>" />
 		</div>
 		<div class="text-content visible-xs">
-			<h5> <?= pll__( 'Services and routes' ) ?></h5>
-			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
+      <a href="?section=services">
+        <h5> <?= pll__( 'Services and routes' ) ?></h5>
+      </a>
+      <?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
 			<a href="?section=services" class="nav-link">
-				<?= pll__( 'Read more about services and routes' ) ?>
+				<?= pll__( 'Read more' ) ?>
 			</a>
 		</div>
 		<div class="graphic-content visible-xs">
@@ -52,19 +54,23 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</div>
 		</div>
 		<div class="text-content visible-xs">
-			<h5> <?= pll__( 'Species' ) ?></h5>
+			<a href="?section=species">
+        <h5> <?= pll__( 'Species' ) ?></h5>
+      </a>
 			<a href="?section=species" class="nav-link">
-				<?= pll__( 'Read more about species' ) ?>
+				<?= pll__( 'Read more' ) ?>
 			</a>
 		</div>
 		<div class="graphic-content visible-xs">
 			<img src="<?php the_field( 'species_image' ) ?>" />
 		</div>
     <div class="text-content">
-			<h5> <?= pll__( 'History' ) ?></h5>
+			<a href="?section=history">
+        <h5> <?= pll__( 'History' ) ?></h5>
+      </a>
 			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
 			<a href="?section=history" class="nav-link">
-				<?= pll__( 'Read more about history' ) ?>
+				<?= pll__( 'Read more' ) ?>
 			</a>
 		</div>
 		<div class="graphic-content">
@@ -85,16 +91,20 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</div>
 		</div>
 		<div class="text-content">
-			<h5> <?= pll__( 'Services and routes' ) ?></h5>
+			<a href="?section=services">
+        <h5> <?= pll__( 'Services and routes' ) ?></h5>
+      </a>
 			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
 			<a href="?section=services" class="nav-link">
-				<?= pll__( 'Read more about services and routes' ) ?>
+				<?= pll__( 'Read more' ) ?>
 			</a>
 		</div>
 		<div class="text-content">
-			<h5> <?= pll__( 'Species' ) ?></h5>
+			<a href="?section=species">
+        <h5> <?= pll__( 'Species' ) ?></h5>
+      </a>
 			<a href="?section=species" class="nav-link">
-				<?= pll__( 'Read more about species' ) ?>
+				<?= pll__( 'Read more' ) ?>
 			</a>
 		</div>
 		<div class="graphic-content">

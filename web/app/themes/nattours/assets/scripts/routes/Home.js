@@ -62,6 +62,7 @@ export default {
     });
 
     $('.box').matchHeight();
+    $('.menu-box').matchHeight();
 
     $('#myModal').on('hidden.bs.modal', () => {
       $('#myModal iframe').attr('src', $('#myModal iframe').attr('src'));

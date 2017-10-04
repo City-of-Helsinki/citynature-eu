@@ -342,4 +342,5 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Luontoportti', 'Luontoportti' );
     pll_register_string( 'Instagram', 'Instagram' );
     pll_register_string( 'Read more about species', 'Read more about species' );
+    pll_register_string( 'Read more', 'Read more' );
 }

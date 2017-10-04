@@ -101,12 +101,12 @@ export default {
 
 function gallerize(galleryId, locationTab) {
   $(galleryId).slick({
-    arrows: false,
     centerMode: true,
     slidesToShow: 1,
     variableWidth: true,
     dots: true,
     initialSlide: 0,
+    adaptiveHeight: true,
   });
 
   const introPar = $(`${locationTab} .content--center .text-content p`)[0];

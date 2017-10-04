@@ -52,6 +52,13 @@ $services_map = get_field( 'services_map' );
     <div class="text-content">
 			<?= get_field( 'services_text' ); ?>
     </div>
+    <?php if ( get_field( 'servicemap_id' ) ) : ?>
+      <div class="text-content outer-link">
+        <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
+        <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
+        <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
+      </div>
+    <?php endif; ?>
 		<div class="graphic-content visible-xs">
 			<div>
         <?= do_shortcode( "[leaflet-map height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
@@ -89,24 +96,10 @@ $services_map = get_field( 'services_map' );
         <hr class="visible-xs" />
       </div>
     <?php endif; ?>
-    <?php if ( get_field( 'servicemap_id' ) ) : ?>
-      <div class="text-content route-link visible-xs">
-        <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
-        <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
-        <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
-      </div>
-    <?php endif; ?>
   </section>
   <section class="content--right hidden-xs">
     <div class="map">
       <?= do_shortcode( "[leaflet-map height=600][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
     </div>
-    <?php if ( get_field( 'servicemap_id' ) ) : ?>
-      <div class="outer-link">
-        <span class="h7"><?= pll__( 'Directions to location' ); ?></span>
-        <p><?= pll__( 'Find the best route and transportation from Reittiopas' ); ?></p>
-        <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
-      </div>
-    <?php endif; ?>
   </section>
 </main>

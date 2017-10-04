@@ -29,10 +29,14 @@
     }
   }
   &__gallery {
+    .slick-arrow {
+      &:before {
+        color: $brand-primary;
+      }
+    }
     // @extend .visible-xs;
     .slick-slide {
       margin: rem-calc(12);
-      height: rem-calc(350);
       width: auto !important;
       img {
         height: 100%;

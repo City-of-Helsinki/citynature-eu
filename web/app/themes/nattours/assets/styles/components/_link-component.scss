@@ -38,3 +38,12 @@
     @include make-md-column(7);
   }
 }
+
+.outer-link {
+  padding-bottom: 2rem !important;
+  & a {
+    padding: rem-calc(12);
+    background-color: #eff6ff;
+    font-size: rem-calc(21);
+  }
+}
