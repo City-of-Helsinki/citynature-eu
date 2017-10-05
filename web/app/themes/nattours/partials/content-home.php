@@ -31,7 +31,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 <main class="location__home">
 	<section class="content--left">
 		<div class="text-content">
-      <?= get_first_paragraph( get_the_content() ); ?>
+      <?= get_field( 'nature_excerpt' ) ? apply_filters( 'the_content', get_field( 'nature_excerpt' ) ) : get_first_paragraph( get_the_content() ); ?>
       <a href="?section=nature" class="nav-link">
         <?= pll__( 'Read more' ) ?>
       </a>
@@ -43,7 +43,7 @@ $ig_feed = get_field( 'feed_shortcode' );
       <a href="?section=services">
         <h5> <?= pll__( 'Services and routes' ) ?></h5>
       </a>
-      <?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
+      <?= get_field( 'services_excerpt' ) ? apply_filters( 'the_content', get_field( 'services_excerpt' ) ) : get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
 			<a href="?section=services" class="nav-link">
 				<?= pll__( 'Read more' ) ?>
 			</a>
@@ -68,7 +68,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 			<a href="?section=history">
         <h5> <?= pll__( 'History' ) ?></h5>
       </a>
-			<?= get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
+			<?= get_field( 'history_excerpt' ) ? apply_filters( 'the_content', get_field( 'history_excerpt' ) ) : get_first_paragraph( get_field( 'history_text', false, false ) ); ?>
 			<a href="?section=history" class="nav-link">
 				<?= pll__( 'Read more' ) ?>
 			</a>
@@ -94,7 +94,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 			<a href="?section=services">
         <h5> <?= pll__( 'Services and routes' ) ?></h5>
       </a>
-			<?= get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
+			<?= get_field( 'services_excerpt' ) ? apply_filters( 'the_content', get_field( 'services_excerpt' ) ) : get_first_paragraph( get_field( 'services_text', false, false ) ); ?>
 			<a href="?section=services" class="nav-link">
 				<?= pll__( 'Read more' ) ?>
 			</a>
