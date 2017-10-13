@@ -13363,6 +13363,64 @@ figure {
   font-size: 1.3125rem;
 }
 
+.species-wrapper {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.species-wrapper:before,
+.species-wrapper:after {
+  content: " ";
+  display: table;
+}
+
+.species-wrapper:after {
+  clear: both;
+}
+
+.species-wrapper .link-component {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  clear: none !important;
+}
+
+@media (min-width: 768px) {
+  .species-wrapper .link-component {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .species-wrapper .link-component {
+    float: left;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .species-wrapper .link-component {
+    float: left;
+    width: 25%;
+  }
+}
+
 html .mceContentBody,
 body#tinymce {
   min-height: 0 !important;

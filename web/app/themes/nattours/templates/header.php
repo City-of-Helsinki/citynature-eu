@@ -39,7 +39,7 @@ $video_id = end( $url_arr );
 			<?= get_field( 'title' ); ?>
 		</h1>
 		<?php if ( $youtube ) : ?>
-      <div class="link-component" data-toggle="modal" data-target="#myModal">
+      <div class="link-component" data-toggle="modal" data-target="#myModal" <?= !get_field( 'video_border' ) ?: 'style="border: 3px solid' .  get_field( 'video_border' ) . '; padding: 1rem;"'; ?>>
         <div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
         <div class="link-component__text">
           <h5><?= get_field( 'video_title' ); ?></h5>
@@ -50,11 +50,6 @@ $video_id = end( $url_arr );
 	</div>
 </header>
 
-<!--
-  TODO:
-    Modal
-      [rve src="<iframe src="https://www.youtube.com/embed/<?= $video_id ?>" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>" ratio="16by9"]
--->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

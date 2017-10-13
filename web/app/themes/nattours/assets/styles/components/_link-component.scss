@@ -47,3 +47,14 @@
     font-size: rem-calc(21);
   }
 }
+
+.species-wrapper {
+  @include make-row();
+  .link-component {
+    @include make-xs-column(12);
+    @include make-sm-column(6);
+    @include make-md-column(4);
+    @include make-lg-column(3);
+    clear: none !important;
+  }
+}

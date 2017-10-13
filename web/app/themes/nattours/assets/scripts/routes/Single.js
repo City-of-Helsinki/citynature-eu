@@ -95,6 +95,8 @@ export default {
         }, 5000);
       }
     });
+
+    $('.species-wrapper .link-component').matchHeight();
   },
   finalize() {},
 };

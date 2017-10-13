@@ -113,6 +113,21 @@ if (function_exists('acf_add_local_field_group')) :
             'append' => '',
             'maxlength' => '',
         ),
+        array (
+        'key' => 'video_border',
+        'label' => 'Video border',
+        'name' => 'video_border',
+        'type' => 'color_picker',
+        'instructions' => 'Color of the video section border',
+        'required' => 0,
+        'conditional_logic' => 0,
+        'wrapper' => array (
+          'width' => '',
+          'class' => '',
+          'id' => '',
+        ),
+        'default_value' => '',
+      ),
     ),
     'location' => array (
         array (
