@@ -290,6 +290,13 @@ function get_first_paragraph( $text ) {
 	return '<p>' . $str . '</p>';
 }
 
+function my_acf_init() {
+
+	acf_update_setting('google_api_key', 'AIzaSyCpsxz-LCgYLUxT1J6eacLwgEBsprfnc_U');
+}
+
+add_action('acf/init', 'my_acf_init');
+
 /**
  * Register strings for polylang
  *
