@@ -1,5 +1,6 @@
 <?php $map_file = get_field( 'map_file', get_option( 'page_on_front' ) ); ?>
 
+
 <section class="sidemenu sidemenu--right" id="rightMenu">
   <div class="sidemenu__header-container">
     <div class="sidemenu__header">
@@ -8,6 +9,19 @@
     </div>
   </div>
   <div class="graphic-content">
-    <?= do_shortcode( "[leaflet-map][leaflet-geojson src=$map_file fitbounds=1 popup_property=\"message\"]" ) ?>
+    <?php
+    $map = "[leaflet-map fit_markers=1][leaflet-geojson src=$map_file fitbounds=1]";
+    $map_arr = [];
+    array_push($map_arr, $map);
+    if ( have_rows( 'markers' ) ): while ( have_rows( 'markers' ) ): the_row();
+      $location = get_sub_field( 'location' );
+      $lat = $location['lat'];
+      $lng = $location['lng'];
+      $icon = get_sub_field( 'icon' )['sizes']['map_marker'];
+      $content = get_sub_field( 'content' );
+      array_push($map_arr, "[leaflet-marker iconUrl=\"$icon\" iconSize=\"30,30\" lat=\"$lat\" lng=\"$lng\"] $content [/leaflet-marker]" );
+    endwhile; endif;
+    echo do_shortcode( implode( $map_arr ) );
+    ?>
   </div>
 </section>
