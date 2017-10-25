@@ -50,36 +50,7 @@ export default {
     };
 
     $(window).on('load', () => {
-      const markers = window.WPLeafletMapPlugin.markers;
-
-      document.documentElement.lang === 'fi'
-        ? window.responsiveVoice.setDefaultVoice('Finnish Female')
-        : window.responsiveVoice.setDefaultVoice('US English Female');
-
-      // console.log(document.documentElement.lang); //eslint-disable-line
-
-      markers.forEach(value => {
-        $(value).click(e => {
-          const contentNode = e.target._popup._contentNode;
-          const innerText = contentNode.innerText.replace(
-            /\.?\r?\n|\r|\n/g,
-            '. '
-          );
-
-          $(contentNode).prepend(
-            `<span
-            class="glyphicon
-            glyphicon-volume-up"
-            aria-hidden="true"
-            style="display: block; font-size: 24px; margin-bottom: 1rem; cursor: pointer"
-            onclick="window.responsiveVoice.speak('${innerText}');"
-            </span>`
-          );
-          $(e.target._popup).on('remove', () => {
-            window.responsiveVoice.cancel();
-          });
-        });
-      });
+      popupTTS();
 
       if (
         $('body').hasClass('single-service') ||
@@ -113,3 +84,33 @@ export default {
     // JavaScript to be fired on all pages, after page specific JS is fired
   },
 };
+
+function popupTTS() {
+  const markers = window.WPLeafletMapPlugin.markers;
+
+  document.documentElement.lang === 'fi'
+    ? window.responsiveVoice.setDefaultVoice('Finnish Female')
+    : window.responsiveVoice.setDefaultVoice('US English Female');
+
+  // console.log(document.documentElement.lang); //eslint-disable-line
+
+  markers.forEach(value => {
+    $(value).click(e => {
+      const contentNode = e.target._popup._contentNode;
+      const innerText = contentNode.innerText.replace(/\.?\r?\n|\r|\n/g, '. ');
+
+      $(contentNode).prepend(
+        `<span
+        class="glyphicon
+        glyphicon-volume-up"
+        aria-hidden="true"
+        style="display: block; font-size: 24px; margin-bottom: 1rem; cursor: pointer"
+        onclick="window.responsiveVoice.speak('${innerText}');"
+        </span>`
+      );
+      $(e.target._popup).on('remove', () => {
+        window.responsiveVoice.cancel();
+      });
+    });
+  });
+}
