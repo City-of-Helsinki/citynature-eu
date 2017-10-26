@@ -50,7 +50,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="graphic-content visible-xs">
 			<div>
-				<?= do_shortcode( "[leaflet-map height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
+				<?= do_shortcode( "[leaflet-map fit_markers=1 height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content visible-xs">
@@ -87,7 +87,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 	<section class="content--right hidden-xs">
 		<div class="graphic-content">
 			<div>
-				<?= do_shortcode( "[leaflet-map height=15vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
+				<?= do_shortcode( "[leaflet-map fit_markers=1 height=15vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
 			</div>
 		</div>
 		<div class="text-content">

@@ -61,7 +61,7 @@ $services_map = get_field( 'services_map' );
     <?php endif; ?>
 		<div class="graphic-content visible-xs">
 			<div>
-        <?= do_shortcode( "[leaflet-map height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
+        <?= do_shortcode( "[leaflet-map fit_markers=1 height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
       </div>
 		</div>
     <?php if( $routes ) : ?>
@@ -99,7 +99,7 @@ $services_map = get_field( 'services_map' );
   </section>
   <section class="content--right hidden-xs">
     <div class="map">
-      <?= do_shortcode( "[leaflet-map height=600][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
+      <?= do_shortcode( "[leaflet-map fit_markers=1 height=600][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
     </div>
   </section>
 </main>
