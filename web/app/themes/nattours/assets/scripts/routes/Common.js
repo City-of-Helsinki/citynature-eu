@@ -52,32 +52,37 @@ export default {
     $(window).on('load', () => {
       popupTTS();
 
-      if (
-        $('body').hasClass('single-service') ||
-        $('body').hasClass('single-route')
-      ) {
-        const map = window.WPLeafletMapPlugin.maps[1];
+      const maps = window.WPLeafletMapPlugin.maps;
+      let circle;
+      let interval;
 
-        let circle;
+      maps.length > 0 &&
+        maps.forEach(value => {
+          value.addControl(new window.L.Control.Fullscreen());
+          value.on('fullscreenchange', () => {
+            if (value.isFullscreen()) {
+              value.locate();
 
-        map.locate();
+              value.on('locationfound', e => {
+                circle = window.L.circleMarker(e.latlng, { radius: 5 });
+                circle.addTo(value);
+              });
 
-        map.on('locationfound', e => {
-          circle = window.L.circleMarker(e.latlng, { radius: 5 });
-          circle.addTo(map);
+              interval = setInterval(() => {
+                value.locate({
+                  setView: true,
+                  maxZoom: 16,
+                });
+
+                value.on('locationfound', e => {
+                  circle.removeFrom(value).setLatLng(e.latlng);
+                });
+              }, 5000);
+            } else {
+              clearInterval(interval);
+            }
+          });
         });
-
-        setInterval(() => {
-          map.locate({
-            setView: true,
-            maxZoom: 16,
-          });
-
-          map.on('locationfound', e => {
-            circle.removeFrom(map).setLatLng(e.latlng);
-          });
-        }, 5000);
-      }
     });
   },
   finalize() {
