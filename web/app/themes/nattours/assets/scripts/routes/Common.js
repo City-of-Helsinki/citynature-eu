@@ -53,34 +53,43 @@ export default {
       popupTTS();
 
       const maps = window.WPLeafletMapPlugin.maps;
-      let circle;
-      let interval;
+      // let circle;
+      // let interval;
 
       maps.length > 0 &&
         maps.forEach(value => {
           value.addControl(new window.L.Control.Fullscreen());
-          value.on('fullscreenchange', () => {
-            if (value.isFullscreen()) {
-              value.locate();
+          value.addControl(
+            new window.L.control.locate({
+              flyTo: true,
+              cacheLocation: true,
+              locateOptions: {
+                enableHighAccuracy: true,
+              },
+            })
+          );
+          // value.on('fullscreenchange', () => {
+          //   if (value.isFullscreen()) {
+          //     value.locate();
 
-              value.on('locationfound', e => {
-                circle = window.L.circleMarker(e.latlng, { radius: 5 });
-                circle.addTo(value);
-              });
+          //     value.on('locationfound', e => {
+          //       circle = window.L.circleMarker(e.latlng, { radius: 5 });
+          //       circle.addTo(value);
+          //     });
 
-              interval = setInterval(() => {
-                value.locate({
-                  setView: true,
-                });
+          //     interval = setInterval(() => {
+          //       value.locate({
+          //         watch: true,
+          //       });
 
-                value.on('locationfound', e => {
-                  circle.removeFrom(value).setLatLng(e.latlng);
-                });
-              }, 5000);
-            } else {
-              clearInterval(interval);
-            }
-          });
+          //       value.on('locationfound', e => {
+          //         circle.removeFrom(value).setLatLng(e.latlng);
+          //       });
+          //     }, 5000);
+          //   } else {
+          //     clearInterval(interval);
+          //   }
+          // });
         });
     });
   },
