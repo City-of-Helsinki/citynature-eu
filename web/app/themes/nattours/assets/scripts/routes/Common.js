@@ -71,7 +71,6 @@ export default {
               interval = setInterval(() => {
                 value.locate({
                   setView: true,
-                  maxZoom: 16,
                 });
 
                 value.on('locationfound', e => {
