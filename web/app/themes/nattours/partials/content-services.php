@@ -59,11 +59,24 @@ $services_map = get_field( 'services_map' );
         <a href="//palvelukartta.hel.fi/unit/<?php the_field( 'servicemap_id' ); ?>#!route-details" target="_blank"><?= pll__( 'Open in Reittiopas' ); ?></a>
       </div>
     <?php endif; ?>
-		<div class="graphic-content visible-xs">
-			<div>
-        <?= do_shortcode( "[leaflet-map fit_markers=1 height=50vw][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
-      </div>
-		</div>
+		  <div class="graphic-content visible-xs">
+        <div>
+          <?php
+          $map = "[leaflet-map fit_markers=1 height=50vw][leaflet-geojson src=$services_map fitbounds=1]";
+          $map_arr = [];
+          array_push($map_arr, $map);
+          if ( have_rows( 'services_markers' ) ): while ( have_rows( 'services_markers' ) ): the_row();
+          $location = get_sub_field( 'location' );
+          $lat = $location['lat'];
+          $lng = $location['lng'];
+          $icon = get_sub_field( 'icon' )['sizes']['map_marker'];
+          $content = get_sub_field( 'content' );
+          array_push($map_arr, "[leaflet-marker iconUrl=\"$icon\" iconSize=\"30,30\" lat=\"$lat\" lng=\"$lng\"] $content [/leaflet-marker]" );
+          endwhile; endif;
+          echo do_shortcode( implode( $map_arr ) );
+          ?>
+        </div>
+		  </div>
     <?php if( $routes ) : ?>
       <div class="text-content">
         <h6><?= pll__('Routes'); ?></h6>
@@ -98,8 +111,21 @@ $services_map = get_field( 'services_map' );
     <?php endif; ?>
   </section>
   <section class="content--right hidden-xs">
-    <div class="map">
-      <?= do_shortcode( "[leaflet-map fit_markers=1 height=600][leaflet-geojson src=$services_map fitbounds=1 popup_property=\"message\"]" ) ?>
-    </div>
+    <?php
+    $map = "[leaflet-map fit_markers=1 height=600][leaflet-geojson src=$services_map fitbounds=1]";
+    $map_arr = [];
+    array_push($map_arr, $map);
+    if ( have_rows( 'services_markers' ) ): while ( have_rows( 'services_markers' ) ): the_row();
+    $location = get_sub_field( 'location' );
+    $lat = $location['lat'];
+    $lng = $location['lng'];
+    $icon = get_sub_field( 'icon' )['sizes']['map_marker'];
+    $content = get_sub_field( 'content' );
+    array_push($map_arr, "[leaflet-marker iconUrl=\"$icon\" iconSize=\"30,30\" lat=\"$lat\" lng=\"$lng\"] $content [/leaflet-marker]" );
+    endwhile; endif;
+    echo '<div class="map">';
+    echo do_shortcode( implode( $map_arr ) );
+    echo '</div>';
+    ?>
   </section>
 </main>

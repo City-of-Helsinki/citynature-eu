@@ -14,7 +14,7 @@ $map = get_field( 'route_map' );
 ?>
 
 <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
-<?php get_template_part( 'partials/components/sidemenu-right__route' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right' ); ?>
 
 <article class="route">
   <section class="text-content">
