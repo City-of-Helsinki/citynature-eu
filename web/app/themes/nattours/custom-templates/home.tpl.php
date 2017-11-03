@@ -13,7 +13,9 @@ get_header();
 
 $locations = new WP_Query( [
   'post_type' => 'location',
+  'orderby'   => 'title',
   'order'     => 'asc',
+  'posts_per_page'  => -1,
 ] );
 
 $location_arr = [];

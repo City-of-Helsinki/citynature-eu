@@ -37,7 +37,7 @@ export default {
       slidesToShow: 2,
       variableWidth: false,
       dots: false,
-      initialSlide: 0,
+      initialSlide: 1,
       centerPadding: 0,
     });
 

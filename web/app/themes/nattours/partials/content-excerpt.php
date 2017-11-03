@@ -28,7 +28,7 @@ foreach ( $taxonomies as $taxonomy ) {
 	<a href="<?php the_permalink(); ?>">
 		<div class="box" style="background-image: url(<?php the_post_thumbnail_url('location_thumb'); ?>);">
 			<h3><?php the_title(); ?></h3>
-			 <p class="subtitle"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
+			 <p class="subtitle hyphenate"><?= wp_strip_all_tags( get_the_excerpt() ); ?></p>
 		</div>
 	</a>
 </article>
