@@ -40,8 +40,8 @@ function nattours_set_imagesizes() {
         ],
         [
             'name'   => 'map_marker',
-            'width'  => 30,
-            'height' => 30,
+            'width'  => 100,
+            'height' => 100,
             'crop'   => true
         ]
     ];
