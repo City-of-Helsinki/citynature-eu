@@ -38,7 +38,7 @@ get_header('location');
   </header>
 
   <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
-  <?php get_template_part( 'partials/components/sidemenu-right--location' ); ?>
+  <?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 
   <?php
   if ( !empty( $_GET ) ) {
