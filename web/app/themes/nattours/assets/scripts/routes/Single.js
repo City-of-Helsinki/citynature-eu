@@ -37,6 +37,11 @@ export default {
     });
 
     $('.species-wrapper .link-component').matchHeight();
+
+    $(window).scroll(() => {
+      let scroll = $('main')[0].scrollTop();
+      console.log('test: ' + scroll); //eslint-disable-line
+    });
   },
   finalize() {},
 };

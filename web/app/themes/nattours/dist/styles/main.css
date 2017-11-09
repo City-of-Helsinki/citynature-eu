@@ -13096,6 +13096,17 @@ span.h7 {
   max-width: 720px !important;
 }
 
+.fixed-tabs {
+  position: fixed;
+  top: 0rem;
+  left: 0;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  z-index: 9999;
+  padding: 1rem 3rem;
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
