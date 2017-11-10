@@ -38,9 +38,23 @@ export default {
 
     $('.species-wrapper .link-component').matchHeight();
 
-    $(window).scroll(() => {
-      let scroll = $('main')[0].scrollTop();
-      console.log('test: ' + scroll); //eslint-disable-line
+    const tabNav = $('#tabNav');
+    const tabNavOffset = tabNav.offset().top + 30;
+
+    $(window).scroll(e => {
+      const scroll = $(e.target).scrollTop();
+      // console.log('test: ' + scroll); //eslint-disable-line
+      // //eslint-disable-next-line
+      // console.log('test2: ' + $('#tabNav').offset().top);
+      // scroll > tabNav.offset().top && !tabNav.hasClass('fixed-tabs')
+      //   ? tabNav.addClass('fixed-tabs')
+      //   : tabNav.removeClass('fixed-tabs');
+
+      if (scroll >= tabNavOffset) {
+        if (!tabNav.hasClass('fixed-tabs')) tabNav.addClass('fixed-tabs');
+      } else if (scroll < tabNavOffset) {
+        if (tabNav.hasClass('fixed-tabs')) tabNav.removeClass('fixed-tabs');
+      }
     });
   },
   finalize() {},

@@ -147,12 +147,13 @@ span.h7 {
 }
 
 .fixed-tabs {
-  position: fixed;
+  position: fixed !important;
   top: 0rem;
   left: 0;
+  bottom: unset !important;
   height: 5rem;
   background-color: rgba(0,0,0,.5);
   right: 0;
   z-index: 9999;
-  padding: 1rem 3rem;
+  padding: 1rem 2.5rem !important;
 }
