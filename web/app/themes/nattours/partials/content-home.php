@@ -43,7 +43,7 @@ $ig_feed = get_field( 'feed_shortcode' );
       </a>
 		</div>
 		<div class="graphic-content">
-			<img src="<?php the_field( 'nature_image' ) ?>" />
+			<img src="<?= get_field( 'nature_image' )['url'] ?>" />
 		</div>
 		<div class="text-content visible-xs">
       <a href="?section=services">
@@ -68,7 +68,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</a>
 		</div>
 		<div class="graphic-content visible-xs">
-			<img src="<?php the_field( 'species_image' ) ?>" />
+			<img src="<?= get_field( 'species_image' )['url'] ?>" />
 		</div>
     <div class="text-content">
 			<a href="?section=history">
@@ -80,7 +80,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</a>
 		</div>
 		<div class="graphic-content">
-			<img src="<?php the_field( 'history_image' ) ?>" />
+			<img src="<?= get_field( 'history_image' )['url'] ?>" />
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content visible-xs">
@@ -114,7 +114,7 @@ $ig_feed = get_field( 'feed_shortcode' );
 			</a>
 		</div>
 		<div class="graphic-content">
-			<img src="<?php the_field( 'species_image' ) ?>" />
+			<img src="<?= get_field( 'species_image' )['url'] ?>" />
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content">
