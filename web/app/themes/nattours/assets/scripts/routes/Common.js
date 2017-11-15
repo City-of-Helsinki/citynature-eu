@@ -92,6 +92,16 @@ export default {
           // });
         });
     });
+
+    $(':has(>.img-caption)').mouseenter(e => {
+      const caption = $(e.currentTarget).children('.img-caption')[0];
+      $(caption).css('transform', 'translateY(0%)');
+    });
+
+    $(':has(>.img-caption)').mouseleave(e => {
+      const caption = $(e.currentTarget).children('.img-caption')[0];
+      $(caption).css('transform', 'translateY(200%)');
+    });
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

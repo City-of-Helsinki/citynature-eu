@@ -43,12 +43,6 @@ export default {
 
     $(window).scroll(e => {
       const scroll = $(e.target).scrollTop();
-      // console.log('test: ' + scroll); //eslint-disable-line
-      // //eslint-disable-next-line
-      // console.log('test2: ' + $('#tabNav').offset().top);
-      // scroll > tabNav.offset().top && !tabNav.hasClass('fixed-tabs')
-      //   ? tabNav.addClass('fixed-tabs')
-      //   : tabNav.removeClass('fixed-tabs');
 
       if (scroll >= tabNavOffset) {
         if (!tabNav.hasClass('fixed-tabs')) tabNav.addClass('fixed-tabs');

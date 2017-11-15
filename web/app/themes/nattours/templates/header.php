@@ -32,6 +32,14 @@ $video_id = end( $url_arr );
 <body <?php body_class(); ?>>
 <?php do_action( 'nattours_after_body' ); ?>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <?= do_shortcode( "[rve src=\"<iframe src=\"https://www.youtube.com/embed/$video_id\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>\" ratio=\"16by9\"]" ); ?>
+    </div>
+  </div>
+</div>
+
 <header class="header header--main">
 	<?php get_template_part( 'partials/components/nav' ); ?>
 	<div class="header__texts">
@@ -48,12 +56,4 @@ $video_id = end( $url_arr );
       </div>
 		<?php endif; ?>
 	</div>
-</header>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <?= do_shortcode( "[rve src=\"<iframe src=\"https://www.youtube.com/embed/$video_id\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>\" ratio=\"16by9\"]" ); ?>
-    </div>
-  </div>
-</div>

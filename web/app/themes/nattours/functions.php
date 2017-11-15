@@ -303,6 +303,11 @@ function my_acf_init() {
 
 add_action('acf/init', 'my_acf_init');
 
+function wp_get_img_caption( $attachment_id ) {
+    $attachment = get_post( $attachment_id );
+    return $attachment->post_excerpt;
+}
+
 /**
  * Register strings for polylang
  *

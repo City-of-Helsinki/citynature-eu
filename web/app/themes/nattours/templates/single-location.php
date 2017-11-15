@@ -35,10 +35,7 @@ get_header('location');
         <a href="?section=history" data-target="history"><?= pll__( 'History' ); ?></a>
       </li>
     </ul>
-  </header>
 
-  <?php get_template_part( 'partials/components/sidemenu-left' ); ?>
-  <?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 
   <?php
   if ( !empty( $_GET ) ) {
@@ -59,5 +56,8 @@ get_header('location');
     get_template_part( 'partials/content', 'home' );
   }
 endif;?>
+
+<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
+<?php get_template_part( 'partials/components/sidemenu-right_location' ); ?>
 
 <?php get_footer(); ?>

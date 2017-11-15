@@ -43,9 +43,15 @@ $services_map = get_field( 'services_map' );
       rgba(0, 0, 0, 0.1) 70%,
       rgba(0, 0, 0, 0.6)
     ),
-    url(<?= $services_bg ?>) center/cover no-repeat;
+    url(<?= $services_bg['url'] ?>) center/cover no-repeat;
+    overflow: hidden;
   }
 </style>
+
+    <?php if ( wp_get_img_caption( $services_bg['id'] ) ): ?>
+        <span class="img-caption"><?= wp_get_img_caption( $services_bg['id'] ); ?></span>
+    <?php endif; ?>
+</header>
 
 <main class="location__services">
 	<section class="content--left">

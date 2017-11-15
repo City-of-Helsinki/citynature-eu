@@ -24,9 +24,15 @@ $ig_feed = get_field( 'feed_shortcode' );
       rgba(0, 0, 0, 0.1) 70%,
       rgba(0, 0, 0, 0.6)
 		),
-		url("<?= $home_bg; ?>");
+        url("<?= $home_bg; ?>");
+        overflow: hidden;
 	}
 </style>
+
+    <?php if ( wp_get_img_caption( get_post_thumbnail_id() ) ): ?>
+        <span class="img-caption"><?= wp_get_img_caption( get_post_thumbnail_id() ); ?></span>
+    <?php endif; ?>
+</header>
 
 <main class="location__home">
 	<section class="content--left">
