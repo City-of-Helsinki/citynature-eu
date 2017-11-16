@@ -13108,6 +13108,19 @@ span.h7 {
   padding: 1rem 2.5rem !important;
 }
 
+.tos-caption {
+  height: unset !important;
+}
+
+.tos-caption-0 {
+  padding: 1rem !important;
+  white-space: initial !important;
+  overflow: auto !important;
+  text-overflow: auto !important;
+  float: none !important;
+  margin: auto !important;
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;

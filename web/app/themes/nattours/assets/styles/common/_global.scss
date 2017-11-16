@@ -157,3 +157,15 @@ span.h7 {
   z-index: 9999;
   padding: 1rem 2.5rem !important;
 }
+
+.tos-caption {
+  height: unset !important;
+  &-0 {
+    padding: 1rem !important;
+    white-space: initial !important;
+    overflow: auto !important;
+    text-overflow: auto !important;
+    float: none !important;
+    margin: auto !important;
+  }
+}

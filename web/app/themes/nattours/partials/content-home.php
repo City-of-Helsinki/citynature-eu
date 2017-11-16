@@ -43,6 +43,9 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="graphic-content">
 			<img src="<?= get_field( 'nature_image' )['url'] ?>" />
+            <?php if ( wp_get_img_caption( get_field( 'nature_image' )['id'] ) ): ?>
+                <span class="img-caption"><?= wp_get_img_caption( get_field( 'nature_image' )['id'] ); ?></span>
+            <?php endif; ?>
 		</div>
 		<div class="text-content visible-xs">
       <a href="?section=services">
@@ -68,6 +71,9 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="graphic-content visible-xs">
 			<img src="<?= get_field( 'species_image' )['url'] ?>" />
+            <?php if ( wp_get_img_caption( get_field( 'species_image' )['id'] ) ): ?>
+                <span class="img-caption"><?= wp_get_img_caption( get_field( 'species_image' )['id'] ); ?></span>
+            <?php endif; ?>
 		</div>
     <div class="text-content">
 			<a href="?section=history">
@@ -80,6 +86,9 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="graphic-content">
 			<img src="<?= get_field( 'history_image' )['url'] ?>" />
+            <?php if ( wp_get_img_caption( get_field( 'history_image' )['id'] ) ): ?>
+                <span class="img-caption"><?= wp_get_img_caption( get_field( 'history_image' )['id'] ); ?></span>
+            <?php endif; ?>
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content visible-xs">
@@ -114,6 +123,9 @@ $ig_feed = get_field( 'feed_shortcode' );
 		</div>
 		<div class="graphic-content">
 			<img src="<?= get_field( 'species_image' )['url'] ?>" />
+            <?php if ( wp_get_img_caption( get_field( 'species_image' )['id'] ) ): ?>
+                <span class="img-caption"><?= wp_get_img_caption( get_field( 'species_image' )['id'] ); ?></span>
+            <?php endif; ?>
 		</div>
 		<?php if ( $ig_feed ) : ?>
 			<div class="text-content">

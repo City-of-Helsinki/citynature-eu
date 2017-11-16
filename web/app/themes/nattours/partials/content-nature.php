@@ -26,7 +26,9 @@
     <?php if ( get_field( 'nature_gallery' ) ) : ?>
       <div class="graphic-content location__gallery" id="natureGallery">
         <?php foreach ( get_field( 'nature_gallery' ) as $pic ) : ?>
-          <a href="<?= $pic['url']; ?>" rel="lightbox"><img src="<?= $pic['sizes']['location_thumb']; ?>" /></a>
+          <a href="<?= $pic['url']; ?>" data-rel="lightbox" rel="<?= wp_get_img_caption( $pic['id'] ) ?>">
+            <img src="<?= $pic['sizes']['location_thumb']; ?>" />
+        </a>
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
