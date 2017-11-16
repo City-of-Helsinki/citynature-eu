@@ -93,14 +93,14 @@ export default {
         });
     });
 
-    $(':has(>.img-caption)').mouseenter(e => {
-      const caption = $(e.currentTarget).children('.img-caption')[0];
-      $(caption).css('transform', 'translateY(0%)');
+    $('.header').mouseenter(() => {
+      const caption = $('.img-caption')[0];
+      $(caption).css('color', 'rgba(0,0,0,.5)');
     });
 
-    $(':has(>.img-caption)').mouseleave(e => {
-      const caption = $(e.currentTarget).children('.img-caption')[0];
-      $(caption).css('transform', 'translateY(200%)');
+    $('.header').mouseleave(() => {
+      const caption = $('.img-caption')[0];
+      $(caption).css('color', 'rgba(0,0,0,0)');
     });
   },
   finalize() {

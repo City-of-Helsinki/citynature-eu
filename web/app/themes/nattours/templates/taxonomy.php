@@ -29,7 +29,7 @@ $locations = get_posts(
 
 	<style>
 		.header--location {
-			background-image: url("<?= get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['url'] ?>"); overflow: hidden;
+			background-image: url("<?= get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['url'] ?>");
 		}
 
 	</style>
@@ -38,10 +38,10 @@ $locations = get_posts(
       <h3><?php single_term_title(); ?></h3>
       <p class="subtitle"><?= wp_strip_all_tags( term_description() ); ?></p>
     </div>
-    <?php if ( wp_get_img_caption( get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['id'] ) ): ?>
-        <span class="img-caption"><?= wp_get_img_caption( get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['id'] ); ?></span>
-    <?php endif; ?>
 	</header>
+  <?php if ( wp_get_img_caption( get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['id'] ) ): ?>
+      <span class="img-caption"><?= wp_get_img_caption( get_field( 'featured_image', $taxonomy->taxonomy . '_' . $taxonomy->term_id )['id'] ); ?></span>
+  <?php endif; ?>
 
 	<?php get_template_part( 'partials/components/sidemenu-left' ); ?>
 	<?php get_template_part( 'partials/components/sidemenu-right' ); ?>

@@ -13268,13 +13268,11 @@ figure {
 }
 
 .img-caption {
-  transform: translateY(200%);
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transition: transform .5s ease;
-  background: linear-gradient(to top left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 70%, transparent 80%);
+  padding: .5rem;
+  color: transparent;
+  transition: color .5s;
+  display: block;
+  text-align: right;
 }
 
 .link-component {
@@ -14183,7 +14181,6 @@ body#tinymce {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 1.875rem;
 }
 
 .header--main * {

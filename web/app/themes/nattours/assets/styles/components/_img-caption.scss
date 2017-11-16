@@ -1,9 +1,7 @@
 .img-caption {
-  transform: translateY(200%);
-  padding: 1rem;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transition: transform .5s ease;
-  background: linear-gradient(to top left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .3) 60%, rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, 0) 80%);
+  padding: .5rem;
+  color: rgba(0, 0, 0, 0);
+  transition: color .5s;
+  display: block;
+  text-align: right;
 }

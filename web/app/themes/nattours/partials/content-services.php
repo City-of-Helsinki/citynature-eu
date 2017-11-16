@@ -44,14 +44,13 @@ $services_map = get_field( 'services_map' );
       rgba(0, 0, 0, 0.6)
     ),
     url(<?= $services_bg['url'] ?>) center/cover no-repeat;
-    overflow: hidden;
   }
 </style>
 
-    <?php if ( wp_get_img_caption( $services_bg['id'] ) ): ?>
-        <span class="img-caption"><?= wp_get_img_caption( $services_bg['id'] ); ?></span>
-    <?php endif; ?>
 </header>
+<?php if ( wp_get_img_caption( $services_bg['id'] ) ): ?>
+    <span class="img-caption"><?= wp_get_img_caption( $services_bg['id'] ); ?></span>
+<?php endif; ?>
 
 <main class="location__services">
 	<section class="content--left">

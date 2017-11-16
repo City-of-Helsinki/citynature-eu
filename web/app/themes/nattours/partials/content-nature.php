@@ -10,14 +10,13 @@
       rgba(0, 0, 0, 0.6)
     ),
     url(<?= $nature_bg['url'] ?>) center/cover no-repeat;
-    overflow: hidden;
   }
 </style>
 
-  <?php if ( wp_get_img_caption( $nature_bg['id'] ) ): ?>
-        <span class="img-caption"><?= wp_get_img_caption( $nature_bg['id'] ); ?></span>
-    <?php endif; ?>
 </header>
+<?php if ( wp_get_img_caption( $nature_bg['id'] ) ): ?>
+    <span class="img-caption"><?= wp_get_img_caption( $nature_bg['id'] ); ?></span>
+<?php endif; ?>
 
 <main class="location__nature">
   <section class="content--center">

@@ -39,14 +39,13 @@ function get_species($tax) {
       rgba(0, 0, 0, 0.6)
     ),
     url(<?= $bg_img['url'] ?>) center/cover no-repeat;
-    overflow: hidden;
   }
 </style>
 
-    <?php if ( wp_get_img_caption( $bg_img['id'] ) ): ?>
-        <span class="img-caption"><?= wp_get_img_caption( $bg_img['id'] ); ?></span>
-    <?php endif; ?>
 </header>
+<?php if ( wp_get_img_caption( $bg_img['id'] ) ): ?>
+    <span class="img-caption"><?= wp_get_img_caption( $bg_img['id'] ); ?></span>
+<?php endif; ?>
 
 <main class="location__species">
 	<section class="text-content">
