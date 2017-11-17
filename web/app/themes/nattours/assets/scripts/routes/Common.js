@@ -123,23 +123,26 @@ function popupTTS() {
 
   // console.log(document.documentElement.lang); //eslint-disable-line
 
-  markers.forEach(value => {
-    $(value).click(e => {
-      const contentNode = e.target._popup._contentNode;
-      const innerText = contentNode.innerText.replace(/\.?\r?\n|\r|\n/g, '. ');
+  $(markers).click(e => {
+    const contentNode = e.target._popup._contentNode;
 
-      $(contentNode).prepend(
-        `<span
+    $(contentNode)
+      .find('br')
+      .remove();
+
+    const innerText = contentNode.innerText.replace(/\.?\r?\n|\r|\n/g, '. ');
+
+    $(contentNode).prepend(
+      `<span
         class="glyphicon
         glyphicon-volume-up"
         aria-hidden="true"
         style="display: block; font-size: 24px; margin-bottom: 1rem; cursor: pointer"
         onclick="window.responsiveVoice.speak('${innerText}');"
         </span>`
-      );
-      $(e.target._popup).on('remove', () => {
-        window.responsiveVoice.cancel();
-      });
+    );
+    $(e.target._popup).on('remove', () => {
+      window.responsiveVoice.cancel();
     });
   });
 }
