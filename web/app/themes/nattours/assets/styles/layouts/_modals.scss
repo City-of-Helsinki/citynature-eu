@@ -56,7 +56,7 @@
       margin-bottom: rem-calc(18);
     }
   }
-  input[type=checkbox] {
+  input[type='checkbox'] {
     display: none;
     & + label {
       @include make-xs-column(4);
@@ -100,8 +100,9 @@
   overflow: visible !important;
   &-content {
     max-width: 70vw !important;
+    font-size: 16px;
     strong {
-      font-size: 14px;
+      font-size: 20px;
       font-weight: bold;
     }
     &-wrapper {

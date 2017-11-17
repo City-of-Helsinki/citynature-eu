@@ -13892,11 +13892,11 @@ body#tinymce {
   margin-bottom: 1.125rem;
 }
 
-.filter input[type=checkbox] {
+.filter input[type='checkbox'] {
   display: none;
 }
 
-.filter input[type=checkbox] + label {
+.filter input[type='checkbox'] + label {
   position: relative;
   float: left;
   width: 33.33333%;
@@ -13907,7 +13907,7 @@ body#tinymce {
   margin-bottom: 2.25rem;
 }
 
-.filter input[type=checkbox] + label > span {
+.filter input[type='checkbox'] + label > span {
   position: relative;
   float: left;
   width: 100%;
@@ -13923,7 +13923,7 @@ body#tinymce {
   padding: 35% 0.75rem;
 }
 
-.filter input[type=checkbox]:checked + label > span {
+.filter input[type='checkbox']:checked + label > span {
   background-color: #0072c6;
   color: #f7f7f7;
 }
@@ -13949,10 +13949,11 @@ body#tinymce {
 
 .leaflet-popup-content {
   max-width: 70vw !important;
+  font-size: 16px;
 }
 
 .leaflet-popup-content strong {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: bold;
 }
 
