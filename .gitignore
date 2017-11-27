@@ -19,3 +19,6 @@ web/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+#Mac
+.idea
