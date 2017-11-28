@@ -12,7 +12,7 @@
   ],
   "config": {
     "port": 3000,
-    "devUrl": "http://nattours.dev",
+    "devUrl": "http://nattours.test",
     "entry": {
       "main": [
         "./assets/scripts/main.js",
