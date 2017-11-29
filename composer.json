@@ -87,7 +87,8 @@
     "wpackagist-plugin/leaflet-map": "^2.8.5",
     "wpackagist-plugin/responsive-video-embed": "^0.3",
     "wpackagist-plugin/autoptimize": "^2.2.2",
-    "wpackagist-plugin/ewww-image-optimizer": "^3.6.1"
+    "wpackagist-plugin/ewww-image-optimizer": ">=3.6.1",
+    "wpackagist-plugin/duplicate-post": ">=3"
   },
   "require-dev": {
     "wpackagist-plugin/ajax-thumbnail-rebuild": "dev-trunk",
