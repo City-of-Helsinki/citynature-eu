@@ -27,13 +27,31 @@ $locations = new CPT( [
     'rewrite'       => [
         'with_front' => false
     ],
-    'has_archive'   => true,
+    'has_archive'   => false,
     'query_var'     => 'location'
 
 ] );
 
 $locations->menu_icon( "dashicons-editor-textcolor" );
 $locations->set_textdomain( TEXT_DOMAIN );
+
+$locations->register_taxonomy( [
+	'taxonomy_name'    => 'location-city',
+	'singular'         => _x( 'City', 'Single', TEXT_DOMAIN ),
+	'plural'           => _x( 'Cities', 'Plural', TEXT_DOMAIN ),
+	'partitive'        => _x( 'city', 'Partitive', TEXT_DOMAIN ),
+	'partitive_plural' => _x( 'cities', 'Partitive plural', TEXT_DOMAIN ),
+	'slug'             => 'location-city',
+	[
+		'rewrite'   => [
+			'slug'         => 'location/city',
+			'with_front'   => false,
+			'hierarchical' => true
+		],
+		'sort'      => true,
+	]
+] );
+
 $locations->register_taxonomy( [
     'taxonomy_name'    => 'difficulty',
     'singular'         => _x( 'Difficulty', 'Single', TEXT_DOMAIN ),
@@ -42,13 +60,12 @@ $locations->register_taxonomy( [
     'partitive_plural' => _x( 'Difficulties', 'Partitive plural', TEXT_DOMAIN ),
     'slug'             => 'difficulty',
     [
-        'query_var' => true,
         'rewrite'   => [
             'slug'         => 'difficulty',
             'with_front'   => false,
             'hierarchical' => true
         ],
-        'sort'      => true
+        'sort'      => true,
     ]
 ] );
 
