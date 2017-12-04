@@ -71,6 +71,7 @@
   width: 100%;
   background-color: #fff;
   overflow-x: hidden;
+
   &__header-container {
     flex: none;
     @include make-xs-column(12, 0);

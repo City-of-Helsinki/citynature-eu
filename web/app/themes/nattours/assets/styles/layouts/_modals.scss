@@ -1,5 +1,6 @@
 .sidemenu {
   @include modal();
+
   &--left {
     transform: translateX(-100%);
     transition: 0.5s;
@@ -44,6 +45,10 @@
       float: right;
     }
   }
+}
+
+.sidemenu--logged-in {
+  top: 32px;
 }
 
 .filter {

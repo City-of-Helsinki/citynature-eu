@@ -1,6 +1,6 @@
 <?php $map_file = get_field( 'map_file' ); ?>
 
-<section class="sidemenu sidemenu--right" id="rightMenu">
+<section class="sidemenu<?php echo ( is_user_logged_in() ) ? ' sidemenu--logged-in': ''; ?> sidemenu--right" id="rightMenu">
   <div class="sidemenu__header-container">
     <div class="sidemenu__header">
       <span> <?= pll__('Map') ?> </span>

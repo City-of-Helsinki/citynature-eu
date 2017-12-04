@@ -7,7 +7,7 @@ $sidemenu_locations = new WP_Query( [
 ] );
 ?>
 
-<section class="sidemenu sidemenu--left" id="leftMenu">
+<section class="sidemenu<?php echo ( is_user_logged_in() ) ? ' sidemenu--logged-in': ''; ?> sidemenu--left" id="leftMenu">
   <div class="sidemenu__header-container">
     <div class="sidemenu__header">
       <span> <?= pll__('Menu') ?> </span>
