@@ -11,10 +11,10 @@ $insects = wp_get_post_terms( $post->ID, 'insects' );
 $bg_img = get_field('species_image');
 
 
-function get_species($tax) {
+function get_species($terms, $taxonomy = 'default') {
   echo '<div class="species-wrapper">';
-    foreach( $tax as $value ):
-      echo '<a href="/' . $value->taxonomy . '/' . $value->slug . '" class="link-component">';
+    foreach( $terms as $value ):
+      echo '<a href="' . get_term_link($value, $taxonomy) . '" class="link-component">';
         echo '<div class="link-component__img" style="background-image: url(' . get_field( 'featured_image', $value->taxonomy . '_' . $value->term_id )['sizes']['location_thumb']. '); background-color: gray;"></div>';
         echo '<div class="link-component__text">';
           echo '<span class="h7">' . $value->name . '</span>';
@@ -51,42 +51,42 @@ function get_species($tax) {
 	<section class="text-content">
 		<?php if( $plants ) : ?>
 				<h6><?= pll__('Plants'); ?></h6>
-				<?php get_species($plants) ?>
+				<?php get_species($plants, 'plants') ?>
 		<?php endif; ?>
 
 		<?php if( $mushrooms ) : ?>
 				<h6><?= pll__('Mushrooms'); ?></h6>
-				<?php get_species($mushrooms) ?>
+				<?php get_species($mushrooms, 'mushrooms') ?>
 		<?php endif; ?>
 
 		<?php if( $mosses_and_lichens ) : ?>
 				<h6><?= pll__('Mosses and lichens'); ?></h6>
-				<?php get_species($mosses_and_lichens) ?>
+				<?php get_species($mosses_and_lichens, 'mosses_and_lichens') ?>
 		<?php endif; ?>
 
 		<?php if( $birds ) : ?>
 				<h6><?= pll__('Birds'); ?></h6>
-				<?php get_species($birds) ?>
+				<?php get_species($birds, 'birds') ?>
 		<?php endif; ?>
 
 		<?php if( $mammals ) : ?>
 				<h6><?= pll__('Mammals'); ?></h6>
-				<?php get_species($mammals) ?>
+				<?php get_species($mammals, 'mammals') ?>
 		<?php endif; ?>
 
 		<?php if( $reptiles ) : ?>
 				<h6><?= pll__('Reptiles'); ?></h6>
-				<?php get_species($reptiles) ?>
+				<?php get_species($reptiles, 'reptiles') ?>
 		<?php endif; ?>
 
 		<?php if( $amphibians ) : ?>
 				<h6><?= pll__('Amphibians'); ?></h6>
-				<?php get_species($amphibians) ?>
+				<?php get_species($amphibians, 'amphibians') ?>
 		<?php endif; ?>
 
 		<?php if( $insects ) : ?>
 				<h6><?= pll__('Insects'); ?></h6>
-				<?php get_species($insects) ?>
+				<?php get_species($insects, 'insects') ?>
 		<?php endif; ?>
 
 	</section>
