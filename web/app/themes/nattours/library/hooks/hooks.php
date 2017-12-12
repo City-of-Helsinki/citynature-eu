@@ -11,29 +11,29 @@
  * @return string
  */
 add_filter( 'embed_oembed_html', function ( $html, $url, $attr, $post_id ) {
-    $matches = [
-        'youtube.com',
-        'vimeo.com',
-        'youtu.be'
-    ];
+	$matches = [
+		'youtube.com',
+		'vimeo.com',
+		'youtu.be'
+	];
 
-    foreach ( $matches as $match ) {
-        if ( false !== stripos( $url, $match ) ) {
-            return '<div class="framecontainer">' . $html . '</div>';
-        }
-    }
+	foreach ( $matches as $match ) {
+		if ( false !== stripos( $url, $match ) ) {
+			return '<div class="framecontainer">' . $html . '</div>';
+		}
+	}
 
-    return $html;
+	return $html;
 }, 99, 4 );
 
 /**
  * Remove h1-tag from tinyMCE, show second row by default
  */
 add_filter( 'tiny_mce_before_init', function ( $init ) {
-    $tinymce['wordpress_adv_hidden'] = false;
-    $init['block_formats']           = "Paragraph=p;Address=address;Pre=pre;Heading 2=h2;Heading 3=h3;Heading 4=h4";
+	$tinymce['wordpress_adv_hidden'] = false;
+	$init['block_formats']           = "Paragraph=p;Address=address;Pre=pre;Heading 2=h2;Heading 3=h3;Heading 4=h4";
 
-    return $init;
+	return $init;
 } );
 
 /**
@@ -42,11 +42,11 @@ add_filter( 'tiny_mce_before_init', function ( $init ) {
  * @hook nattours_after_body
  */
 add_action( 'nattours_after_body', function () {
-    $options = get_option( 'nattours_general_options' );
+	$options = get_option( 'nattours_general_options' );
 
-    if ( ! empty( $options['nattours_tagmanager'] ) ) :
-        echo $options['nattours_tagmanager'];
-    endif;
+	if ( ! empty( $options['nattours_tagmanager'] ) ) :
+		echo $options['nattours_tagmanager'];
+	endif;
 } );
 
 /**
@@ -55,9 +55,9 @@ add_action( 'nattours_after_body', function () {
  * @hook wp_head
  */
 add_action( 'wp_head', function () {
-    $imageUri = UTILS()->get_image_uri();
+	$imageUri = UTILS()->get_image_uri();
 
-    echo <<<EOT
+	echo <<<EOT
 	\n
 
 	<link rel="icon" type="image/png" sizes="192x192" href="{$imageUri}/icons/android-chrome-192x192.png">
@@ -96,3 +96,24 @@ add_action( 'wp_head', function () {
 	\n
 EOT;
 }, 999 );
+
+/**
+ * Hook city name to body class
+ */
+add_filter( 'body_class', function ( $classes ) {
+	global $post;
+
+	if ( $post->post_type === 'location' ) {
+		$terms = get_the_terms( $post, 'location-city' );
+
+		if ( ! is_wp_error( $terms ) ) {
+			if($terms) {
+				foreach ( $terms as $term ) {
+					$classes[] = 'location-' . $term->slug;
+				}
+			}
+		}
+	}
+
+	return $classes;
+} );
