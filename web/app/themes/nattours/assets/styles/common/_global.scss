@@ -26,6 +26,14 @@ body {
   min-height: 100%;
   font-size: $font-size-base;
   color: $gray-light;
+
+  &.location-helsinki {
+    font-family: $font--helsinki;
+  }
+
+  &.location-tallinn, &.location-tallinna {
+    font-family: $font--tallinn;
+  }
 }
 
 h1,
@@ -38,9 +46,17 @@ h6 {
 }
 
 h1 {
-  color: $brand-success;
+  color: #000;
   line-height: 1.2;
   @include responsive-font($font-size-h1);
+
+  .location-helsinki & {
+    color: $color--helsinki-green;
+  }
+
+  .location-tallinn &, .location-tallinna & {
+    color: $color--tallinn-blue;
+  }
 }
 
 h2 {
@@ -53,14 +69,30 @@ h3 {
 }
 
 h4 {
-  color: $brand-success;
+  color: #000;
   margin: rem-calc(0 0 24);
   @include responsive-font($font-size-h4);
+
+  .location-helsinki & {
+    color: $color--helsinki-green;
+  }
+
+  .location-tallinn &, .location-tallinna & {
+    color: $color--tallinn-blue;
+  }
 }
 
 h5 {
-  color: $brand-success;
+  color: #000;
   margin-top: 0;
+
+  .location-helsinki & {
+    color: $color--helsinki-green;
+  }
+
+  .location-tallinn &, .location-tallinna & {
+    color: $color--tallinn-blue;
+  }
 }
 
 h6 {

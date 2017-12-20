@@ -16,6 +16,18 @@ $brand-success: #00d7a7 !default;
 $brand-info: #0072c6 !default;
 $brand-warning: #f0ad4e !default;
 $brand-danger: #d9534f !default;
+
+//Helsinki brand
+$color--helsinki-green: #00d7a7 !default;
+$font--helsinki: $hel-grotesk !default;
+
+//Tallinn brand
+$color--tallinn-blue: #0072ce !default;
+$color--tallinn-red: #ef3340 !default;
+$color--tallinn-green: #009639 !default;
+$color--tallinn-yellow: #f3d03e !default;
+$font--tallinn: 'Open Sans', sans-serif !default;
+
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -37,7 +49,7 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New",
   monospace !default;
-$font-family-base: $font-family-sans-serif !default;
+$font-family-base: $font-family-serif !default;
 $font-size-base: 16px !default;
 $font-size-large: ceil(($font-size-base * 1.375)) !default; // ~18px
 $font-size-small: ceil(($font-size-base * 0.935)) !default; // ~12px
