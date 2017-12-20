@@ -107,11 +107,17 @@ add_filter( 'body_class', function ( $classes ) {
 		$terms = get_the_terms( $post, 'location-city' );
 
 		if ( ! is_wp_error( $terms ) ) {
-			if($terms) {
+			if ( $terms ) {
 				foreach ( $terms as $term ) {
 					$classes[] = 'location-' . $term->slug;
 				}
 			}
+		}
+	} elseif ( is_page_template( 'custom-templates/locations-front-page.php' ) ) {
+		$term = get_term( get_field( 'city_location', $post->ID ), 'location-city' );
+
+		if ( ! is_wp_error( $term ) ) {
+			$classes[] = 'location-' . $term->slug;
 		}
 	}
 
