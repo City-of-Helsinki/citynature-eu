@@ -26,21 +26,42 @@ $locations = new WP_Query( [
 ] );
 
 $location_arr = [];
-?>
 
-<style>
-    .header--main {
-        background-image: linear-gradient(
-                to bottom,
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.1) 10%,
-                rgba(0, 0, 0, 0.1) 80%,
-                rgba(0, 0, 0, 0.5)
-        ),
-        url("<?= get_the_post_thumbnail_url() ?>");
-        /* overflow: hidden; */
-    }
-</style>
+$youtube  = get_field( 'video_url' );
+$url_arr  = explode( '/', $youtube );
+$video_id = end( $url_arr );
+?>
+<header class="header header--main">
+	<?php get_template_part( 'partials/components/nav' ); ?>
+    <div class="header__texts">
+        <h1>
+			<?= get_field( 'title' ); ?>
+        </h1>
+		<?php if ( $youtube ) : ?>
+            <div class="link-component" data-toggle="modal"
+                 data-target="#myModal" <?= ! get_field( 'video_border' ) ?: 'style="border: 3px solid' . get_field( 'video_border' ) . '; padding: 1rem;"'; ?>>
+                <div class="link-component__img"
+                     style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
+                <div class="link-component__text">
+                    <h5><?= get_field( 'video_title' ); ?></h5>
+                    <p><?= get_field( 'video_subtitle' ); ?></p>
+                </div>
+            </div>
+		<?php endif; ?>
+    </div>
+    <style>
+        .header--main {
+            background-image: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.1) 10%,
+                    rgba(0, 0, 0, 0.1) 80%,
+                    rgba(0, 0, 0, 0.5)
+            ),
+            url("<?= get_the_post_thumbnail_url() ?>");
+            /* overflow: hidden; */
+        }
+    </style>
 </header>
 <?php if ( wp_get_img_caption( get_post_thumbnail_id() ) ): ?>
     <span class="img-caption"><?= wp_get_img_caption( get_post_thumbnail_id() ); ?></span>
@@ -80,5 +101,13 @@ $location_arr = [];
         </p>
     </div>
 </main>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+			<?= do_shortcode( "[rve src=\"<iframe src=\"https://www.youtube.com/embed/$video_id\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>\" ratio=\"16by9\"]" ); ?>
+        </div>
+    </div>
+</div>
 
 <?php get_footer(); ?>

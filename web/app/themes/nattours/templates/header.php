@@ -6,10 +6,6 @@
  * @package Nattours
  */
 
-$youtube = get_field( 'video_url' );
-$url_arr = explode( '/', $youtube );
-$video_id = end( $url_arr );
-
 ?>
 
 <!doctype html>
@@ -31,29 +27,4 @@ $video_id = end( $url_arr );
 
 <body <?php body_class(); ?>>
 <?php do_action( 'nattours_after_body' ); ?>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <?= do_shortcode( "[rve src=\"<iframe src=\"https://www.youtube.com/embed/$video_id\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe>\" ratio=\"16by9\"]" ); ?>
-    </div>
-  </div>
-</div>
-
-<header class="header header--main">
-	<?php get_template_part( 'partials/components/nav' ); ?>
-	<div class="header__texts">
-		<h1>
-			<?= get_field( 'title' ); ?>
-		</h1>
-		<?php if ( $youtube ) : ?>
-      <div class="link-component" data-toggle="modal" data-target="#myModal" <?= !get_field( 'video_border' ) ?: 'style="border: 3px solid' .  get_field( 'video_border' ) . '; padding: 1rem;"'; ?>>
-        <div class="link-component__img" style="background-image: url(//img.youtube.com/vi/<?= $video_id ?>/0.jpg)"></div>
-        <div class="link-component__text">
-          <h5><?= get_field( 'video_title' ); ?></h5>
-          <p><?= get_field( 'video_subtitle' ); ?></p>
-        </div>
-      </div>
-		<?php endif; ?>
-	</div>
 
