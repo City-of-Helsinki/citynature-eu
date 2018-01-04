@@ -16,7 +16,13 @@ echo '</header>';
 if ( have_posts() ) {
 	while ( have_posts() ) {
 		the_post();
-		the_content();
+		?>
+		<div class="logos-wrapper">
+			<img src="<?php echo \UTILS()->get_image_uri() . '/interreg_logo.jpg' ?>" alt="Interreg logo" />
+            <img src="<?php echo \UTILS()->get_image_uri() . '/eu_logo.jpg' ?>" alt="EU logo" />
+            <img src="<?php echo \UTILS()->get_image_uri() . '/nattours_logo.jpg' ?>" alt="Nattours logo" />
+		</div>
+		<?php
 	}
 }
 
