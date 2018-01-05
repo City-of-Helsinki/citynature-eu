@@ -1,12 +1,1 @@
-/**
- * Login logo
- */
-
-.login h1 a {
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  background-size: 100% auto;
-  width: 300px;
-  height: 60px;
-}
-
+.login h1 a{background-size:100% auto;width:300px;height:60px}
