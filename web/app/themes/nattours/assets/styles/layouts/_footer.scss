@@ -29,4 +29,16 @@ footer {
       }
     }
   }
+
+  .footer-logo-column {
+    @include make-sm-column(12);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+
+    .footer-logo-img {
+      width: 20rem;
+      height: auto;
+    }
+  }
 }

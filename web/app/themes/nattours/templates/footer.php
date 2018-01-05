@@ -9,10 +9,23 @@
 ?>
 <footer>
     <div class="container">
+		<?php
+		if ( \UTILS()->get_city() !== '' ) {
+			?>
+            <div class="row">
+                <div class="footer-logo-column">
+                    <img class="footer-logo-img"
+                         src="<?php echo \UTILS()->get_image_uri() . '/' . \UTILS()->get_city() . '_logo.png' ?>"
+                         alt="<?php echo \UTILS()->get_city() . ' logo' ?>"/>
+                </div>
+            </div>
+			<?php
+		}
+		?>
         <div class="row">
             <div class="footer-menu-column">
                 <ul class="footer-links-menu">
-	                <?php nattours_footer_menu() ?>
+					<?php nattours_footer_menu() ?>
                 </ul>
             </div>
         </div>

@@ -205,4 +205,34 @@ class Utils {
 
 		return wp_get_attachment_image_src( $image_id, $size )[0];
 	}
+
+	/**
+     * Get city slug
+     *
+	 * @return string
+	 */
+	function get_city() {
+		global $post;
+		$city_slug = '';
+
+		if ( $post->post_type === 'location' ) {
+			$terms = get_the_terms( $post, 'location-city' );
+
+			if ( ! is_wp_error( $terms ) ) {
+				if ( $terms ) {
+					foreach ( $terms as $term ) {
+						$city_slug = $term->slug;
+					}
+				}
+			}
+		} elseif ( is_page_template( 'custom-templates/locations-front-page.php' ) ) {
+			$term = get_term( get_field( 'city_location', $post->ID ), 'location-city' );
+
+			if ( ! is_wp_error( $term ) ) {
+				$city_slug = $term->slug;
+			}
+		}
+
+		return $city_slug;
+	}
 }
