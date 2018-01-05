@@ -7,6 +7,11 @@
  */
 
 ?>
+<?php
+if ( \UTILS()->get_city() === 'helsinki' ) {
+    echo '<div class="helsinki-pulse"></div>';
+}
+?>
 <footer>
     <div class="container">
 		<?php

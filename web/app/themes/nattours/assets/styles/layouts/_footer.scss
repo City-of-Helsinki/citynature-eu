@@ -6,6 +6,7 @@ footer {
 
   .location-helsinki & {
     background-color: $color--helsinki-green;
+    margin-top: 0;
   }
 
   .location-tallinn &, .location-tallinna & {
@@ -41,4 +42,10 @@ footer {
       height: auto;
     }
   }
+}
+
+.helsinki-pulse {
+  @include koro('pulse', $color--helsinki-green, 200);
+  height: 2rem;
+  margin-top: 4rem;
 }
