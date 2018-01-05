@@ -107,6 +107,20 @@ img {
 
 a {
   text-decoration: none !important;
+
+  .location-helsinki & {
+    color: $color--helsinki-green;
+    &:hover, &:focus, &:active {
+      color: darken($color--helsinki-green, 15%);
+    }
+  }
+
+  .location-tallinn &, .location-tallinna & {
+    color: $color--tallinn-blue;
+    &:hover, &:focus, &:active {
+      color: darken($color--tallinn-blue, 15%);
+    }
+  }
 }
 
 // framecontainer to maintain 16:9 aspect-ratio
