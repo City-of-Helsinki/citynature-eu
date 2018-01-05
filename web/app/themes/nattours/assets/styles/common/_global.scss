@@ -51,7 +51,7 @@ h1 {
   @include responsive-font($font-size-h1);
 
   .location-helsinki & {
-    color: $color--helsinki-green;
+    //color: $color--helsinki-green;
   }
 
   .location-tallinn &, .location-tallinna & {
@@ -74,7 +74,7 @@ h4 {
   @include responsive-font($font-size-h4);
 
   .location-helsinki & {
-    color: $color--helsinki-green;
+    //color: $color--helsinki-green;
   }
 
   .location-tallinn &, .location-tallinna & {
@@ -87,7 +87,7 @@ h5 {
   margin-top: 0;
 
   .location-helsinki & {
-    color: $color--helsinki-green;
+    //color: $color--helsinki-green;
   }
 
   .location-tallinn &, .location-tallinna & {
@@ -109,9 +109,9 @@ a {
   text-decoration: none !important;
 
   .location-helsinki & {
-    color: $color--helsinki-green;
+    color: $color--helsinki-coat;
     &:hover, &:focus, &:active {
-      color: darken($color--helsinki-green, 15%);
+      color: darken($color--helsinki-coat, 15%);
     }
   }
 

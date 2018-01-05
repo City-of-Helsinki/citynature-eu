@@ -5,7 +5,7 @@ footer {
   padding: 2rem 0;
 
   .location-helsinki & {
-    background-color: $color--helsinki-green;
+    background-color: $color--helsinki-fog;
     margin-top: 0;
   }
 
@@ -45,7 +45,7 @@ footer {
 }
 
 .helsinki-pulse {
-  @include koro('pulse', $color--helsinki-green, 200);
+  @include koro('pulse', $color--helsinki-fog, 200);
   height: 2rem;
   margin-top: 4rem;
 }
