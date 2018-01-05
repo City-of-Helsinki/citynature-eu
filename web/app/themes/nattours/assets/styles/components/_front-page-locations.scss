@@ -1,0 +1,29 @@
+.front-page-locations {
+  @extend .container-fluid;
+  padding-right: 0;
+  padding-left: 0;
+
+  .front-page-location {
+    @include make-sm-column(6);
+    height: 50vw;
+    max-height: 70vh;
+
+    >.logo-img {
+      width: 200px;
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+    }
+
+    >.image-caption {
+      width: 150px;
+      position: absolute;
+      height: auto;
+      bottom: 1.5rem;
+      right: 1rem;
+      text-align: right;
+      color: #FFF;
+      font-size: 1.2rem;
+    }
+  }
+}

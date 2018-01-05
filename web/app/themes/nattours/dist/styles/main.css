@@ -2106,6 +2106,7 @@ pre code {
 }
 
 .container-fluid,
+.front-page-locations,
 .front,
 .header,
 .location__home,
@@ -2123,6 +2124,7 @@ pre code {
 }
 
 .container-fluid:before,
+.front-page-locations:before,
 .front:before,
 .header:before,
 .location__home:before,
@@ -2134,6 +2136,7 @@ pre code {
 .service:before,
 .taxonomy:before,
 .container-fluid:after,
+.front-page-locations:after,
 .front:after,
 .header:after,
 .location__home:after,
@@ -2149,6 +2152,7 @@ pre code {
 }
 
 .container-fluid:after,
+.front-page-locations:after,
 .front:after,
 .header:after,
 .location__home:after,
@@ -6440,6 +6444,7 @@ tbody.collapse.in {
 .container > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
+.front-page-locations > .navbar-header,
 .front > .navbar-header,
 .header > .navbar-header,
 .location__home > .navbar-header,
@@ -6451,6 +6456,7 @@ tbody.collapse.in {
 .service > .navbar-header,
 .taxonomy > .navbar-header,
 .container-fluid > .navbar-collapse,
+.front-page-locations > .navbar-collapse,
 .front > .navbar-collapse,
 .header > .navbar-collapse,
 .location__home > .navbar-collapse,
@@ -6469,6 +6475,7 @@ tbody.collapse.in {
   .container > .navbar-header,
   .container > .navbar-collapse,
   .container-fluid > .navbar-header,
+  .front-page-locations > .navbar-header,
   .front > .navbar-header,
   .header > .navbar-header,
   .location__home > .navbar-header,
@@ -6480,6 +6487,7 @@ tbody.collapse.in {
   .service > .navbar-header,
   .taxonomy > .navbar-header,
   .container-fluid > .navbar-collapse,
+  .front-page-locations > .navbar-collapse,
   .front > .navbar-collapse,
   .header > .navbar-collapse,
   .location__home > .navbar-collapse,
@@ -6552,6 +6560,7 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand,
+  .navbar > .front-page-locations .navbar-brand,
   .navbar > .front .navbar-brand,
   .navbar > .header .navbar-brand,
   .navbar > .location__home .navbar-brand,
@@ -7472,6 +7481,7 @@ a.badge:focus {
 
 .container .jumbotron,
 .container-fluid .jumbotron,
+.front-page-locations .jumbotron,
 .front .jumbotron,
 .header .jumbotron,
 .location__home .jumbotron,
@@ -7499,6 +7509,7 @@ a.badge:focus {
 
   .container .jumbotron,
   .container-fluid .jumbotron,
+  .front-page-locations .jumbotron,
   .front .jumbotron,
   .header .jumbotron,
   .location__home .jumbotron,
@@ -13589,6 +13600,45 @@ body#tinymce {
   margin: 1rem;
 }
 
+.front-page-locations {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.front-page-locations .front-page-location {
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 50vw;
+  max-height: 70vh;
+}
+
+@media (min-width: 768px) {
+  .front-page-locations .front-page-location {
+    float: left;
+    width: 50%;
+  }
+}
+
+.front-page-locations .front-page-location > .logo-img {
+  width: 200px;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.front-page-locations .front-page-location > .image-caption {
+  width: 150px;
+  position: absolute;
+  height: auto;
+  bottom: 1.5rem;
+  right: 1rem;
+  text-align: right;
+  color: #FFF;
+  font-size: 1.2rem;
+}
+
 .sidemenu {
   display: flex;
   flex-direction: column;
@@ -13764,6 +13814,7 @@ body#tinymce {
 }
 
 .sidemenu--left .container-fluid,
+.sidemenu--left .front-page-locations,
 .sidemenu--left .front,
 .sidemenu--left .header,
 .sidemenu--left .location__home,
