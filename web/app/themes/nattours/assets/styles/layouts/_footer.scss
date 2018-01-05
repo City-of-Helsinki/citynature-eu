@@ -1,5 +1,24 @@
-.footer {
-  @include make-xs-column(12);
-  text-align: center;
-  height: 100px;
+footer {
+  margin-top: 4rem;
+  background-color: #000;
+  color: #FFF;
+  padding: 2rem 0;
+
+  .footer-menu-column {
+    @include make-sm-column(12);
+
+    .footer-links-menu {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      > li {
+        display: inline-block;
+        padding: 1.5rem;
+        > a {
+          color: #FFF;
+        }
+      }
+    }
+  }
 }
