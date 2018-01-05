@@ -4,6 +4,14 @@ footer {
   color: #FFF;
   padding: 2rem 0;
 
+  .location-helsinki & {
+    background-color: $color--helsinki-green;
+  }
+
+  .location-tallinn &, .location-tallinna & {
+    background-color: $color--tallinn-blue;
+  }
+
   .footer-menu-column {
     @include make-sm-column(12);
 
