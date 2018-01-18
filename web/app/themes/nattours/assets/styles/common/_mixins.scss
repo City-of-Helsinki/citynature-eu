@@ -38,6 +38,18 @@
       @include make-md-column(6);
       @include make-md-column-offset(3);
     }
+
+    &--left-services {
+      margin-top: rem-calc(24);
+      @include make-sm-column(5);
+      @include make-sm-column-push(7);
+    }
+
+    &--right-services {
+      margin-top: rem-calc(18);
+      @include make-sm-column(7);
+      @include make-sm-column-pull(5);
+    }
   }
   .text-content {
     @include make-xs-column(12);
