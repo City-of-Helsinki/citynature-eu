@@ -9,7 +9,7 @@
 ?>
 <?php
 if ( \UTILS()->get_city() === 'helsinki' ) {
-    echo '<div class="helsinki-pulse"></div>';
+	echo '<div class="helsinki-pulse"></div>';
 }
 ?>
 <footer>
@@ -28,11 +28,17 @@ if ( \UTILS()->get_city() === 'helsinki' ) {
 		}
 		?>
         <div class="row">
-            <div class="footer-menu-column">
-                <ul class="footer-links-menu">
-					<?php nattours_footer_menu() ?>
-                </ul>
-            </div>
+			<?php if ( ! is_front_page() ): ?>
+                <div class="footer-menu-column">
+                    <ul class="footer-links-menu">
+						<?php nattours_footer_menu() ?>
+                    </ul>
+                </div>
+			<?php else: ?>
+                <div class="footer-text-column">
+					<?php pll_e( 'Front page footer text' ); ?>
+                </div>
+			<?php endif; ?>
         </div>
     </div>
 </footer>

@@ -14301,6 +14301,22 @@ footer .footer-menu-column .footer-links-menu > li > a {
   color: #FFF;
 }
 
+footer .footer-text-column {
+  position: relative;
+  min-height: 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  footer .footer-text-column {
+    float: left;
+    width: 100%;
+  }
+}
+
 footer .footer-logo-column {
   position: relative;
   min-height: 1px;
