@@ -19,6 +19,14 @@
     color: white;
     @include make-xs-column(12);
   }
+
+  h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .subtitle {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
 }
 
 .menu-box-container {
