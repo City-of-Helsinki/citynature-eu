@@ -13244,6 +13244,10 @@ span.h7 {
   margin: auto !important;
 }
 
+blockquote em {
+  font-size: 1.4rem;
+}
+
 .alignnone {
   margin-left: 0;
   margin-right: 0;
