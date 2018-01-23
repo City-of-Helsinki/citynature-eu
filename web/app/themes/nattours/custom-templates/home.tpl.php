@@ -48,6 +48,23 @@ if ( have_posts() ) {
             </div>
 			<?php
 		}
+		?>
+        <div class="container">
+            <div class="front-page-lang-switcher">
+                <h5><?php pll_e( 'Switch language' ) ?></h5>
+                <ul>
+					<?php
+					$translations = pll_the_languages( [ 'raw' => 1 ] );
+
+					foreach ( $translations as $translation ) {
+
+						echo '<li><a href="' . $translation['url'] . '">' . strtoupper( $translation['slug'] ) . '</a></li>';
+					}
+					?>
+                </ul>
+            </div>
+        </div>
+		<?php
 	}
 }
 

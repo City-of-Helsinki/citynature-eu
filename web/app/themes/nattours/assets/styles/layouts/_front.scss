@@ -57,3 +57,24 @@
     color: $brand-info !important;
   }
 }
+
+.front-page-lang-switcher {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+
+  > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      display: inline-block;
+      padding: 1rem;
+
+      > a {
+
+      }
+    }
+  }
+}

@@ -14599,6 +14599,23 @@ footer .footer-logo-column .footer-logo-img {
   color: #0072c6 !important;
 }
 
+.front-page-lang-switcher {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.front-page-lang-switcher > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.front-page-lang-switcher > ul > li {
+  display: inline-block;
+  padding: 1rem;
+}
+
 .header {
   position: relative;
   padding-bottom: 1.125rem;
