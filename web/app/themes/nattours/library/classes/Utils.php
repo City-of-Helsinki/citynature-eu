@@ -28,8 +28,8 @@ class Utils {
 		$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 		?>
-		<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-			<ul class="pager">
+        <nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
+            <ul class="pager">
 				<?php if ( is_single() ) : ?>
 					<?php previous_post_link( '<li class="nav-previous previous">%link</li>',
 						'<span class="meta-nav">' . _x( '&larr;', 'Previous post link',
@@ -40,16 +40,16 @@ class Utils {
 
 				<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 					<?php if ( get_next_posts_link() ) : ?>
-						<li class="nav-previous previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts',
+                        <li class="nav-previous previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts',
 								TEXT_DOMAIN ) ); ?></li>
 					<?php endif; ?>
 					<?php if ( get_previous_posts_link() ) : ?>
-						<li class="nav-next next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>',
+                        <li class="nav-next next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>',
 								TEXT_DOMAIN ) ); ?></li>
 					<?php endif; ?>
 				<?php endif; ?>
-			</ul>
-		</nav>
+            </ul>
+        </nav>
 		<?php
 	}
 
@@ -158,7 +158,7 @@ class Utils {
 	 */
 	public function get_category_hierarchy( $taxonomy = 'category' ) {
 
-		$cats     = [ ];
+		$cats     = [];
 		$category = wp_get_object_terms( get_the_ID(), $taxonomy )[0];
 		$cat_tree = get_ancestors( $category->term_id, $taxonomy );
 		array_push( $cat_tree, $category->term_id );
@@ -190,7 +190,7 @@ class Utils {
 	 * @return string
 	 */
 	public function get_image_uri() {
-		return asset_uri('images');
+		return asset_uri( 'images' );
 	}
 
 	/**
@@ -207,8 +207,8 @@ class Utils {
 	}
 
 	/**
-     * Get city slug
-     *
+	 * Get city slug
+	 *
 	 * @return string
 	 */
 	function get_city() {
@@ -233,6 +233,22 @@ class Utils {
 			}
 		}
 
+		if ( $city_slug === 'tallinna' ) {
+			$city_slug = 'tallinn';
+		}
+
 		return $city_slug;
+	}
+
+	function get_map_tileurl() {
+		if ( $this->get_city() === 'helsinki' ) {
+			$tile_url = 'http://api.digitransit.fi/map/v1/hsl-map/{z}/{x}/{y}.png';
+		} elseif ( $this->get_city() === 'tallinn' ) {
+			$tile_url = 'https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}';
+		} else {
+			$tile_url = 'http://api.digitransit.fi/map/v1/hsl-map/{z}/{x}/{y}.png';
+		}
+
+		return $tile_url;
 	}
 }
