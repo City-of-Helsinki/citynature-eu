@@ -59,9 +59,13 @@
 }
 
 .front-page-lang-switcher {
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
+
+  > h6 {
+    margin-bottom: 0;
+  }
 
   > ul {
     list-style-type: none;

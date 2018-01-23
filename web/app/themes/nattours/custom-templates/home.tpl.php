@@ -22,6 +22,21 @@ if ( have_posts() ) {
             <img src="<?php echo \UTILS()->get_image_uri() . '/eu_logo.jpg' ?>" alt="EU logo"/>
             <img src="<?php echo \UTILS()->get_image_uri() . '/nattours_logo.jpg' ?>" alt="Nattours logo"/>
         </div>
+        <div class="container">
+            <div class="front-page-lang-switcher">
+                <h6><?php pll_e( 'Switch language' ) ?></h6>
+                <ul>
+					<?php
+					$translations = pll_the_languages( [ 'raw' => 1 ] );
+
+					foreach ( $translations as $translation ) {
+
+						echo '<li><a href="' . $translation['url'] . '">' . strtoupper( $translation['slug'] ) . '</a></li>';
+					}
+					?>
+                </ul>
+            </div>
+        </div>
         <h1 class="text-center"><?php the_field( 'front_page_title' ) ?></h1>
 		<?php
 		if ( have_rows( 'locations' ) ) {
@@ -48,23 +63,6 @@ if ( have_posts() ) {
             </div>
 			<?php
 		}
-		?>
-        <div class="container">
-            <div class="front-page-lang-switcher">
-                <h5><?php pll_e( 'Switch language' ) ?></h5>
-                <ul>
-					<?php
-					$translations = pll_the_languages( [ 'raw' => 1 ] );
-
-					foreach ( $translations as $translation ) {
-
-						echo '<li><a href="' . $translation['url'] . '">' . strtoupper( $translation['slug'] ) . '</a></li>';
-					}
-					?>
-                </ul>
-            </div>
-        </div>
-		<?php
 	}
 }
 

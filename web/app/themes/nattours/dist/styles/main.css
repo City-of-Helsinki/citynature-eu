@@ -13613,14 +13613,13 @@ body#tinymce {
   -ms-flex-align: center;
   align-items: center;
   padding: 1rem;
-  margin-bottom: 2rem;
 }
 
 .logos-wrapper > img {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  max-width: 10rem !important;
+  max-width: 8rem !important;
   margin: 1rem;
 }
 
@@ -14600,9 +14599,13 @@ footer .footer-logo-column .footer-logo-img {
 }
 
 .front-page-lang-switcher {
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 1.2rem;
+}
+
+.front-page-lang-switcher > h6 {
+  margin-bottom: 0;
 }
 
 .front-page-lang-switcher > ul {
