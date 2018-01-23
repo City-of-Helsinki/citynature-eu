@@ -21,7 +21,10 @@
 <main class="location__history">
   <section class="content--center">
     <div class="text-content">
-      <?= get_field( 'history_text' ); ?>
+      <?php
+      get_template_part( 'partials/content-audio-player', 'history' );
+      the_field( 'history_text' );
+      ?>
     </div>
     <?php if ( get_field( 'history_gallery' ) ) : ?>
       <div class="graphic-content location__gallery" id="historyGallery">

@@ -376,4 +376,6 @@ if(function_exists('pll_register_string')) {
     pll_register_string( 'Read more', 'Read more' );
 	pll_register_string( 'Front page footer text', 'Front page footer text' );
 	pll_register_string( 'Switch language', 'Switch language' );
+	pll_register_string( 'Listen text', 'Listen text' );
+	pll_register_string( 'Your browser does not support the audio element.', 'Your browser does not support the audio element.' );
 }
