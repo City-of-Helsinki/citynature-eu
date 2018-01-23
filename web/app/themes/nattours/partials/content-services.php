@@ -32,6 +32,8 @@ $services_bg = get_field( 'services_image' );
 
 $services_map = get_field( 'services_map' );
 
+$tile_url = UTILS()->get_map_tileurl();
+
 ?>
 
 <style>
@@ -55,7 +57,7 @@ $services_map = get_field( 'services_map' );
 <main class="location__services">
     <section class="content--left-services">
 	    <?php
-	    $map     = "[leaflet-map fit_markers=1 height=600][leaflet-geojson src=$services_map fitbounds=1]";
+	    $map     = "[leaflet-map fit_markers=1 height=600 tileurl=$tile_url][leaflet-geojson src=$services_map fitbounds=1]";
 	    $map_arr = [];
 	    array_push( $map_arr, $map );
 	    if ( have_rows( 'services_markers' ) ): while ( have_rows( 'services_markers' ) ): the_row();

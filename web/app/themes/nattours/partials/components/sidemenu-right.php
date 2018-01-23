@@ -1,6 +1,8 @@
 <?php $map_file = get_field( 'map_file' ); ?>
 
-
+<?php
+$tile_url = UTILS()->get_map_tileurl();
+?>
 <section class="sidemenu<?php echo ( is_user_logged_in() ) ? ' sidemenu--logged-in' : ''; ?> sidemenu--right"
          id="rightMenu">
     <div class="sidemenu__header-container">
@@ -11,7 +13,7 @@
     </div>
     <div class="graphic-content">
 		<?php
-		$map     = "[leaflet-map fit_markers=1][leaflet-geojson src=$map_file]";
+		$map     = "[leaflet-map fit_markers=1 tileurl=$tile_url][leaflet-geojson src=$map_file]";
 		$map_arr = [];
 		array_push( $map_arr, $map );
 		if ( have_rows( 'markers' ) ): while ( have_rows( 'markers' ) ): the_row();
