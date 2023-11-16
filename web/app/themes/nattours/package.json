@@ -45,7 +45,7 @@
     "jquery": "1.12.4 - 3",
     "jquery-match-height": "^0.7.2",
     "leaflet": "^1.1.0",
-    "lodash": "^4.15.0",
+    "lodash": "^4.17.21",
     "slick-carousel": "^1.7.1"
   },
   "devDependencies": {
